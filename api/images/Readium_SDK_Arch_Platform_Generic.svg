@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="647px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+<rect x="133.152" y="151.285" fill="#C7B299" stroke="#000000" width="419.121" height="28.14"/>
+<polygon fill="#E6ECFF" stroke="#000000" points="368.597,218.097 368.605,262.841 133.152,262.841 133.152,218.097 "/>
+<text transform="matrix(1 0 0 1 223.5054 244.334)" font-family="'MyriadPro-Regular'" font-size="15.5364">Controller</text>
+<rect x="148.706" y="394.897" fill="#FFE3F7" stroke="#000000" width="107.355" height="67.198"/>
+<rect x="381.658" y="217.659" fill="#FAFFD4" stroke="#000000" width="86.763" height="45.182"/>
+<text transform="matrix(1 0 0 1 402.9189 236.3105)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="14">WebKit</tspan><tspan x="6.958" y="16.8" font-family="'MyriadPro-Regular'" font-size="14">View</tspan></text>
+<text transform="matrix(1 0 0 1 255.9277 169.4707)" font-family="'MyriadPro-Regular'" font-size="15.5364">Application (UI) Layer</text>
+<rect x="131.957" y="518.578" fill="#D6FFDB" stroke="#000000" width="423.938" height="46.508"/>
+<text transform="matrix(1 0 0 1 295.4429 546.8232)" font-family="'MyriadPro-Regular'" font-size="16">OS Services</text>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M214.896,405.213"/>
+<g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="436.239" y1="383.851" x2="436.239" y2="273.419"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="431.365,275.994 436.289,263.9 441.117,276.031 	"/>
+</g>
+<g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="178.024" y1="298.018" x2="178.024" y2="267.9"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="173.148,276.94 178.071,264.848 182.899,276.977 	"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="182.899,289.822 178.056,301.947 173.149,289.847 	"/>
+</g>
+<rect x="391.888" y="394.622" fill="#E3FBFF" stroke="#000000" stroke-miterlimit="10" width="111.375" height="67.75"/>
+<polygon stroke="#000000" stroke-miterlimit="10" points="351.124,275.995 356.048,263.901 360.876,276.03 "/>
+<polygon stroke="#000000" stroke-miterlimit="10" points="416.428,380.911 411.584,393.038 406.678,380.938 "/>
+<text transform="matrix(1 0 0 1 430.8867 421.7695)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="15.5364">DOM</tspan><tspan x="-11.792" y="18.643" font-family="'MyriadPro-Regular'" font-size="15.5364">Accessor</tspan></text>
+<text transform="matrix(1 0 0 1 187.1733 423.1582)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="15.5364">Core </tspan><tspan x="-1.328" y="18.644" font-family="'MyriadPro-Regular'" font-size="15.5364">(C++)</tspan></text>
+<rect x="133.152" y="303.046" fill="#FFE8BA" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" width="89.741" height="44.059"/>
+<g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="178.023" y1="387.974" x2="178.023" y2="353.143"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="173.236,360.327 178.069,348.456 182.809,360.362 	"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="182.809,381.806 178.055,393.708 173.238,381.831 	"/>
+</g>
+<text transform="matrix(1 0 0 1 143.189 330.0991)" font-family="'MyriadPro-Regular'" font-size="15.5364">Extensions</text>
+<rect x="131.957" y="370.482" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="4" width="385.78" height="119.886"/>
+<text transform="matrix(1.5143 0 0 1 309.4229 481.6816)" font-family="'MyriadPro-Regular'" font-size="14">SDK</text>
+<g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="256.062" y1="213.729" x2="256.062" y2="183.611"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="251.186,192.652 256.109,180.559 260.938,192.688 	"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="260.938,205.534 256.094,217.659 251.188,205.558 	"/>
+</g>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="239.91" y1="383.802" x2="239.91" y2="273.371"/>
+<polygon stroke="#000000" stroke-miterlimit="10" points="235.036,276.946 239.959,264.852 244.788,276.983 "/>
+<polygon stroke="#000000" stroke-miterlimit="10" points="244.795,378.245 239.944,393.346 235.047,378.284 "/>
+<g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="203.272" y1="513.05" x2="203.272" y2="472.646"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="198.397,476.137 203.321,464.043 208.149,476.172 	"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="208.149,506.987 203.306,519.114 198.399,507.015 	"/>
+</g>
+<g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="325.452" y1="384.479" x2="325.452" y2="274.048"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="320.578,276.623 325.502,264.529 330.33,276.66 	"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="330.338,378.922 325.486,394.023 320.59,378.961 	"/>
+</g>
+<rect x="288.179" y="395.472" fill="#E3FBFF" stroke="#000000" stroke-miterlimit="10" width="74.668" height="67.75"/>
+<text transform="matrix(1 0 0 1 308.8809 421.8418)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="15.5364">View</tspan><tspan x="-8.661" y="18.645" font-family="'MyriadPro-Regular'" font-size="15.5364">Utilities</tspan></text>
+<g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="388.773" y1="425.708" x2="364.891" y2="425.708"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="372.059,429.574 362.469,425.671 372.087,421.842 	"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="382.274,421.842 391.889,425.683 382.293,429.573 	"/>
+</g>
+<rect x="133.152" y="338.805" fill="#FFE3F7" stroke="#000000" stroke-width="0.5" width="89.741" height="8.3"/>
+<rect x="118.825" y="121.29" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="4" width="446.997" height="161.669"/>
+<text transform="matrix(1.5143 0 0 1 259.8105 142.3159)" font-family="'MyriadPro-Regular'" font-size="14">Host Application</text>
+<rect x="497.117" y="221.586" fill="#F0F0F0" stroke="#000000" width="55.156" height="37.326"/>
+<text transform="matrix(1 0 0 1 510.5137 238.0391)"><tspan x="0" y="0" fill="#ABABAB" font-family="'MyriadPro-Regular'" font-size="12">Local</tspan><tspan x="-2.657" y="10.4" fill="#ABABAB" font-family="'MyriadPro-Regular'" font-size="12">Server</tspan></text>
+<g>
+	<g>
+		<line fill="#ABABAB" stroke="#ABABAB" stroke-miterlimit="10" x1="493.96" y1="240.469" x2="470.077" y2="240.469"/>
+		<polygon fill="#ABABAB" stroke="#ABABAB" stroke-miterlimit="10" points="477.245,244.335 467.655,240.432 477.273,236.603 		"/>
+		<polygon fill="#ABABAB" stroke="#ABABAB" stroke-miterlimit="10" points="487.461,236.603 497.075,240.443 487.479,244.334 		"/>
+	</g>
+</g>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="356" y1="265.928" x2="356" y2="307.474"/>
+<line fill="none" stroke="#000000" stroke-linecap="square" stroke-miterlimit="10" x1="356" y1="307.474" x2="411.553" y2="307.474"/>
+<line fill="none" stroke="#000000" stroke-linecap="square" stroke-miterlimit="10" x1="411.553" y1="307.474" x2="411.553" y2="387.974"/>
+<polygon stroke="#000000" stroke-miterlimit="10" points="441.116,380.911 436.272,393.038 431.366,380.938 "/>
+<g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="425.04" y1="213.29" x2="425.04" y2="183.172"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="420.164,192.213 425.087,180.12 429.914,192.249 	"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="429.914,205.095 425.072,217.22 420.165,205.119 	"/>
+</g>
+<g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="531.531" y1="509.846" x2="531.531" y2="268.433"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="526.657,272.006 531.581,259.913 536.409,272.043 	"/>
+	<polygon stroke="#000000" stroke-miterlimit="10" points="536.408,504.923 531.564,517.05 526.658,504.95 	"/>
+</g>
+</svg>
