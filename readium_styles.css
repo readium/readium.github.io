@@ -38,6 +38,10 @@ h2 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; colo
 h3 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; color:rgb(26,83,153)}
 h4 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; color:rgb(26,83,153)}
 
+.phone_numbers {
+	font-size:small;
+}
+
 #normal_div { 
 	margin-top:10px;
 	margin-left:10px;

@@ -37,30 +37,85 @@
   <p><a href="https://github.com/readium/SDKLauncher-OSX">SDKLauncher-OSX</a></p>
   <p><a href="https://github.com/readium/SDKLauncher-Windows">SDKLauncher-Windows</a></p>
   <!-- p><a href="https://github.com/readium/readium-lcp-client">SCP</a></p -->
-  </div>
+  </div> <!-- end of the left banner -->
   
 <div class="right_banner">
-<p>The Readium Projects primary goal is to provide rock-solid, performant building blocks and applications for EPUB3 publications.  There are currently three separate projects  underway: ReadiumJS, Readium SDK and SCP (Secure Content Protection).
-<h3>ReadiumJS</h3>
-<p>
+<h3>The Weekly Meetings</h3>
+<p>There are three regular Readium Meetings each week</p>
+<blockquote>
+<table width="60%" border="1" cellspacing="0" cellpadding="4">
+  <tr>
+    <td width="47%">ReadiumJS Engineering</td>
+    <td width="53%">Tuesdays at 1600h UTC</td>
+  </tr>
+  <tr>
+    <td>Readium SDK Engineering</td>
+    <td>Wednesdays at 1600h UTC</td>
+  </tr>
+  <tr>
+    <td>Readium Triage/Planning</td>
+    <td>Thursdays at 1600h UTC</td>
+  </tr>
+</table>
+</blockquote>
+<p>All three meetings are hosted in GoToMeeting with the same call-in info:</p>
+<blockquote>
+  <p>Access Code: 334-772-733</p>  
+  <p>On the web, click <a href="https://global.gotomeeting.com/meeting/join/334772733">here</a> or call in by phone:</p>
+ 
+  <table width="90%" border="1" cellspacing="0" cellpadding="1" class="phone_numbers">
+    <tr>
+      <td>Belgium: +32 (0) 28 08 4342</td>
+      <td>Canada: +1 (647) 497-9371</td>
+      <td>Denmark: +45 (0) 69 91 89 21</td>
+      
+    </tr>
+    <tr>
+      <td>Finland: +358 (0) 942 41 5770</td>
+      <td>France: +33 (0) 182 880 462</td>
+      <td>Germany: +49 (0) 811 8899 6925</td>
+    
+    </tr>
+    <tr>
+      <td>Ireland: +353 (0) 19 030 050</td>
+      <td>Italy: +39 0 693 38 75 50</td>
+      <td>Netherlands: +31 (0) 208 080 208</td>
+   
+    </tr>
+    <tr>
+      <td>Norway: +47 21 54 82 21</td>
+      <td>Spain: +34 911 82 9890</td>
+      <td>Sweden: +46 (0) 852 500 179</td>   
+    </tr>
+    <tr>
+      <td>Switzerland: +41 (0) 435 0167 65</td>
+      <td> UK: +44 20 3657 6776</td>
+      <td>United States: +1 (213) 493-0619</td>   
+    </tr>
+  </table>
+ 
+ <p>Use your microphone and speakers (VoIP) - a headset is recommended. </p>
+ 
+ </blockquote>
 
-The ReadiumJS project is developing a JavaScript library and viewer for EPUB 3 rendering optimized for use to render EPUB files directly from websites and in browser-based "cloud" readers. Using ReadiumJS does not require any server-side infrastructure or browser plug-ins. ReadiumJS shares common JS modules with the Readium SDK project which targets native apps. 
-</p>
-<p>There are two parts to ReadiumJS:</p>
-<ul>
-  <li>A Readium Chrome Extension which is  available  from the Chrome Web Store. It is one of the most full-featured EPUB 3 Reading Systems available.  The curent version, released 1 May 2015, is 2.18.1.</li>
-  <li>A cross-browser (as opposed to a Chrome Extension) implementation (known as the CloudReader) based on essentially the same sources but with a different viewer/application front end.  </li>
-  </ul>
-<p> In addition, all of the source code for both the Chrome Extension and the CloudReader can be downloaded from github as source code and modified to suit. All of the ReadiumJS sub-projects are available under the BSD open source license</p>
-<h3>Readium SDK</h3>
-<p>The Readium SDK project is  developing a compact, performant EPUB 3 rendering engine optimized for  use in native apps for tablets and other devices. The Readium SDK Core  C++ library is cross-platform and implemented largely in native code  with some JavaScript/Java/C# implementations where appropriate.</p>
-<p>Note that the Readium SDK Core C++ library is dual-licensed: publicly via <a href="http://www.gnu.org/licenses/agpl-3.0.html">Gnu Affero General Public License Version 3</a> (a license which contains terms incompatible with use in closed-source software including a <a href="http://en.wikipedia.org/wiki/Copyleft">copyleft</a> provision), and via a an <a href="http://readium.org/about-us/corporate-documents/readium-sdk-license">Alternative License</a> based on the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License</a> which  provides additional rights targeted to commercial adopters utilizing  Readium SDK in closed-source software, including not having any copyleft  provision. For more information on Readium SDK licensing see: <a href="http://readium.org/license-readium-sdk">http://readium.org/license-readium-sdk</a></p>
-<h3>SCP</h3>
+<p>An invitation to each meeting and a separate agenda for each meeting and all the login and call-in info is sent out to the readium-dev mailing list each week.</p>
+<h3>Face to Face Meetings</h3>
+<p>Several times a year (it varies) we try to arrange a face-to-face meeting of the developers and contributors. These usually but not always coicide with Readium membership meetings and/or major eBook conferences like Book Expo America, etc.</p>
+<h3>Meeting Archives</h3>
+<p>The agenda and notes from all the meetings are archived in the Readium Google doc tree. Access to all the archives can be found <a href="https://drive.google.com/drive/folders/0BzaNaBNAB6FjbloySkdKRHZzdGM/0BzaNaBNAB6FjRmFocHotbV9nMFU?hl=en">here</a>.</p>
+<h3>The ReadiumJS Meeting</h3>
+<p>The ReadiumJS meeting is focused primarily on the Readium Chrome Extension and CloudReader development. However, since the JS and SDK sides share the readium-shared-js layer, there is often a little bit of overlap. </p>
+<h3>The Readium SDK Meeting</h3>
+<p>The Readium SDK meeting is of course focused primarily on the SDK development. However,  there is often a little bit of overlap with ReadiumJS. The SDK meeting also covers some of the DRM-related development.</p>
+<h3>The Triage/Planning Meeting</h3>
+<p>The Thursday meeting varies in its content, but tends to be broader in scope than the JS or SDK engineering meetings. Sometimes if focuses on reviewing the open issues or some particular topic (e.g. user interface changes to the Chrome Extension, etc.). Other times, the meeting focuses on planning for one or more facets of the project over the near or medium term. Longer term planning tends to be held at the membership and board level.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
-          <p>Several members of Readium Foundation are pursuing, as a sub-project of Readium SDK, an implementation of a  DRM technology. Readium SCP (for &quot;Secure Content Protection&quot;) is expected to provide a   module for Readium SDK as well as server-side components. Readium  SDK will not require use of Readium LCP, which will be separately  licensed to interested parties. </p>
-          <p>An initial specification proposal for Readium LCP was contributed by Kobo and is available <a href="https://dl.dropbox.com/u/896638/Kobo-EPUB-LCP.pdf">here</a>. More information on Readium LCP coming soon.</p>
+ 
 
-</div>
+</div> 
+<!-- end of right banner -->
 
 <div class="siteInfo">
 <br/>
