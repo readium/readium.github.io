@@ -15,7 +15,7 @@
 <img src="images/ReadiumLogo.png" width="321" height="97" alt="Readium Logo"/>
 </a>
 </p>
-<h1>Readium Planning</h1>
+<h1>Readium Planning and Project Management</h1>
 </div>
 
 <div class="left_banner">
@@ -40,36 +40,40 @@
   </div>
   
 <div class="right_banner">
-<p>The Readium Projects primary goal is to provide rock-solid, performant building blocks and applications for EPUB3 publications.  There are currently three separate projects  underway: ReadiumJS, Readium SDK and SCP (Secure Content Protection).
-<h3>ReadiumJS</h3>
-<p>
-
-The ReadiumJS project is developing a JavaScript library and viewer for EPUB 3 rendering optimized for use to render EPUB files directly from websites and in browser-based "cloud" readers. Using ReadiumJS does not require any server-side infrastructure or browser plug-ins. ReadiumJS shares common JS modules with the Readium SDK project which targets native apps. 
-</p>
-<p>There are two parts to ReadiumJS:</p>
+<p><em>Note: We are currently reviewing and revising our planning approaches, so this page is a work-in-progress.</em>
+<h3>General Approach
+</h3>
+<p>The planning process for Readium is an adaptation of the Agile development workflow. However, Agile works very well where one has one or more small teams and the cooperation between the teams and management is tight. A large, global open-source project like Readium, however is definitely not highly, tightly linked.The contributors are distributedd all over the globe and who, exactly is working on the project at any given time varies widely - and sometimes isn't known in advance.</p>
+<p>In consequence, we have adopted some parts of the Agile approach and skipped others - and it is all applied flexibly to account for the highly distributed nature of the team and its members. What we do aim to do includes:</p>
 <ul>
-  <li>A Readium Chrome Extension which is  available  from the Chrome Web Store. It is one of the most full-featured EPUB 3 Reading Systems available.  The curent version, released 1 May 2015, is 2.18.1.</li>
-  <li>A cross-browser (as opposed to a Chrome Extension) implementation (known as the CloudReader) based on essentially the same sources but with a different viewer/application front end.  </li>
+  <li>A prioritized backlog. 
+    <ul>
+      <li>Readium's is based on Trello but is currently rather out-of-date. This is being worked on real-time.</li>
+      <li>Due to the nature of Readium, there are in fact several backlogs:
+        <ul>
+          <li><a href="https://trello.com/b/FtslcLy7/readium-sdk">Readium SDK</a>, which includes the Launchers</li>
+          <li><a href="https://trello.com/b/mdx405yR/readiumjs">ReadiumJS</a>, which includes the shared-js layer as well as both the Chrome Extension and the CloudReader</li>
+          </ul>
+      </li>
+      </ul>
+  </li>
+  <li>Issue Tracking
+    <ul>
+      <li>This is done via the Github issue tracker for each of the repos in Readium.</li>
+      <li>Due to the complex nature of Readium and its projects (7 major platforms, many browsers, etc.) there are many different places where issue get tracker.</li>
+      </ul>
+  </li>
+  <li>Sprint-based development
+    <ul>
+      <li>We aim to keep our sprints and releases on the order of 3-4 weeks, but again due to the highly varied resources and timing sometimes the sprints are 5-6 weeks or even more on occasion.</li>
+      <li>Since the number, identities and amount of time available from the contributors is rarely known with any certainty, the decisions on what bugs need to be fixed and which features get priority is a rather <em>ad hoc</em> process.</li>
+      </ul>
+  </li>
   </ul>
-<p> In addition, all of the source code for both the Chrome Extension and the CloudReader can be downloaded from github as source code and modified to suit. All of the ReadiumJS sub-projects are available under the BSD open source license</p>
-<h3>Readium SDK</h3>
-<p>The Readium SDK project is  developing a compact, performant EPUB 3 rendering engine optimized for  use in native apps for tablets and other devices. The Readium SDK Core  C++ library is cross-platform and implemented largely in native code  with some JavaScript/Java/C# implementations where appropriate.</p>
-<p>Note that the Readium SDK Core C++ library is dual-licensed: publicly via <a href="http://www.gnu.org/licenses/agpl-3.0.html">Gnu Affero General Public License Version 3</a> (a license which contains terms incompatible with use in closed-source software including a <a href="http://en.wikipedia.org/wiki/Copyleft">copyleft</a> provision), and via a an <a href="http://readium.org/about-us/corporate-documents/readium-sdk-license">Alternative License</a> based on the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License</a> which  provides additional rights targeted to commercial adopters utilizing  Readium SDK in closed-source software, including not having any copyleft  provision. For more information on Readium SDK licensing see: <a href="http://readium.org/license-readium-sdk">http://readium.org/license-readium-sdk</a></p>
-<h3>SCP</h3>
-<div>
-  <div>
-    <div>
-      <div>
-        <div>
-          <p>Several members of Readium Foundation are pursuing, as a sub-project of Readium SDK, an implementation of a  DRM technology. Readium SCP (for &quot;Secure Content Protection&quot;) is expected to provide a   module for Readium SDK as well as server-side components. Readium  SDK will not require use of Readium LCP, which will be separately  licensed to interested parties. </p>
-          <p>An initial specification proposal for Readium LCP was contributed by Kobo and is available <a href="https://dl.dropbox.com/u/896638/Kobo-EPUB-LCP.pdf">here</a>. More information on Readium LCP coming soon.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
+<h3>Project Management</h3>
+<p>Overall priorities for the Readium project and its sub-projects are set by the Readium board, based on feedback and discussions with the members of the foundation. WIthin these guidelines, Readium project management (Ric Wright, Director of Engineering and other key contributors decide on an actual development plan on a sprint by sprint basis. Every attempt is to make this an open and transparent process and we encourage any and all contributors to participate in the process, where appropriate.</p>
+</div> 
+<!-- end of right banner -->
 
 <div class="siteInfo">
 <br/>
