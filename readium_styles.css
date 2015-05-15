@@ -35,6 +35,8 @@ body {
 
 h1 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; color:rgb(26,83,153)}
 h2 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; color:rgb(26,83,153)}
+h3 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; color:rgb(26,83,153)}
+h4 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; color:rgb(26,83,153)}
 
 #normal_div { 
 	margin-top:10px;
@@ -49,6 +51,29 @@ h2 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; colo
 		
 }
 	
+.left_banner {
+	margin-left:0.25em;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	width:18%;
+	height:40em;
+	border-style:solid;
+	border-color:green;
+	border-width:2px;
+	float:left;
+}
+
+.right_banner {
+	margin-right:0.25em;
+	padding-left:0.5em;
+	padding-right:0.5em;	
+	width:77%;
+	border-style:solid;
+	border-color:green;
+	border-width:2px;
+	float:right;
+	lef:11em;
+}
 .siteInfo{
 	clear: both;
 	_border: 1px solid #cccccc;
