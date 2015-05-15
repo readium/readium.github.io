@@ -40,37 +40,66 @@
   </div>
   
 <div class="right_banner">
-<p>The Readium Projects primary goal is to provide rock-solid, performant building blocks and applications for EPUB3 publications.  There are currently three separate projects  underway: ReadiumJS, Readium SDK and SCP (Secure Content Protection).
-<h3>ReadiumJS</h3>
-<p>
-
-The ReadiumJS project is developing a JavaScript library and viewer for EPUB 3 rendering optimized for use to render EPUB files directly from websites and in browser-based "cloud" readers. Using ReadiumJS does not require any server-side infrastructure or browser plug-ins. ReadiumJS shares common JS modules with the Readium SDK project which targets native apps. 
-</p>
-<p>There are two parts to ReadiumJS:</p>
+<h2>Current Plan for the Next Sprints</h2>
+<h3>Release 0.19</h3>
 <ul>
-  <li>A Readium Chrome Extension which is  available  from the Chrome Web Store. It is one of the most full-featured EPUB 3 Reading Systems available.  The curent version, released 1 May 2015, is 2.18.1.</li>
-  <li>A cross-browser (as opposed to a Chrome Extension) implementation (known as the CloudReader) based on essentially the same sources but with a different viewer/application front end.  </li>
+  <li>Release circa May 22</li>
+  <li>Primary feature:
+    <ul>
+      <li>The improved ContentFilter support</li>
+      <li>
+        Other minor bug fixes and improvements
+      </li>
+      </ul>
+  </li>
   </ul>
-<p> In addition, all of the source code for both the Chrome Extension and the CloudReader can be downloaded from github as source code and modified to suit. All of the ReadiumJS sub-projects are available under the BSD open source license</p>
-<h3>Readium SDK</h3>
-<p>The Readium SDK project is  developing a compact, performant EPUB 3 rendering engine optimized for  use in native apps for tablets and other devices. The Readium SDK Core  C++ library is cross-platform and implemented largely in native code  with some JavaScript/Java/C# implementations where appropriate.</p>
-<p>Note that the Readium SDK Core C++ library is dual-licensed: publicly via <a href="http://www.gnu.org/licenses/agpl-3.0.html">Gnu Affero General Public License Version 3</a> (a license which contains terms incompatible with use in closed-source software including a <a href="http://en.wikipedia.org/wiki/Copyleft">copyleft</a> provision), and via a an <a href="http://readium.org/about-us/corporate-documents/readium-sdk-license">Alternative License</a> based on the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License</a> which  provides additional rights targeted to commercial adopters utilizing  Readium SDK in closed-source software, including not having any copyleft  provision. For more information on Readium SDK licensing see: <a href="http://readium.org/license-readium-sdk">http://readium.org/license-readium-sdk</a></p>
-<h3>SCP</h3>
-<div>
-  <div>
-    <div>
-      <div>
-        <div>
-          <p>Several members of Readium Foundation are pursuing, as a sub-project of Readium SDK, an implementation of a  DRM technology. Readium SCP (for &quot;Secure Content Protection&quot;) is expected to provide a   module for Readium SDK as well as server-side components. Readium  SDK will not require use of Readium LCP, which will be separately  licensed to interested parties. </p>
-          <p>An initial specification proposal for Readium LCP was contributed by Kobo and is available <a href="https://dl.dropbox.com/u/896638/Kobo-EPUB-LCP.pdf">here</a>. More information on Readium LCP coming soon.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<h3>Release 0.20</h3>
+<ul>
+  <li>
+    Release circa June 12
+  </li>
+  <li>
+    Primary features
+    <ul>
+      <li>
+        New plugins support
+        </li>
+      <li>
+        Restructured builds and dependencies
+        </li>
+      <li>
+        Mathjax 2.5.x integration  </li>
+      <li> Other minor bug fixes and improvements </li>
+      </ul>
+  </li>
+  </ul>
+<h3>Release 0.21</h3>
+<ul>
+  <li>Release circa July 3</li>
+  <li>Primary features
+    <ul>
+      <li>Refactored Windows (Desktop) Launcher</li>
+      <li>64-bit LibZip</li>
+      <li> Other minor bug fixes and improvements </li>
+      </ul>
+  </li>
+</ul>
+<h2>Recent Releases</h2>
+<h3>Release of Readium - Sprint 18</h3>
+<p>Readium.org is pleased to announce that 0.18 version of  Readium   has been released.  This release was pushed 21 April 2015.</p>
+<p  id="docs-internal-guid-3615061b-5997-8ef9-bb01-5514dadc2b54">This release, 0.18, is a new release that is comprised primarily of bug fixes for the Chrome Extension. Significantly, though, it adds support for Chrome Extension Packaging 2.0. &nbsp;The primary aspect of this new packaging format that users will see right now is the the Reader will have its own window and icon in the taskbar when running (all platforms). </p>
+<p >  The  complete release notes can be found <a href="https://docs.google.com/document/d/1GUdWAJ7_Zgg2eXgDK-4ty4e4_pCJ2fHC7S5jKjJhz7w/edit#heading=h.ybo2phzex0y2">here.</a></p>
+<h3>Release of Readium SDK - Sprint 17</h3>
+<p>Readium.org is pleased to announce that 0.17 version of the Readium  SDK has been released.  This release was pushed 23 March 2015.<br />
+  <br />
+  This release includes a significant fix for media handling under  Android, which fixes a number of serious stability issues. This release  comprises updates to the readium github repositories for readium-sdk,  readium-shared-js and the SDK sample applications (including  configurations for Android, iOS, and OS/X that have been validated  against the EPUB Test Suite, and a Windows configuration that is still  in development).  This marks the 17th push (formally tagged as version  0.17) of the source code for SDK.  This release has achieved  substantially complete support for the EPUB 3.0 spec including MathML,  Reading System object, font-deobfuscation and many more features.  The  complete release notes can be found <a href="https://docs.google.com/document/d/1poM6j7rbO1P-hdGczsK-2lIJPSVGBZmFoL5g_qXvARA/edit#h">here.</a></p>
+<h3>Release of Readium SDK - Sprint 16</h3>
+<p>Readium.org is pleased to announce that the &ldquo;1.0&rdquo; version of the  Readium SDK has been released. With this release, the first version of  the Readium SDK is essentially complete (hence the &ldquo;1.0&rdquo; label). This  release was pushed 30 December 2014.<br />
+  <br />
+  The 1.0 version comprises updates to the readium github repositories  for readium-sdk, readium-shared-js and the SDK sample applications  (including configurations for Android, iOS, and OS/X that have been  validated against the EPUB Test Suite, and a Windows configuration that  is still in development).  1.0 marks the 16th push (formally tagged as  version 0.16.1) of the source code for SDK.  This release has achieved  substantially complete support for the EPUB 3.0 spec including MathML,  Reading System object, font-deobfuscation and many more features.  The  complete release notes can be found <a href="https://docs.google.com/document/d/1AW2Ja9HArF8f9YJCiTSdkMuqZvQgP7oVplA3DJ-ssTY/edit#heading=h.lqh1c9gooqsh">here.</a></p>
+<h3>Older Releases</h3>
+<p>The release notes for older releases can be found in Readium's GoogleDoc archives <a href="https://drive.google.com/drive/folders/0BzaNaBNAB6FjbloySkdKRHZzdGM/0BzaNaBNAB6FjTE1PVkhWcTM0cU0/0BzaNaBNAB6FjMllWSjQwa2lwVkU?hl=en">here</a>.</p>
 </div>
-
-</div>
-
 <div class="siteInfo">
 <br/>
 <p><a href="http://readium.github.io/index.html">Readium Home</a></p>
