@@ -85,12 +85,15 @@
 <h3>Coding Standards</h3>
 <p>The following guidelines are aimed at self-created code. Clearly, if the code is an  EPUB and was created by a tool such as InDesign then these guidelines might not apply.</p>
 <p>For all code, please remove all tabs, replacing them with 4 spaces. Please set this preference in your tool(s).</p>
-<h4>C++, C# and Java</h4>
+<h4>C++, Objectove-C, C# and Java</h4>
 <ul>
-  <li>Readium doesn't have a required style-guide, but the following are good guidelines</li>
-  <li><a href="https://google-styleguide.googlecode.com/svn/trunk/cppguide.html">Google C++</a> and <a href="https://github.com/NYTimes/objective-c-style-guide">NYT Objective-C</a>  are good for those languages.</li>
-  <li>Similarly, the <a href="https://google-styleguide.googlecode.com/svn/trunk/javaguide.html">Google Java</a> and <a href="http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0CCsQFjAB&url=http%3A%2F%2Fwww.oracle.com%2Ftechnetwork%2Fjava%2Fcodeconvtoc-136057.html&ei=gHhfVarXE8zzsAXQy4KYBw&usg=AFQjCNGK5NcB_oSCCnKA_TudutzCu2wjiA&sig2=51WE34zkp08cjDKHYTsSxQ&bvm=bv.93990622,d.b2w">Oracle Java</a> are good for Java.</li>
-  <li>Microsft has a guide for <a href="https://msdn.microsoft.com/en-us/library/ff926074.aspx">C# coding</a>.</li>
+  <li>Readium doesn't have a required style-guide for these languages, but the following are good guidelines</li>
+  <li>C++ : <a href="https://google-styleguide.googlecode.com/svn/trunk/cppguide.html">Google C++</a> </li>
+  <li>Objective-C: <a href="https://github.com/NYTimes/objective-c-style-guide">NYT Objective-C</a></li>
+  <li>Java:  <a href="https://google-styleguide.googlecode.com/svn/trunk/javaguide.html">Google Java</a> and <a href="http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0CCsQFjAB&url=http%3A%2F%2Fwww.oracle.com%2Ftechnetwork%2Fjava%2Fcodeconvtoc-136057.html&ei=gHhfVarXE8zzsAXQy4KYBw&usg=AFQjCNGK5NcB_oSCCnKA_TudutzCu2wjiA&sig2=51WE34zkp08cjDKHYTsSxQ&bvm=bv.93990622,d.b2w">Oracle Java</a></li>
+  <li>C#:  <a href="https://msdn.microsoft.com/en-us/library/ff926074.aspx">Microsoft C# coding</a>.</li>
+  <li>Where appropriate, please add clear comments</li>
+  <li>Use <a href="http://www.stack.nl/~dimitri/doxygen/">Doyxgen-compatible markup</a> where appropriate</li>
   <li>If in doubt, please post your questions to the readium-dev mailing list.</li>
 </ul>
 <h4>JS</h4>
@@ -98,14 +101,14 @@
   <li>End all lines with a semi-colon</li>
   <li>Comma last</li>
   <li>Make it readable and attractive</li>
-  <li>Please use jsDoc annotations/comments to add typing information.</li>
+  <li>Please use <a href="http://usejsdoc.org/">JSDoc</a> annotations/comments to add typing information.</li>
   </ul>
 <h4>HTML</h4>
 <ul>
   <li>Double quotes only, never single quotes</li>
   <li>EPUB must at least for now, be HTML5. </li>
-  <li>The XML serialization of HTML is required in EPUB 3.0. This may change in EPUB 3.1 but for backwards compatibility using the XML serialization is strongly encouraged.</li>
   <li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags)</li>
+  <li>The XML serialization of HTML is required in EPUB 3.0. This may change in EPUB 3.1 but for backwards compatibility using the XML serialization is strongly encouraged.</li>
   <li>Use CDNs and HTTPS for third-party JS when possible. We don't use  protocol-relative URLs in this case because they break when viewing the  page locally via file://</li>
 </ul>
 <h4>CSS</h4>
