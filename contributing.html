@@ -45,7 +45,79 @@
   </div> <!-- end of left banner -->
   
 <div class="right_banner">
+<h3>Introduction</h3>
 <p>As an open-source project, the Readium Foundation welcomes contributions from everyone - from individuals, groups and corporations. The best way to get started with Readium is to read through the introductory materials on this site, subscribe to the mailing list and, of course, get the source code and start spelunking through it.</p>
+<p>An important note to bear in mind is that YOU are the Readium team. Readium has no &quot;dedicated team&quot;. Other than a consultant or two and a couple of part-time employees, everything in Readium is done by the Readium contributors - some employed by Readium Foundation members, some simply individual contributors.</p>
+<h3>Project Communication</h3>
+<h3>Mailing List</h3>
+<p>There is an active mailing list for the Readium projects. To join, simply send mail to <a href="mailto:rkwright@readium.org">Ric Wright</a>, requesting access. Alternatively, visit the <a href="https://groups.google.com/forum/?fromgroups#!forum/readium-dev">Google Readium mailing-list</a> page (where you can also browse the archives) and request access.</p>
+<h4>Meetings</h4>
+<p>There are three weekly Readium meetings, which anyone is welcome to join. These are web-based access. All the details can be found on the <a href="http://readium.github.io/meetings.html">Meetings page</a>.</p>
+<h4>Google Calendar</h4>
+<p>There is a shared Google Calendar. It isn't heavily used - only the three meetings (see the Meeting Page) are in it normally but is used for other meetings from time to time. To get a copy of the shared calendar for yourself, follow these steps:</p>
+<ul>
+  <li>Copy the calendar ID: <strong>5opdfjiap6oopikc0o5pq12dd0@group.calendar.google.com</strong></li>
+  <li>Open your Google Calendar</li>
+  <li>Paste the ID into the&quot; Add a coworker’s calendar&quot; box (under Other calendars) and press Enter</li>
+  <li>The calendar will then show up in your &quot;Other calendars&quot; list</li>
+</ul>
+<p>One can also always reach out to the Readium project director, Ric Wright, directly via <a href="mailto:rkwright@readoium.org">email</a> or Skype (richardkylewright).</p>
+<h3>Contributing to the Readium Project</h3>
+<p>Looking to contribute something to EPUB Scriptable Components code &amp; samples? <strong>Here's how you can help:</strong></p>
+<h4>Reporting Issues</h4>
+<p>Please read the following guidelines before opening any issue.</p>
+<ol>
+  <li><strong>Ensure that your EPUB is valid</strong>. Always validate your EPUB against <a href="http://validator.idpf.org/">EPUBCheck</a>. If there are errors or warnings, please fix those before submitting an issue.</li>
+  <li><strong>Search for existing issues.</strong> We get a lot of  duplicate issues, and you'd help us out a lot by first checking if  someone else has reported the same issue. Moreover, the issue may have  already been resolved with a fix available.</li>
+  <li><strong>Create an isolated and reproducible test case.</strong> Be sure the problem exists in Readium (try your HTML in the browser) code &amp; samples with a <a href="http://css-tricks.com/reduced-test-cases/">reduced test case</a> that should be included in each bug report.</li>
+  <li><strong>Include a live example.</strong> Ideally with an EPUB..</li>
+  <li><strong>Share as much information as possible.</strong> Include  operating system and version, browser and version, version of the SDK/Chrome Extension as appropriate.  Also include steps to reproduce the bug.</li>
+  </ol>
+<p>Finally, Readium is a complex project with many parts (repos). Try to ensure that you post the issue to the right repo. In general, bugs in the Chrome Extension or CloudReader are in readium-js-viewer. Bugs that are Core issues in the SDK of course go to readium-sdk. If in doubt, contact <a href="mailto:rkwright@readium.org">Ric Wright</a> for guidance.</p>
+<h4>Pull Requests</h4>
+<ul>
+  <li>Try not to pollute your pull request with unintended changes--keep them simple and small</li>
+  <li>Try to share how you have tested your  code  before submitting a pull request. Provide as much detail as possible.</li>
+  <li>Pull requests should <strong>always</strong> be created against the develop branch - never the master.</li>
+</ul>
+<h3>Coding Standards</h3>
+<p>The following guidelines are aimed at self-created code. Clearly, if your EPUB was created by a tool such as InDesign then these guidelines might not apply.</p>
+<p>For all code, please remove all tabs, replacing them with 4 spaces. Please set this preference in your tool(s).</p>
+<h4>C++, C# and Java</h4>
+<ul>
+  <li>Readium doesn't have a required style-guide, but the <a href="https://google-styleguide.googlecode.com/svn/trunk/cppguide.html">Google C++</a> and <a href="https://github.com/NYTimes/objective-c-style-guide">NYT Objective-C</a>  are good guidelines.</li>
+  <li>Similarly, the <a href="https://google-styleguide.googlecode.com/svn/trunk/javaguide.html">Google Java</a> and <a href="http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0CCsQFjAB&url=http%3A%2F%2Fwww.oracle.com%2Ftechnetwork%2Fjava%2Fcodeconvtoc-136057.html&ei=gHhfVarXE8zzsAXQy4KYBw&usg=AFQjCNGK5NcB_oSCCnKA_TudutzCu2wjiA&sig2=51WE34zkp08cjDKHYTsSxQ&bvm=bv.93990622,d.b2w">Oracle Java</a> are good guidelines.</li>
+  <li>Microsft has a guide for <a href="https://msdn.microsoft.com/en-us/library/ff926074.aspx">C# coding</a>.</li>
+  <li>If in doubt, please post yur questions to the readium-dev mailing list.</li>
+</ul>
+<h4>JS</h4>
+<ul>
+  <li>End all lines with a semi-colon</li>
+  <li>Comma last</li>
+  <li>Make it readable and attractive</li>
+  <li>Please use jsDoc annotations/comments to add typing information.</li>
+  </ul>
+<h4>HTML</h4>
+<ul>
+  <li>Double quotes only, never single quotes</li>
+  <li>EPUB must at least for now, be HTML5. </li>
+  <li>The XML serialization of HTML is required in EPUB 3.0. This may change in EPUB 3.1 but for backwards compatibility using the XML serialization is strongly encouraged.</li>
+  <li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags)</li>
+  <li>Use CDNs and HTTPS for third-party JS when possible. We don't use  protocol-relative URLs in this case because they break when viewing the  page locally via file://</li>
+</ul>
+<h4>CSS</h4>
+<ul>
+  <li>Adhere to the <a href="http://markdotto.com/2011/11/29/css-property-order/">RECESS CSS property order</a></li>
+  <li>Multiple-line approach (one property and value per line)</li>
+  <li>Always a space after a property's colon (e.g., display: block; and not display:block;)</li>
+  <li>End all lines with a semi-colon</li>
+  <li>For multiple, comma-separated selectors, place each selector on its own line</li>
+  <li>Attribute selectors, like input[type=&quot;text&quot;] should always wrap the attribute's value in double quotes, for consistency and safety (see this <a href="http://mathiasbynens.be/notes/unquoted-attribute-values">blog post on unquoted attribute values</a> that can lead to XSS attacks)</li>
+  </ul>
+<h3>Licenses</h3>
+<p>All of the JavaScript-based code (readium-js, readium-js-viewer and readium-shared-js) are available under the BSD license. This is also true of the native-code applications. The Readium SDK Core, on the other hand, is dual-licensed. For non-commercial, open-source use it is also under the BSD. For any type of commercial use, however, the SDK is licensed under the GNU Affero licence. Please see this <a href="http://readium.org/license-readium-sdk">page</a> for details. For further info, please contact <a href="mailto:rkwright@readium.org">Ric Wright</a>.</p>
+<p>Please note that ANY contributor <strong>MUST</strong> fill out and sign the <a href="http://readium.org/licenses/icla">Individual Contributor License</a> agreement. Note that each contributor must sign the form - it is not on a per-company basis.</p>
+<p>&nbsp;</p>
 
 </div>  <!-- end of right banner -->
 
