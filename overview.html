@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div id="page-top-wrapper"><br/><br/></div>
+<div id="page-top-wrapper"></div>
 <div id="normal_div">
 <p>
 <a href="http://www.readium.org">
@@ -45,12 +45,144 @@
   </div>  <!-- end of left banner -->
   
 <div class="right_banner">
-<img src="images/under_construction.jpg" alt="Under construction" />
-<h4>Please check back soon!</h4>
+  <h3>Scope and Goals of the Project</h3>
+  <p>The overall Readium project consists of three sub-projects:</p>
+  <h4>Readium SDK</h4>
+    <p>The goal of the SDK is to allow developers to create performant native applications that can run on various desktop and mobile platforms such as iOS and Android as well as desktops.  It supports DRM, but in such a way that it is agnostic with respect to the flavour of DRM.  Readium has implemented support for LCP, which will be available from the Readium repos.  Other DRM flavours, such as Sony DADC and Adobe ACS, can be used with Readium via vendor-specific implementations which are integrated with the readium-sdk core.</p>
+    <h4>
+    ReadiumJS</h4>
+    <p>
+    ReadiumJS allows developers to create browser-based EPUB reading systems that can be used by end-users across many different platforms.  ReadiumJS does not support any traditional DRM methods (though content-specific solutions such as watermarking are of course feasible). As pure JavaScript, ReadiumJS allows developers to use the base Readium implementations or to extend those implementations as they see fit.</p>
+    <h4>
+    Readium LCP</h4>
+    <p>
+    LCP aims is to provide a relatively portable, secure rights protection and management that can be used easily with Readium SDK.  This DRM is relatively lightweight in that it does not require the rather constraining PKI infrastructure of systems such as Adobe ACS.  Instead, it is a simple hashed pass-phrase system that, while still very secure, gives the user more freedom and flexibility in managing their ebooks.</p>
+    <h3>
+    Readium SDK</h3>
+    <p>
+    Readium SDK is consists of three major parts:</p>
+    <ul>
+      <li>readium-sdk</li>
+      <li>readium-shared-js</li>
+      <li>SDKLauncher-*</li>
+    </ul>
+    <p>The diagram below illustrates the high-level relationship of the parts of the architecture.</p>
+    <p><img src="images/Readium-SDK-Arch.png" /></p>
+    <h4>
+    readium-sdk</h4>
+    <p>
+    This is is the Core C++ code that manages the EPUB package, metadata, navigating and fetching resources and so on.  The Core is platform-independent.  In addition to the C++ core, there are also platform-dependent code layers that provide the interfaces to the platform-specific language layers:</p>
+    <ul>
+      <li>
+        iOS and OSX:  There is no interface layer since Objective-C can call C++ directly. However, there is an interface layer (in Objective-C) called RDServices</li>
+      <li>
+        Android: This is the Java/C JNI layer.</li>
+      <li>
+        Windows
+        <ul>
+          <li>
+            MFC:  There is no interface layer as MFC can call the C++ core directly</li>
+          <li>
+            RT: As Windows RT framework-based code is managed code, there is a C#/C++ layer</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>
+    readium-shared-js</h4>
+    <p>
+    This layer, as its name implies, is pure JavaScript.  It provides the interfaces and services between the application layer (in Objective-C, C++, Java or C#) and the Core as well as the web-browser engine instance. This layer is shared across all platforms and sub-projects, including both ReadiumJS sub-projects and all SDK-based applications. It manages messaging between the native layers as well as providing the management of views and other facilities of the browser engine.</p>
+    <h4>
+    SDKLauncher-*</h4>
+    <p>
+    These are platform-specific applications that facilitate testing of the rest of the SDK as well as providing a rudimentary demonstration of how to integrate native applications with the SDK.  They are deliberately rather limited and crude since it is not the intent of Readium to compete with its own members, many of whose value proposition is integrating the SDK into their sophisticated applications and workflows.</p>
+    <p>
+    The platforms supported by Readium SDK (as of summer 2015) are</p>
+    <ul>
+      <li>
+        iOS 7 and above</li>
+      <li>
+        Android 4.x and above</li>
+      <li>
+        OSX 10.7 and above</li>
+      <li>
+        Windows 7 and 8
+        <ul>
+          <li>
+            MFC framework</li>
+        </ul>
+      </li>
+      <li>
+        Windows 8 and 10
+        <ul>
+          <li>
+            RT framework</li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      Of course, developers are welcome to tackle porting to and integration with other platforms, but the above are the only platforms against which the Readium SDK is validated and for which Launchers exist.</p>
+  
+  <h3>ReadiumJS</h3>
+  <p>
+  ReadiumJS comprises two sub-projects, Readium Chrome Extension and the Readium CloudReader. Both consist of three major pieces:</p>
+  <ul>
+    <li>readium-js, which is the core (equivalent to the C++ Core in the SDK) and provides basic services, manages the EPUB package, metadata, navigating and fetching resources and so on</li>
+    <li>readium-shared-js: This is exactly the same code as used in the SDK implementation (hence the 'shared' name)</li>
+    <li>readium-js-viewer: This is the application layer which manages the user-interface</li>
+  </ul>
+  <p>The Chrome Extension and the CloudReader share approximately 95% of their code, the primary difference is where their EPUB &quot;library&quot; is located and how they  fetch EPUB resources. The diagram below illustrates the major aspects of their architectures.</p>
+  <p><img src="images/ReadiumJS-Arch.png" /></p>
+  <h4>
+    Readium Chrome Extension (RCE)</h4>
+  <p>
+    This sub-project consists of an extension to Google Chrome.  It is a full-fledged, functional EPUB reading system.  It supports virtually all of the EPUB 3.0.1 specification.  Unlike the Readium SDK Launchers, RCE is a relatively polished, full-featured application.  It is under constant development to provide more features and capabilities.  It only works with Google Chrome since it leverages the built-in capabilities provided by the Chrome framework.  It imports the user’s books into a private file-system on the user’s computer.  </p>
+  <h4>Readium CloudReader</h4>
+  <p>
+  The CloudReader is very similar to the Chrome extension – and they share almost all their code.  The key difference is that RCE is tightly wedded to Google Chrome and therefor works only where Chrome is available.  The CloudReader, on the other hand, runs in almost all browsers.  Another distinction is while RCS loads the user’s books into a private filesystem managed by Chrome on the user’s computer, the CloudReader loads its books from a “bookshelf” located somewhere on the web.  The CloudReader is downloaded each time the user creates a new instance of the CloudReader.  The bookshelf and the CloudReader’s deployed location are typically the same, but do not need to be so.</p>
+  <p>
+    The only supported platform for RCE is of course Google Chrome.  It is validated (tested) on Windows (7 and 8), OSX, and ChromeOS (ChromeBook). It may work on other platforms but we do not test it elsewhere. Chrome apps are not supported on iOS or Android.</p>
+  
+  <p>The CloudReader is currently validated against the latest version of all major browsers, including:</p>
+  <ul>
+    <li>
+      Safari (OSX and iOS only)</li>
+    <li>
+      Firefox (iOS, OSX, Windows, Android)</li>
+    <li>
+      Chrome (iOS, OSX, Windows, Android)</li>
+  </ul>
+  <p>
+    Again, the CloudReader may (and usually does) run properly on other browser/platform combinations, but Readium does not validate against them.</p>
+ 
+  <h3>Readium LCP</h3>
+  <p>
+  There are four major parts to the LCP workflow:</p>
+  <ul>
+    <li>The server, which packages the books provided by the publisher</li>
+    <li>The client code which manages the user's authentication and opens and decrypts the book</li>
+    <li>The certificate authority, provides the necessary certificates for the packaging code</li>
+    <li>The infrastructure which manages the storing of the packaged books, handling user transactions and the download of books to the user</li>
+  </ul>
+  <p>The diagram below illustrates a high-level view of a LCP-enabled workflow.</p>
+  <p><img src="images/LCP_Overview-3.png" width="607" height="796"/></p>
+  <h3>LCP Server</h3>
+  <p>
+  This is the server which encrypts and packages a raw EPUB.  The server can also take an exploded EPUB contents and package the contents, encrypting some parts of it.  The server has been written in the GO language and is available from the Readium github repository.</p>
+  <h3>LCP Client</h3>
+  <p>
+  This is the piece which reads the necessary information from the encrypted EPUB and decrypts the encrypted portions of the EPUB and provides them to the Readium rendering module.  This decryption is done on-the-fly so that the decrypted contents are never on disk where they might be sniffed and/or extracted.</p>
+  <p>
+  In addition to the basic decryption of the EPUB, there are also several steps required to  authenticate the user, obtain and/or store the pass-phrase and so on.  These are normally specific to the vendor implementing the Reading System based on the Readium SDK.  The Readium SDK does provide some facilities to enable these workflows, but much of the implementation is vendor-specific and outside the SDK itself.</p>
+  <h3>
+    Server Infrastructure</h3>
+  <p>
+    In addition to the server which packages the books for deployment and the DRM-enabled SDK which decrypts the books for reading, there is also some necessary server-side infrastructure needed to support the servers by providing certificates for the encryption process.  In order for books to be shared across reading systems, and especially across different Reading Systems, there needs to be a central “certificate authority (CA)” which provides the necessary certificates.</p>
+
+
 </div> <!-- end of right banner -->
 
 <div class="siteInfo">
-<br/>
+
 <p><a href="http://readium.github.io/index.html">Readium Home</a></p>
 </div>
 </body>
