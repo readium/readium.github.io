@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+   		margin: 0px;
+        margin-top: 0px;
+        margin-right-value: 0px;
+        margin-bottom: 0px;
+        margin-left-value: 0px;
+        margin-left-ltr-source: physical;
+        margin-left-rtl-source: physical;
+        margin-right-ltr-source: physical;
+        margin-right-rtl-source: physical;
+   		padding: 0px;
+        padding-top: 0px;
+        padding-right-value: 0px;
+        padding-bottom: 0px;
+        padding-left-value: 0px;
+        padding-left-ltr-source: physical;
+        padding-left-rtl-source: physical;
+        padding-right-ltr-source: physical;
+        padding-right-rtl-source: physical;
+		font-family: Arial,Helvetica,"Nimbus Sans L",sans-serif;
+}
+#page-top-wrapper {
+    background: none repeat scroll 0% 0% rgb(103, 148, 48);
+        background-color: rgb(103, 148, 48);
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-size: auto auto;
+}
+
+h1 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; color:rgb(26,83,153)}
+h2 { font-family:Georgia, "Times New Roman", Times, serif; font-weight:400; color:rgb(26,83,153)}
+
+#normal_div { 
+	margin-top:10px;
+	margin-left:10px;
+}
+#image_div { 
+	margin-left:100px;
+}
+
+#picture {
+		float:right;
+		
+}
+	
+.siteInfo{
+	clear: both;
+	_border: 1px solid #cccccc;
+	font-size: 75%;
+	color: #cccccc;
+	padding: 10px 10px 10px 10px;
+	margin-top: 0px;
+}
