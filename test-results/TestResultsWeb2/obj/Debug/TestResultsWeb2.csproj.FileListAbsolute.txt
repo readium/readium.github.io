@@ -28,3 +28,9 @@ C:\Users\Duan\Documents\GitHub\readium.github.io\test-results\cloudreader\TestRe
 C:\Users\Duan\Documents\GitHub\readium.github.io\test-results\cloudreader\TestResultsWeb2\obj\Debug\TestResultsWeb2.csprojResolveAssemblyReference.cache
 C:\Users\Duan\Documents\GitHub\readium.github.io\test-results\cloudreader\TestResultsWeb2\obj\Debug\TestResultsWeb2.dll
 C:\Users\Duan\Documents\GitHub\readium.github.io\test-results\cloudreader\TestResultsWeb2\obj\Debug\TestResultsWeb2.pdb
+H:\Readium\Readium-test-files\test-results\cloudreader\spreadsheets\test-results\TestResultsWeb2\bin\TestResultsWeb2.dll.config
+H:\Readium\Readium-test-files\test-results\cloudreader\spreadsheets\test-results\TestResultsWeb2\bin\TestResultsWeb2.dll
+H:\Readium\Readium-test-files\test-results\cloudreader\spreadsheets\test-results\TestResultsWeb2\bin\TestResultsWeb2.pdb
+H:\Readium\Readium-test-files\test-results\cloudreader\spreadsheets\test-results\TestResultsWeb2\obj\Debug\TestResultsWeb2.csprojResolveAssemblyReference.cache
+H:\Readium\Readium-test-files\test-results\cloudreader\spreadsheets\test-results\TestResultsWeb2\obj\Debug\TestResultsWeb2.dll
+H:\Readium\Readium-test-files\test-results\cloudreader\spreadsheets\test-results\TestResultsWeb2\obj\Debug\TestResultsWeb2.pdb
