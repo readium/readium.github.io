@@ -24,7 +24,7 @@ namespace TestResultsWeb2
             string getExcelSheetName = "";
             //get array of files from Github repo folder         
             //string[] files = Directory.GetFiles(@"C:\Users\walkd\Documents\GitHub\ReadiumTestResults_v4.0\TestResultsWeb2\App_Data");
-            string[] files = Directory.GetFiles(@"H:\Readium\Readium-test-files\test-results\cloudreader\spreadsheets\test-results\cloudreader\spreadsheets");
+            string[] files = Directory.GetFiles(Server.MapPath("~/App_Data/"));
             if (files.Length == 0)
             {
                 Response.Write("no files in folder");
