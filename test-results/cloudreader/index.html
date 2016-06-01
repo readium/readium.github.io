@@ -2966,6 +2966,8 @@ Pages Home</a></p>
     <script>
         $(document).ready(function () {
 
+            //here is where you add the filename of the new spreadsheets to be parsed and placed in the table
+            // create a new filename[] for the array and add url 
             var filenames = [];
             filenames[0] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-WIN-10.0-RCE-20160510.xlsx";
             filenames[1] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gotharas-WIN-8.1-Chrome-20150309.xlsx";
@@ -2976,18 +2978,10 @@ Pages Home</a></p>
             filenames[6] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX-10.10.2-Safari-20150304.xlsx";
 
             getData();
-            //$("#submitButton").click(function () {
-            //    var name = document.getElementById("filenameInput").value;
-            //    filenames.push("http://readium.github.io/test-results/cloudreader/spreadsheets/" + name);
-            //    getData();
-            //    //  console.log(filenames);
-            //});
-
-
+           
             function getData() {
                 var text2 = "";
-               // text2 = "<table id=results><tr><th>Tester</th><th>Date</th><th>CR Version</th><th>Device</th><th>OS</th><th>Locale</th><th>Browser</th><th>Score</th></tr>";
-
+              
                 for (var i = 0; i < filenames.length; i++) {
                     //   console.log(filenames)
                     text2 += "<tr>";
@@ -3015,7 +3009,6 @@ Pages Home</a></p>
                       }).catch(function (err) {
                           console.log('Error:', err);
                       });
-
                 }
             };
         })
