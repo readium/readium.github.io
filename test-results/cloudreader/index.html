@@ -27,7 +27,7 @@ link to download the Excel spreadsheet.</p>
 </div>
 <div id="results">
 <table id="results_table"style="width: 100%; height: 100%;" border="1" cellpadding="4" cellspacing="1">
-<caption>&nbsp; </caption> <tbody>
+<caption>&nbsp; </caption> <tbody id="results_tbody">
 <tr>
 <th scope="col">Tester</th>
 <th scope="col" >Date</th>
@@ -2970,24 +2970,23 @@ Pages Home</a></p>
             // create a new filename[] for the array and add url 
             var filenames = [];
             filenames[0] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-WIN-10.0-RCE-20160510.xlsx";
-            filenames[1] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gotharas-WIN-8.1-Chrome-20150309.xlsx";
-            filenames[2] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gotharas-WIN-8.1-IE-20150305.xlsx";
-            filenames[3] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX-10.10.2-Chrome-20150312.xlsx";
-            filenames[4] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX10.10.2-Firefox-20150321.xlsx";
-            filenames[5] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX10.10.2-Opera-20150331.xlsx";
-            filenames[6] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX-10.10.2-Safari-20150304.xlsx";
+            filenames[1] = "http://readium.github.io/test-results/cloudreader/spreadsheets/farmbee2016-WIN-10-Firefox-20160519.xlsx";
+            filenames[2] = "http://readium.github.io/test-results/cloudreader/spreadsheets/alev-WIN-10-RCE-20160507.xlsx";
+            //filenames[3] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX-10.10.2-Chrome-20150312.xlsx";
+            //filenames[4] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX10.10.2-Firefox-20150321.xlsx";
+            //filenames[5] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX10.10.2-Opera-20150331.xlsx";
+            //filenames[6] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX-10.10.2-Safari-20150304.xlsx";
+            //filenames[7] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-WIN-10.0-Chrome-20160530.xlsx";
 
             getData();
            
             function getData() {                
                 for (var i = 0; i < filenames.length; i++) {
-                    //   console.log(filenames)
-                   
-                    var text2 = " ";
-                    text2 += "<tr id='results_rows'>";
+   
                     alasql.promise('select * from xlsx("' + filenames[i] + '") ')
                       .then(function (data) {
                          
+                       var   text2 = "<tr>";
                           //    console.log(data[9]);
                           var tester = data[4];
                           text2 += "<td>" + JSON.stringify(tester.D).replace(/['"]+/g, '') + "</td>";
@@ -2995,20 +2994,20 @@ Pages Home</a></p>
                           text2 += "<td>" + JSON.stringify(date.D).replace(/['"]+/g, '') + "</td>";
                           var crVersion = data[9];
                           text2 += "<td>" + JSON.stringify(crVersion.D).replace(/['"]+/g, '') + "</td>";
-                          var device = data[15];
-                          text2 += "<td>" + JSON.stringify(device.D) + "</td>";
-                          var os = data[17];
+                          var device = data[16];
+                          text2 += "<td>" + JSON.stringify(device.D).replace(/['"]+/g, '') + "</td>";
+                          var os = data[18];
                           text2 += "<td>" + JSON.stringify(os.D).replace(/['"]+/g, '') + "</td>";
-                          var os = data[17];
-                          text2 += "<td>" + JSON.stringify(os.D).replace(/['"]+/g, '') + "</td>";
-                          var browser = data[19];
+                          var locale = data[19];
+                          text2 += "<td>" + JSON.stringify(locale.D).replace(/['"]+/g, '') + "</td>";
+                          var browser = data[20];
                           text2 += "<td>" + JSON.stringify(browser.D).replace(/['"]+/g, '') + "</td>";
-                          var score = data[35];
-                          text2 += "<td><a href='" + filenames[i] + "'>" + JSON.stringify(score.C).replace(/['" ]+/g, '') + "</a></td>";
+                          var score = data[37];
+                          text2 += "<td><a href='" + filenames[i] + "'>" + JSON.stringify(score.C).replace(/['" %]+/g, '') + "</a></td>";
                           text2 += "</tr>"
                           
-                          $("#results_table").append(text2);
-                          text2 = null;
+                          $("#results_tbody").append(text2);
+
                       }).catch(function (err) {
                           console.log('Error:', err);
                       });
