@@ -26,17 +26,17 @@ in each row is linked to the actual spreadsheet, so just click on the
 link to download the Excel spreadsheet.</p>
 </div>
 <div id="results">
-<table id="results_table"style="width: 1619px; height: 414px;" border="1" cellpadding="4" cellspacing="1">
+<table id="results_table"style="width: 100%; height: 100%;" border="1" cellpadding="4" cellspacing="1">
 <caption>&nbsp; </caption> <tbody>
 <tr>
-<th scope="col" width="15%">Tester</th>
-<th scope="col" width="9%">Date</th>
-<th scope="col" width="8%">CR Version</th>
-<th style="width: 282px;" scope="col">Device</th>
-<th style="width: 181px;" scope="col">OS</th>
-<th style="width: 87px;" scope="col">Locale</th>
-<th scope="col" width="20%">Browser</th>
-<th scope="col" width="10%">Score</th>
+<th scope="col">Tester</th>
+<th scope="col" >Date</th>
+<th scope="col" >CR Version</th>
+<th  scope="col">Device</th>
+<th  scope="col">OS</th>
+<th  scope="col">Locale</th>
+<th scope="col" >Browser</th>
+<th scope="col" >Score</th>
 </tr>
 <tr>
 <td>Gothami Rasnakawewa</td>
@@ -2979,14 +2979,15 @@ Pages Home</a></p>
 
             getData();
            
-            function getData() {
-                var text2 = "";
-              
+            function getData() {                
                 for (var i = 0; i < filenames.length; i++) {
                     //   console.log(filenames)
-                    text2 += "<tr>";
+                   
+                    var text2 = " ";
+                    text2 += "<tr id='results_rows'>";
                     alasql.promise('select * from xlsx("' + filenames[i] + '") ')
                       .then(function (data) {
+                         
                           //    console.log(data[9]);
                           var tester = data[4];
                           text2 += "<td>" + JSON.stringify(tester.D).replace(/['"]+/g, '') + "</td>";
@@ -3003,12 +3004,15 @@ Pages Home</a></p>
                           var browser = data[19];
                           text2 += "<td>" + JSON.stringify(browser.D).replace(/['"]+/g, '') + "</td>";
                           var score = data[35];
-                          text2 += "<td><a href='" + filenames[i] + "'>" + JSON.stringify(score.C).replace(/['"]+/g, '') + "</a></td>";
+                          text2 += "<td><a href='" + filenames[i] + "'>" + JSON.stringify(score.C).replace(/['" ]+/g, '') + "</a></td>";
                           text2 += "</tr>"
+                          
                           $("#results_table").append(text2);
+                          text2 = null;
                       }).catch(function (err) {
                           console.log('Error:', err);
                       });
+                    
                 }
             };
         })
