@@ -1,0 +1,5 @@
+<map id="Property" name="Property">
+<area shape="rect" id="node2" href="$class_pointer_type.xhtml" title="PointerType\&lt; Property \&gt;" alt="" coords="5,99,171,127"/>
+<area shape="rect" id="node4" href="$class_owned_by.xhtml" title="OwnedBy\&lt; PropertyHolder \&gt;" alt="" coords="195,99,385,127"/>
+<area shape="rect" id="node5" href="$class_x_m_l_identifiable.xhtml" title="XMLIdentifiable" alt="" coords="410,99,523,127"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classshared__list.xhtml" title="shared_list\&lt; _Tp \&gt;" alt="" coords="103,5,235,33"/>
+<area shape="rect" id="node3" href="$classshared__list.xhtml" title="shared_list\&lt; RunLoop\l::EventSource \&gt;" alt="" coords="94,57,245,101"/>
+<area shape="rect" id="node4" href="$classshared__list.xhtml" title="shared_list\&lt; RunLoop\l::Observer \&gt;" alt="" coords="94,125,245,169"/>
+<area shape="rect" id="node5" href="$classshared__list.xhtml" title="shared_list\&lt; RunLoop\l::Timer \&gt;" alt="" coords="94,193,245,237"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ContentFilter" name="ContentFilter">
+<area shape="rect" id="node2" href="$class_font_obfuscator.xhtml" title="FontObfuscator" alt="" coords="5,83,117,111"/>
+<area shape="rect" id="node3" href="$class_object_preprocessor.xhtml" title="ObjectPreprocessor" alt="" coords="142,83,281,111"/>
+<area shape="rect" id="node4" href="$class_pass_through_filter.xhtml" title="PassThroughFilter" alt="" coords="306,83,435,111"/>
+<area shape="rect" id="node5" href="$class_switch_preprocessor.xhtml" title="SwitchPreprocessor" alt="" coords="459,83,599,111"/>
+</map>

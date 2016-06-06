@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: globals.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: globals.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//  LauncherOSX
+//
+//  Created by Boris Schneiderman.
+//  Copyright (c) 2014 Readium Foundation and/or its licensees. All rights reserved.
+//  
+//  Redistribution and use in source and binary forms, with or without modification, 
+//  are permitted provided that the following conditions are met:
+//  1. Redistributions of source code must retain the above copyright notice, this 
+//  list of conditions and the following disclaimer.
+//  2. Redistributions in binary form must reproduce the above copyright notice, 
+//  this list of conditions and the following disclaimer in the documentation and/or 
+//  other materials provided with the distribution.
+//  3. Neither the name of the organization nor the names of its contributors may be 
+//  used to endorse or promote products derived from this software without specific 
+//  prior written permission.
+//  
+//  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+//  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+//  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+//  IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+//  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+//  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+//  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+//  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+//  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+//  OF THE POSSIBILITY OF SUCH DAMAGE.
+
+define(['jquery','eventEmitter'], function($, EventEmitter) {
+/**
+ * Top level ReadiumSDK namespace
+ * @namespace
+ */
+var Globals = {
+
+    /**
+     * Current version of the JS SDK
+     * @static
+     * @return {string} version
+     */
+    version: function () {
+        return "0.8.0";
+    },
+    /**
+     * @namespace
+     */
+    Views: {
+        /**
+         * Landscape Orientation
+         */
+        ORIENTATION_LANDSCAPE: "orientation_landscape",
+        /**
+         * Portrait Orientation
+         */
+        ORIENTATION_PORTRAIT: "orientation_portrait"
+    },
+    /**
+     * @namespace
+     */
+    Events: {
+        /**
+         * @event
+         */
+        READER_INITIALIZED: "ReaderInitialized",
+        /**
+         * This gets triggered on every page turnover. It includes spine information and such.
+         * @event
+         */
+        PAGINATION_CHANGED: "PaginationChanged",
+        /**
+         * @event
+         */
+        SETTINGS_APPLIED: "SettingsApplied",
+        /**
+         * @event
+         */
+        FXL_VIEW_RESIZED: "FXLViewResized",
+        /**
+         * @event
+         */
+        READER_VIEW_CREATED: "ReaderViewCreated",
+        /**
+         * @event
+         */
+        READER_VIEW_DESTROYED: "ReaderViewDestroyed",
+        /**
+         * @event
+         */
+        CONTENT_DOCUMENT_LOAD_START: "ContentDocumentLoadStart",
+        /**
+         * @event
+         */
+        CONTENT_DOCUMENT_LOADED: "ContentDocumentLoaded",
+        /**
+         * @event
+         */
+        MEDIA_OVERLAY_STATUS_CHANGED: "MediaOverlayStatusChanged",
+        /**
+         * @event
+         */
+        MEDIA_OVERLAY_TTS_SPEAK: "MediaOverlayTTSSpeak",
+        /**
+         * @event
+         */
+        MEDIA_OVERLAY_TTS_STOP: "MediaOverlayTTSStop",
+        /**
+         * @event
+         */
+        PLUGINS_LOADED: "PluginsLoaded"
+    },
+    /**
+     * Internal Events
+     *
+     * @desc Should not be triggered outside of {@link Views.ReaderView}.
+     * @namespace
+     */
+    InternalEvents: {
+        /**
+         * @event
+         */
+        CURRENT_VIEW_PAGINATION_CHANGED: "CurrentViewPaginationChanged",
+    }
+
+};
+$.extend(Globals, new EventEmitter());
+
+return Globals;
+
+});
+
+//This is default implementation of reading system object that will be available for the publication's javascript to analyze at runtime
+//To extend/modify/replace this object reading system should subscribe Globals.Events.READER_INITIALIZED and apply changes in reaction to this event
+navigator.epubReadingSystem = {
+    name: "",
+    version: "0.0.0",
+    layoutStyle: "paginated",
+
+    hasFeature: function (feature, version) {
+
+        // for now all features must be version 1.0 so fail fast if the user has asked for something else
+        if (version &amp;&amp; version !== "1.0") {
+            return false;
+        }
+
+        if (feature === "dom-manipulation") {
+            // Scripts may make structural changes to the document???s DOM (applies to spine-level scripting only).
+            return true;
+        }
+        if (feature === "layout-changes") {
+            // Scripts may modify attributes and CSS styles that affect content layout (applies to spine-level scripting only).
+            return true;
+        }
+        if (feature === "touch-events") {
+            // The device supports touch events and the Reading System passes touch events to the content.
+            return false;
+        }
+        if (feature === "mouse-events") {
+            // The device supports mouse events and the Reading System passes mouse events to the content.
+            return true;
+        }
+        if (feature === "keyboard-events") {
+            // The device supports keyboard events and the Reading System passes keyboard events to the content.
+            return true;
+        }
+
+        if (feature === "spine-scripting") {
+            //Spine-level scripting is supported.
+            return true;
+        }
+
+        return false;
+    }
+};</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="-_anonymous_-Helpers.Margins.html">Margins</a></li><li><a href="-_anonymous_-Helpers.Rect.html">Rect</a></li><li><a href="-_anonymous_-Helpers.ResolveContentRef.html">ResolveContentRef</a></li><li><a href="Models.BookmarkData.html">BookmarkData</a></li><li><a href="Models.PackageData.html">PackageData</a></li><li><a href="Models.Spine.html">Spine</a></li><li><a href="Models.SpineItem.html">SpineItem</a></li></ul><h3>Events</h3><ul><li><a href="-_anonymous_-Globals.Events.html#.event:CONTENT_DOCUMENT_LOAD_START">CONTENT_DOCUMENT_LOAD_START</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:CONTENT_DOCUMENT_LOADED">CONTENT_DOCUMENT_LOADED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:FXL_VIEW_RESIZED">FXL_VIEW_RESIZED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:MEDIA_OVERLAY_STATUS_CHANGED">MEDIA_OVERLAY_STATUS_CHANGED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:MEDIA_OVERLAY_TTS_SPEAK">MEDIA_OVERLAY_TTS_SPEAK</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:MEDIA_OVERLAY_TTS_STOP">MEDIA_OVERLAY_TTS_STOP</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:PAGINATION_CHANGED">PAGINATION_CHANGED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:PLUGINS_LOADED">PLUGINS_LOADED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:READER_INITIALIZED">READER_INITIALIZED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:READER_VIEW_CREATED">READER_VIEW_CREATED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:READER_VIEW_DESTROYED">READER_VIEW_DESTROYED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:SETTINGS_APPLIED">SETTINGS_APPLIED</a></li><li><a href="-_anonymous_-Globals.InternalEvents.html#.event:CURRENT_VIEW_PAGINATION_CHANGED">CURRENT_VIEW_PAGINATION_CHANGED</a></li></ul><h3>Namespaces</h3><ul><li><a href="-_anonymous_-Globals.Events.html">Events</a></li><li><a href="-_anonymous_-Globals.InternalEvents.html">InternalEvents</a></li><li><a href="-_anonymous_-Globals.Views.html">Views</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon Jun 06 2016 12:21:53 GMT-0500 (CDT)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

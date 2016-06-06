@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: models/spine.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: models/spine.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//  Created by Boris Schneiderman.
+//  Copyright (c) 2014 Readium Foundation and/or its licensees. All rights reserved.
+//  
+//  Redistribution and use in source and binary forms, with or without modification, 
+//  are permitted provided that the following conditions are met:
+//  1. Redistributions of source code must retain the above copyright notice, this 
+//  list of conditions and the following disclaimer.
+//  2. Redistributions in binary form must reproduce the above copyright notice, 
+//  this list of conditions and the following disclaimer in the documentation and/or 
+//  other materials provided with the distribution.
+//  3. Neither the name of the organization nor the names of its contributors may be 
+//  used to endorse or promote products derived from this software without specific 
+//  prior written permission.
+//  
+//  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+//  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+//  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+//  IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+//  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+//  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+//  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+//  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+//  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+//  OF THE POSSIBILITY OF SUCH DAMAGE.
+
+define(["./spine_item", "../helpers", "URIjs"], function(SpineItem, Helpers, URI) {
+/**
+ *  Wrapper of the spine object received from hosting application
+ *
+ *  @class  Models.Spine
+ */
+
+var Spine = function(epubPackage, spineDTO) {
+
+    var self = this;
+
+    /*
+     * Collection of spine items
+     * @property items
+     * @type {Array}
+     */
+    this.items = [];
+
+    /*
+     * Page progression direction ltr|rtl|default
+     * @property direction
+     * @type {string}
+     */
+    this.direction = "ltr";
+
+    /*
+     * @property package
+     * @type {Models.Package}
+     *
+     */
+    this.package = epubPackage;
+
+    var _handleLinear = false;
+
+    this.handleLinear = function(handleLinear) {
+        _handleLinear = handleLinear;
+    };
+
+    function isValidLinearItem(item) {
+        return !_handleLinear || item.linear !== "no";
+    }
+
+
+    this.isValidLinearItem = function(index) {
+        
+        if(!isValidIndex(index)) {
+            return undefined;
+        }
+
+        return isValidLinearItem(this.item(index));
+    };
+
+    this.prevItem = function(item) {
+
+        return lookForPrevValidItem(item.index - 1);
+    };
+
+    function lookForNextValidItem(ix) {
+
+        if(!isValidIndex(ix)) {
+            return undefined;
+        }
+
+        var item = self.items[ix];
+
+        if(isValidLinearItem(item)) {
+            return item;
+        }
+
+        return lookForNextValidItem(item.index + 1);
+    }
+
+    function lookForPrevValidItem(ix) {
+
+        if(!isValidIndex(ix)) {
+            return undefined;
+        }
+
+        var item = self.items[ix];
+
+        if(isValidLinearItem(item)) {
+            return item;
+        }
+
+        return lookForPrevValidItem(item.index - 1);
+    }
+
+    this.nextItem = function(item){
+
+        return lookForNextValidItem(item.index + 1);
+    };
+
+    this.getItemUrl = function(item) {
+
+        return self.package.resolveRelativeUrl(item.href);
+
+    };
+
+    function isValidIndex(index) {
+
+        return index >= 0 &amp;&amp; index &lt; self.items.length;
+    }
+
+    this.first = function() {
+
+        return lookForNextValidItem(0);
+    };
+
+    this.last = function() {
+
+        return lookForPrevValidItem(this.items.length - 1);
+    };
+
+    this.isFirstItem = function(item) {
+
+        return self.first() === item;
+    };
+
+    this.isLastItem = function(item) {
+
+        return self.last() === item;
+    };
+
+    this.item = function(index) {
+        
+        if (isValidIndex(index))
+            return self.items[index];
+            
+        return undefined;
+    };
+
+    this.isRightToLeft = function() {
+
+        return self.direction == "rtl";
+    };
+
+    this.isLeftToRight = function() {
+
+        return !self.isRightToLeft();
+    };
+
+    this.getItemById = function(idref) {
+
+        var length = self.items.length;
+
+        for(var i = 0; i &lt; length; i++) {
+            if(self.items[i].idref == idref) {
+
+                return self.items[i];
+            }
+        }
+
+        return undefined;
+    };
+
+    this.getItemByHref = function(href) {
+
+        // var href1 = Helpers.ResolveContentRef(self.items[i].href, self.package.rootUrl + "/pack.opf");
+        // var href1 = self.package.resolveRelativeUrl(href);
+        //var href1 = new URI(href).absoluteTo(self.package.rootUrl).pathname();
+        //var href1 = new URI(self.package.resolveRelativeUrl(href)).relativeTo(self.package.rootUrl).pathname();
+        
+        var href1 = new URI(self.package.resolveRelativeUrl(href)).normalizePathname().pathname();
+        
+        var length = self.items.length;
+
+        for(var i = 0; i &lt; length; i++) {
+            
+            var href2 = new URI(self.package.resolveRelativeUrl(self.items[i].href)).normalizePathname().pathname();
+            
+            //if(self.items[i].href == href) {
+            if(href1 == href2) {
+                return self.items[i];
+            }
+        }
+
+        return undefined;
+    };
+
+    function updateSpineItemsSpread() {
+
+        var len = self.items.length;
+
+        var isFirstPageInSpread = false;
+        var baseSide = self.isLeftToRight() ? SpineItem.SPREAD_LEFT : SpineItem.SPREAD_RIGHT;
+
+        for(var i = 0; i &lt; len; i++) {
+
+            var spineItem = self.items[i];
+            if( !spineItem.page_spread) {
+
+                var spread = spineItem.isRenditionSpreadAllowed() ? (isFirstPageInSpread ? baseSide : SpineItem.alternateSpread(baseSide)) : SpineItem.SPREAD_CENTER;
+                spineItem.setSpread(spread);
+            }
+
+            isFirstPageInSpread = !spineItem.isRenditionSpreadAllowed() || spineItem.page_spread != baseSide;
+        }
+    }
+
+    if(spineDTO) {
+
+        if(spineDTO.direction) {
+            this.direction = spineDTO.direction;
+        }
+
+        var length = spineDTO.items.length;
+        for(var i = 0; i &lt; length; i++) {
+            var item = new SpineItem(spineDTO.items[i], i, this);
+            this.items.push(item);
+        }
+
+        updateSpineItemsSpread();
+    }
+
+};
+    return Spine;
+});
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="-_anonymous_-Helpers.Margins.html">Margins</a></li><li><a href="-_anonymous_-Helpers.Rect.html">Rect</a></li><li><a href="-_anonymous_-Helpers.ResolveContentRef.html">ResolveContentRef</a></li><li><a href="Models.BookmarkData.html">BookmarkData</a></li><li><a href="Models.PackageData.html">PackageData</a></li><li><a href="Models.Spine.html">Spine</a></li><li><a href="Models.SpineItem.html">SpineItem</a></li></ul><h3>Events</h3><ul><li><a href="-_anonymous_-Globals.Events.html#.event:CONTENT_DOCUMENT_LOAD_START">CONTENT_DOCUMENT_LOAD_START</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:CONTENT_DOCUMENT_LOADED">CONTENT_DOCUMENT_LOADED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:FXL_VIEW_RESIZED">FXL_VIEW_RESIZED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:MEDIA_OVERLAY_STATUS_CHANGED">MEDIA_OVERLAY_STATUS_CHANGED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:MEDIA_OVERLAY_TTS_SPEAK">MEDIA_OVERLAY_TTS_SPEAK</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:MEDIA_OVERLAY_TTS_STOP">MEDIA_OVERLAY_TTS_STOP</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:PAGINATION_CHANGED">PAGINATION_CHANGED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:PLUGINS_LOADED">PLUGINS_LOADED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:READER_INITIALIZED">READER_INITIALIZED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:READER_VIEW_CREATED">READER_VIEW_CREATED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:READER_VIEW_DESTROYED">READER_VIEW_DESTROYED</a></li><li><a href="-_anonymous_-Globals.Events.html#.event:SETTINGS_APPLIED">SETTINGS_APPLIED</a></li><li><a href="-_anonymous_-Globals.InternalEvents.html#.event:CURRENT_VIEW_PAGINATION_CHANGED">CURRENT_VIEW_PAGINATION_CHANGED</a></li></ul><h3>Namespaces</h3><ul><li><a href="-_anonymous_-Globals.Events.html">Events</a></li><li><a href="-_anonymous_-Globals.InternalEvents.html">InternalEvents</a></li><li><a href="-_anonymous_-Globals.Views.html">Views</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon Jun 06 2016 12:21:53 GMT-0500 (CDT)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
