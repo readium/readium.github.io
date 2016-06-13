@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Readium SDK APIs</title>
 
@@ -2966,18 +2966,20 @@ Pages Home</a></p>
 <script>
 $(document).ready(function () {
 //here is where you add the filename of the new spreadsheets to be parsed and placed in the table
-//simply create a new filename[n] for the array and set it equal to url  
+//simply create a new filename[n] for the array and set it equal to url 
 var filenames = [];
 filenames[0] = "http://readium.github.io/test-results/cloudreader/spreadsheets/EricXia-WIN-8.1-Chrome-20160606.xlsx";
 filenames[1] = "http://readium.github.io/test-results/cloudreader/spreadsheets/farmbee2016-WIN-10-Firefox-20160519.xlsx";
-filenames[3] = "http://readium.github.io/test-results/cloudreader/spreadsheets/gurwinderdhaliwal-OSX-10.10.2-Chrome-20150312.xlsx";
+filenames[2] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-WIN-10.0-Chrome-20160530.xlsx";
+filenames[3] = "http://readium.github.io/test-results/cloudreader/spreadsheets/DeanNgo-WIN-7-Firefox-20160612.xlsx";
+filenames[4] = "http://readium.github.io/test-results/cloudreader/spreadsheets/EricXia-WIN-8.1-RCE-20160610.xlsx";
 getData();
 function getData() {
-for (var i = 0; i < filenames.length; i++) {
+for (var i = 0; i <= filenames.length; i++) {
 console.log(filenames[i]);
-alasql.promise("select * from xlsx(' " + filenames[i] + " ') ")
+alasql.promise('select * from xlsx(" ' + filenames[i] + ' ") ')
 .then(function (data) {
-    console.log(filenames[i]);
+console.log(filenames[i]);
 var text2 = "<tr>";
 var tester = data[4];
 text2 += "<td>" + JSON.stringify(tester.D).replace(/['"]+/g, '') + "</td>";
@@ -3002,8 +3004,8 @@ $("#results_tbody").append(text2);
 }).catch(function (err) {
 console.log('Error:', err);
 });
-}
 };
-})
+};
+});
 </script>
 </body></html>
