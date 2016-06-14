@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Readium SDK APIs</title>
 
@@ -2965,8 +2965,11 @@ Pages Home</a></p>
 </div>
 <script>
 $(document).ready(function () {
-//here is where you add the filename of the new spreadsheets to be parsed and placed in the table
-//simply create a new filename[n] for the array and set it equal to url var filenames = [];
+
+    //here is where you add the filename of the new spreadsheets to be parsed and placed in the table
+//simply create a new filename[n] for the array and set it equal to url 
+
+var filenames = [];
 filenames[0] = "http://readium.github.io/test-results/cloudreader/spreadsheets/EricXia-WIN-8.1-Chrome-20160606.xlsx";
 filenames[1] = "http://readium.github.io/test-results/cloudreader/spreadsheets/farmbee2016-WIN-10-Firefox-20160519.xlsx";
 filenames[2] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-WIN-10.0-Chrome-20160530.xlsx";
@@ -2974,7 +2977,9 @@ filenames[3] = "http://readium.github.io/test-results/cloudreader/spreadsheets/D
 filenames[4] = "http://readium.github.io/test-results/cloudreader/spreadsheets/EricXia-WIN-8.1-RCE-20160610.xlsx";
 filenames[5] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-WIN-10.0-Chrome-20160613.xlsx";
 filenames[6] = "http://readium.github.io/test-results/cloudreader/spreadsheets/EricXia-WIN-8.1-Chrome-20160613.xlsx";
+
 getData();
+
 function getData() {
 for (var i = 0; i <= filenames.length; i++) {
 console.log(filenames[i]);
@@ -3005,6 +3010,7 @@ $("#results_tbody").append(text2);
 }).catch(function (err) {
 console.log('Error:', err);
 });
+
 };
 };
 });
