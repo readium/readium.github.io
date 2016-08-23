@@ -47,12 +47,30 @@
   
 <div class="right_banner">
 <h2>Current Plan for the Next Release</h2>
-<h3>Release 0.24</h3>
+<h3>Readium 0.25</h3>
 <ul>
-  <li>Release targeted for late summer 2016 (hgihly dependent on available resources)</li>
-  <li>Features TBD </li>
-</ul>
+  <li>This release is targeted for early October 2016</li>
+  <li>Candidate features include:
+    <ul>
+      <li>Better support for page-refresh on font-changes</li>
+      <li>Support for selectin new fonts as well as Dyslexix font support</li>
+      <li>Better handling of page-break markup</li>
+      <li>More bug fixes (exact ones TBD)</li>
+    </ul>
+  </li>
+  </ul>
 <h2>Recent Releases</h2>
+<h3>Release of Readium 0.24</h3>
+<p>Readium.org is pleased to announce that 0.24 version of  Readium   has been released.  This release was pushed 16 August 2016.</p>
+<p  id="docs-internal-guid-3615061b-5997-8ef9-bb01-5514dadc2b6">This release, 0.24, is a new release that  has one significant feature in the Chrome Extensions and number of minor improvements in both the Chrome Extension and Cloud Reader - as well as a large number of bug fixes.</p>
+<p>In the SDK, there were a number of minor bug fixes, plus the removal of some obsolete libraries (OpenSSL for Android and Boos).</p>
+<p>The new feature in the Chrome Extension (which is NOT in the Cloud Reader)  is the support for importing more than one file at a time.  Multiple files can be added via drag and drop onto the library pane or via the normal “Add File” dialog. Once the import has started, the user CAN cancel the import process but the file being imported when the cancel button is pressed will still be imported but subsequent queued files will not be imported.</p>
+<p>In addition, there were two regressions in the previous releases:</p>
+<ul>
+  <li>An experimental highlighting plugin was inadvertently included in the previous 2.23 build. While this is a nice feature, it is not yet complete - there’s no way to save the highlights.  We are working on this but have no ETA when it will be available (volunteers are welcome).</li>
+  <li>Navigation using the TOC was not working correctly for TOC items that were not top level (i.e. sub-headers).  This is now fixed in this release.</li>
+</ul>
+<p > The  complete release notes can be found <a href="https://docs.google.com/document/d/1ioOVtGK00m8TUtGfKA8DCq428wXREfmexc0_fuyHTUs/edit#" target="_blank">here.</a></p>
 <h3>Release of Readium - 0.23</h3>
 <p>Readium.org is pleased to announce that 0.23 version of  Readium   has been released.  This release was pushed 10 June 2016.</p>
 <p  id="docs-internal-guid-3615061b-5997-8ef9-bb01-5514dadc2b5">This release, 0.23, is a new release that is has one major change and a number of minor improvements - as well as a large number of bug fixes, primarily affecting CFI/navigation. The major change is that we have switched Android build support from Eclipse (now deprecated) to Android Studio (currently 2.1). We also enabled (experimental) support for debugging from Java into C++ (see release notes for more info). Also, HTTP header caching has been enabled which can provide significant performance improvements for some resource-heavy EPUBs.</p>
