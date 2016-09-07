@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('interface_renderer.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7649bf78fddd112a929d3255caa74c02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_highlight_item.html">HighlightItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a7649bf78fddd112a929d3255caa74c02">getHighlightsRoot</a> ()</td></tr>
 <tr class="separator:a7649bf78fddd112a929d3255caa74c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a3a1b6310b82aff9c1a4b7ad78c2d5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a9a3a1b6310b82aff9c1a4b7ad78c2d5a">addHighlight</a> (<a class="el" href="interface_location.html">Location</a> start, <a class="el" href="interface_location.html">Location</a> end, DOMString color, float opacity)</td></tr>
-<tr class="separator:a9a3a1b6310b82aff9c1a4b7ad78c2d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366ee20d739f5323ca0d770e1ae209d2"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a366ee20d739f5323ca0d770e1ae209d2">addHighlight</a> (<a class="el" href="interface_location.html">Location</a> start, <a class="el" href="interface_location.html">Location</a> end, DOMString color, float opacity)</td></tr>
+<tr class="separator:a366ee20d739f5323ca0d770e1ae209d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb09f3ce57d6b18a78e2faedd2a2100a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#aeb09f3ce57d6b18a78e2faedd2a2100a">clearHighlights</a> ()</td></tr>
 <tr class="separator:aeb09f3ce57d6b18a78e2faedd2a2100a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b5351742fe35fb895793645b6f7a3dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a6b5351742fe35fb895793645b6f7a3dc">clearHighlight</a> (<a class="el" href="interface_highlight_item.html">HighlightItem</a> item)</td></tr>
@@ -135,14 +135,14 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates the various rendering capabilities, currently comprising only highlights. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01046">1046</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01048">1048</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9a3a1b6310b82aff9c1a4b7ad78c2d5a"></a>
+<a class="anchor" id="a366ee20d739f5323ca0d770e1ae209d2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Renderer::addHighlight </td>
+          <td class="memname">DOMString Renderer::addHighlight </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_location.html">Location</a>&#160;</td>
           <td class="paramname"><em>start</em>, </td>
@@ -178,10 +178,11 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">start</td><td>location to start the hightlight, or range if end param null </td></tr>
     <tr><td class="paramname">end</td><td>end location for the hightlight. Can be null if start is range </td></tr>
     <tr><td class="paramname">color</td><td>CSS-style color </td></tr>
-    <tr><td class="paramname">opacity</td><td>opacity in the range of 0..1 </td></tr>
+    <tr><td class="paramname">opacity</td><td>opacity in the range of 0..1</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>DOMString The GUID that uniquely identifies this highlight. </dd></dl>
 
 </div>
 </div>
@@ -198,7 +199,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Attach a handler that will be called when a highlight is selected</p>
+<p>Attach a handler that will be called when a highlight is selected. The handler will be passed the <a class="el" href="interface_highlight_item.html">HighlightItem</a> that has been selected.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td></td></tr>
@@ -260,7 +261,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the root highlight element which can be used to then traverse the current set of highlights associated with the document.</p>
-<dl class="section return"><dt>Returns</dt><dd>HighlightsItem </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_highlight_item.html">HighlightItem</a> </dd></dl>
 
 </div>
 </div>
@@ -296,7 +297,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_renderer.html">Renderer</a></li>
-    <li class="footer">Generated on Wed Sep 7 2016 13:16:50 for Readium IDL by
+    <li class="footer">Generated on Wed Sep 7 2016 13:33:33 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
