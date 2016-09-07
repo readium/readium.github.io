@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('interface_navigator.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Provides methods to navigate the document as well as converting between <a class="el" href="interface_location.html">Location</a>, screen and document position.  
+<p>Provides methods to navigate the document as well as converting between <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a>, screen and document position.  
  <a href="interface_navigator.html#details">More...</a></p>
 
 <p><code>import &quot;<a class="el" href="_readium_8idl_source.html">Readium.idl</a>&quot;;</code></p>
@@ -161,9 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a39614a2ae2643ade4c12fb95b59ac66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides methods to navigate the document as well as converting between <a class="el" href="interface_location.html">Location</a>, screen and document position. </p>
+<div class="textblock"><p>Provides methods to navigate the document as well as converting between <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a>, screen and document position. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00635">635</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00640">640</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a39614a2ae2643ade4c12fb95b59ac66f"></a>
 <div class="memitem">
@@ -188,7 +188,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a JSON object that has the bounding box enclosed by the start <a class="el" href="interface_location.html">Location</a> (if a range) or the two Locations</p>
+<p>Returns a JSON object that has the bounding box enclosed by the start <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> (if a range) or the two Locations</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">start</td><td></td></tr>
@@ -213,7 +213,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the current location in the current spine item. If no selection then it returns the top-left (or top-right if r-t-l document) of the current screenDOMString</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns, as accurately as possible, the location of the top left (for ltr doc) or top-right location (for rtl docs) of the first screen in the doc</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns, as accurately as possible, the location of the lower right (for ltr doc) or lower-left location (for rtl docs) of the last screen in the doc</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
 
 </div>
 </div>
@@ -271,7 +271,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> The location for the specified screen </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> The location for the specified screen </dd></dl>
 
 </div>
 </div>
@@ -289,7 +289,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the most recent location before the current location. This is essentially a FILO stack as each navigation action (e.g. nextScreen, gotoDocEnd, etc.) pushes the previous "current" location onto the stack</p>
 <p>QUESTION: Should simple page turns be saved? Or only higher level actions such as gotoLocation, gotoEnd, etc.?</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
 
 </div>
 </div>
@@ -306,7 +306,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns, as accurately as possible, the location of the top left (for ltr doc) or top-right location (for rtl docs) of the current screen</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
 
 </div>
 </div>
@@ -369,7 +369,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns, as accurately as possible, the location of the lower right (for ltr doc) or lower-left location (for rtl docs) of the current screen</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the spine item that contains the specified <a class="el" href="interface_location.html">Location</a></p>
+<p>Get the spine item that contains the specified <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a></p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_spine_item.html" title="Methods for managing the spine.">SpineItem</a> </dd></dl>
 
 </div>
@@ -571,7 +571,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_navigator.html">Navigator</a></li>
-    <li class="footer">Generated on Wed Sep 7 2016 17:24:07 for Readium IDL by
+    <li class="footer">Generated on Wed Sep 7 2016 17:42:41 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
