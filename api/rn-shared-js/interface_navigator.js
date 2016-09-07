@@ -4,7 +4,7 @@ var interface_navigator =
     [ "getCurrentLocation", "interface_navigator.html#a9c0fe7e828c149b940f7935225fe9b4a", null ],
     [ "getDocBegin", "interface_navigator.html#a7c3d79aebcd0c6fc391a3b6ee3d9213e", null ],
     [ "getDocEnd", "interface_navigator.html#a3c9d8785b4d38d2785c95d4423d17284", null ],
-    [ "getLocationFromScreen", "interface_navigator.html#aef4bf69be4d6321347a406bbfaf50395", null ],
+    [ "getLocationFromScreen", "interface_navigator.html#a1a5c366ae436d5ebaddc8a9d6b14d548", null ],
     [ "getPreviousLocation", "interface_navigator.html#ad72f2217e23ca1903629f24e7a295212", null ],
     [ "getScreenBegin", "interface_navigator.html#a7130fc56702f258742d83cd6bd65958f", null ],
     [ "getScreenCount", "interface_navigator.html#a3cf5d344bd0af48152cdf02524932417", null ],

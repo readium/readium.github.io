@@ -153,8 +153,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2293d9c86a6aa44e14f951dbb228dbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab52f9f9abe6fc3dde19aaac879c1d85a"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_navigator.html#ab52f9f9abe6fc3dde19aaac879c1d85a">getScreenFromLocation</a> (<a class="el" href="interface_location.html">Location</a> loc)</td></tr>
 <tr class="separator:ab52f9f9abe6fc3dde19aaac879c1d85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef4bf69be4d6321347a406bbfaf50395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_navigator.html#aef4bf69be4d6321347a406bbfaf50395">getLocationFromScreen</a> (integer)</td></tr>
-<tr class="separator:aef4bf69be4d6321347a406bbfaf50395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5c366ae436d5ebaddc8a9d6b14d548"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_navigator.html#a1a5c366ae436d5ebaddc8a9d6b14d548">getLocationFromScreen</a> (integer screen)</td></tr>
+<tr class="separator:a1a5c366ae436d5ebaddc8a9d6b14d548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58cf706133d35029c0368656a32758ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_spine_item.html">SpineItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_navigator.html#a58cf706133d35029c0368656a32758ea">getSpineItemFromLocation</a> ()</td></tr>
 <tr class="separator:a58cf706133d35029c0368656a32758ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39614a2ae2643ade4c12fb95b59ac66f"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_navigator.html#a39614a2ae2643ade4c12fb95b59ac66f">getBoundingBox</a> (<a class="el" href="interface_location.html">Location</a> start, <a class="el" href="interface_location.html">Location</a> end)</td></tr>
@@ -163,7 +163,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides methods to navigate the document as well as converting between <a class="el" href="interface_location.html">Location</a>, screen and document position. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00638">638</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00635">635</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a39614a2ae2643ade4c12fb95b59ac66f"></a>
 <div class="memitem">
@@ -212,7 +212,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the current location in the current spine item. If no selection then it returns the top-left (or top-right if r-t-l document) of the current screen</p>
+<p>Returns the current location in the current spine item. If no selection then it returns the top-left (or top-right if r-t-l document) of the current screenDOMString</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> </dd></dl>
 
 </div>
@@ -251,7 +251,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aef4bf69be4d6321347a406bbfaf50395"></a>
+<a class="anchor" id="a1a5c366ae436d5ebaddc8a9d6b14d548"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -259,7 +259,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="interface_location.html">Location</a> Navigator::getLocationFromScreen </td>
           <td>(</td>
           <td class="paramtype">integer&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>screen</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -267,11 +267,11 @@ Public Member Functions</h2></td></tr>
 <p>Return the location of the upper-left (ltr documents) or upper-right (for rtl documents) of the specified screen.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">integer</td><td>The number of the screen</td></tr>
+    <tr><td class="paramname">screen</td><td>The number of the screen</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html">Location</a> The location for the specified screen </dd></dl>
 
 </div>
 </div>
@@ -563,7 +563,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>/Users/rkwright/Documents/Sandbox_Readium/Interface/Readium/<a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
+<li><a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -571,7 +571,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_navigator.html">Navigator</a></li>
-    <li class="footer">Generated on Wed Sep 7 2016 16:47:28 for Readium IDL by
+    <li class="footer">Generated on Wed Sep 7 2016 17:24:07 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

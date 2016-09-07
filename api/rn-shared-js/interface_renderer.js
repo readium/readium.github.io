@@ -5,5 +5,6 @@ var interface_renderer =
     [ "clearHighlight", "interface_renderer.html#a6b5351742fe35fb895793645b6f7a3dc", null ],
     [ "clearHighlights", "interface_renderer.html#aeb09f3ce57d6b18a78e2faedd2a2100a", null ],
     [ "getHighlightsRoot", "interface_renderer.html#a7649bf78fddd112a929d3255caa74c02", null ],
+    [ "initRenderer", "interface_renderer.html#aa627fa42d759595222ee20ddb144cd46", null ],
     [ "removeHandlerForHighlights", "interface_renderer.html#a0d093f8735becad89db2ecf6483e8ba7", null ]
 ];

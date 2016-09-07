@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['initrenderer',['initRenderer',['../interface_renderer.html#aa627fa42d759595222ee20ddb144cd46',1,'Renderer']]],
   ['injectjavascript',['injectJavaScript',['../interface_reading_system.html#aed897c6e99585624bd86e3b3d247d68d',1,'ReadingSystem']]],
   ['injectstylesheet',['injectStyleSheet',['../interface_reading_system.html#af2b634d222d195c940bc23a25427e180',1,'ReadingSystem']]],
   ['isfinalscreen',['isFinalScreen',['../interface_navigator.html#afecd3c7f55a3a92baff8521f4e1eec98',1,'Navigator']]],

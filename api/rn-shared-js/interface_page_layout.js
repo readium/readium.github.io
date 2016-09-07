@@ -10,7 +10,7 @@ var interface_page_layout =
     [ "setRenditionFlow", "interface_page_layout.html#a0781e37918431ae8a6ca3f1b3d3114e6", null ],
     [ "setRenditionOrientation", "interface_page_layout.html#a3835413efc0f19f55d478c5c6f22ded3", null ],
     [ "setRenditionSpread", "interface_page_layout.html#a65eccc262fed4372274528e6956f14c5", null ],
-    [ "setWidth", "interface_page_layout.html#a47d824cce20d84d8dd9e8e837a1fceb7", null ],
+    [ "setWidth", "interface_page_layout.html#aeb662399a3b8256d5a55f235827a6e7f", null ],
     [ "REND_FLOW_CONTINUOUS", "interface_page_layout.html#a99cf5d0c14f9f953bb502d22e54e37e5", null ],
     [ "REND_FLOW_DOCUMENT", "interface_page_layout.html#a80910a0c5f9220c54f7b46f06e48d956", null ],
     [ "REND_FLOW_FIXED", "interface_page_layout.html#a95a382eb71f93f131ee994bc224c9a4e", null ],

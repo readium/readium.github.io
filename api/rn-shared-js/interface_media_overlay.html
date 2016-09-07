@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac736fb43eff2cb8f1ae909e5822e09a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da55e210268cdc263ae17dfdd02de1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_media_overlay.html#a5da55e210268cdc263ae17dfdd02de1c">setAudioVolume</a> (float volume)</td></tr>
 <tr class="separator:a5da55e210268cdc263ae17dfdd02de1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5614a310f3c849a8f06b6419e2161c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_media_overlay.html#ab5614a310f3c849a8f06b6419e2161c4">setHighlightColor</a> (DOMString)</td></tr>
-<tr class="separator:ab5614a310f3c849a8f06b6419e2161c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3bcca595f41ed1c5998f172973d08f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_media_overlay.html#a0e3bcca595f41ed1c5998f172973d08f">setHighlightColor</a> (DOMString color)</td></tr>
+<tr class="separator:a0e3bcca595f41ed1c5998f172973d08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a841641293d55c6d1ad1e6c6f74348151"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_media_overlay.html#a841641293d55c6d1ad1e6c6f74348151">enableScrollDuringPlayback</a> (boolean enable)</td></tr>
 <tr class="separator:a841641293d55c6d1ad1e6c6f74348151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae20cf911ed31350e9e903bdbf34f64bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_media_overlay.html#ae20cf911ed31350e9e903bdbf34f64bf">enableAutomaticPageTurn</a> (boolean enable)</td></tr>
@@ -148,7 +148,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A set of methods to provide access and control of media overlays </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00402">402</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00401">401</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae20cf911ed31350e9e903bdbf34f64bf"></a>
 <div class="memitem">
@@ -251,11 +251,10 @@ Public Member Functions</h2></td></tr>
 <p>Check to see if the specified <a class="el" href="interface_location.html">Location</a> has a media overlay</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="interface_location.html">Location</a></td><td></td></tr>
+    <tr><td class="paramname">location</td><td>the location to check for media overlay </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
 </div>
 </div>
@@ -348,7 +347,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab5614a310f3c849a8f06b6419e2161c4"></a>
+<a class="anchor" id="a0e3bcca595f41ed1c5998f172973d08f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -356,7 +355,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void MediaOverlay::setHighlightColor </td>
           <td>(</td>
           <td class="paramtype">DOMString&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -364,7 +363,7 @@ Public Member Functions</h2></td></tr>
 <p>Set the audio highlight color</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">DOMString</td><td>CSS color syntax </td></tr>
+    <tr><td class="paramname">color</td><td>the color of the highlight, in CSS color syntax </td></tr>
   </table>
   </dd>
 </dl>
@@ -434,7 +433,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>/Users/rkwright/Documents/Sandbox_Readium/Interface/Readium/<a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
+<li><a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -442,7 +441,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_media_overlay.html">MediaOverlay</a></li>
-    <li class="footer">Generated on Wed Sep 7 2016 16:47:28 for Readium IDL by
+    <li class="footer">Generated on Wed Sep 7 2016 17:24:07 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

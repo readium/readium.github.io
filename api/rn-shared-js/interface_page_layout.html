@@ -134,8 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0781e37918431ae8a6ca3f1b3d3114e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6d81a272ad8525bc5207a88e02e524"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#ade6d81a272ad8525bc5207a88e02e524">getRenditionFlow</a> ()</td></tr>
 <tr class="separator:ade6d81a272ad8525bc5207a88e02e524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d824cce20d84d8dd9e8e837a1fceb7"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#a47d824cce20d84d8dd9e8e837a1fceb7">setWidth</a> (integer)</td></tr>
-<tr class="separator:a47d824cce20d84d8dd9e8e837a1fceb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb662399a3b8256d5a55f235827a6e7f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#aeb662399a3b8256d5a55f235827a6e7f">setWidth</a> (integer width)</td></tr>
+<tr class="separator:aeb662399a3b8256d5a55f235827a6e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee919e531b74fdd57839c7b972efde3"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#acee919e531b74fdd57839c7b972efde3">getWidth</a> ()</td></tr>
 <tr class="separator:acee919e531b74fdd57839c7b972efde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fe498ccc2d71548f9127f3bd5e9c89b"><td class="memItemLeft" align="right" valign="top">DOMstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#a6fe498ccc2d71548f9127f3bd5e9c89b">getGutterWidth</a> ()</td></tr>
@@ -188,7 +188,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Enables querying and constrolling how screens and/or pages are laid out. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00875">875</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00872">872</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6fe498ccc2d71548f9127f3bd5e9c89b"></a>
 <div class="memitem">
@@ -336,7 +336,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 <p>Note: If the document is not reflowable the method will return false</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode@see</td><td>REND_FLOW_* constants (above)</td></tr>
+    <tr><td class="paramname">mode</td><td>SEE REND_FLOW_* constants (above)</td></tr>
   </table>
   </dd>
 </dl>
@@ -393,7 +393,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 
 </div>
 </div>
-<a class="anchor" id="a47d824cce20d84d8dd9e8e837a1fceb7"></a>
+<a class="anchor" id="aeb662399a3b8256d5a55f235827a6e7f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -401,7 +401,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
           <td class="memname">boolean PageLayout::setWidth </td>
           <td>(</td>
           <td class="paramtype">integer&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -410,7 +410,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 <p>Note: This may not be supported on some devices</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">integer</td><td></td></tr>
+    <tr><td class="paramname">width</td><td>Width in pixels</td></tr>
   </table>
   </dd>
 </dl>
@@ -419,7 +419,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>/Users/rkwright/Documents/Sandbox_Readium/Interface/Readium/<a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
+<li><a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -427,7 +427,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_page_layout.html">PageLayout</a></li>
-    <li class="footer">Generated on Wed Sep 7 2016 16:47:28 for Readium IDL by
+    <li class="footer">Generated on Wed Sep 7 2016 17:24:07 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

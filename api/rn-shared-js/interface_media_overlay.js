@@ -10,7 +10,7 @@ var interface_media_overlay =
     [ "play", "interface_media_overlay.html#af0c705f2059922a6c255011e670368e2", null ],
     [ "reset", "interface_media_overlay.html#a63436ba6ad147185023c1ef10149df7b", null ],
     [ "setAudioVolume", "interface_media_overlay.html#a5da55e210268cdc263ae17dfdd02de1c", null ],
-    [ "setHighlightColor", "interface_media_overlay.html#ab5614a310f3c849a8f06b6419e2161c4", null ],
+    [ "setHighlightColor", "interface_media_overlay.html#a0e3bcca595f41ed1c5998f172973d08f", null ],
     [ "setPlaybackRate", "interface_media_overlay.html#ac736fb43eff2cb8f1ae909e5822e09a6", null ],
     [ "setTouchToPlay", "interface_media_overlay.html#a95b77a98c1f24c8ca8e9be79e7d8b8b1", null ],
     [ "stop", "interface_media_overlay.html#a5066b1b9896da9eb345c63080880234f", null ]

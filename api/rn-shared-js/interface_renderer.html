@@ -119,6 +119,8 @@ $(document).ready(function(){initNavTree('interface_renderer.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa627fa42d759595222ee20ddb144cd46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#aa627fa42d759595222ee20ddb144cd46">initRenderer</a> (Object div)</td></tr>
+<tr class="separator:aa627fa42d759595222ee20ddb144cd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7649bf78fddd112a929d3255caa74c02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_highlight_item.html">HighlightItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a7649bf78fddd112a929d3255caa74c02">getHighlightsRoot</a> ()</td></tr>
 <tr class="separator:a7649bf78fddd112a929d3255caa74c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366ee20d739f5323ca0d770e1ae209d2"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a366ee20d739f5323ca0d770e1ae209d2">addHighlight</a> (<a class="el" href="interface_location.html">Location</a> start, <a class="el" href="interface_location.html">Location</a> end, DOMString color, float opacity)</td></tr>
@@ -135,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates the various rendering capabilities, currently comprising only highlights. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01048">1048</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01045">1045</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a366ee20d739f5323ca0d770e1ae209d2"></a>
 <div class="memitem">
@@ -172,7 +174,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a highlight to the current document. If the second location is NULL the first <a class="el" href="interface_location.html">Location</a> MUST be a range.</p>
+<p>Add a highlight to the current document. If the second location is NULL the first <a class="el" href="interface_location.html">Location</a> MUST be a range. integer </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">start</td><td>location to start the hightlight, or range if end param null </td></tr>
@@ -265,6 +267,30 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa627fa42d759595222ee20ddb144cd46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::initRenderer </td>
+          <td>(</td>
+          <td class="paramtype">Object&#160;</td>
+          <td class="paramname"><em>div</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize the renderer by passing in the div within which the renderer should install its own rendering machinery (e.g. nested iframes or similar)</p>
+<p>There can only be one call to this method per book.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">div</td><td>The top-level div within which the document will be rendered </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a0d093f8735becad89db2ecf6483e8ba7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +315,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
-<li>/Users/rkwright/Documents/Sandbox_Readium/Interface/Readium/<a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
+<li><a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -297,7 +323,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_renderer.html">Renderer</a></li>
-    <li class="footer">Generated on Wed Sep 7 2016 16:47:28 for Readium IDL by
+    <li class="footer">Generated on Wed Sep 7 2016 17:24:07 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
