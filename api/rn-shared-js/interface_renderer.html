@@ -130,8 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a366ee20d739f5323ca0d770e1ae209d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb09f3ce57d6b18a78e2faedd2a2100a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#aeb09f3ce57d6b18a78e2faedd2a2100a">clearHighlights</a> ()</td></tr>
 <tr class="separator:aeb09f3ce57d6b18a78e2faedd2a2100a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b5351742fe35fb895793645b6f7a3dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a6b5351742fe35fb895793645b6f7a3dc">clearHighlight</a> (<a class="el" href="interface_highlight_item.html">HighlightItem</a> item)</td></tr>
-<tr class="separator:a6b5351742fe35fb895793645b6f7a3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d797807bdce33e0aba3444815e40d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#af3d797807bdce33e0aba3444815e40d0">deleteHighlight</a> (<a class="el" href="interface_highlight_item.html">HighlightItem</a> item)</td></tr>
+<tr class="separator:af3d797807bdce33e0aba3444815e40d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa802b5d9e99b9ca4e7c2815e063e0e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#aa802b5d9e99b9ca4e7c2815e063e0e1a">attachHandlerForHighlights</a> (Object handler)</td></tr>
 <tr class="separator:aa802b5d9e99b9ca4e7c2815e063e0e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d093f8735becad89db2ecf6483e8ba7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a0d093f8735becad89db2ecf6483e8ba7">removeHandlerForHighlights</a> (Object handler)</td></tr>
@@ -140,7 +140,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates the various rendering capabilities, currently comprising only highlights. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01050">1050</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01132">1132</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a366ee20d739f5323ca0d770e1ae209d2"></a>
 <div class="memitem">
@@ -177,7 +177,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a highlight to the current document. If the second location is NULL the first <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> MUST be a range. integer </p>
+<p>Add a highlight to the current document. If the second location is NULL the first <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> MUST be a range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">start</td><td>location to start the hightlight, or range if end param null </td></tr>
@@ -187,7 +187,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>DOMString The GUID that uniquely identifies this highlight. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the GUID that uniquely identifies this highlight </dd></dl>
 
 </div>
 </div>
@@ -204,33 +204,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Attach a handler that will be called when a highlight is selected. The handler will be passed the <a class="el" href="interface_highlight_item.html" title="Provides methods to manage the current highlight item.">HighlightItem</a> that has been selected.</p>
+<p>Attach a handler that will be called when any highlight is selected. The handler will be passed the <a class="el" href="interface_highlight_item.html" title="Provides methods to manage the current highlight item.">HighlightItem</a> that has been selected</p>
+<p>The signature of the callback function MUST be</p>
+<p><code>callback(Object:item)</code></p>
+<p>where</p>
+<p><code>item</code> is the <a class="el" href="interface_highlight_item.html" title="Provides methods to manage the current highlight item.">HighlightItem</a> selected</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handler</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a6b5351742fe35fb895793645b6f7a3dc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Renderer::clearHighlight </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_highlight_item.html">HighlightItem</a>&#160;</td>
-          <td class="paramname"><em>item</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delete the specified highlight</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">item</td><td></td></tr>
+    <tr><td class="paramname">attaches</td><td>the supplied handler to the highlights collection </td></tr>
   </table>
   </dd>
 </dl>
@@ -253,6 +234,29 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af3d797807bdce33e0aba3444815e40d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::deleteHighlight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_highlight_item.html">HighlightItem</a>&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Delete the specified highlight</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deletes</td><td>the specified highlight from the collection </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a7649bf78fddd112a929d3255caa74c02"></a>
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +270,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the root highlight element which can be used to then traverse the current set of highlights associated with the document.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_highlight_item.html" title="Provides methods to manage the current highlight item.">HighlightItem</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the root element of the highlights collection </dd></dl>
 
 </div>
 </div>
@@ -283,11 +287,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize the renderer by passing in the div within which the renderer should install its own rendering machinery (e.g. nested iframes or similar)</p>
+<p>Initialize the renderer by passing in the div within which the renderer should inject its own rendering machinery (e.g. nested iframes or similar)</p>
 <p>There can only be one call to this method per book.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">div</td><td>The top-level div within which the document will be rendered </td></tr>
+    <tr><td class="paramname">the</td><td>top-level div within which the document will be rendered </td></tr>
   </table>
   </dd>
 </dl>
@@ -307,10 +311,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove handler for hit-testing on highlights. The supplied object is to ID the correct handler to remove.</p>
+<p>Remove handler for hit-testing on highlights. The supplied object is used to identify the correct handler to remove.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handler</td><td></td></tr>
+    <tr><td class="paramname">the</td><td>handler to remove </td></tr>
   </table>
   </dd>
 </dl>
@@ -327,7 +331,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_renderer.html">Renderer</a></li>
-    <li class="footer">Generated on Thu Sep 8 2016 07:45:04 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

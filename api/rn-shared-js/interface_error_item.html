@@ -125,8 +125,8 @@ $(document).ready(function(){initNavTree('interface_error_item.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a433b59cf043436d62a48538a28e19e3a"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_error_item.html#a433b59cf043436d62a48538a28e19e3a">getChildCount</a> ()</td></tr>
 <tr class="separator:a433b59cf043436d62a48538a28e19e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cc0f86e3775d034780f611a7e1cf31d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_error_item.html">ErrorItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_error_item.html#a9cc0f86e3775d034780f611a7e1cf31d">getChild</a> (integer index)</td></tr>
-<tr class="separator:a9cc0f86e3775d034780f611a7e1cf31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ce6ec59032c4d07a2b35cfba98c038"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_error_item.html#a07ce6ec59032c4d07a2b35cfba98c038">getChild</a> (integer index)</td></tr>
+<tr class="separator:a07ce6ec59032c4d07a2b35cfba98c038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11229b244678aa374ea234e6eb72812f"><td class="memItemLeft" align="right" valign="top">const integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_error_item.html#a11229b244678aa374ea234e6eb72812f">getID</a> ()</td></tr>
 <tr class="separator:a11229b244678aa374ea234e6eb72812f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37fcfcea01b88b1f02efea1290d3fe4f"><td class="memItemLeft" align="right" valign="top">const integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_error_item.html#a37fcfcea01b88b1f02efea1290d3fe4f">getSeverity</a> ()</td></tr>
@@ -151,14 +151,14 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides access to the current error list. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00150">150</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00117">117</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9cc0f86e3775d034780f611a7e1cf31d"></a>
+<a class="anchor" id="a07ce6ec59032c4d07a2b35cfba98c038"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_error_item.html">ErrorItem</a> ErrorItem::getChild </td>
+          <td class="memname">Object ErrorItem::getChild </td>
           <td>(</td>
           <td class="paramtype">integer&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -169,11 +169,11 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
 <p>Returns the indicated child error item.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td></td></tr>
+    <tr><td class="paramname">0-based</td><td>index in the list to return</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_error_item.html" title="Provides access to the current error list.">ErrorItem</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an object that implements the <a class="el" href="interface_error_item.html" title="Provides access to the current error list.">ErrorItem</a> interface </dd></dl>
 
 </div>
 </div>
@@ -189,8 +189,8 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the number of children (errors) in the current error list (level)</p>
-<dl class="section return"><dt>Returns</dt><dd>integer Number of children </dd></dl>
+<p>Get the number of children (errors) in the current error list (or level)</p>
+<dl class="section return"><dt>Returns</dt><dd>the number of children </dd></dl>
 
 </div>
 </div>
@@ -208,13 +208,14 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
       </table>
 </div><div class="memdoc">
 <p>Returns the string representation of the error, if any. The intent here is that the implementation may have a database of strings that correspond to the set of possible error IDs</p>
+<p>Returns an empty string if no such string exists.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">errID</td><td></td></tr>
+    <tr><td class="paramname">the</td><td>ID of the string to be returned</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>DOMString An empty string if there is no such string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the string corresponding to the error ID </dd></dl>
 
 </div>
 </div>
@@ -231,7 +232,7 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
       </table>
 </div><div class="memdoc">
 <p>Returns the error's ID value</p>
-<dl class="section return"><dt>Returns</dt><dd>integer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the ID of the <a class="el" href="interface_error_item.html" title="Provides access to the current error list.">ErrorItem</a> </dd></dl>
 
 </div>
 </div>
@@ -248,7 +249,7 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
       </table>
 </div><div class="memdoc">
 <p>Return the severity of the specified error item</p>
-<dl class="section return"><dt>Returns</dt><dd>const integer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an integer which represents the severity of the error </dd></dl>
 
 </div>
 </div>
@@ -264,7 +265,7 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
 </div><div class="memdoc">
 <p>The types of error severity - TODO better or more complete enumeration </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00155">155</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00122">122</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 
 </div>
 </div>
@@ -278,7 +279,7 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_error_item.html">ErrorItem</a></li>
-    <li class="footer">Generated on Thu Sep 8 2016 07:45:04 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

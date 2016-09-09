@@ -11,7 +11,7 @@ var interface_navigator =
     [ "getScreenCountSpine", "interface_navigator.html#ac40eef14face3f0f7de024b19e193cec", null ],
     [ "getScreenEnd", "interface_navigator.html#adfabf95347ae7dfd471b30df1ea21c34", null ],
     [ "getScreenFromLocation", "interface_navigator.html#ab52f9f9abe6fc3dde19aaac879c1d85a", null ],
-    [ "getSpineItemFromLocation", "interface_navigator.html#a58cf706133d35029c0368656a32758ea", null ],
+    [ "getSpineItemFromLocation", "interface_navigator.html#a46afc622981b39d1e9beb12b43400e50", null ],
     [ "gotoLocation", "interface_navigator.html#a72cf551984ec2000a7a5d3f663698d45", null ],
     [ "gotoScreen", "interface_navigator.html#a2293d9c86a6aa44e14f951dbb228dbfc", null ],
     [ "isFinalScreen", "interface_navigator.html#afecd3c7f55a3a92baff8521f4e1eec98", null ],

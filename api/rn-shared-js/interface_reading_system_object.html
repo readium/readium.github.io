@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>Readium IDL: Selection Interface Reference</title>
+<title>Readium IDL: ReadingSystemObject Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('interface_selection.html','');});
+$(document).ready(function(){initNavTree('interface_reading_system_object.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -109,61 +109,104 @@ $(document).ready(function(){initNavTree('interface_selection.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="interface_selection-members.html">List of all members</a>  </div>
+<a href="interface_reading_system_object-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Selection Interface Reference</div>  </div>
+<div class="title">ReadingSystemObject Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides access to the current selection in the document. There can only be one selection at a time and must be a contiguous range.  
- <a href="interface_selection.html#details">More...</a></p>
+<p>The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3.1)  
+ <a href="interface_reading_system_object.html#details">More...</a></p>
 
 <p><code>import &quot;<a class="el" href="_readium_8idl_source.html">Readium.idl</a>&quot;;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc38966fb3b3ad8fa3c7799a2bbd7c71"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_selection.html#adc38966fb3b3ad8fa3c7799a2bbd7c71">getText</a> ()</td></tr>
-<tr class="separator:adc38966fb3b3ad8fa3c7799a2bbd7c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c18d575b23dafde19f2ae5337fc28d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_selection.html#a1c18d575b23dafde19f2ae5337fc28d4">getLocation</a> ()</td></tr>
-<tr class="separator:a1c18d575b23dafde19f2ae5337fc28d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170dc3714cb9ab977e6f5310456ee1f7"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system_object.html#a170dc3714cb9ab977e6f5310456ee1f7">getName</a> ()</td></tr>
+<tr class="separator:a170dc3714cb9ab977e6f5310456ee1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7ac8c6eb38ca48eeafd00d196c2d4d"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system_object.html#a2c7ac8c6eb38ca48eeafd00d196c2d4d">getVersion</a> ()</td></tr>
+<tr class="separator:a2c7ac8c6eb38ca48eeafd00d196c2d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7897295db5af78618274143417263b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system_object.html#a7c7897295db5af78618274143417263b">hasFeature</a> (DOMString feature, optional DOMString version)</td></tr>
+<tr class="separator:a7c7897295db5af78618274143417263b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides access to the current selection in the document. There can only be one selection at a time and must be a contiguous range. </p>
+<div class="textblock"><p>The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3.1) </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01256">1256</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01080">1080</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a1c18d575b23dafde19f2ae5337fc28d4"></a>
+<a class="anchor" id="a170dc3714cb9ab977e6f5310456ee1f7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_location.html">Location</a> Selection::getLocation </td>
+          <td class="memname">DOMString ReadingSystemObject::getName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get current location of the selection</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> Is empty if there is no current selection </dd></dl>
+<p>The name of the reading system</p>
+<dl class="section return"><dt>Returns</dt><dd>The name of the reading system, if any </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="adc38966fb3b3ad8fa3c7799a2bbd7c71"></a>
+<a class="anchor" id="a2c7ac8c6eb38ca48eeafd00d196c2d4d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">DOMString Selection::getText </td>
+          <td class="memname">Object ReadingSystemObject::getVersion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fetch the current selection, if any</p>
-<p>QUESTION: What if it includes image(s), either raster or SVG?</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString </dd></dl>
+<p>Returns the version of the reading system.<br/>
+ This returns a JSON array of the form:</p>
+<div class="fragment"><div class="line">[</div>
+<div class="line">   { module:name, version:commit-hash },</div>
+<div class="line">   { module:name, version:commit-hash },</div>
+<div class="line">   { module:name, version:commit-hash }</div>
+<div class="line">                  etc.</div>
+<div class="line">]</div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a JSON array with the version info </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c7897295db5af78618274143417263b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean ReadingSystemObject::hasFeature </td>
+          <td>(</td>
+          <td class="paramtype">DOMString&#160;</td>
+          <td class="paramname"><em>feature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">optional DOMString&#160;</td>
+          <td class="paramname"><em>version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>General query method. Returns true or false depending on whether the feature is supported by the current reading system.</p>
+<p>As of 3.1, the queries that should be supported include: </p>
+<div class="fragment"><div class="line">dom-manipulation</div>
+<div class="line">layout-changes</div>
+<div class="line">touch-events</div>
+<div class="line">mouse-events</div>
+<div class="line">keyboard-events</div>
+<div class="line">spine-scripting</div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>true if feature supported, else false </dd></dl>
 
 </div>
 </div>
@@ -176,7 +219,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="interface_selection.html">Selection</a></li>
+    <li class="navelem"><a class="el" href="interface_reading_system_object.html">ReadingSystemObject</a></li>
     <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>

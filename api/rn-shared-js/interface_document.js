@@ -1,8 +1,8 @@
 var interface_document =
 [
     [ "clearErrorList", "interface_document.html#a31e63732f18cdf86270a3e0d0fe62e9c", null ],
-    [ "getErrorRoot", "interface_document.html#a5b4d72b92cb735d4f61d376c742d2d5e", null ],
-    [ "getNavDoc", "interface_document.html#a77b0d2c5d0420f8c3008c96ff45cbbfd", null ],
-    [ "getPackage", "interface_document.html#a54f273e73d65f9e3244bf1aeec247bb2", null ],
+    [ "getErrorRoot", "interface_document.html#a3090ed820a8b801a8a0ab2693280b60f", null ],
+    [ "getNavDoc", "interface_document.html#ac517098108cbf6482ea0c0b1350f4ae1", null ],
+    [ "getPackage", "interface_document.html#af4e5f7c7b8db3f62e188eebb23f7aeb6", null ],
     [ "openBook", "interface_document.html#af2a78e5d0371c5bc94c0c2e4c842e689", null ]
 ];

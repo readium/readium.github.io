@@ -1,8 +1,8 @@
 var interface_metadata_item =
 [
-    [ "findProperty", "interface_metadata_item.html#aebc1beda5d1b61e253fd1bf3deb1a027", null ],
-    [ "getAttributes", "interface_metadata_item.html#a5450f93079603a03b0088267c22fc21d", null ],
-    [ "getChild", "interface_metadata_item.html#a98e7582000daf5c325caaa8211155cd8", null ],
+    [ "findProperty", "interface_metadata_item.html#ac0449fdb129a4c2f9b6aa2f78c85af19", null ],
+    [ "getAttributes", "interface_metadata_item.html#a5793bdfee9f42d302bb08399938fdbfc", null ],
+    [ "getChild", "interface_metadata_item.html#ae24968e0bc2cee5f0a3d78f3afe837a9", null ],
     [ "getChildCount", "interface_metadata_item.html#a44f4ec6d18690c0df138fb040155b32e", null ],
     [ "getName", "interface_metadata_item.html#af0f534ea09b5ff8b397887bc831506be", null ],
     [ "getNodeType", "interface_metadata_item.html#ada8df6d99b228dc9659978638436d473", null ],

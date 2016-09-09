@@ -132,28 +132,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac88166712a9e92f42ecd5da4ff12b6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ed2696ed3f61f40a0e45cbbbc228eb2"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nav_doc_item.html#a3ed2696ed3f61f40a0e45cbbbc228eb2">getEPUBType</a> ()</td></tr>
 <tr class="separator:a3ed2696ed3f61f40a0e45cbbbc228eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1e2afc9cc16f675452afe1e2f951385"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nav_doc_item.html#af1e2afc9cc16f675452afe1e2f951385">getAttributes</a> ()</td></tr>
-<tr class="separator:af1e2afc9cc16f675452afe1e2f951385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f9b53c8db7c2f2c18ab309ce94bf1b"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nav_doc_item.html#ae4f9b53c8db7c2f2c18ab309ce94bf1b">getAttributes</a> ()</td></tr>
+<tr class="separator:ae4f9b53c8db7c2f2c18ab309ce94bf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to elements of the EPUB navigation document. The intent of this interface is to allow callers to walk the tree of the NavDoc. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00586">586</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00593">593</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af1e2afc9cc16f675452afe1e2f951385"></a>
+<a class="anchor" id="ae4f9b53c8db7c2f2c18ab309ce94bf1b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">DOMString NavDocItem::getAttributes </td>
+          <td class="memname">Object NavDocItem::getAttributes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a JSON object that is the complete set of attributes for this item</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString </dd></dl>
+<p>Returns a JSON object that is the complete set of attributes for this item, where the array is of the form:</p>
+<div class="fragment"><div class="line">[</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value }</div>
+<div class="line">                etc.</div>
+<div class="line">]</div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the JSON array that holds the complete set of attributes </dd></dl>
 
 </div>
 </div>
@@ -173,11 +179,11 @@ Public Member Functions</h2></td></tr>
 <p>Fetch the specified child of the current <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> Returns null if there isn't one</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td></td></tr>
+    <tr><td class="paramname">0-based</td><td>index of the item to be fetched</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an object which implements the <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> interface </dd></dl>
 
 </div>
 </div>
@@ -194,7 +200,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Return the number of children of this <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a></p>
-<dl class="section return"><dt>Returns</dt><dd>integer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of children </dd></dl>
 
 </div>
 </div>
@@ -211,7 +217,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the value of the epub:type attribute if any. Returns empty if there is no such attribute.</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the value (text) of the attribute. Empty if none </dd></dl>
 
 </div>
 </div>
@@ -244,8 +250,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the DOM3 Node type value for the current item.</p>
-<dl class="section return"><dt>Returns</dt><dd>integer </dd></dl>
+<p>Returns the DOM3 Node type value for the element wrapped by the current item.</p>
+<dl class="section return"><dt>Returns</dt><dd>the Node type value </dd></dl>
 
 </div>
 </div>
@@ -259,7 +265,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_nav_doc_item.html">NavDocItem</a></li>
-    <li class="footer">Generated on Thu Sep 8 2016 07:45:04 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

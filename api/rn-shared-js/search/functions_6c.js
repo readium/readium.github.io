@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['layoutstyle',['layoutStyle',['../interface_e_p_u_b_reading_system.html#ab3e88cfa4f1c81dd3bf79071d93ea613',1,'EPUBReadingSystem']]]
+  ['layoutstyle',['layoutStyle',['../interface_reading_system_object.html#a07d5256197650232e3a86b8525ff1be7',1,'ReadingSystemObject']]]
 ];

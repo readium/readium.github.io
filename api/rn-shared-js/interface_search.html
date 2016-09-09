@@ -147,7 +147,7 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>SEARCH_IGNOR
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to the search capability of the underlying implementation. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01120">1120</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01210">1210</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a19d6d5534e288c90f2454699630b7311"></a>
 <div class="memitem">
@@ -190,17 +190,17 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>SEARCH_IGNOR
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Searches for ALL succesful results for the specified string between the start and end locations. Callback is the function to be called with the results.</p>
+<p>Searches for ALL succesful results for the specified string between the start and end locations. Note: If the search is backwards or the document is rtl, then the start location will be closer to the end of the document than the end location Callback is the function to be called with the results.</p>
 <p>The signature of the callback function MUST be </p>
 <div class="fragment"><div class="line">callback(Object:results)</div>
 </div><!-- fragment --><p> where</p>
 <p><code>results</code> is a JSON array of the form:<br/>
  </p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { start:loc, end:loc, result:text },</div>
-<div class="line">   { start:loc, end:loc, result:text },</div>
-<div class="line">   { start:loc, end:loc, result:text }</div>
-<div class="line">                  etc.</div>
+<div class="line">   { <span class="stringliteral">&quot;start&quot;</span>:loc, <span class="stringliteral">&quot;end&quot;</span>:loc, <span class="stringliteral">&quot;result&quot;</span>:text },</div>
+<div class="line">   { <span class="stringliteral">&quot;start&quot;</span>:loc, <span class="stringliteral">&quot;end&quot;</span>:loc, <span class="stringliteral">&quot;result&quot;</span>:text },</div>
+<div class="line">   { <span class="stringliteral">&quot;start&quot;</span>:loc, <span class="stringliteral">&quot;end&quot;</span>:loc, <span class="stringliteral">&quot;result&quot;</span>:text }</div>
+<div class="line">                   etc.</div>
 <div class="line">]</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -225,7 +225,7 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>SEARCH_IGNOR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_search.html">Search</a></li>
-    <li class="footer">Generated on Thu Sep 8 2016 07:45:04 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

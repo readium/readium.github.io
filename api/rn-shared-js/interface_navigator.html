@@ -158,15 +158,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab52f9f9abe6fc3dde19aaac879c1d85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5c366ae436d5ebaddc8a9d6b14d548"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_navigator.html#a1a5c366ae436d5ebaddc8a9d6b14d548">getLocationFromScreen</a> (integer screen)</td></tr>
 <tr class="separator:a1a5c366ae436d5ebaddc8a9d6b14d548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58cf706133d35029c0368656a32758ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_spine_item.html">SpineItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_navigator.html#a58cf706133d35029c0368656a32758ea">getSpineItemFromLocation</a> ()</td></tr>
-<tr class="separator:a58cf706133d35029c0368656a32758ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46afc622981b39d1e9beb12b43400e50"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_navigator.html#a46afc622981b39d1e9beb12b43400e50">getSpineItemFromLocation</a> ()</td></tr>
+<tr class="separator:a46afc622981b39d1e9beb12b43400e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39614a2ae2643ade4c12fb95b59ac66f"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_navigator.html#a39614a2ae2643ade4c12fb95b59ac66f">getBoundingBox</a> (<a class="el" href="interface_location.html">Location</a> start, <a class="el" href="interface_location.html">Location</a> end)</td></tr>
 <tr class="separator:a39614a2ae2643ade4c12fb95b59ac66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides methods to navigate the document as well as converting between <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a>, screen and document position. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00640">640</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00658">658</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a39614a2ae2643ade4c12fb95b59ac66f"></a>
 <div class="memitem">
@@ -192,14 +192,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns a JSON object that has the bounding box enclosed by the start <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> (if a range) or the two Locations</p>
+<p>The bbox is returned as the x and y coordinate and the height and width of the box. All values in pixels with the origin of the coordinate system in the upper left of the current screen</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td></td></tr>
-    <tr><td class="paramname">end</td><td></td></tr>
+    <tr><td class="paramname">the</td><td>starting location for the bounding box </td></tr>
+    <tr><td class="paramname">the</td><td>end location for the bounding box</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Object JSON object with top, right, bottom, left as CSS lengths </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a JSON object of the form <code>{ "x":num, "y":num, "width":num, "height":num }</code> </dd></dl>
 
 </div>
 </div>
@@ -215,8 +216,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the current location in the current spine item. If no selection then it returns the top-left (or top-right if r-t-l document) of the current screenDOMString</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
+<p>Returns the current location in the current spine item. If no selection then it returns the top-left (or top-right if r-t-l document) of the current screen</p>
+<dl class="section return"><dt>Returns</dt><dd>the CFI that represents the current location </dd></dl>
 
 </div>
 </div>
@@ -233,7 +234,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns, as accurately as possible, the location of the top left (for ltr doc) or top-right location (for rtl docs) of the first screen in the doc</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> that represents the "beginning" of the current document </dd></dl>
 
 </div>
 </div>
@@ -250,7 +251,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns, as accurately as possible, the location of the lower right (for ltr doc) or lower-left location (for rtl docs) of the last screen in the doc</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> that represents the "end" of the current document </dd></dl>
 
 </div>
 </div>
@@ -292,7 +293,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the most recent location before the current location. This is essentially a FILO stack as each navigation action (e.g. nextScreen, gotoDocEnd, etc.) pushes the previous "current" location onto the stack</p>
 <p>QUESTION: Should simple page turns be saved? Or only higher level actions such as gotoLocation, gotoEnd, etc.?</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> that represents the previous location </dd></dl>
 
 </div>
 </div>
@@ -309,7 +310,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns, as accurately as possible, the location of the top left (for ltr doc) or top-right location (for rtl docs) of the current screen</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> that represents the "beginning" of the current screen </dd></dl>
 
 </div>
 </div>
@@ -326,15 +327,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the total number of screens in the document (for reflowable documents) or the total number of pages (for fixed layout documents). The parameter is the callback function that will be called when the count is complete.<br/>
+<p>Returns the total number of screens in the document (for reflowable documents) or the total number of pages (for fixed layout documents).</p>
+<p>The parameter is the callback function that will be called when the count is complete.<br/>
  The signature of the callback function must be:</p>
-<p><em>callback( integer:result )</em></p>
+<p><code>callback( integer:result )</code></p>
 <p>where</p>
-<p><em>result</em> will be the number of screens in the document<br/>
+<p><code>result</code> will be the number of screens in the document<br/>
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">callback</td><td>Function to be called with results </td></tr>
+    <tr><td class="paramname">the</td><td>callback function to be called with the count </td></tr>
   </table>
   </dd>
 </dl>
@@ -355,7 +357,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the total number of screens in the current spine item (for reflowable documents). Always returns 1 for fixed layout spine items.</p>
 <p>QUESTION: Should this be callback-based?</p>
-<dl class="section return"><dt>Returns</dt><dd>integer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of screens in this spine item </dd></dl>
 
 </div>
 </div>
@@ -372,7 +374,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns, as accurately as possible, the location of the lower right (for ltr doc) or lower-left location (for rtl docs) of the current screen</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> that represents the "end" of the current screen </dd></dl>
 
 </div>
 </div>
@@ -392,20 +394,20 @@ Public Member Functions</h2></td></tr>
 <p>Returns the screen (or page) number for the specified location in the document.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">loc</td><td></td></tr>
+    <tr><td class="paramname">location</td><td>whose screen is to be determined</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>integer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the 0-based index of the screen which contains the location </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a58cf706133d35029c0368656a32758ea"></a>
+<a class="anchor" id="a46afc622981b39d1e9beb12b43400e50"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_spine_item.html">SpineItem</a> Navigator::getSpineItemFromLocation </td>
+          <td class="memname">Object Navigator::getSpineItemFromLocation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -413,7 +415,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get the spine item that contains the specified <a class="el" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a></p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_spine_item.html" title="Methods for managing the spine.">SpineItem</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an object that implements the <a class="el" href="interface_spine_item.html" title="Methods for managing the spine.">SpineItem</a> interface </dd></dl>
 
 </div>
 </div>
@@ -433,7 +435,7 @@ Public Member Functions</h2></td></tr>
 <p>Navigate such that the specified location is at the top left of the displayed screen (if ltr doc, else top right).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">loc</td><td></td></tr>
+    <tr><td class="paramname">the</td><td>location to navigate to </td></tr>
   </table>
   </dd>
 </dl>
@@ -453,10 +455,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Navigates to the specified screen (for reflowable) or page (for fixed layout)</p>
+<p>Navigates to the specified screen (for reflowable) or page (for fixed layout). Note that the first screen in the document would be screen 0</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">screenNum</td><td></td></tr>
+    <tr><td class="paramname">0-based</td><td>index of the screen to navigate to </td></tr>
   </table>
   </dd>
 </dl>
@@ -476,7 +478,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns true if the current screen is the last one in the document (.</p>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the last screen, else false </dd></dl>
 
 </div>
 </div>
@@ -493,7 +495,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns true if the current screen is the last one in the spine item (for reflowable documents). Always returns true for fixed layout spine items.</p>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the last screen else false </dd></dl>
 
 </div>
 </div>
@@ -510,7 +512,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns true if the current screen is the first screen in the document</p>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the first screen, else false </dd></dl>
 
 </div>
 </div>
@@ -526,8 +528,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns true if the current screen is the first screen in the current spiineItem (for reflowable spine items). Always returns true for fixed layout spine items.</p>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<p>Returns true if the current screen is the first screen in the current spine item (for reflowable spine items). Always returns true for fixed layout spine items.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if it is the first screen else false </dd></dl>
 
 </div>
 </div>
@@ -575,7 +577,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_navigator.html">Navigator</a></li>
-    <li class="footer">Generated on Thu Sep 8 2016 07:45:04 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
