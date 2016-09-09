@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('interface_renderer.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa627fa42d759595222ee20ddb144cd46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#aa627fa42d759595222ee20ddb144cd46">initRenderer</a> (Object div)</td></tr>
 <tr class="separator:aa627fa42d759595222ee20ddb144cd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7649bf78fddd112a929d3255caa74c02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_highlight_item.html">HighlightItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a7649bf78fddd112a929d3255caa74c02">getHighlightsRoot</a> ()</td></tr>
-<tr class="separator:a7649bf78fddd112a929d3255caa74c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69b7bcf814ae2ac7f62c058ea4a98e0"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#ac69b7bcf814ae2ac7f62c058ea4a98e0">getHighlightsRoot</a> ()</td></tr>
+<tr class="separator:ac69b7bcf814ae2ac7f62c058ea4a98e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366ee20d739f5323ca0d770e1ae209d2"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#a366ee20d739f5323ca0d770e1ae209d2">addHighlight</a> (<a class="el" href="interface_location.html">Location</a> start, <a class="el" href="interface_location.html">Location</a> end, DOMString color, float opacity)</td></tr>
 <tr class="separator:a366ee20d739f5323ca0d770e1ae209d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb09f3ce57d6b18a78e2faedd2a2100a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_renderer.html#aeb09f3ce57d6b18a78e2faedd2a2100a">clearHighlights</a> ()</td></tr>
@@ -257,12 +257,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7649bf78fddd112a929d3255caa74c02"></a>
+<a class="anchor" id="ac69b7bcf814ae2ac7f62c058ea4a98e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_highlight_item.html">HighlightItem</a> Renderer::getHighlightsRoot </td>
+          <td class="memname">Object Renderer::getHighlightsRoot </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -270,7 +270,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the root highlight element which can be used to then traverse the current set of highlights associated with the document.</p>
-<dl class="section return"><dt>Returns</dt><dd>the root element of the highlights collection </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the object which implements the <a class="el" href="interface_highlight_item.html" title="Provides methods to manage the current highlight item.">HighlightItem</a> interface </dd></dl>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initialize the renderer by passing in the div within which the renderer should inject its own rendering machinery (e.g. nested iframes or similar)</p>
-<p>There can only be one call to this method per book.</p>
+<p>There can only be one call to this method per document.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">the</td><td>top-level div within which the document will be rendered </td></tr>
@@ -331,7 +331,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_renderer.html">Renderer</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 9 2016 16:39:58 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

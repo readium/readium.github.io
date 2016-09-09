@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('interface_text_rendering.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a0a0122caa7f6521154d3e32eb82410"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a1a0a0122caa7f6521154d3e32eb82410">getLineHeight</a> ()</td></tr>
 <tr class="separator:a1a0a0122caa7f6521154d3e32eb82410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06ead79b564f1c77a7dcf0de41d8b2f4"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a06ead79b564f1c77a7dcf0de41d8b2f4">setLineHeight</a> ()</td></tr>
-<tr class="separator:a06ead79b564f1c77a7dcf0de41d8b2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5346088ef6f2d0b14452605dbdaa465"><td class="memItemLeft" align="right" valign="top">boolean setLineHe&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#ae5346088ef6f2d0b14452605dbdaa465">ight</a> ()</td></tr>
+<tr class="separator:ae5346088ef6f2d0b14452605dbdaa465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a548c2c168a981be2c0dbc8557e1e3b87"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a548c2c168a981be2c0dbc8557e1e3b87">getNumColumns</a> ()</td></tr>
 <tr class="separator:a548c2c168a981be2c0dbc8557e1e3b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc6e04d6382c93a472ab63ed9cb7549"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#acdc6e04d6382c93a472ab63ed9cb7549">setNumColumns</a> ()</td></tr>
@@ -171,7 +171,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the size of a column cap between columns on the page (not the gutter between pages in a spread). Will be empty if multiple columns are not supported.</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString In CSS lengths. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the column gap in CSS lengths. </dd></dl>
 
 </div>
 </div>
@@ -188,7 +188,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the current font color for the document</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString In CSS color syntax </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>font color in hexadecimal CSS color syntax </dd></dl>
 
 </div>
 </div>
@@ -224,7 +224,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the height of the current document font</p>
 <p>Note: Returns empty string for fixed layout spine items</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString CSS length </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>font height in CSS length syntax </dd></dl>
 
 </div>
 </div>
@@ -241,7 +241,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the justification setting for the current document</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString justify Type of justification (CSS enumeration: left, right, center or justify) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>type of justification (CSS enumeration: left, right, center or justify) </dd></dl>
 
 </div>
 </div>
@@ -258,7 +258,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the distance (in CSS units) between baselines in the current font</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the lineHeight expressed in CSS units </dd></dl>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the margins setting for the current document.</p>
 <p>Note: Will be empty for fixed-layout documents</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString CSS fashion (all, or top, right, bottom, left) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the margins string in CSS fashion (all, or top, right, bottom, left) </dd></dl>
 
 </div>
 </div>
@@ -295,7 +295,25 @@ Public Member Functions</h2></td></tr>
 <p>Returns the number of columns the screen is laid out in.</p>
 <p>Note that this is columns within a single page, not whether the screen is laid as a synthetic spread or not.</p>
 <dl class="section see"><dt>See Also</dt><dd>synthetic spread</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>integer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of columns </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae5346088ef6f2d0b14452605dbdaa465"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean setLineHe TextRendering::ight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the the distance (in CSS units) between baselines in the current font</p>
+<p>Note that this call will fail for fixed layout pages and return false.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the line-height was altered else false </dd></dl>
 
 </div>
 </div>
@@ -315,7 +333,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets the color of the current font</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fontColor</td><td>In CSS color syntax </td></tr>
+    <tr><td class="paramname">the</td><td>fontColor in hexadecimal CSS color syntax </td></tr>
   </table>
   </dd>
 </dl>
@@ -339,11 +357,11 @@ Public Member Functions</h2></td></tr>
 <p>Note: Will fail for fixed layout spine items</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fontFace</td><td></td></tr>
+    <tr><td class="paramname">the</td><td>desired font-face</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean False if not supported </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful false if not supported </dd></dl>
 
 </div>
 </div>
@@ -364,11 +382,11 @@ Public Member Functions</h2></td></tr>
 <p>Note: Will fail and return false for fixed layout spine items</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fontHeight</td><td>In CSS length</td></tr>
+    <tr><td class="paramname">the</td><td>fontHeight in CSS length syntax</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful else false </dd></dl>
 
 </div>
 </div>
@@ -389,29 +407,11 @@ Public Member Functions</h2></td></tr>
 <p>Note that this will apply to the whole document, not just the current screen</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">justify</td><td>Type of justification (CSS enumeration: left, right, center or justify)</td></tr>
+    <tr><td class="paramname">type</td><td>of justification (CSS enumeration: left, right, center or justify)</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean true if successful, false if not supported </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a06ead79b564f1c77a7dcf0de41d8b2f4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean TextRendering::setLineHeight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets the the distance (in CSS units) between baselines in the current font</p>
-<p>Note that this call will fail for fixed layout pages and return false.</p>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful false if not supported </dd></dl>
 
 </div>
 </div>
@@ -432,11 +432,11 @@ Public Member Functions</h2></td></tr>
 <p>Note: Will return false for fixed-layout documents</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">margins</td><td>CSS syntax (all, or top, right, bottom, left)</td></tr>
+    <tr><td class="paramname">desired</td><td>margins in CSS syntax (all, or top, right, bottom, left)</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful false if ignored or not supported </dd></dl>
 
 </div>
 </div>
@@ -455,7 +455,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets the number of columns laid out within a single page.</p>
 <p>Note that this is columns within a single page, not whether the screen is laid as a synthetic spread or not.</p>
 <dl class="section see"><dt>See Also</dt><dd>synthetic spread</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean true if successful, false if not supported </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful false if not supported </dd></dl>
 
 </div>
 </div>
@@ -469,7 +469,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_text_rendering.html">TextRendering</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 9 2016 16:39:58 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

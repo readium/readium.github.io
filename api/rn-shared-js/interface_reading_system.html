@@ -124,26 +124,26 @@ $(document).ready(function(){initNavTree('interface_reading_system.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a432c97e4b19afe94a1a87e6b03d1646b"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#a432c97e4b19afe94a1a87e6b03d1646b">getName</a> ()</td></tr>
 <tr class="separator:a432c97e4b19afe94a1a87e6b03d1646b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ba588def729320da4870b9b6d1c1bf4"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#a9ba588def729320da4870b9b6d1c1bf4">getDeviceSize</a> ()</td></tr>
-<tr class="separator:a9ba588def729320da4870b9b6d1c1bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f10b405876f3f3a1b068d489d49ecdb"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#a9f10b405876f3f3a1b068d489d49ecdb">getDeviceSize</a> ()</td></tr>
+<tr class="separator:a9f10b405876f3f3a1b068d489d49ecdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2b634d222d195c940bc23a25427e180"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#af2b634d222d195c940bc23a25427e180">injectStyleSheet</a> (DOMString url)</td></tr>
 <tr class="separator:af2b634d222d195c940bc23a25427e180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed897c6e99585624bd86e3b3d247d68d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#aed897c6e99585624bd86e3b3d247d68d">injectJavaScript</a> (DOMString url)</td></tr>
 <tr class="separator:aed897c6e99585624bd86e3b3d247d68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ca05e986496791c5f36292454a10b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_reading_system_object.html">ReadingSystemObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#a41ca05e986496791c5f36292454a10b7">getRSO</a> ()</td></tr>
-<tr class="separator:a41ca05e986496791c5f36292454a10b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3653a4f8c1c8ad4acf3e7b8ec2ccea3f"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#a3653a4f8c1c8ad4acf3e7b8ec2ccea3f">getRSO</a> ()</td></tr>
+<tr class="separator:a3653a4f8c1c8ad4acf3e7b8ec2ccea3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides information about the current device as well as setting device parameters, if supported. </p>
 
 <p>Definition at line <a class="el" href="_readium_8idl_source.html#l01031">1031</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9ba588def729320da4870b9b6d1c1bf4"></a>
+<a class="anchor" id="a9f10b405876f3f3a1b068d489d49ecdb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">DOMString ReadingSystem::getDeviceSize </td>
+          <td class="memname">Object ReadingSystem::getDeviceSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns a JSON object that has the size of the device, if available</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>SON array with the size of the deveice as { "width":num, "height":num } </dd></dl>
 
 </div>
 </div>
@@ -168,16 +168,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get the name of the device (e.g browser or device)</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the device (if any) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a41ca05e986496791c5f36292454a10b7"></a>
+<a class="anchor" id="a3653a4f8c1c8ad4acf3e7b8ec2ccea3f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_reading_system_object.html">ReadingSystemObject</a> ReadingSystem::getRSO </td>
+          <td class="memname">Object ReadingSystem::getRSO </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -185,7 +185,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get the <a class="el" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3...">ReadingSystemObject</a></p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3...">ReadingSystemObject</a> Returns the current reading system object </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>returns an object which implements the <a class="el" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3...">ReadingSystemObject</a> interface </dd></dl>
 
 </div>
 </div>
@@ -233,7 +233,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean False if not supported </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>false if not supported </dd></dl>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_reading_system.html">ReadingSystem</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 9 2016 16:39:58 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

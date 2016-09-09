@@ -10,7 +10,6 @@ var searchData=
   ['setgutterwidth',['setGutterWidth',['../interface_page_layout.html#a7fe5a024c93f182bbe614af9e0340d80',1,'PageLayout']]],
   ['sethighlightcolor',['setHighlightColor',['../interface_media_overlay.html#a0e3bcca595f41ed1c5998f172973d08f',1,'MediaOverlay']]],
   ['setjustification',['setJustification',['../interface_text_rendering.html#ac236bef553d6451fd2c119a8775c8e8c',1,'TextRendering']]],
-  ['setlineheight',['setLineHeight',['../interface_text_rendering.html#a06ead79b564f1c77a7dcf0de41d8b2f4',1,'TextRendering']]],
   ['setmargins',['setMargins',['../interface_text_rendering.html#a6d580d69dea1e3f0ac72eed3b9db5739',1,'TextRendering']]],
   ['setnumcolumns',['setNumColumns',['../interface_text_rendering.html#acdc6e04d6382c93a472ab63ed9cb7549',1,'TextRendering']]],
   ['setopacity',['setOpacity',['../interface_highlight_item.html#ab07dfa41f680c2c22cea6b98022299e6',1,'HighlightItem']]],

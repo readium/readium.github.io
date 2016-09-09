@@ -207,7 +207,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 </div><div class="memdoc">
 <p>Returns the gutter distance between synthetic spread pages</p>
 <p>Note: If there is no synthetic spread the returned string will be empty.</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMstring CSS units </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the width of the gutter in CSS units </dd></dl>
 
 </div>
 </div>
@@ -225,7 +225,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 </div><div class="memdoc">
 <p>Returns the document-level rendition flow mode</p>
 <p>Note: If the document is fixed layout this will always return REND_FLOW_FIXED, indicating that the document is fixed layout</p>
-<dl class="section return"><dt>Returns</dt><dd>integer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the constant that is the current rendition flow state </dd></dl>
 
 </div>
 </div>
@@ -314,11 +314,11 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 <p>Note: Will fail if the document or reading system does not allow synthetic spreads</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">gutter</td><td>CSS units</td></tr>
+    <tr><td class="paramname">width</td><td>of the gutter in CSS units</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful else false </dd></dl>
 
 </div>
 </div>
@@ -413,11 +413,11 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 <p>Note: This may not be supported on some devices</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">width</td><td>Width in pixels</td></tr>
+    <tr><td class="paramname">width</td><td>the width in pixels</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean False if request not supported </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>false if request not supported </dd></dl>
 
 </div>
 </div>
@@ -431,7 +431,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_page_layout.html">PageLayout</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 15:00:05 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 9 2016 16:39:58 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
