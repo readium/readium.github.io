@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a single manifest item. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00348">348</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00364">364</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af621bf2e1c5ab3756d0832644ebf1de8"></a>
 <div class="memitem">
@@ -152,9 +152,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a JSON object that is the complete set of attributes for this item, where the array is of the form:</p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value }</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> }</div>
 <div class="line">                etc.</div>
 <div class="line">]</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the JSON array that holds the complete set of attributes </dd></dl>
@@ -177,7 +177,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns the specified ManifestChildItem, if any.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">0-based</td><td>index of the item to be fetched</td></tr>
+    <tr><td class="paramname">index</td><td>0-based index of the item to be fetched</td></tr>
   </table>
   </dd>
 </dl>
@@ -246,7 +246,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_manifest_item.html">ManifestItem</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 16:50:26 for Readium IDL by
+    <li class="footer">Generated on Sat Sep 10 2016 10:58:19 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -127,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a433b59cf043436d62a48538a28e19e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07ce6ec59032c4d07a2b35cfba98c038"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_error_item.html#a07ce6ec59032c4d07a2b35cfba98c038">getChild</a> (integer index)</td></tr>
 <tr class="separator:a07ce6ec59032c4d07a2b35cfba98c038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb26618b8252a627ea6e28148de0a566"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_error_item.html#aeb26618b8252a627ea6e28148de0a566">getAttributes</a> ()</td></tr>
+<tr class="separator:aeb26618b8252a627ea6e28148de0a566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11229b244678aa374ea234e6eb72812f"><td class="memItemLeft" align="right" valign="top">const integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_error_item.html#a11229b244678aa374ea234e6eb72812f">getID</a> ()</td></tr>
 <tr class="separator:a11229b244678aa374ea234e6eb72812f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37fcfcea01b88b1f02efea1290d3fe4f"><td class="memItemLeft" align="right" valign="top">const integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_error_item.html#a37fcfcea01b88b1f02efea1290d3fe4f">getSeverity</a> ()</td></tr>
@@ -153,6 +155,29 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
 
 <p>Definition at line <a class="el" href="_readium_8idl_source.html#l00117">117</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aeb26618b8252a627ea6e28148de0a566"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object ErrorItem::getAttributes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a JSON object that is the complete set of attributes for this item, where the array is of the form:</p>
+<div class="fragment"><div class="line">[</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> }</div>
+<div class="line">                etc.</div>
+<div class="line">]</div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the JSON array that holds the complete set of attributes </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a07ce6ec59032c4d07a2b35cfba98c038"></a>
 <div class="memitem">
 <div class="memproto">
@@ -169,11 +194,11 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
 <p>Returns the indicated child error item.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">0-based</td><td>index in the list to return</td></tr>
+    <tr><td class="paramname">index</td><td>0-based index in the list to return</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an object that implements the <a class="el" href="interface_error_item.html" title="Provides access to the current error list.">ErrorItem</a> interface </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>index an object that implements the <a class="el" href="interface_error_item.html" title="Provides access to the current error list.">ErrorItem</a> interface </dd></dl>
 
 </div>
 </div>
@@ -211,7 +236,7 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
 <p>Returns an empty string if no such string exists.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">the</td><td>ID of the string to be returned</td></tr>
+    <tr><td class="paramname">errID</td><td>the ID of the string to be returned</td></tr>
   </table>
   </dd>
 </dl>
@@ -279,7 +304,7 @@ const integer&#160;</td><td class="memItemRight" valign="bottom"><b>INFO</b> = 3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_error_item.html">ErrorItem</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 16:50:26 for Readium IDL by
+    <li class="footer">Generated on Sat Sep 10 2016 10:58:19 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

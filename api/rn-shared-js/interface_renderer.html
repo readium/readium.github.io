@@ -140,7 +140,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates the various rendering capabilities, currently comprising only highlights. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01132">1132</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01150">1150</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a366ee20d739f5323ca0d770e1ae209d2"></a>
 <div class="memitem">
@@ -211,7 +211,7 @@ Public Member Functions</h2></td></tr>
 <p><code>item</code> is the <a class="el" href="interface_highlight_item.html" title="Provides methods to manage the current highlight item.">HighlightItem</a> selected</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attaches</td><td>the supplied handler to the highlights collection </td></tr>
+    <tr><td class="paramname">handler</td><td>the supplied handler to the highlights collection </td></tr>
   </table>
   </dd>
 </dl>
@@ -250,7 +250,7 @@ Public Member Functions</h2></td></tr>
 <p>Delete the specified highlight</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">deletes</td><td>the specified highlight from the collection </td></tr>
+    <tr><td class="paramname">item</td><td>the item to be deleted from the collection </td></tr>
   </table>
   </dd>
 </dl>
@@ -291,7 +291,7 @@ Public Member Functions</h2></td></tr>
 <p>There can only be one call to this method per document.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">the</td><td>top-level div within which the document will be rendered </td></tr>
+    <tr><td class="paramname">div</td><td>the top-level div within which the document will be rendered </td></tr>
   </table>
   </dd>
 </dl>
@@ -314,7 +314,7 @@ Public Member Functions</h2></td></tr>
 <p>Remove handler for hit-testing on highlights. The supplied object is used to identify the correct handler to remove.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">the</td><td>handler to remove </td></tr>
+    <tr><td class="paramname">handler</td><td>the handler to remove </td></tr>
   </table>
   </dd>
 </dl>
@@ -331,7 +331,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_renderer.html">Renderer</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 16:50:26 for Readium IDL by
+    <li class="footer">Generated on Sat Sep 10 2016 10:58:19 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

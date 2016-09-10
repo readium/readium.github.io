@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides methods for walking and querying the metadata. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00504">504</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00520">520</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac0449fdb129a4c2f9b6aa2f78c85af19"></a>
 <div class="memitem">
@@ -172,7 +172,8 @@ Public Member Functions</h2></td></tr>
 <p>Recursively searches the current item and its children for the metadata item with the specified name and specified property.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">property</td><td>Name of the property</td></tr>
+    <tr><td class="paramname">elementName</td><td>the name of the element containng the property </td></tr>
+    <tr><td class="paramname">property</td><td>the name of the property</td></tr>
   </table>
   </dd>
 </dl>
@@ -194,9 +195,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a JSON object that is the complete set of attributes for this item, where the array is of the form:</p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value }</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> }</div>
 <div class="line">                etc.</div>
 <div class="line">]</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the JSON array that holds the complete set of attributes </dd></dl>
@@ -219,7 +220,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns the specified <a class="el" href="interface_metadata_item.html" title="Provides methods for walking and querying the metadata.">MetadataItem</a>, if any.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">0-based</td><td>index of the item to be fetched</td></tr>
+    <tr><td class="paramname">index</td><td>0-based index of the item to be fetched</td></tr>
   </table>
   </dd>
 </dl>
@@ -339,7 +340,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_metadata_item.html">MetadataItem</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 16:50:26 for Readium IDL by
+    <li class="footer">Generated on Sat Sep 10 2016 10:58:19 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

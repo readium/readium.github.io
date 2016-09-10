@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to elements of the EPUB navigation document. The intent of this interface is to allow callers to walk the tree of the NavDoc. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00593">593</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00610">610</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae4f9b53c8db7c2f2c18ab309ce94bf1b"></a>
 <div class="memitem">
@@ -154,9 +154,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a JSON object that is the complete set of attributes for this item, where the array is of the form:</p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:name, <span class="stringliteral">&quot;value&quot;</span>:value }</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> }</div>
 <div class="line">                etc.</div>
 <div class="line">]</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the JSON array that holds the complete set of attributes </dd></dl>
@@ -176,13 +176,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fetch the specified child of the current <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> Returns null if there isn't one</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">0-based</td><td>index of the item to be fetched</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Fetch the specified child of the current <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> Returns null if there isn't one index 0-based index of the item to be fetched</p>
 <dl class="section return"><dt>Returns</dt><dd>an object which implements the <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> interface </dd></dl>
 
 </div>
@@ -265,7 +259,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_nav_doc_item.html">NavDocItem</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 16:50:26 for Readium IDL by
+    <li class="footer">Generated on Sat Sep 10 2016 10:58:19 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

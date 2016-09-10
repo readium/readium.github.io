@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ight',['ight',['../interface_text_rendering.html#ae5346088ef6f2d0b14452605dbdaa465',1,'TextRendering']]],
   ['initrenderer',['initRenderer',['../interface_renderer.html#aa627fa42d759595222ee20ddb144cd46',1,'Renderer']]],
   ['injectjavascript',['injectJavaScript',['../interface_reading_system.html#aed897c6e99585624bd86e3b3d247d68d',1,'ReadingSystem']]],
   ['injectstylesheet',['injectStyleSheet',['../interface_reading_system.html#af2b634d222d195c940bc23a25427e180',1,'ReadingSystem']]],

@@ -124,12 +124,12 @@ $(document).ready(function(){initNavTree('interface_text_rendering.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a0a0122caa7f6521154d3e32eb82410"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a1a0a0122caa7f6521154d3e32eb82410">getLineHeight</a> ()</td></tr>
 <tr class="separator:a1a0a0122caa7f6521154d3e32eb82410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5346088ef6f2d0b14452605dbdaa465"><td class="memItemLeft" align="right" valign="top">boolean setLineHe&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#ae5346088ef6f2d0b14452605dbdaa465">ight</a> ()</td></tr>
-<tr class="separator:ae5346088ef6f2d0b14452605dbdaa465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378f42cab1210aecf314ea72fe2dbf55"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a378f42cab1210aecf314ea72fe2dbf55">setLineHeight</a> (float height)</td></tr>
+<tr class="separator:a378f42cab1210aecf314ea72fe2dbf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a548c2c168a981be2c0dbc8557e1e3b87"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a548c2c168a981be2c0dbc8557e1e3b87">getNumColumns</a> ()</td></tr>
 <tr class="separator:a548c2c168a981be2c0dbc8557e1e3b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc6e04d6382c93a472ab63ed9cb7549"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#acdc6e04d6382c93a472ab63ed9cb7549">setNumColumns</a> ()</td></tr>
-<tr class="separator:acdc6e04d6382c93a472ab63ed9cb7549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a03cb21a7ac50768490869647e00cc"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#ab2a03cb21a7ac50768490869647e00cc">setNumColumns</a> (integer nCol)</td></tr>
+<tr class="separator:ab2a03cb21a7ac50768490869647e00cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cbc754ec2cd10a5de318515cfb4d645"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a7cbc754ec2cd10a5de318515cfb4d645">getColumnGap</a> ()</td></tr>
 <tr class="separator:a7cbc754ec2cd10a5de318515cfb4d645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac236bef553d6451fd2c119a8775c8e8c"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#ac236bef553d6451fd2c119a8775c8e8c">setJustification</a> (DOMString justify)</td></tr>
@@ -156,7 +156,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to enable controlling the way in which text on a page is rendered. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01335">1335</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01353">1353</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a7cbc754ec2cd10a5de318515cfb4d645"></a>
 <div class="memitem">
@@ -170,7 +170,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the size of a column cap between columns on the page (not the gutter between pages in a spread). Will be empty if multiple columns are not supported.</p>
+<p>Returns the size of a column cap between columns on the page (not the gutter between pages in a spread). Will be zero if multiple columns are not supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>the column gap in CSS lengths. </dd></dl>
 
 </div>
@@ -293,27 +293,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the number of columns the screen is laid out in.</p>
-<p>Note that this is columns within a single page, not whether the screen is laid as a synthetic spread or not.</p>
-<dl class="section see"><dt>See Also</dt><dd>synthetic spread</dd></dl>
+<p>Note that this is columns within a single page, not whether the screen is laid as a synthetic spread or not. See synthetic spread</p>
 <dl class="section return"><dt>Returns</dt><dd>number of columns </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae5346088ef6f2d0b14452605dbdaa465"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean setLineHe TextRendering::ight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets the the distance (in CSS units) between baselines in the current font</p>
-<p>Note that this call will fail for fixed layout pages and return false.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the line-height was altered else false </dd></dl>
 
 </div>
 </div>
@@ -333,7 +314,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets the color of the current font</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">the</td><td>fontColor in hexadecimal CSS color syntax </td></tr>
+    <tr><td class="paramname">fontColor</td><td>the foreground font color in hexadecimal CSS color syntax </td></tr>
   </table>
   </dd>
 </dl>
@@ -357,7 +338,7 @@ Public Member Functions</h2></td></tr>
 <p>Note: Will fail for fixed layout spine items</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">the</td><td>desired font-face</td></tr>
+    <tr><td class="paramname">fontFace</td><td>the desired font-face</td></tr>
   </table>
   </dd>
 </dl>
@@ -382,7 +363,7 @@ Public Member Functions</h2></td></tr>
 <p>Note: Will fail and return false for fixed layout spine items</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">the</td><td>fontHeight in CSS length syntax</td></tr>
+    <tr><td class="paramname">fontHeight</td><td>the fontHeight in CSS length syntax</td></tr>
   </table>
   </dd>
 </dl>
@@ -407,11 +388,36 @@ Public Member Functions</h2></td></tr>
 <p>Note that this will apply to the whole document, not just the current screen</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>of justification (CSS enumeration: left, right, center or justify)</td></tr>
+    <tr><td class="paramname">justify</td><td>the type of justification (CSS enumeration: left, right, center or justify)</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successful false if not supported </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a378f42cab1210aecf314ea72fe2dbf55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean TextRendering::setLineHeight </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the the distance (in CSS units) between baselines in the current font</p>
+<p>Note that this call will fail for fixed layout pages and return false.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">height</td><td>the height in CSS length units between baselines</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the line-height was updated else false </dd></dl>
 
 </div>
 </div>
@@ -432,7 +438,7 @@ Public Member Functions</h2></td></tr>
 <p>Note: Will return false for fixed-layout documents</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">desired</td><td>margins in CSS syntax (all, or top, right, bottom, left)</td></tr>
+    <tr><td class="paramname">margins</td><td>desired margins in CSS syntax (all, or top, right, bottom, left)</td></tr>
   </table>
   </dd>
 </dl>
@@ -440,21 +446,27 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acdc6e04d6382c93a472ab63ed9cb7549"></a>
+<a class="anchor" id="ab2a03cb21a7ac50768490869647e00cc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">boolean TextRendering::setNumColumns </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>nCol</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the number of columns laid out within a single page.</p>
-<p>Note that this is columns within a single page, not whether the screen is laid as a synthetic spread or not.</p>
-<dl class="section see"><dt>See Also</dt><dd>synthetic spread</dd></dl>
+<p>Note that this is columns within a single page, not whether the screen is laid as a synthetic spread or not. See synthetic spread</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nCol</td><td>the number of columns to set</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successful false if not supported </dd></dl>
 
 </div>
@@ -469,7 +481,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_text_rendering.html">TextRendering</a></li>
-    <li class="footer">Generated on Fri Sep 9 2016 16:50:26 for Readium IDL by
+    <li class="footer">Generated on Sat Sep 10 2016 10:58:19 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

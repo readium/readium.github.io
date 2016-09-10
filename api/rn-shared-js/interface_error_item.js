@@ -1,5 +1,6 @@
 var interface_error_item =
 [
+    [ "getAttributes", "interface_error_item.html#aeb26618b8252a627ea6e28148de0a566", null ],
     [ "getChild", "interface_error_item.html#a07ce6ec59032c4d07a2b35cfba98c038", null ],
     [ "getChildCount", "interface_error_item.html#a433b59cf043436d62a48538a28e19e3a", null ],
     [ "getErrorString", "interface_error_item.html#a44139027efcb98ecc92a81e7a7df54cf", null ],

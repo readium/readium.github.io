@@ -6,7 +6,7 @@ var interface_page_layout =
     [ "getRenditionOrientation", "interface_page_layout.html#a2e069badff72026bfe6fa0c9eab63db1", null ],
     [ "getRenditionSpread", "interface_page_layout.html#a366930fa0515be8b04e96387d6396e39", null ],
     [ "getWidth", "interface_page_layout.html#acee919e531b74fdd57839c7b972efde3", null ],
-    [ "setGutterWidth", "interface_page_layout.html#a7fe5a024c93f182bbe614af9e0340d80", null ],
+    [ "setGutterWidth", "interface_page_layout.html#aba90d0720c247664556aaace41104797", null ],
     [ "setRenditionFlow", "interface_page_layout.html#a0781e37918431ae8a6ca3f1b3d3114e6", null ],
     [ "setRenditionOrientation", "interface_page_layout.html#a3835413efc0f19f55d478c5c6f22ded3", null ],
     [ "setRenditionSpread", "interface_page_layout.html#a65eccc262fed4372274528e6956f14c5", null ],
