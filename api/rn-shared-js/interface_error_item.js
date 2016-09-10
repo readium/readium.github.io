@@ -3,7 +3,7 @@ var interface_error_item =
     [ "getAttributes", "interface_error_item.html#aeb26618b8252a627ea6e28148de0a566", null ],
     [ "getChild", "interface_error_item.html#a07ce6ec59032c4d07a2b35cfba98c038", null ],
     [ "getChildCount", "interface_error_item.html#a433b59cf043436d62a48538a28e19e3a", null ],
-    [ "getErrorString", "interface_error_item.html#a44139027efcb98ecc92a81e7a7df54cf", null ],
+    [ "getErrorString", "interface_error_item.html#a47349947b6e1f1d3869bcb32de0437ad", null ],
     [ "getID", "interface_error_item.html#a11229b244678aa374ea234e6eb72812f", null ],
     [ "getSeverity", "interface_error_item.html#a37fcfcea01b88b1f02efea1290d3fe4f", null ],
     [ "ERROR", "interface_error_item.html#a1f3ca05f9bde7987146390d4c492e801", null ],

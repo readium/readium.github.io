@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['readingsystem',['ReadingSystem',['../interface_reading_system.html',1,'']]],
+  ['readingsystem',['ReadingSystem',['../interface_reading_system.html',1,'ReadingSystem'],['../interface_reading_system.html#a6ce40dd2ffbb881dbee3846425def315',1,'ReadingSystem::ReadingSystem()']]],
   ['readingsystemobject',['ReadingSystemObject',['../interface_reading_system_object.html',1,'']]],
   ['removechild',['removeChild',['../interface_highlight_item.html#a051f12dca3f9cf8b68988b6fdf37cd62',1,'HighlightItem']]],
   ['removehandlerforevent',['removeHandlerForEvent',['../interface_events.html#a87c31b81230158ea81570687557bfa40',1,'Events']]],

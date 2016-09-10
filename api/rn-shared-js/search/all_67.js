@@ -14,7 +14,7 @@ var searchData=
   ['getdocend',['getDocEnd',['../interface_navigator.html#a3c9d8785b4d38d2785c95d4423d17284',1,'Navigator']]],
   ['getepubtype',['getEPUBType',['../interface_nav_doc_item.html#a3ed2696ed3f61f40a0e45cbbbc228eb2',1,'NavDocItem']]],
   ['geterrorroot',['getErrorRoot',['../interface_document.html#a3090ed820a8b801a8a0ab2693280b60f',1,'Document']]],
-  ['geterrorstring',['getErrorString',['../interface_error_item.html#a44139027efcb98ecc92a81e7a7df54cf',1,'ErrorItem']]],
+  ['geterrorstring',['getErrorString',['../interface_error_item.html#a47349947b6e1f1d3869bcb32de0437ad',1,'ErrorItem']]],
   ['getfontcolor',['getFontColor',['../interface_text_rendering.html#a217370b690e735d38352c3033a9fc18a',1,'TextRendering']]],
   ['getfontface',['getFontFace',['../interface_text_rendering.html#aaa84bce3b3134c06c249a8eb39f6aef0',1,'TextRendering']]],
   ['getfontheight',['getFontHeight',['../interface_text_rendering.html#a94a5a507abaac2a6bd474eb844b6c37a',1,'TextRendering']]],
