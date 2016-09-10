@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deletehighlight',['deleteHighlight',['../interface_renderer.html#af3d797807bdce33e0aba3444815e40d0',1,'Renderer']]]
+  ['deletehighlight',['deleteHighlight',['../interface_highlights.html#a4da7950e08cb6e3e44c58eb266f38f86',1,'Highlights']]]
 ];

@@ -199,308 +199,308 @@ $(document).ready(function(){initNavTree('_readium_8idl_source.html','');});
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="interface_highlight_item.html#a272e7a9b45f0246931bfc7cddc74d4ee">getOpacity</a>();</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="code" href="interface_location.html">  319</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    DOMString <a class="code" href="interface_location.html#a0aab0a90a66aadda0aa06318a6474260">getLocation</a>();</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_location.html#a46bcadcb46d52a7aa63e27dbbb2c575b">getLocationPrecision</a>();</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_location.html#a50f4fff24bebe43ac072ef85bd0e181b">compare</a> ( DOMString otherLoc, Object callback);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;}</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno"><a class="code" href="interface_manifest_item.html">  364</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_manifest_item.html" title="Represents a single manifest item.">ManifestItem</a> {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    integer <a class="code" href="interface_manifest_item.html#a768b4857547f14b82f3ec38bd66445d6">getChildCount</a>();</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    Object <a class="code" href="interface_manifest_item.html#aef1ea8385ac00f5dd221aabcce71b27f">getChild</a>( integer index );</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    integer   <a class="code" href="interface_manifest_item.html#ae663877526aceb94825bc409aa35d7c3">getNodeType</a>();</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    DOMString <a class="code" href="interface_manifest_item.html#a96bd2da54a7a67d4d1beebab9ad37c28">getName</a>();</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    Object <a class="code" href="interface_manifest_item.html#af621bf2e1c5ab3756d0832644ebf1de8">getAttributes</a>();</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00418"></a><span class="lineno"><a class="code" href="interface_media_overlay.html">  418</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_media_overlay.html" title="A set of methods to provide access and control of media overlays.">MediaOverlay</a> {</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a26d69c63b07da67b2c2f971e429d6981">hasMediaOverlay</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> location );</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#af0c705f2059922a6c255011e670368e2">play</a>();</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a5066b1b9896da9eb345c63080880234f">stop</a>();</div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="code" href="interface_highlights.html">  318</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_highlights.html" title="Encapsulates the support for highlights.">Highlights</a> {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    Object  <a class="code" href="interface_highlights.html#ae4772f3917e7dfa94fc7a32032100dbd">getHighlightsRoot</a>();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    DOMString <a class="code" href="interface_highlights.html#acd657e3920c82687f70845bd5925b534">addHighlight</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> start, <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> end, DOMString color, <span class="keywordtype">float</span> opacity );</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_highlights.html#a6551ea46f5c9bfdc891e4801c0ed7a76">clearHighlights</a>();</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_highlights.html#a4da7950e08cb6e3e44c58eb266f38f86">deleteHighlight</a>( <a class="code" href="interface_highlight_item.html" title="Provides methods to manage the current highlight item.">HighlightItem</a> item );</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_highlights.html#a809519a407992fd79f7e3cd1140050c2">attachHandlerForHighlights</a>( Object handler );</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_highlights.html#a4f2de207973ae479a97cac341bce744d">removeHandlerForHighlights</a>( Object handler );</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno"><a class="code" href="interface_location.html">  385</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    DOMString <a class="code" href="interface_location.html#a0aab0a90a66aadda0aa06318a6474260">getLocation</a>();</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_location.html#a46bcadcb46d52a7aa63e27dbbb2c575b">getLocationPrecision</a>();</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_location.html#a50f4fff24bebe43ac072ef85bd0e181b">compare</a> ( DOMString otherLoc, Object callback);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;}</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
+<div class="line"><a name="l00430"></a><span class="lineno"><a class="code" href="interface_manifest_item.html">  430</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_manifest_item.html" title="Represents a single manifest item.">ManifestItem</a> {</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    integer <a class="code" href="interface_manifest_item.html#a768b4857547f14b82f3ec38bd66445d6">getChildCount</a>();</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a2e1d0b87f12b71b30211a0470554ba66">pause</a>();</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a63436ba6ad147185023c1ef10149df7b">reset</a>();</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a1e2c8e34779f3f7ff76a0a98eb6c1709">escapeCurrentContext</a>();</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    integer <a class="code" href="interface_media_overlay.html#a14ab1e7b77f09091a67f9ded96fd657c">onMOError</a>();</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a95b77a98c1f24c8ca8e9be79e7d8b8b1">setTouchToPlay</a> ( <span class="keywordtype">boolean</span> enable );</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#ac736fb43eff2cb8f1ae909e5822e09a6">setPlaybackRate</a> ( <span class="keywordtype">float</span> rate );</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    Object <a class="code" href="interface_manifest_item.html#aef1ea8385ac00f5dd221aabcce71b27f">getChild</a>( integer index );</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    integer   <a class="code" href="interface_manifest_item.html#ae663877526aceb94825bc409aa35d7c3">getNodeType</a>();</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    DOMString <a class="code" href="interface_manifest_item.html#a96bd2da54a7a67d4d1beebab9ad37c28">getName</a>();</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    Object <a class="code" href="interface_manifest_item.html#af621bf2e1c5ab3756d0832644ebf1de8">getAttributes</a>();</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;}</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a5da55e210268cdc263ae17dfdd02de1c">setAudioVolume</a> ( <span class="keywordtype">float</span> volume );</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a0e3bcca595f41ed1c5998f172973d08f">setHighlightColor</a> ( DOMString color );</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a841641293d55c6d1ad1e6c6f74348151">enableScrollDuringPlayback</a> ( <span class="keywordtype">boolean</span> enable );</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#ae20cf911ed31350e9e903bdbf34f64bf">enableAutomaticPageTurn</a> ( <span class="keywordtype">boolean</span> enable );</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a65059bd6e26ba0a479dcfbe7c68cd10f">enableSkippability</a> ( <span class="keywordtype">boolean</span> enable );</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;}</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
-<div class="line"><a name="l00520"></a><span class="lineno"><a class="code" href="interface_metadata_item.html">  520</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_metadata_item.html" title="Provides methods for walking and querying the metadata.">MetadataItem</a> {</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    integer <a class="code" href="interface_metadata_item.html#a44f4ec6d18690c0df138fb040155b32e">getChildCount</a>();</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    Object <a class="code" href="interface_metadata_item.html#ae24968e0bc2cee5f0a3d78f3afe837a9">getChild</a>( integer index );</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    integer   <a class="code" href="interface_metadata_item.html#ada8df6d99b228dc9659978638436d473">getNodeType</a>();</div>
+<div class="line"><a name="l00484"></a><span class="lineno"><a class="code" href="interface_media_overlay.html">  484</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_media_overlay.html" title="A set of methods to provide access and control of media overlays.">MediaOverlay</a> {</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a26d69c63b07da67b2c2f971e429d6981">hasMediaOverlay</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> location );</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#af0c705f2059922a6c255011e670368e2">play</a>();</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a5066b1b9896da9eb345c63080880234f">stop</a>();</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a2e1d0b87f12b71b30211a0470554ba66">pause</a>();</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a63436ba6ad147185023c1ef10149df7b">reset</a>();</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a1e2c8e34779f3f7ff76a0a98eb6c1709">escapeCurrentContext</a>();</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    integer <a class="code" href="interface_media_overlay.html#a14ab1e7b77f09091a67f9ded96fd657c">onMOError</a>();</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a95b77a98c1f24c8ca8e9be79e7d8b8b1">setTouchToPlay</a> ( <span class="keywordtype">boolean</span> enable );</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#ac736fb43eff2cb8f1ae909e5822e09a6">setPlaybackRate</a> ( <span class="keywordtype">float</span> rate );</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    DOMString <a class="code" href="interface_metadata_item.html#af0f534ea09b5ff8b397887bc831506be">getName</a>();</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a5da55e210268cdc263ae17dfdd02de1c">setAudioVolume</a> ( <span class="keywordtype">float</span> volume );</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    Object <a class="code" href="interface_metadata_item.html#a5793bdfee9f42d302bb08399938fdbfc">getAttributes</a>();</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    DOMString <a class="code" href="interface_metadata_item.html#a2074c3ad68512cd64971bb118952e2c6">getProperty</a>();</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    DOMString <a class="code" href="interface_metadata_item.html#a12f06b7aee36a1a4f9ff20f14decbe8f">getRefines</a>();</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;    DOMString <a class="code" href="interface_metadata_item.html#ad465679cdef61a571504c706ac8e383f">getValue</a>();</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    Object <a class="code" href="interface_metadata_item.html#ac0449fdb129a4c2f9b6aa2f78c85af19">findProperty</a> ( DOMString elementName, DOMString property );</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;}</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;</div>
-<div class="line"><a name="l00610"></a><span class="lineno"><a class="code" href="interface_nav_doc_item.html">  610</a></span>&#160;<span class="keyword">interface  </span><a class="code" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> {</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a0e3bcca595f41ed1c5998f172973d08f">setHighlightColor</a> ( DOMString color );</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a841641293d55c6d1ad1e6c6f74348151">enableScrollDuringPlayback</a> ( <span class="keywordtype">boolean</span> enable );</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#ae20cf911ed31350e9e903bdbf34f64bf">enableAutomaticPageTurn</a> ( <span class="keywordtype">boolean</span> enable );</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_media_overlay.html#a65059bd6e26ba0a479dcfbe7c68cd10f">enableSkippability</a> ( <span class="keywordtype">boolean</span> enable );</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;}</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
+<div class="line"><a name="l00586"></a><span class="lineno"><a class="code" href="interface_metadata_item.html">  586</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_metadata_item.html" title="Provides methods for walking and querying the metadata.">MetadataItem</a> {</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    integer <a class="code" href="interface_metadata_item.html#a44f4ec6d18690c0df138fb040155b32e">getChildCount</a>();</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    Object <a class="code" href="interface_metadata_item.html#ae24968e0bc2cee5f0a3d78f3afe837a9">getChild</a>( integer index );</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    integer   <a class="code" href="interface_metadata_item.html#ada8df6d99b228dc9659978638436d473">getNodeType</a>();</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    integer <a class="code" href="interface_nav_doc_item.html#afaed1d36abfa3601da9552ddb02a5e62">getChildCount</a>();</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    DOMString <a class="code" href="interface_metadata_item.html#af0f534ea09b5ff8b397887bc831506be">getName</a>();</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <a class="code" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a>  <a class="code" href="interface_nav_doc_item.html#a1a2e5fab20b4b1b9f179227f6699f4b2">getChild</a>( integer index );</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    integer   <a class="code" href="interface_nav_doc_item.html#aab1d2911935b3d0b71bbcbc69a5b8d9e">getNodeType</a>();</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    Object <a class="code" href="interface_metadata_item.html#a5793bdfee9f42d302bb08399938fdbfc">getAttributes</a>();</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    DOMString   <a class="code" href="interface_nav_doc_item.html#ac88166712a9e92f42ecd5da4ff12b6c4">getItemName</a>();</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    DOMString <a class="code" href="interface_metadata_item.html#a2074c3ad68512cd64971bb118952e2c6">getProperty</a>();</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    DOMString   <a class="code" href="interface_nav_doc_item.html#a3ed2696ed3f61f40a0e45cbbbc228eb2">getEPUBType</a>();</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;     Object <a class="code" href="interface_nav_doc_item.html#ae4f9b53c8db7c2f2c18ab309ce94bf1b">getAttributes</a>();</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;}</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;</div>
-<div class="line"><a name="l00674"></a><span class="lineno"><a class="code" href="interface_navigator.html">  674</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_navigator.html" title="Provides methods to navigate the document as well as converting between Location, screen and document...">Navigator</a> {</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#a72cf551984ec2000a7a5d3f663698d45">gotoLocation</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> loc );</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a9c0fe7e828c149b940f7935225fe9b4a">getCurrentLocation</a>();</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#ad72f2217e23ca1903629f24e7a295212">getPreviousLocation</a>();</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#a60a0458e461c35d01a9e4645d8a5e8b5">nextScreen</a>();</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#ad82f9158b1f2ea8431a7b55e8f67c2c7">previousScreen</a>();</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a7130fc56702f258742d83cd6bd65958f">getScreenBegin</a>();</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#adfabf95347ae7dfd471b30df1ea21c34">getScreenEnd</a>();</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a7c3d79aebcd0c6fc391a3b6ee3d9213e">getDocBegin</a>();</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a3c9d8785b4d38d2785c95d4423d17284">getDocEnd</a>();</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_navigator.html#a2239ebb85063dd11ee2fd87832f8443b">isFirstScreen</a>();</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    DOMString <a class="code" href="interface_metadata_item.html#a12f06b7aee36a1a4f9ff20f14decbe8f">getRefines</a>();</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    DOMString <a class="code" href="interface_metadata_item.html#ad465679cdef61a571504c706ac8e383f">getValue</a>();</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    Object <a class="code" href="interface_metadata_item.html#ac0449fdb129a4c2f9b6aa2f78c85af19">findProperty</a> ( DOMString elementName, DOMString property );</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;}</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;</div>
+<div class="line"><a name="l00676"></a><span class="lineno"><a class="code" href="interface_nav_doc_item.html">  676</a></span>&#160;<span class="keyword">interface  </span><a class="code" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> {</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    integer <a class="code" href="interface_nav_doc_item.html#afaed1d36abfa3601da9552ddb02a5e62">getChildCount</a>();</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <a class="code" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a>  <a class="code" href="interface_nav_doc_item.html#a1a2e5fab20b4b1b9f179227f6699f4b2">getChild</a>( integer index );</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    integer   <a class="code" href="interface_nav_doc_item.html#aab1d2911935b3d0b71bbcbc69a5b8d9e">getNodeType</a>();</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;    DOMString   <a class="code" href="interface_nav_doc_item.html#ac88166712a9e92f42ecd5da4ff12b6c4">getItemName</a>();</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    DOMString   <a class="code" href="interface_nav_doc_item.html#a3ed2696ed3f61f40a0e45cbbbc228eb2">getEPUBType</a>();</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;     Object <a class="code" href="interface_nav_doc_item.html#ae4f9b53c8db7c2f2c18ab309ce94bf1b">getAttributes</a>();</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;}</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;</div>
+<div class="line"><a name="l00740"></a><span class="lineno"><a class="code" href="interface_navigator.html">  740</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_navigator.html" title="Provides methods to navigate the document as well as converting between Location, screen and document...">Navigator</a> {</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#a72cf551984ec2000a7a5d3f663698d45">gotoLocation</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> loc );</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a9c0fe7e828c149b940f7935225fe9b4a">getCurrentLocation</a>();</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_navigator.html#afecd3c7f55a3a92baff8521f4e1eec98">isFinalScreen</a>();</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_navigator.html#a56a2ef1705a3953edc0e6ffd4411b8e1">isFirstScreenSpine</a>();</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_navigator.html#a9730a1887ec631e13ed696d39bac933e">isFinalScreenSpine</a>();</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    integer <a class="code" href="interface_navigator.html#ac40eef14face3f0f7de024b19e193cec">getScreenCountSpine</a>();</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#a3cf5d344bd0af48152cdf02524932417">getScreenCount</a>( Object callback );</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#a2293d9c86a6aa44e14f951dbb228dbfc">gotoScreen</a> ( integer screenNum );</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    integer <a class="code" href="interface_navigator.html#ab52f9f9abe6fc3dde19aaac879c1d85a">getScreenFromLocation</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> loc );</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a1a5c366ae436d5ebaddc8a9d6b14d548">getLocationFromScreen</a> ( integer screen );</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;    Object <a class="code" href="interface_navigator.html#a46afc622981b39d1e9beb12b43400e50">getSpineItemFromLocation</a>();</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    Object <a class="code" href="interface_navigator.html#a39614a2ae2643ade4c12fb95b59ac66f">getBoundingBox</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> start, <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> end );</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;}</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;</div>
-<div class="line"><a name="l00867"></a><span class="lineno"><a class="code" href="interface_package.html">  867</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_package.html" title="Provides access to the OPF package (or equivalent)">Package</a> {</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;     Object <a class="code" href="interface_package.html#a1d59566fad4b9f0efc2b648506735cf7">getMetadataRoot</a>();</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    Object <a class="code" href="interface_package.html#a57c0d06f107d60e4a3f148e1cd507fa6">getManifestRoot</a>();</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    Object   <a class="code" href="interface_package.html#a20797d5a68aa865419336c4cef46a0c4">getSpineRoot</a>();</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#ad72f2217e23ca1903629f24e7a295212">getPreviousLocation</a>();</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#a60a0458e461c35d01a9e4645d8a5e8b5">nextScreen</a>();</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#ad82f9158b1f2ea8431a7b55e8f67c2c7">previousScreen</a>();</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a7130fc56702f258742d83cd6bd65958f">getScreenBegin</a>();</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#adfabf95347ae7dfd471b30df1ea21c34">getScreenEnd</a>();</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a7c3d79aebcd0c6fc391a3b6ee3d9213e">getDocBegin</a>();</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a3c9d8785b4d38d2785c95d4423d17284">getDocEnd</a>();</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_navigator.html#a2239ebb85063dd11ee2fd87832f8443b">isFirstScreen</a>();</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_navigator.html#afecd3c7f55a3a92baff8521f4e1eec98">isFinalScreen</a>();</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_navigator.html#a56a2ef1705a3953edc0e6ffd4411b8e1">isFirstScreenSpine</a>();</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_navigator.html#a9730a1887ec631e13ed696d39bac933e">isFinalScreenSpine</a>();</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    integer <a class="code" href="interface_navigator.html#ac40eef14face3f0f7de024b19e193cec">getScreenCountSpine</a>();</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#a3cf5d344bd0af48152cdf02524932417">getScreenCount</a>( Object callback );</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_navigator.html#a2293d9c86a6aa44e14f951dbb228dbfc">gotoScreen</a> ( integer screenNum );</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    integer <a class="code" href="interface_navigator.html#ab52f9f9abe6fc3dde19aaac879c1d85a">getScreenFromLocation</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> loc );</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;    Object  <a class="code" href="interface_package.html#a3ba434024ba1f84cae2140426e7a1b0c">getCollectionRoot</a>(); </div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;     </div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    DOMString <a class="code" href="interface_package.html#a0cc83741c93089a4bff72cf6d61d462a">getCoverImage</a>();</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;}</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;</div>
-<div class="line"><a name="l00916"></a><span class="lineno"><a class="code" href="interface_page_layout.html">  916</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_page_layout.html" title="Enables querying and constrolling how screens and/or pages are laid out.">PageLayout</a> {</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    <span class="keyword">const</span> REND_LAYOUT_PREPAGINATED = 0;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <span class="keyword">const</span> REND_LAYOUT_REFLOWABLE   = 1;</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    <span class="keyword">const</span> REND_ORIENT_AUTO      = 0;</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    <span class="keyword">const</span> REND_ORIENT_LANDSCAPE = 1;</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    <span class="keyword">const</span> REND_ORIENT_PORTRAIT  = 2;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    <span class="keyword">const</span> REND_SPREAD_AUTO      = 0;</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    <span class="keyword">const</span> REND_SPREAD_LANDSCAPE = 1;</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    <span class="keyword">const</span> REND_SPREAD_PORTRAIT  = 2;</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    <span class="keyword">const</span> REND_SPREAD_NONE      = 3;</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    <span class="keyword">const</span> REND_FLOW_PAGINATED   = 0;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;    <span class="keyword">const</span> REND_FLOW_CONTINUOUS  = 1;</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;    <span class="keyword">const</span> REND_FLOW_DOCUMENT    = 2;</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;    <span class="keyword">const</span> REND_FLOW_FIXED       = 3;</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> <a class="code" href="interface_navigator.html#a1a5c366ae436d5ebaddc8a9d6b14d548">getLocationFromScreen</a> ( integer screen );</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;    Object <a class="code" href="interface_navigator.html#a46afc622981b39d1e9beb12b43400e50">getSpineItemFromLocation</a>();</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    Object <a class="code" href="interface_navigator.html#a39614a2ae2643ade4c12fb95b59ac66f">getBoundingBox</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> start, <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> end );</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;}</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;</div>
+<div class="line"><a name="l00933"></a><span class="lineno"><a class="code" href="interface_package.html">  933</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_package.html" title="Provides access to the OPF package (or equivalent)">Package</a> {</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    integer <a class="code" href="interface_page_layout.html#a78dd5075e1cd0d26b5cba0e69bdc5fca">getRenditionLayout</a>();</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#a3835413efc0f19f55d478c5c6f22ded3">setRenditionOrientation</a> ( integer orient );</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;     Object <a class="code" href="interface_package.html#a1d59566fad4b9f0efc2b648506735cf7">getMetadataRoot</a>();</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;    Object <a class="code" href="interface_package.html#a57c0d06f107d60e4a3f148e1cd507fa6">getManifestRoot</a>();</div>
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    integer <a class="code" href="interface_page_layout.html#a2e069badff72026bfe6fa0c9eab63db1">getRenditionOrientation</a>();</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#a65eccc262fed4372274528e6956f14c5">setRenditionSpread</a> ( integer spread );</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;    integer <a class="code" href="interface_page_layout.html#a366930fa0515be8b04e96387d6396e39">getRenditionSpread</a>();</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;    Object   <a class="code" href="interface_package.html#a20797d5a68aa865419336c4cef46a0c4">getSpineRoot</a>();</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    Object  <a class="code" href="interface_package.html#a3ba434024ba1f84cae2140426e7a1b0c">getCollectionRoot</a>(); </div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;     </div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;    DOMString <a class="code" href="interface_package.html#a0cc83741c93089a4bff72cf6d61d462a">getCoverImage</a>();</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;}</div>
 <div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#a0781e37918431ae8a6ca3f1b3d3114e6">setRenditionFlow</a> ( integer mode );</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    integer <a class="code" href="interface_page_layout.html#ade6d81a272ad8525bc5207a88e02e524">getRenditionFlow</a>();</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#aeb662399a3b8256d5a55f235827a6e7f">setWidth</a> ( integer width );</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;</div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    integer <a class="code" href="interface_page_layout.html#acee919e531b74fdd57839c7b972efde3">getWidth</a> ();</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;    DOMstring <a class="code" href="interface_page_layout.html#a6fe498ccc2d71548f9127f3bd5e9c89b">getGutterWidth</a>();</div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#aba90d0720c247664556aaace41104797">setGutterWidth</a>( DOMString width );</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;}</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;</div>
-<div class="line"><a name="l01047"></a><span class="lineno"><a class="code" href="interface_reading_system.html"> 1047</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> {</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;    DOMString <a class="code" href="interface_reading_system.html#a432c97e4b19afe94a1a87e6b03d1646b">getName</a>();</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;</div>
-<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;    Object <a class="code" href="interface_reading_system.html#a9f10b405876f3f3a1b068d489d49ecdb">getDeviceSize</a>();</div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system.html#af2b634d222d195c940bc23a25427e180">injectStyleSheet</a> ( DOMString url );</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system.html#aed897c6e99585624bd86e3b3d247d68d">injectJavaScript</a> ( DOMString url );</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;    Object <a class="code" href="interface_reading_system.html#a3653a4f8c1c8ad4acf3e7b8ec2ccea3f">getRSO</a>();</div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160; }</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;</div>
-<div class="line"><a name="l01096"></a><span class="lineno"><a class="code" href="interface_reading_system_object.html"> 1096</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3...">ReadingSystemObject</a> {</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    DOMString <a class="code" href="interface_reading_system_object.html#a170dc3714cb9ab977e6f5310456ee1f7">getName</a>();</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;    Object <a class="code" href="interface_reading_system_object.html#a2c7ac8c6eb38ca48eeafd00d196c2d4d">getVersion</a>();</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;    <span class="comment">/* Note:  Not supporting getLayoutStyle, which is now deprecated as of  EPUB 3.1 */</span></div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system_object.html#a7c7897295db5af78618274143417263b">hasFeature</a>( DOMString feature, optional DOMString version );</div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;};</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;</div>
-<div class="line"><a name="l01150"></a><span class="lineno"><a class="code" href="interface_renderer.html"> 1150</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_renderer.html" title="Encapsulates the various rendering capabilities, currently comprising only highlights.">Renderer</a> {</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_renderer.html#aa627fa42d759595222ee20ddb144cd46">initRenderer</a> ( Object div );</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;</div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;    Object  <a class="code" href="interface_renderer.html#ac69b7bcf814ae2ac7f62c058ea4a98e0">getHighlightsRoot</a>();</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;    DOMString <a class="code" href="interface_renderer.html#a366ee20d739f5323ca0d770e1ae209d2">addHighlight</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> start, <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> end, DOMString color, <span class="keywordtype">float</span> opacity );</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;</div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_renderer.html#aeb09f3ce57d6b18a78e2faedd2a2100a">clearHighlights</a>();</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;</div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_renderer.html#af3d797807bdce33e0aba3444815e40d0">deleteHighlight</a>( <a class="code" href="interface_highlight_item.html" title="Provides methods to manage the current highlight item.">HighlightItem</a> item );</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_renderer.html#aa802b5d9e99b9ca4e7c2815e063e0e1a">attachHandlerForHighlights</a>( Object handler );</div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_renderer.html#a0d093f8735becad89db2ecf6483e8ba7">removeHandlerForHighlights</a>( Object handler );</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;}</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;</div>
-<div class="line"><a name="l01228"></a><span class="lineno"><a class="code" href="interface_search.html"> 1228</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_search.html" title="Interface to the search capability of the underlying implementation.">Search</a> {</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    <span class="keyword">const</span> integer       SEARCH_BACKWARD       = 1;</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    <span class="keyword">const</span> integer       SEARCH_WRAP_ON_END    = 2;</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    <span class="keyword">const</span> integer       SEARCH_WHOLE_WORD     = 4;</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    <span class="keyword">const</span> integer       SEARCH_IGNORE_CASE    = 8;</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    <span class="keyword">const</span> integer       SEARCH_IGNORE_DIACRIT = 16;</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;</div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="interface_search.html#a19d6d5534e288c90f2454699630b7311">search</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> startLoc, <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> endLoc, integer modifiers, DOMString findText, Object callback );   </div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;}</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;</div>
-<div class="line"><a name="l01274"></a><span class="lineno"><a class="code" href="interface_selection.html"> 1274</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_selection.html" title="Provides access to the current selection in the document. There can only be one selection at a time a...">Selection</a> {</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;</div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;    DOMString   <a class="code" href="interface_selection.html#adc38966fb3b3ad8fa3c7799a2bbd7c71">getText</a>();</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;</div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a>    <a class="code" href="interface_selection.html#a1c18d575b23dafde19f2ae5337fc28d4">getLocation</a>();</div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;}</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;</div>
-<div class="line"><a name="l01298"></a><span class="lineno"><a class="code" href="interface_spine_item.html"> 1298</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_spine_item.html" title="Methods for managing the spine.">SpineItem</a> {</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    integer <a class="code" href="interface_spine_item.html#ae75b13f7496bc0207c1d744585ed5427">getChildCount</a>();</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    Object  <a class="code" href="interface_spine_item.html#ac18acc29880a7e00b7124e1fa628443e">getChild</a>( integer index );</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;    integer   <a class="code" href="interface_spine_item.html#a9e840ef084bd63033c0aaab8aaf5eba0">getNodeType</a>();</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    DOMString   <a class="code" href="interface_spine_item.html#acfb8484c7b61359610226e40d45e13d6">getIdref</a>();</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;    Object <a class="code" href="interface_spine_item.html#a3476d406d3c359308ce19364de9619af">getAttributes</a>();</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;} </div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;</div>
-<div class="line"><a name="l01353"></a><span class="lineno"><a class="code" href="interface_text_rendering.html"> 1353</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_text_rendering.html" title="Interface to enable controlling the way in which text on a page is rendered.">TextRendering</a> {</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a1a0a0122caa7f6521154d3e32eb82410">getLineHeight</a>();</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;</div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#a378f42cab1210aecf314ea72fe2dbf55">setLineHeight</a>( <span class="keywordtype">float</span> height );</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    integer <a class="code" href="interface_text_rendering.html#a548c2c168a981be2c0dbc8557e1e3b87">getNumColumns</a>();</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ab2a03cb21a7ac50768490869647e00cc">setNumColumns</a>( integer nCol );</div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a7cbc754ec2cd10a5de318515cfb4d645">getColumnGap</a>();</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ac236bef553d6451fd2c119a8775c8e8c">setJustification</a> ( DOMString justify );</div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#abbcb7c8c85348f17c975b48cb4d02645">getJustification</a>();</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#afa5c5b5305e7014b15a4ed63b67d1e2e">getMargins</a>();</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#a6d580d69dea1e3f0ac72eed3b9db5739">setMargins</a>( DOMstring margins );</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_text_rendering.html#a59367181b27d0244d5f14f8c9486910d">setFontColor</a> ( DOMString fontColor );</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a217370b690e735d38352c3033a9fc18a">getFontColor</a>();</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a94a5a507abaac2a6bd474eb844b6c37a">getFontHeight</a>();</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#aae3c654a4d9dd20a59fee35b02f37412">setFontHeight</a>( DOMString fontHeight );</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#aaa84bce3b3134c06c249a8eb39f6aef0">getFontFace</a>();</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ada9bd7c1a6dbb8041cb7bbd5edb19205">setFontFace</a> ( DOMString fontFace );</div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;};</div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;</div>
-<div class="line"><a name="l01505"></a><span class="lineno"><a class="code" href="interface_transform.html"> 1505</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_transform.html" title="Provides methods for zooming or otherwise transforming the page content.">Transform</a> {</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="interface_transform.html#a4eb9642d18cb5b76896ef46c46a330f9">getZoom</a>();</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_transform.html#a1d265cb6422f8ff7c9f4b5736a74c619">setZoom</a>( <span class="keywordtype">float</span> zoom );</div>
-<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;};</div>
+<div class="line"><a name="l00982"></a><span class="lineno"><a class="code" href="interface_page_layout.html">  982</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_page_layout.html" title="Enables querying and constrolling how screens and/or pages are laid out.">PageLayout</a> {</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    <span class="keyword">const</span> REND_LAYOUT_PREPAGINATED = 0;</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    <span class="keyword">const</span> REND_LAYOUT_REFLOWABLE   = 1;</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;    <span class="keyword">const</span> REND_ORIENT_AUTO      = 0;</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    <span class="keyword">const</span> REND_ORIENT_LANDSCAPE = 1;</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    <span class="keyword">const</span> REND_ORIENT_PORTRAIT  = 2;</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    <span class="keyword">const</span> REND_SPREAD_AUTO      = 0;</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;    <span class="keyword">const</span> REND_SPREAD_LANDSCAPE = 1;</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    <span class="keyword">const</span> REND_SPREAD_PORTRAIT  = 2;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    <span class="keyword">const</span> REND_SPREAD_NONE      = 3;</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    <span class="keyword">const</span> REND_FLOW_PAGINATED   = 0;</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;    <span class="keyword">const</span> REND_FLOW_CONTINUOUS  = 1;</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    <span class="keyword">const</span> REND_FLOW_DOCUMENT    = 2;</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    <span class="keyword">const</span> REND_FLOW_FIXED       = 3;</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    integer <a class="code" href="interface_page_layout.html#a78dd5075e1cd0d26b5cba0e69bdc5fca">getRenditionLayout</a>();</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#a3835413efc0f19f55d478c5c6f22ded3">setRenditionOrientation</a> ( integer orient );</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;    integer <a class="code" href="interface_page_layout.html#a2e069badff72026bfe6fa0c9eab63db1">getRenditionOrientation</a>();</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#a65eccc262fed4372274528e6956f14c5">setRenditionSpread</a> ( integer spread );</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;    integer <a class="code" href="interface_page_layout.html#a366930fa0515be8b04e96387d6396e39">getRenditionSpread</a>();</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#a0781e37918431ae8a6ca3f1b3d3114e6">setRenditionFlow</a> ( integer mode );</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;    integer <a class="code" href="interface_page_layout.html#ade6d81a272ad8525bc5207a88e02e524">getRenditionFlow</a>();</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#aeb662399a3b8256d5a55f235827a6e7f">setWidth</a> ( integer width );</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;    integer <a class="code" href="interface_page_layout.html#acee919e531b74fdd57839c7b972efde3">getWidth</a> ();</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    DOMstring <a class="code" href="interface_page_layout.html#a6fe498ccc2d71548f9127f3bd5e9c89b">getGutterWidth</a>();</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#aba90d0720c247664556aaace41104797">setGutterWidth</a>( DOMString width );</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;}</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;</div>
+<div class="line"><a name="l01113"></a><span class="lineno"><a class="code" href="interface_reading_system.html"> 1113</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> {</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_reading_system.html#aa8ee2952832188e3fd799e2747e20e75">initRenderer</a> ( Object div );</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    DOMString <a class="code" href="interface_reading_system.html#a432c97e4b19afe94a1a87e6b03d1646b">getName</a>();</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;    Object <a class="code" href="interface_reading_system.html#a9f10b405876f3f3a1b068d489d49ecdb">getDeviceSize</a>();</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system.html#af2b634d222d195c940bc23a25427e180">injectStyleSheet</a> ( DOMString url );</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system.html#aed897c6e99585624bd86e3b3d247d68d">injectJavaScript</a> ( DOMString url );</div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;</div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;    Object <a class="code" href="interface_reading_system.html#a3653a4f8c1c8ad4acf3e7b8ec2ccea3f">getRSO</a>();</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160; }</div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;</div>
+<div class="line"><a name="l01173"></a><span class="lineno"><a class="code" href="interface_reading_system_object.html"> 1173</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3...">ReadingSystemObject</a> {</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;    DOMString <a class="code" href="interface_reading_system_object.html#a170dc3714cb9ab977e6f5310456ee1f7">getName</a>();</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;    Object <a class="code" href="interface_reading_system_object.html#a2c7ac8c6eb38ca48eeafd00d196c2d4d">getVersion</a>();</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;    <span class="comment">/* Note:  Not supporting getLayoutStyle, which is now deprecated as of  EPUB 3.1 */</span></div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system_object.html#a7c7897295db5af78618274143417263b">hasFeature</a>( DOMString feature, optional DOMString version );</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;};</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;</div>
+<div class="line"><a name="l01227"></a><span class="lineno"><a class="code" href="interface_search.html"> 1227</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_search.html" title="Interface to the search capability of the underlying implementation.">Search</a> {</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    <span class="keyword">const</span> integer       SEARCH_BACKWARD       = 1;</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    <span class="keyword">const</span> integer       SEARCH_WRAP_ON_END    = 2;</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    <span class="keyword">const</span> integer       SEARCH_WHOLE_WORD     = 4;</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;    <span class="keyword">const</span> integer       SEARCH_IGNORE_CASE    = 8;</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    <span class="keyword">const</span> integer       SEARCH_IGNORE_DIACRIT = 16;</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="interface_search.html#a19d6d5534e288c90f2454699630b7311">search</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> startLoc, <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> endLoc, integer modifiers, DOMString findText, Object callback );   </div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;}</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;</div>
+<div class="line"><a name="l01273"></a><span class="lineno"><a class="code" href="interface_selection.html"> 1273</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_selection.html" title="Provides access to the current selection in the document. There can only be one selection at a time a...">Selection</a> {</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;</div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;    DOMString   <a class="code" href="interface_selection.html#adc38966fb3b3ad8fa3c7799a2bbd7c71">getText</a>();</div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;</div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a>    <a class="code" href="interface_selection.html#a1c18d575b23dafde19f2ae5337fc28d4">getLocation</a>();</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;}</div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;</div>
+<div class="line"><a name="l01297"></a><span class="lineno"><a class="code" href="interface_spine_item.html"> 1297</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_spine_item.html" title="Methods for managing the spine.">SpineItem</a> {</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    integer <a class="code" href="interface_spine_item.html#ae75b13f7496bc0207c1d744585ed5427">getChildCount</a>();</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;    Object  <a class="code" href="interface_spine_item.html#ac18acc29880a7e00b7124e1fa628443e">getChild</a>( integer index );</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;    integer   <a class="code" href="interface_spine_item.html#a9e840ef084bd63033c0aaab8aaf5eba0">getNodeType</a>();</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;    DOMString   <a class="code" href="interface_spine_item.html#acfb8484c7b61359610226e40d45e13d6">getIdref</a>();</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;    Object <a class="code" href="interface_spine_item.html#a3476d406d3c359308ce19364de9619af">getAttributes</a>();</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;} </div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;</div>
+<div class="line"><a name="l01352"></a><span class="lineno"><a class="code" href="interface_text_rendering.html"> 1352</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_text_rendering.html" title="Interface to enable controlling the way in which text on a page is rendered.">TextRendering</a> {</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a1a0a0122caa7f6521154d3e32eb82410">getLineHeight</a>();</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#a378f42cab1210aecf314ea72fe2dbf55">setLineHeight</a>( <span class="keywordtype">float</span> height );</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;    integer <a class="code" href="interface_text_rendering.html#a548c2c168a981be2c0dbc8557e1e3b87">getNumColumns</a>();</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ab2a03cb21a7ac50768490869647e00cc">setNumColumns</a>( integer nCol );</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;</div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a7cbc754ec2cd10a5de318515cfb4d645">getColumnGap</a>();</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ac236bef553d6451fd2c119a8775c8e8c">setJustification</a> ( DOMString justify );</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#abbcb7c8c85348f17c975b48cb4d02645">getJustification</a>();</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#afa5c5b5305e7014b15a4ed63b67d1e2e">getMargins</a>();</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#a6d580d69dea1e3f0ac72eed3b9db5739">setMargins</a>( DOMstring margins );</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_text_rendering.html#a59367181b27d0244d5f14f8c9486910d">setFontColor</a> ( DOMString fontColor );</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a217370b690e735d38352c3033a9fc18a">getFontColor</a>();</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a94a5a507abaac2a6bd474eb844b6c37a">getFontHeight</a>();</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#aae3c654a4d9dd20a59fee35b02f37412">setFontHeight</a>( DOMString fontHeight );</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#aaa84bce3b3134c06c249a8eb39f6aef0">getFontFace</a>();</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ada9bd7c1a6dbb8041cb7bbd5edb19205">setFontFace</a> ( DOMString fontFace );</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;};</div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;</div>
+<div class="line"><a name="l01504"></a><span class="lineno"><a class="code" href="interface_transform.html"> 1504</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_transform.html" title="Provides methods for zooming or otherwise transforming the page content.">Transform</a> {</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;</div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="interface_transform.html#a4eb9642d18cb5b76896ef46c46a330f9">getZoom</a>();</div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_transform.html#a1d265cb6422f8ff7c9f4b5736a74c619">setZoom</a>( <span class="keywordtype">float</span> zoom );</div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;};</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;</div>
 <div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;</div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -508,7 +508,7 @@ $(document).ready(function(){initNavTree('_readium_8idl_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Readium.idl</b></li>
-    <li class="footer">Generated on Sat Sep 10 2016 10:58:19 for Readium IDL by
+    <li class="footer">Generated on Sat Sep 10 2016 11:09:09 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -20,7 +20,7 @@ var searchData=
   ['getfontheight',['getFontHeight',['../interface_text_rendering.html#a94a5a507abaac2a6bd474eb844b6c37a',1,'TextRendering']]],
   ['getguid',['getGUID',['../interface_highlight_item.html#aa63afd09cff6f57793f0efa9d15b0d9a',1,'HighlightItem']]],
   ['getgutterwidth',['getGutterWidth',['../interface_page_layout.html#a6fe498ccc2d71548f9127f3bd5e9c89b',1,'PageLayout']]],
-  ['gethighlightsroot',['getHighlightsRoot',['../interface_renderer.html#ac69b7bcf814ae2ac7f62c058ea4a98e0',1,'Renderer']]],
+  ['gethighlightsroot',['getHighlightsRoot',['../interface_highlights.html#ae4772f3917e7dfa94fc7a32032100dbd',1,'Highlights']]],
   ['getid',['getID',['../interface_error_item.html#a11229b244678aa374ea234e6eb72812f',1,'ErrorItem']]],
   ['getidref',['getIdref',['../interface_spine_item.html#acfb8484c7b61359610226e40d45e13d6',1,'SpineItem']]],
   ['getitemname',['getItemName',['../interface_collection_item.html#a49d3ce3c67afb811600f09d33521ed51',1,'CollectionItem::getItemName()'],['../interface_nav_doc_item.html#ac88166712a9e92f42ecd5da4ff12b6c4',1,'NavDocItem::getItemName()']]],
