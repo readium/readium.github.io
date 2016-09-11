@@ -246,9 +246,6 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getDocEnd()
 : <a class="el" href="interface_navigator.html#a3c9d8785b4d38d2785c95d4423d17284">Navigator</a>
 </li>
-<li>getEPUBType()
-: <a class="el" href="interface_nav_doc_item.html#a3ed2696ed3f61f40a0e45cbbbc228eb2">NavDocItem</a>
-</li>
 <li>getErrorRoot()
 : <a class="el" href="interface_document.html#a3090ed820a8b801a8a0ab2693280b60f">Document</a>
 </li>
@@ -272,6 +269,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>getHighlightsRoot()
 : <a class="el" href="interface_highlights.html#ae4772f3917e7dfa94fc7a32032100dbd">Highlights</a>
+</li>
+<li>getHref()
+: <a class="el" href="interface_nav_doc_item.html#a209b133758bd5c09b32ae8de94ee8342">NavDocItem</a>
 </li>
 <li>getID()
 : <a class="el" href="interface_error_item.html#a11229b244678aa374ea234e6eb72812f">ErrorItem</a>
@@ -314,14 +314,25 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 , <a class="el" href="interface_metadata_item.html#af0f534ea09b5ff8b397887bc831506be">MetadataItem</a>
 , <a class="el" href="interface_reading_system.html#a432c97e4b19afe94a1a87e6b03d1646b">ReadingSystem</a>
 </li>
-<li>getNavDoc()
-: <a class="el" href="interface_document.html#ac517098108cbf6482ea0c0b1350f4ae1">Document</a>
+<li>getNavElm()
+: <a class="el" href="interface_document.html#aac5d25d41ee39be95129c99c88803ad1">Document</a>
+</li>
+<li>getNavElms()
+: <a class="el" href="interface_document.html#a859566cde9e720b65ad1edc0130747fe">Document</a>
+</li>
+<li>getNode()
+: <a class="el" href="interface_spine_item.html#a64f45c67579a1af56e6892b9b0f808ca">SpineItem</a>
+, <a class="el" href="interface_highlight_item.html#a7b57a8c53596294240e858671eec6613">HighlightItem</a>
+, <a class="el" href="interface_collection_item.html#a88381996e6a64f8ea92766a4c2703990">CollectionItem</a>
+, <a class="el" href="interface_manifest_item.html#ac06de78aea43d27384301778cbf9eecf">ManifestItem</a>
+, <a class="el" href="interface_metadata_item.html#a9dead810e6e45e93903f21e4cd048ebe">MetadataItem</a>
+, <a class="el" href="interface_nav_doc_item.html#a4f21f01031904ed23e8786852b3b3b46">NavDocItem</a>
 </li>
 <li>getNodeType()
-: <a class="el" href="interface_metadata_item.html#ada8df6d99b228dc9659978638436d473">MetadataItem</a>
-, <a class="el" href="interface_spine_item.html#a9e840ef084bd63033c0aaab8aaf5eba0">SpineItem</a>
-, <a class="el" href="interface_collection_item.html#ae7518985a0948c44ab1bdbf00f3af945">CollectionItem</a>
+: <a class="el" href="interface_collection_item.html#ae7518985a0948c44ab1bdbf00f3af945">CollectionItem</a>
 , <a class="el" href="interface_manifest_item.html#ae663877526aceb94825bc409aa35d7c3">ManifestItem</a>
+, <a class="el" href="interface_metadata_item.html#ada8df6d99b228dc9659978638436d473">MetadataItem</a>
+, <a class="el" href="interface_spine_item.html#a9e840ef084bd63033c0aaab8aaf5eba0">SpineItem</a>
 , <a class="el" href="interface_nav_doc_item.html#aab1d2911935b3d0b71bbcbc69a5b8d9e">NavDocItem</a>
 </li>
 <li>getNumColumns()
@@ -370,7 +381,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_navigator.html#adfabf95347ae7dfd471b30df1ea21c34">Navigator</a>
 </li>
 <li>getScreenFromLocation()
-: <a class="el" href="interface_navigator.html#ab52f9f9abe6fc3dde19aaac879c1d85a">Navigator</a>
+: <a class="el" href="interface_navigator.html#a8a779c17cfc41250e2472648819f5dd1">Navigator</a>
 </li>
 <li>getSeverity()
 : <a class="el" href="interface_error_item.html#a37fcfcea01b88b1f02efea1290d3fe4f">ErrorItem</a>
@@ -452,7 +463,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_media_overlay.html#a14ab1e7b77f09091a67f9ded96fd657c">MediaOverlay</a>
 </li>
 <li>openBook()
-: <a class="el" href="interface_document.html#af2a78e5d0371c5bc94c0c2e4c842e689">Document</a>
+: <a class="el" href="interface_reading_system.html#ae497dcbf5bfe0db72c8088059231d1a5">ReadingSystem</a>
 </li>
 </ul>
 
@@ -563,7 +574,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Sep 10 2016 13:40:16 for Readium IDL by
+    <li class="footer">Generated on Sun Sep 11 2016 12:14:25 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

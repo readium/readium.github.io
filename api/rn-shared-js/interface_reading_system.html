@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6ce40dd2ffbb881dbee3846425def315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ee2952832188e3fd799e2747e20e75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#aa8ee2952832188e3fd799e2747e20e75">initRenderer</a> (Object div)</td></tr>
 <tr class="separator:aa8ee2952832188e3fd799e2747e20e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae497dcbf5bfe0db72c8088059231d1a5"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#ae497dcbf5bfe0db72c8088059231d1a5">openBook</a> (DOMString url)</td></tr>
+<tr class="separator:ae497dcbf5bfe0db72c8088059231d1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a432c97e4b19afe94a1a87e6b03d1646b"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#a432c97e4b19afe94a1a87e6b03d1646b">getName</a> ()</td></tr>
 <tr class="separator:a432c97e4b19afe94a1a87e6b03d1646b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f10b405876f3f3a1b068d489d49ecdb"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#a9f10b405876f3f3a1b068d489d49ecdb">getDeviceSize</a> ()</td></tr>
@@ -140,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides information about the current device as well as setting device parameters, if supported. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01116">1116</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01179">1179</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6ce40dd2ffbb881dbee3846425def315"></a>
 <div class="memitem">
@@ -296,6 +298,30 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae497dcbf5bfe0db72c8088059231d1a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object ReadingSystem::openBook </td>
+          <td>(</td>
+          <td class="paramtype">DOMString&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Basic method to open an EPUB. Also performs any other initialization required.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>the url to the EPUB to be opened</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an object that implements the <a class="el" href="interface_document.html" title="The fundamental interface for the Readium implementation. Represents the current open EPUB document...">Document</a> interface. Null if failed </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li><a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
 </ul>
@@ -306,7 +332,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_reading_system.html">ReadingSystem</a></li>
-    <li class="footer">Generated on Sat Sep 10 2016 13:40:16 for Readium IDL by
+    <li class="footer">Generated on Sun Sep 11 2016 12:14:25 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

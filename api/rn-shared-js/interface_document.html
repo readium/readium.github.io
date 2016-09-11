@@ -122,21 +122,21 @@ $(document).ready(function(){initNavTree('interface_document.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af2a78e5d0371c5bc94c0c2e4c842e689"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_document.html#af2a78e5d0371c5bc94c0c2e4c842e689">openBook</a> (DOMString url)</td></tr>
-<tr class="separator:af2a78e5d0371c5bc94c0c2e4c842e689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e5f7c7b8db3f62e188eebb23f7aeb6"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_document.html#af4e5f7c7b8db3f62e188eebb23f7aeb6">getPackage</a> ()</td></tr>
 <tr class="separator:af4e5f7c7b8db3f62e188eebb23f7aeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3090ed820a8b801a8a0ab2693280b60f"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_document.html#a3090ed820a8b801a8a0ab2693280b60f">getErrorRoot</a> ()</td></tr>
 <tr class="separator:a3090ed820a8b801a8a0ab2693280b60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e63732f18cdf86270a3e0d0fe62e9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_document.html#a31e63732f18cdf86270a3e0d0fe62e9c">clearErrorList</a> ()</td></tr>
 <tr class="separator:a31e63732f18cdf86270a3e0d0fe62e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac517098108cbf6482ea0c0b1350f4ae1"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_document.html#ac517098108cbf6482ea0c0b1350f4ae1">getNavDoc</a> ()</td></tr>
-<tr class="separator:ac517098108cbf6482ea0c0b1350f4ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5d25d41ee39be95129c99c88803ad1"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_document.html#aac5d25d41ee39be95129c99c88803ad1">getNavElm</a> (DOMString epubType)</td></tr>
+<tr class="separator:aac5d25d41ee39be95129c99c88803ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859566cde9e720b65ad1edc0130747fe"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_document.html#a859566cde9e720b65ad1edc0130747fe">getNavElms</a> ()</td></tr>
+<tr class="separator:a859566cde9e720b65ad1edc0130747fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The fundamental interface for the Readium implementation. Represents the current open EPUB document. Provides access to the document's OPF and its contents as well as rendering, etc. In addition, it provides access to the underlying rendering and navigation engine (typically a browser engine). </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00073">73</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00080">80</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a31e63732f18cdf86270a3e0d0fe62e9c"></a>
 <div class="memitem">
@@ -171,20 +171,45 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac517098108cbf6482ea0c0b1350f4ae1"></a>
+<a class="anchor" id="aac5d25d41ee39be95129c99c88803ad1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Object Document::getNavDoc </td>
+          <td class="memname">Object Document::getNavElm </td>
+          <td>(</td>
+          <td class="paramtype">DOMString&#160;</td>
+          <td class="paramname"><em>epubType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fetch the an object that provides high-level access to the associated <code>nav</code> element in the NavDoc for the EPUB.</p>
+<dl class="section return"><dt>Returns</dt><dd>an object that implements the NavDoc interface </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a859566cde9e720b65ad1edc0130747fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object Document::getNavElms </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fetch the an object that wraps the root element (an <code>xhtml</code> element) of the associated navdoc for the EPUB.</p>
-<dl class="section return"><dt>Returns</dt><dd>an object that implements the <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> interface </dd></dl>
+<p>Returns a JSON array of the nav elements in the NavDoc item, where the array is of the form:</p>
+<div class="fragment"><div class="line">[</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> }</div>
+<div class="line">                etc.</div>
+<div class="line">]</div>
+</div><!-- fragment --><p>where the first three names MUST be "toc", "page-list" and "landmarks", in that order. Per spec, the TOC must exist and the object will be an object that implements the <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> interface However, the page-list and landmarks are optional, in which case the objects will be null. If there are other "custom" nav elements, the name will be in the first field and the second will be an object which implements the NavDocInterface and wraps that nav element</p>
+<dl class="section return"><dt>Returns</dt><dd>Object </dd></dl>
 
 </div>
 </div>
@@ -205,30 +230,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af2a78e5d0371c5bc94c0c2e4c842e689"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean Document::openBook </td>
-          <td>(</td>
-          <td class="paramtype">DOMString&#160;</td>
-          <td class="paramname"><em>url</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Basic method to open an EPUB. Also performs any other initialization required.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">url</td><td>the url to the EPUB to be opened</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful, else false </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li><a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
 </ul>
@@ -239,7 +240,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_document.html">Document</a></li>
-    <li class="footer">Generated on Sat Sep 10 2016 13:40:16 for Readium IDL by
+    <li class="footer">Generated on Sun Sep 11 2016 12:14:25 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
