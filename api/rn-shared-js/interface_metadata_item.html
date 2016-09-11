@@ -128,10 +128,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae24968e0bc2cee5f0a3d78f3afe837a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dead810e6e45e93903f21e4cd048ebe"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_metadata_item.html#a9dead810e6e45e93903f21e4cd048ebe">getNode</a> ()</td></tr>
 <tr class="separator:a9dead810e6e45e93903f21e4cd048ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada8df6d99b228dc9659978638436d473"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_metadata_item.html#ada8df6d99b228dc9659978638436d473">getNodeType</a> ()</td></tr>
-<tr class="separator:ada8df6d99b228dc9659978638436d473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0f534ea09b5ff8b397887bc831506be"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_metadata_item.html#af0f534ea09b5ff8b397887bc831506be">getName</a> ()</td></tr>
-<tr class="separator:af0f534ea09b5ff8b397887bc831506be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5793bdfee9f42d302bb08399938fdbfc"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_metadata_item.html#a5793bdfee9f42d302bb08399938fdbfc">getAttributes</a> ()</td></tr>
 <tr class="separator:a5793bdfee9f42d302bb08399938fdbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2074c3ad68512cd64971bb118952e2c6"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_metadata_item.html#a2074c3ad68512cd64971bb118952e2c6">getProperty</a> ()</td></tr>
@@ -140,29 +136,31 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a12f06b7aee36a1a4f9ff20f14decbe8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad465679cdef61a571504c706ac8e383f"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_metadata_item.html#ad465679cdef61a571504c706ac8e383f">getValue</a> ()</td></tr>
 <tr class="separator:ad465679cdef61a571504c706ac8e383f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0449fdb129a4c2f9b6aa2f78c85af19"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_metadata_item.html#ac0449fdb129a4c2f9b6aa2f78c85af19">findProperty</a> (DOMString elementName, DOMString property)</td></tr>
-<tr class="separator:ac0449fdb129a4c2f9b6aa2f78c85af19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a266fe719e04e4f844e999edf533cc0c9"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_metadata_item.html#a266fe719e04e4f844e999edf533cc0c9">findElements</a> (DOMString namespace, DOMString elementName)</td></tr>
+<tr class="separator:a266fe719e04e4f844e999edf533cc0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c13884cedd19c519b99ed4197c0702"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_metadata_item.html#a82c13884cedd19c519b99ed4197c0702">findMetaElements</a> (DOMString namespace, DOMString propertyName)</td></tr>
+<tr class="separator:a82c13884cedd19c519b99ed4197c0702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides methods for walking and querying the metadata. </p>
 
 <p>Definition at line <a class="el" href="_readium_8idl_source.html#l00620">620</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac0449fdb129a4c2f9b6aa2f78c85af19"></a>
+<a class="anchor" id="a266fe719e04e4f844e999edf533cc0c9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Object MetadataItem::findProperty </td>
+          <td class="memname">Object MetadataItem::findElements </td>
           <td>(</td>
           <td class="paramtype">DOMString&#160;</td>
-          <td class="paramname"><em>elementName</em>, </td>
+          <td class="paramname"><em>namespace</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">DOMString&#160;</td>
-          <td class="paramname"><em>property</em>&#160;</td>
+          <td class="paramname"><em>elementName</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -171,15 +169,66 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Recursively searches the current item and its children for the metadata item with the specified name and specified property.</p>
+<p>Recursively searches the current item and its children for the metadata item with the specified namespace and element name.</p>
+<p>Returns a JSON array of matching elements, where the array is of the form:</p>
+<div class="fragment"><div class="line">[</div>
+<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> }</div>
+<div class="line">                etc.</div>
+<div class="line">]</div>
+</div><!-- fragment --><p>where the <code>object</code> implements the <a class="el" href="interface_metadata_item.html" title="Provides methods for walking and querying the metadata.">MetadataItem</a> interface and wraps the matching element found.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">elementName</td><td>the name of the element containng the property </td></tr>
-    <tr><td class="paramname">property</td><td>the name of the property</td></tr>
+    <tr><td class="paramname">namespace</td><td>the namespace of the element </td></tr>
+    <tr><td class="paramname">elementName</td><td>the name of the element containng the property</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an object which implements the <a class="el" href="interface_metadata_item.html" title="Provides methods for walking and querying the metadata.">MetadataItem</a> interface. Null if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a JSON array of matching elements </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a82c13884cedd19c519b99ed4197c0702"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object MetadataItem::findMetaElements </td>
+          <td>(</td>
+          <td class="paramtype">DOMString&#160;</td>
+          <td class="paramname"><em>namespace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DOMString&#160;</td>
+          <td class="paramname"><em>propertyName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recursively searches the current item and its children for the <code>meta</code> element with the specified namespace and property name.</p>
+<p>Returns a JSON array of matching elements, where the array is of the form:</p>
+<div class="fragment"><div class="line">[</div>
+<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
+<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> }</div>
+<div class="line">                etc.</div>
+<div class="line">]</div>
+</div><!-- fragment --><p>where the <code>object</code> implements the <a class="el" href="interface_metadata_item.html" title="Provides methods for walking and querying the metadata.">MetadataItem</a> interface and wraps the matching element found.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">namespace</td><td>the namespace of the property </td></tr>
+    <tr><td class="paramname">elementName</td><td>the name of the the property</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a JSON array of matching elements </dd></dl>
 
 </div>
 </div>
@@ -247,23 +296,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af0f534ea09b5ff8b397887bc831506be"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOMString MetadataItem::getName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the short name of the element wrapped by this item</p>
-<dl class="section return"><dt>Returns</dt><dd>the short name for this item's element </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a9dead810e6e45e93903f21e4cd048ebe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -278,23 +310,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieve the actual DOM node wrapped by this item</p>
 <dl class="section return"><dt>Returns</dt><dd>the actual DOM node wrapped by this item </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ada8df6d99b228dc9659978638436d473"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer MetadataItem::getNodeType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the DOM3 Node type value for the element wrapped by this item</p>
-<dl class="section return"><dt>Returns</dt><dd>the DOM3 Node type value </dd></dl>
 
 </div>
 </div>
@@ -359,7 +374,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_metadata_item.html">MetadataItem</a></li>
-    <li class="footer">Generated on Sun Sep 11 2016 12:14:25 for Readium IDL by
+    <li class="footer">Generated on Sun Sep 11 2016 12:51:23 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

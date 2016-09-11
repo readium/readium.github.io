@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['findproperty',['findProperty',['../interface_metadata_item.html#ac0449fdb129a4c2f9b6aa2f78c85af19',1,'MetadataItem']]]
+  ['findelements',['findElements',['../interface_metadata_item.html#a266fe719e04e4f844e999edf533cc0c9',1,'MetadataItem']]],
+  ['findmetaelements',['findMetaElements',['../interface_metadata_item.html#a82c13884cedd19c519b99ed4197c0702',1,'MetadataItem']]]
 ];

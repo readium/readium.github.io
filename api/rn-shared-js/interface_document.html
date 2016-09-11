@@ -209,7 +209,7 @@ Public Member Functions</h2></td></tr>
 <div class="line">                etc.</div>
 <div class="line">]</div>
 </div><!-- fragment --><p>where the first three names MUST be "toc", "page-list" and "landmarks", in that order. Per spec, the TOC must exist and the object will be an object that implements the <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> interface However, the page-list and landmarks are optional, in which case the objects will be null. If there are other "custom" nav elements, the name will be in the first field and the second will be an object which implements the NavDocInterface and wraps that nav element</p>
-<dl class="section return"><dt>Returns</dt><dd>Object </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a JSON array of the nav elms in the <a class="el" href="interface_document.html" title="The fundamental interface for the Readium implementation. Represents the current open EPUB document...">Document</a>'s NavDoc </dd></dl>
 
 </div>
 </div>
@@ -240,7 +240,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_document.html">Document</a></li>
-    <li class="footer">Generated on Sun Sep 11 2016 12:14:25 for Readium IDL by
+    <li class="footer">Generated on Sun Sep 11 2016 12:51:23 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
