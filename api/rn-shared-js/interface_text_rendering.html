@@ -136,10 +136,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac236bef553d6451fd2c119a8775c8e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbcb7c8c85348f17c975b48cb4d02645"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#abbcb7c8c85348f17c975b48cb4d02645">getJustification</a> ()</td></tr>
 <tr class="separator:abbcb7c8c85348f17c975b48cb4d02645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa5c5b5305e7014b15a4ed63b67d1e2e"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#afa5c5b5305e7014b15a4ed63b67d1e2e">getMargins</a> ()</td></tr>
-<tr class="separator:afa5c5b5305e7014b15a4ed63b67d1e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d580d69dea1e3f0ac72eed3b9db5739"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a6d580d69dea1e3f0ac72eed3b9db5739">setMargins</a> (DOMstring margins)</td></tr>
-<tr class="separator:a6d580d69dea1e3f0ac72eed3b9db5739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59367181b27d0244d5f14f8c9486910d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a59367181b27d0244d5f14f8c9486910d">setFontColor</a> (DOMString fontColor)</td></tr>
 <tr class="separator:a59367181b27d0244d5f14f8c9486910d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a217370b690e735d38352c3033a9fc18a"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_text_rendering.html#a217370b690e735d38352c3033a9fc18a">getFontColor</a> ()</td></tr>
@@ -156,7 +152,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to enable controlling the way in which text on a page is rendered. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01478">1478</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01498">1498</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a7cbc754ec2cd10a5de318515cfb4d645"></a>
 <div class="memitem">
@@ -259,24 +255,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the distance (in CSS units) between baselines in the current font</p>
 <dl class="section return"><dt>Returns</dt><dd>the lineHeight expressed in CSS units </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="afa5c5b5305e7014b15a4ed63b67d1e2e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOMString TextRendering::getMargins </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the margins setting for the current document.</p>
-<p>Note: Will be empty for fixed-layout documents</p>
-<dl class="section return"><dt>Returns</dt><dd>the margins string in CSS fashion (all, or top, right, bottom, left) </dd></dl>
 
 </div>
 </div>
@@ -421,31 +399,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6d580d69dea1e3f0ac72eed3b9db5739"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean TextRendering::setMargins </td>
-          <td>(</td>
-          <td class="paramtype">DOMstring&#160;</td>
-          <td class="paramname"><em>margins</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the margins for the current document.</p>
-<p>Note: Will return false for fixed-layout documents</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">margins</td><td>desired margins in CSS syntax (all, or top, right, bottom, left)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful false if ignored or not supported </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ab2a03cb21a7ac50768490869647e00cc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -481,7 +434,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_text_rendering.html">TextRendering</a></li>
-    <li class="footer">Generated on Sun Sep 11 2016 12:51:23 for Readium IDL by
+    <li class="footer">Generated on Mon Sep 12 2016 11:02:26 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

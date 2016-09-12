@@ -403,99 +403,99 @@ $(document).ready(function(){initNavTree('_readium_8idl_source.html','');});
 <div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;</div>
 <div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;    integer <a class="code" href="interface_page_layout.html#ade6d81a272ad8525bc5207a88e02e524">getRenditionFlow</a>();</div>
 <div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#aeb662399a3b8256d5a55f235827a6e7f">setWidth</a> ( integer width );</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#ab23e4c7bf0f109a5e4ac3d371c245da8">setLayoutWidth</a> ( integer width );</div>
 <div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;    integer <a class="code" href="interface_page_layout.html#acee919e531b74fdd57839c7b972efde3">getWidth</a> ();</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;    integer <a class="code" href="interface_page_layout.html#aafd5c7d550c2e94d6b42848c3cdbf4f7">getLayoutWidth</a> ();</div>
 <div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;    DOMstring <a class="code" href="interface_page_layout.html#a6fe498ccc2d71548f9127f3bd5e9c89b">getGutterWidth</a>();</div>
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;</div>
 <div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#aba90d0720c247664556aaace41104797">setGutterWidth</a>( DOMString width );</div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;}</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;[Constructor( Object config )]</div>
-<div class="line"><a name="l01203"></a><span class="lineno"><a class="code" href="interface_reading_system.html"> 1203</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> {</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;</div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;    DOMString <a class="code" href="interface_page_layout.html#ab34b72643772a2ba7a27ade07c823ff0">getMargins</a>();</div>
 <div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;</div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;    <a class="code" href="interface_reading_system.html#a6ce40dd2ffbb881dbee3846425def315">ReadingSystem</a> ( Object config );</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_page_layout.html#a825925fe593953269457b86f70f1e32c">setMargins</a>( DOMstring margins );</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;}</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;[Constructor( Object config )]</div>
+<div class="line"><a name="l01223"></a><span class="lineno"><a class="code" href="interface_reading_system.html"> 1223</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> {</div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_reading_system.html#aa8ee2952832188e3fd799e2747e20e75">initRenderer</a> ( Object div );</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;    Object <a class="code" href="interface_reading_system.html#ae497dcbf5bfe0db72c8088059231d1a5">openBook</a> ( DOMString url );</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;    <a class="code" href="interface_reading_system.html#a6ce40dd2ffbb881dbee3846425def315">ReadingSystem</a> ( Object config );</div>
 <div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;    DOMString <a class="code" href="interface_reading_system.html#a432c97e4b19afe94a1a87e6b03d1646b">getName</a>();</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    Object <a class="code" href="interface_reading_system.html#a9f10b405876f3f3a1b068d489d49ecdb">getDeviceSize</a>();</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system.html#af2b634d222d195c940bc23a25427e180">injectStyleSheet</a> ( DOMString url );</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system.html#aed897c6e99585624bd86e3b3d247d68d">injectJavaScript</a> ( DOMString url );</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_reading_system.html#aa8ee2952832188e3fd799e2747e20e75">initRenderer</a> ( Object div );</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;</div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;    Object <a class="code" href="interface_reading_system.html#ae497dcbf5bfe0db72c8088059231d1a5">openBook</a> ( DOMString url );</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;    DOMString <a class="code" href="interface_reading_system.html#a432c97e4b19afe94a1a87e6b03d1646b">getName</a>();</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;    Object <a class="code" href="interface_reading_system.html#a9f10b405876f3f3a1b068d489d49ecdb">getDeviceSize</a>();</div>
 <div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;    Object <a class="code" href="interface_reading_system.html#a3653a4f8c1c8ad4acf3e7b8ec2ccea3f">getRSO</a>();</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160; }</div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;</div>
-<div class="line"><a name="l01292"></a><span class="lineno"><a class="code" href="interface_reading_system_object.html"> 1292</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3...">ReadingSystemObject</a> {</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;    DOMString <a class="code" href="interface_reading_system_object.html#a170dc3714cb9ab977e6f5310456ee1f7">getName</a>();</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;    Object <a class="code" href="interface_reading_system_object.html#a2c7ac8c6eb38ca48eeafd00d196c2d4d">getVersion</a>();</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;    <span class="comment">/* Note:  Not supporting getLayoutStyle, which is now deprecated as of  EPUB 3.1 */</span></div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system_object.html#a7c7897295db5af78618274143417263b">hasFeature</a>( DOMString feature, optional DOMString version );</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;};</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;</div>
-<div class="line"><a name="l01346"></a><span class="lineno"><a class="code" href="interface_search.html"> 1346</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_search.html" title="Interface to the search capability of the underlying implementation.">Search</a> {</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;    <span class="keyword">const</span> integer       SEARCH_BACKWARD       = 1;</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;    <span class="keyword">const</span> integer       SEARCH_WRAP_ON_END    = 2;</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;    <span class="keyword">const</span> integer       SEARCH_WHOLE_WORD     = 4;</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;    <span class="keyword">const</span> integer       SEARCH_IGNORE_CASE    = 8;</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;    <span class="keyword">const</span> integer       SEARCH_IGNORE_DIACRIT = 16;</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="interface_search.html#a19d6d5534e288c90f2454699630b7311">search</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> startLoc, <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> endLoc, integer modifiers, DOMString findText, Object callback );   </div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;}</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;</div>
-<div class="line"><a name="l01392"></a><span class="lineno"><a class="code" href="interface_selection.html"> 1392</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_selection.html" title="Provides access to the current selection in the document. There can only be one selection at a time a...">Selection</a> {</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    DOMString   <a class="code" href="interface_selection.html#adc38966fb3b3ad8fa3c7799a2bbd7c71">getText</a>();</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a>    <a class="code" href="interface_selection.html#a1c18d575b23dafde19f2ae5337fc28d4">getLocation</a>();</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;}</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;</div>
-<div class="line"><a name="l01416"></a><span class="lineno"><a class="code" href="interface_spine_item.html"> 1416</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_spine_item.html" title="Methods for managing the spine.">SpineItem</a> {</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;    integer <a class="code" href="interface_spine_item.html#ae75b13f7496bc0207c1d744585ed5427">getChildCount</a>();</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;    Object  <a class="code" href="interface_spine_item.html#ac18acc29880a7e00b7124e1fa628443e">getChild</a>( integer index );</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;    Object  <a class="code" href="interface_spine_item.html#a64f45c67579a1af56e6892b9b0f808ca">getNode</a> ();</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;    integer   <a class="code" href="interface_spine_item.html#a9e840ef084bd63033c0aaab8aaf5eba0">getNodeType</a>();</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;    DOMString   <a class="code" href="interface_spine_item.html#acfb8484c7b61359610226e40d45e13d6">getIdref</a>();</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    Object <a class="code" href="interface_spine_item.html#a3476d406d3c359308ce19364de9619af">getAttributes</a>();</div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;} </div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;</div>
-<div class="line"><a name="l01478"></a><span class="lineno"><a class="code" href="interface_text_rendering.html"> 1478</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_text_rendering.html" title="Interface to enable controlling the way in which text on a page is rendered.">TextRendering</a> {</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a1a0a0122caa7f6521154d3e32eb82410">getLineHeight</a>();</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#a378f42cab1210aecf314ea72fe2dbf55">setLineHeight</a>( <span class="keywordtype">float</span> height );</div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;    integer <a class="code" href="interface_text_rendering.html#a548c2c168a981be2c0dbc8557e1e3b87">getNumColumns</a>();</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;</div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ab2a03cb21a7ac50768490869647e00cc">setNumColumns</a>( integer nCol );</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a7cbc754ec2cd10a5de318515cfb4d645">getColumnGap</a>();</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;</div>
-<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ac236bef553d6451fd2c119a8775c8e8c">setJustification</a> ( DOMString justify );</div>
-<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;</div>
-<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#abbcb7c8c85348f17c975b48cb4d02645">getJustification</a>();</div>
-<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;</div>
-<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#afa5c5b5305e7014b15a4ed63b67d1e2e">getMargins</a>();</div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;</div>
-<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#a6d580d69dea1e3f0ac72eed3b9db5739">setMargins</a>( DOMstring margins );</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system.html#af2b634d222d195c940bc23a25427e180">injectStyleSheet</a> ( DOMString url );</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system.html#aed897c6e99585624bd86e3b3d247d68d">injectJavaScript</a> ( DOMString url );</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    Object <a class="code" href="interface_reading_system.html#a3653a4f8c1c8ad4acf3e7b8ec2ccea3f">getRSO</a>();</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160; }</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;</div>
+<div class="line"><a name="l01312"></a><span class="lineno"><a class="code" href="interface_reading_system_object.html"> 1312</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3...">ReadingSystemObject</a> {</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;    DOMString <a class="code" href="interface_reading_system_object.html#a170dc3714cb9ab977e6f5310456ee1f7">getName</a>();</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;    Object <a class="code" href="interface_reading_system_object.html#a2c7ac8c6eb38ca48eeafd00d196c2d4d">getVersion</a>();</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;    <span class="comment">/* Note:  Not supporting getLayoutStyle, which is now deprecated as of  EPUB 3.1 */</span></div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_reading_system_object.html#a7c7897295db5af78618274143417263b">hasFeature</a>( DOMString feature, optional DOMString version );</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;};</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;</div>
+<div class="line"><a name="l01366"></a><span class="lineno"><a class="code" href="interface_search.html"> 1366</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_search.html" title="Interface to the search capability of the underlying implementation.">Search</a> {</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;    <span class="keyword">const</span> integer       SEARCH_BACKWARD       = 1;</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;    <span class="keyword">const</span> integer       SEARCH_WRAP_ON_END    = 2;</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;    <span class="keyword">const</span> integer       SEARCH_WHOLE_WORD     = 4;</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;    <span class="keyword">const</span> integer       SEARCH_IGNORE_CASE    = 8;</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;    <span class="keyword">const</span> integer       SEARCH_IGNORE_DIACRIT = 16;</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="interface_search.html#a19d6d5534e288c90f2454699630b7311">search</a> ( <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> startLoc, <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a> endLoc, integer modifiers, DOMString findText, Object callback );   </div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;}</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;</div>
+<div class="line"><a name="l01412"></a><span class="lineno"><a class="code" href="interface_selection.html"> 1412</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_selection.html" title="Provides access to the current selection in the document. There can only be one selection at a time a...">Selection</a> {</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;    DOMString   <a class="code" href="interface_selection.html#adc38966fb3b3ad8fa3c7799a2bbd7c71">getText</a>();</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;    <a class="code" href="interface_location.html" title="Represents a single location, which may be a single point or a range.">Location</a>    <a class="code" href="interface_selection.html#a1c18d575b23dafde19f2ae5337fc28d4">getLocation</a>();</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;}</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;</div>
+<div class="line"><a name="l01436"></a><span class="lineno"><a class="code" href="interface_spine_item.html"> 1436</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_spine_item.html" title="Methods for managing the spine.">SpineItem</a> {</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;    integer <a class="code" href="interface_spine_item.html#ae75b13f7496bc0207c1d744585ed5427">getChildCount</a>();</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;    Object  <a class="code" href="interface_spine_item.html#ac18acc29880a7e00b7124e1fa628443e">getChild</a>( integer index );</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    Object  <a class="code" href="interface_spine_item.html#a64f45c67579a1af56e6892b9b0f808ca">getNode</a> ();</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;    integer   <a class="code" href="interface_spine_item.html#a9e840ef084bd63033c0aaab8aaf5eba0">getNodeType</a>();</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;    DOMString   <a class="code" href="interface_spine_item.html#acfb8484c7b61359610226e40d45e13d6">getIdref</a>();</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;    Object <a class="code" href="interface_spine_item.html#a3476d406d3c359308ce19364de9619af">getAttributes</a>();</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;} </div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;</div>
+<div class="line"><a name="l01498"></a><span class="lineno"><a class="code" href="interface_text_rendering.html"> 1498</a></span>&#160;<span class="keyword">interface </span><a class="code" href="interface_text_rendering.html" title="Interface to enable controlling the way in which text on a page is rendered.">TextRendering</a> {</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a1a0a0122caa7f6521154d3e32eb82410">getLineHeight</a>();</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#a378f42cab1210aecf314ea72fe2dbf55">setLineHeight</a>( <span class="keywordtype">float</span> height );</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;    integer <a class="code" href="interface_text_rendering.html#a548c2c168a981be2c0dbc8557e1e3b87">getNumColumns</a>();</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ab2a03cb21a7ac50768490869647e00cc">setNumColumns</a>( integer nCol );</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;</div>
+<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#a7cbc754ec2cd10a5de318515cfb4d645">getColumnGap</a>();</div>
+<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;</div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;    <span class="keywordtype">boolean</span> <a class="code" href="interface_text_rendering.html#ac236bef553d6451fd2c119a8775c8e8c">setJustification</a> ( DOMString justify );</div>
+<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;</div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;    DOMString <a class="code" href="interface_text_rendering.html#abbcb7c8c85348f17c975b48cb4d02645">getJustification</a>();</div>
 <div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;</div>
 <div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_text_rendering.html#a59367181b27d0244d5f14f8c9486910d">setFontColor</a> ( DOMString fontColor );</div>
 <div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;</div>
@@ -525,7 +525,7 @@ $(document).ready(function(){initNavTree('_readium_8idl_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Readium.idl</b></li>
-    <li class="footer">Generated on Sun Sep 11 2016 12:51:23 for Readium IDL by
+    <li class="footer">Generated on Mon Sep 12 2016 11:02:26 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

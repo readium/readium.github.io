@@ -137,14 +137,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0781e37918431ae8a6ca3f1b3d3114e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6d81a272ad8525bc5207a88e02e524"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#ade6d81a272ad8525bc5207a88e02e524">getRenditionFlow</a> ()</td></tr>
 <tr class="separator:ade6d81a272ad8525bc5207a88e02e524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb662399a3b8256d5a55f235827a6e7f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#aeb662399a3b8256d5a55f235827a6e7f">setWidth</a> (integer width)</td></tr>
-<tr class="separator:aeb662399a3b8256d5a55f235827a6e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acee919e531b74fdd57839c7b972efde3"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#acee919e531b74fdd57839c7b972efde3">getWidth</a> ()</td></tr>
-<tr class="separator:acee919e531b74fdd57839c7b972efde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23e4c7bf0f109a5e4ac3d371c245da8"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#ab23e4c7bf0f109a5e4ac3d371c245da8">setLayoutWidth</a> (integer width)</td></tr>
+<tr class="separator:ab23e4c7bf0f109a5e4ac3d371c245da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafd5c7d550c2e94d6b42848c3cdbf4f7"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#aafd5c7d550c2e94d6b42848c3cdbf4f7">getLayoutWidth</a> ()</td></tr>
+<tr class="separator:aafd5c7d550c2e94d6b42848c3cdbf4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fe498ccc2d71548f9127f3bd5e9c89b"><td class="memItemLeft" align="right" valign="top">DOMstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#a6fe498ccc2d71548f9127f3bd5e9c89b">getGutterWidth</a> ()</td></tr>
 <tr class="separator:a6fe498ccc2d71548f9127f3bd5e9c89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba90d0720c247664556aaace41104797"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#aba90d0720c247664556aaace41104797">setGutterWidth</a> (DOMString width)</td></tr>
 <tr class="separator:aba90d0720c247664556aaace41104797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34b72643772a2ba7a27ade07c823ff0"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#ab34b72643772a2ba7a27ade07c823ff0">getMargins</a> ()</td></tr>
+<tr class="separator:ab34b72643772a2ba7a27ade07c823ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825925fe593953269457b86f70f1e32c"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_page_layout.html#a825925fe593953269457b86f70f1e32c">setMargins</a> (DOMstring margins)</td></tr>
+<tr class="separator:a825925fe593953269457b86f70f1e32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -208,6 +212,41 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 <p>Returns the gutter distance between synthetic spread pages</p>
 <p>Note: If there is no synthetic spread the returned string will be empty.</p>
 <dl class="section return"><dt>Returns</dt><dd>the width of the gutter in CSS units </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aafd5c7d550c2e94d6b42848c3cdbf4f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer PageLayout::getLayoutWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the current width of the display surface (in pixels) available to layout screens (pages), including margins and gutters.</p>
+<dl class="section return"><dt>Returns</dt><dd>integer </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab34b72643772a2ba7a27ade07c823ff0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DOMString PageLayout::getMargins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the margins setting for the current document.</p>
+<p>Note: Will be empty for fixed-layout documents</p>
+<dl class="section return"><dt>Returns</dt><dd>the margins string in CSS fashion (all, or top, right, bottom, left) </dd></dl>
 
 </div>
 </div>
@@ -280,23 +319,6 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 
 </div>
 </div>
-<a class="anchor" id="acee919e531b74fdd57839c7b972efde3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer PageLayout::getWidth </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the current width of the display surface (in pixels) available to layout screens (pages), including margins and gutters.</p>
-<dl class="section return"><dt>Returns</dt><dd>integer </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="aba90d0720c247664556aaace41104797"></a>
 <div class="memitem">
 <div class="memproto">
@@ -319,6 +341,56 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successful else false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab23e4c7bf0f109a5e4ac3d371c245da8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean PageLayout::setLayoutWidth </td>
+          <td>(</td>
+          <td class="paramtype">integer&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the width (in pixels) of the display available for layout of the screens (pages). This is the width of the displays available to layout spreads, including the margins and gutter width, if any.</p>
+<p>Note: This may not be supported on some devices</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>the width in pixels</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false if request not supported </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a825925fe593953269457b86f70f1e32c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean PageLayout::setMargins </td>
+          <td>(</td>
+          <td class="paramtype">DOMstring&#160;</td>
+          <td class="paramname"><em>margins</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the margins for the current document.</p>
+<p>Note: Will return false for fixed-layout documents</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">margins</td><td>desired margins in CSS syntax (all, or top, right, bottom, left)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful false if ignored or not supported </dd></dl>
 
 </div>
 </div>
@@ -396,31 +468,6 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 
 </div>
 </div>
-<a class="anchor" id="aeb662399a3b8256d5a55f235827a6e7f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean PageLayout::setWidth </td>
-          <td>(</td>
-          <td class="paramtype">integer&#160;</td>
-          <td class="paramname"><em>width</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the width (in pixels) of the display available for layout of the screens (pages). This is the width of the displays available to layout spreads, including the margins and gutter width, if any.</p>
-<p>Note: This may not be supported on some devices</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">width</td><td>the width in pixels</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>false if request not supported </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li><a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
 </ul>
@@ -431,7 +478,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REND_FLOW_FIXED</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_page_layout.html">PageLayout</a></li>
-    <li class="footer">Generated on Sun Sep 11 2016 12:51:23 for Readium IDL by
+    <li class="footer">Generated on Mon Sep 12 2016 11:02:26 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
