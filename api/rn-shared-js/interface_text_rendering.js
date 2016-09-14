@@ -7,6 +7,7 @@ var interface_text_rendering =
     [ "getJustification", "interface_text_rendering.html#abbcb7c8c85348f17c975b48cb4d02645", null ],
     [ "getLineHeight", "interface_text_rendering.html#a1a0a0122caa7f6521154d3e32eb82410", null ],
     [ "getNumColumns", "interface_text_rendering.html#a548c2c168a981be2c0dbc8557e1e3b87", null ],
+    [ "setColumnGap", "interface_text_rendering.html#a4ec379c9b5b082b5bd7088ce111a7a18", null ],
     [ "setFontColor", "interface_text_rendering.html#a59367181b27d0244d5f14f8c9486910d", null ],
     [ "setFontFace", "interface_text_rendering.html#ada9bd7c1a6dbb8041cb7bbd5edb19205", null ],
     [ "setFontHeight", "interface_text_rendering.html#aae3c654a4d9dd20a59fee35b02f37412", null ],

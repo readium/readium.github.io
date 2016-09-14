@@ -4,6 +4,7 @@ var searchData=
   ['selection',['Selection',['../interface_selection.html',1,'']]],
   ['setaudiovolume',['setAudioVolume',['../interface_media_overlay.html#a5da55e210268cdc263ae17dfdd02de1c',1,'MediaOverlay']]],
   ['setcolor',['setColor',['../interface_highlight_item.html#ae52b19652122987e69907440513ac9dc',1,'HighlightItem']]],
+  ['setcolumngap',['setColumnGap',['../interface_text_rendering.html#a4ec379c9b5b082b5bd7088ce111a7a18',1,'TextRendering']]],
   ['setfontcolor',['setFontColor',['../interface_text_rendering.html#a59367181b27d0244d5f14f8c9486910d',1,'TextRendering']]],
   ['setfontface',['setFontFace',['../interface_text_rendering.html#ada9bd7c1a6dbb8041cb7bbd5edb19205',1,'TextRendering']]],
   ['setfontheight',['setFontHeight',['../interface_text_rendering.html#aae3c654a4d9dd20a59fee35b02f37412',1,'TextRendering']]],
@@ -21,6 +22,5 @@ var searchData=
   ['setrenditionspread',['setRenditionSpread',['../interface_page_layout.html#a65eccc262fed4372274528e6956f14c5',1,'PageLayout']]],
   ['settouchtoplay',['setTouchToPlay',['../interface_media_overlay.html#a95b77a98c1f24c8ca8e9be79e7d8b8b1',1,'MediaOverlay']]],
   ['setzoom',['setZoom',['../interface_transform.html#a1d265cb6422f8ff7c9f4b5736a74c619',1,'Transform']]],
-  ['spineitem',['SpineItem',['../interface_spine_item.html',1,'']]],
-  ['stop',['stop',['../interface_media_overlay.html#a5066b1b9896da9eb345c63080880234f',1,'MediaOverlay']]]
+  ['spineitem',['SpineItem',['../interface_spine_item.html',1,'']]]
 ];
