@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides methods for walking and querying the metadata. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00678">678</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00671">671</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a266fe719e04e4f844e999edf533cc0c9"></a>
 <div class="memitem">
@@ -170,12 +170,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Recursively searches the current item and its children for the metadata item with the specified namespace and element name.</p>
-<p>Returns a JSON array of matching elements, where the array is of the form:</p>
+<p>Returns an array of matching elements, where the array is of the form:</p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> }</div>
-<div class="line">                etc.</div>
+<div class="line">   object,</div>
+<div class="line">   object,</div>
+<div class="line">   <span class="keywordtype">object</span></div>
+<div class="line">    etc.</div>
 <div class="line">]</div>
 </div><!-- fragment --><p>where the <code>object</code> implements the <a class="el" href="interface_metadata_item.html" title="Provides methods for walking and querying the metadata.">MetadataItem</a> interface and wraps the matching element found.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -185,7 +185,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a JSON array of matching elements </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an array of matching elements </dd></dl>
 
 </div>
 </div>
@@ -213,12 +213,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Recursively searches the current item and its children for the <code>meta</code> element with the specified namespace and property name.</p>
-<p>Returns a JSON array of matching elements, where the array is of the form:</p>
+<p>Returns an array of matching elements, where the array is of the form:</p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;node&quot;</span>:<span class="keywordtype">object</span> }</div>
-<div class="line">                etc.</div>
+<div class="line">   object,</div>
+<div class="line">   object,</div>
+<div class="line">   <span class="keywordtype">object</span></div>
+<div class="line">    etc.</div>
 <div class="line">]</div>
 </div><!-- fragment --><p>where the <code>object</code> implements the <a class="el" href="interface_metadata_item.html" title="Provides methods for walking and querying the metadata.">MetadataItem</a> interface and wraps the matching element found.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -228,7 +228,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a JSON array of matching elements </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an array of matching elements </dd></dl>
 
 </div>
 </div>
@@ -244,14 +244,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a JSON object that is the complete set of attributes for this item, where the array is of the form:</p>
+<p>Returns an array of objects that is the complete set of attributes for this item, where the array is of the form:</p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> }</div>
+<div class="line">   { ns:string, name:string, value:<span class="keywordtype">string</span> },</div>
+<div class="line">   { ns:string, name:string, value:<span class="keywordtype">string</span> },</div>
+<div class="line">   { ns:string, name:string, value:<span class="keywordtype">string</span> }</div>
 <div class="line">                etc.</div>
 <div class="line">]</div>
-</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the JSON array that holds the complete set of attributes </dd></dl>
+</div><!-- fragment --><p> where<br/>
+ <code>ns</code> is the fully qualified namespace<br/>
+ <code>name</code> is the short name of the attribute (without prefix or namespace)<br/>
+ <code>value</code> is the value of the attribute</p>
+<dl class="section return"><dt>Returns</dt><dd>an array of objects that hold the complete set of attributes </dd></dl>
 
 </div>
 </div>
@@ -374,7 +378,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_metadata_item.html">MetadataItem</a></li>
-    <li class="footer">Generated on Thu Sep 15 2016 10:55:28 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 16 2016 10:26:58 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

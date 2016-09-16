@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides information about the current device as well as setting device parameters, if supported. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01281">1281</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01267">1267</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6ce40dd2ffbb881dbee3846425def315"></a>
 <div class="memitem">
@@ -157,17 +157,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The constructor for the <a class="el" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> object The constructor for the <a class="el" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> interface allows a <a class="el" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> object to be created. The parameter is a JSON object of the form:</p>
-<div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;margin&quot;</span>:<span class="keywordtype">string</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;fontSize&quot;</span>:<span class="keywordtype">string</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;fontFace&quot;</span>:<span class="keywordtype">string</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;currentPage&quot;</span>:number }</div>
-<div class="line">             etc.</div>
-<div class="line">]</div>
+<p>The constructor for the <a class="el" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> object The constructor for the <a class="el" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> interface allows a <a class="el" href="interface_reading_system.html" title="Provides information about the current device as well as setting device parameters, if supported.">ReadingSystem</a> object to be created. The parameter is a JavaScript object of the form:</p>
+<div class="fragment"><div class="line">var config = {};</div>
+<div class="line">config[<span class="stringliteral">&quot;margin&quot;</span>] = <span class="stringliteral">&quot;1em&quot;</span>;</div>
+<div class="line">config[<span class="stringliteral">&quot;line-height&quot;</span>] = <span class="stringliteral">&quot;16pt&quot;</span>;</div>
+<div class="line">  etc.</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>the JSON object that holds the configuration options </td></tr>
+    <tr><td class="paramname">config</td><td>the JavaScript object that holds the configuration options </td></tr>
   </table>
   </dd>
 </dl>
@@ -221,8 +218,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the <a class="el" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3...">ReadingSystemObject</a></p>
-<dl class="section return"><dt>Returns</dt><dd>returns an object which implements the <a class="el" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3...">ReadingSystemObject</a> interface </dd></dl>
+<p>Get the <a class="el" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (http://www.idpf.org/epub/31/spec/epub-contentdocs-20160906.html#app-epubReadingSystem)">ReadingSystemObject</a></p>
+<dl class="section return"><dt>Returns</dt><dd>returns an object which implements the <a class="el" href="interface_reading_system_object.html" title="The official EPUB reading system object. Interface defined in the EPUB spec here (http://www.idpf.org/epub/31/spec/epub-contentdocs-20160906.html#app-epubReadingSystem)">ReadingSystemObject</a> interface </dd></dl>
 
 </div>
 </div>
@@ -332,7 +329,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_reading_system.html">ReadingSystem</a></li>
-    <li class="footer">Generated on Thu Sep 15 2016 10:55:28 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 16 2016 10:26:58 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

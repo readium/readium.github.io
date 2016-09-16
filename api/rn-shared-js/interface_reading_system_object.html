@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('interface_reading_system_object.html',
 </div><!--header-->
 <div class="contents">
 
-<p>The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3.1)  
+<p>The official EPUB reading system object. Interface defined in the EPUB spec here (<a class="el" href="">http://www.idpf.org/epub/31/spec/epub-contentdocs-20160906.html#app-epubReadingSystem)</a> 
  <a href="interface_reading_system_object.html#details">More...</a></p>
 
 <p><code>import &quot;<a class="el" href="_readium_8idl_source.html">Readium.idl</a>&quot;;</code></p>
@@ -130,9 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7c7897295db5af78618274143417263b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The official EPUB reading system object. Interface defined in the EPUB spec here (provide link to 3.1) </p>
+<div class="textblock"><p>The official EPUB reading system object. Interface defined in the EPUB spec here (<a class="el" href="">http://www.idpf.org/epub/31/spec/epub-contentdocs-20160906.html#app-epubReadingSystem)</a></p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01370">1370</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01353">1353</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a170dc3714cb9ab977e6f5310456ee1f7"></a>
 <div class="memitem">
@@ -166,9 +166,9 @@ Public Member Functions</h2></td></tr>
 <p>Returns the version of the reading system.<br/>
  This returns a JSON array of the form:</p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;module&quot;</span>:name, <span class="stringliteral">&quot;version&quot;</span>:commit-hash },</div>
-<div class="line">   { <span class="stringliteral">&quot;module&quot;</span>:name, <span class="stringliteral">&quot;version&quot;</span>:commit-hash },</div>
-<div class="line">   { <span class="stringliteral">&quot;module&quot;</span>:name, <span class="stringliteral">&quot;version&quot;</span>:commit-hash }</div>
+<div class="line">   { module:name, version:commit-hash },</div>
+<div class="line">   { module:name, version:commit-hash },</div>
+<div class="line">   { module:name, version:commit-hash }</div>
 <div class="line">                  etc.</div>
 <div class="line">]</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>a JSON array with the version info </dd></dl>
@@ -227,7 +227,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_reading_system_object.html">ReadingSystemObject</a></li>
-    <li class="footer">Generated on Thu Sep 15 2016 10:55:28 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 16 2016 10:26:58 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

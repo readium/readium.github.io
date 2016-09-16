@@ -128,10 +128,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1a2e5fab20b4b1b9f179227f6699f4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f21f01031904ed23e8786852b3b3b46"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nav_doc_item.html#a4f21f01031904ed23e8786852b3b3b46">getNode</a> ()</td></tr>
 <tr class="separator:a4f21f01031904ed23e8786852b3b3b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab1d2911935b3d0b71bbcbc69a5b8d9e"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nav_doc_item.html#aab1d2911935b3d0b71bbcbc69a5b8d9e">getNodeType</a> ()</td></tr>
-<tr class="separator:aab1d2911935b3d0b71bbcbc69a5b8d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac88166712a9e92f42ecd5da4ff12b6c4"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nav_doc_item.html#ac88166712a9e92f42ecd5da4ff12b6c4">getItemName</a> ()</td></tr>
-<tr class="separator:ac88166712a9e92f42ecd5da4ff12b6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a209b133758bd5c09b32ae8de94ee8342"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nav_doc_item.html#a209b133758bd5c09b32ae8de94ee8342">getHref</a> ()</td></tr>
 <tr class="separator:a209b133758bd5c09b32ae8de94ee8342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4f9b53c8db7c2f2c18ab309ce94bf1b"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_nav_doc_item.html#ae4f9b53c8db7c2f2c18ab309ce94bf1b">getAttributes</a> ()</td></tr>
@@ -140,7 +136,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to elements of the EPUB navigation document. The intent of this interface is to allow callers to either directly access the associated nav element (if this is the top level <a class="el" href="interface_nav_doc_item.html" title="Interface to elements of the EPUB navigation document. The intent of this interface is to allow calle...">NavDocItem</a> or to walk the tree of the nav element. </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00800">800</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l00797">797</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae4f9b53c8db7c2f2c18ab309ce94bf1b"></a>
 <div class="memitem">
@@ -154,14 +150,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a JSON object that is the complete set of attributes for this item, where the array is of the form:</p>
+<p>Returns an array of objects that is the complete set of attributes for this item, where the array is of the form:</p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> }</div>
+<div class="line">   { ns:string, name:string, value:<span class="keywordtype">string</span> },</div>
+<div class="line">   { ns:string, name:string, value:<span class="keywordtype">string</span> },</div>
+<div class="line">   { ns:string, name:string, value:<span class="keywordtype">string</span> }</div>
 <div class="line">                etc.</div>
 <div class="line">]</div>
-</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the JSON array that holds the complete set of attributes </dd></dl>
+</div><!-- fragment --><p> where<br/>
+ <code>ns</code> is the fully qualified namespace<br/>
+ <code>name</code> is the short name of the attribute (without prefix or namespace)<br/>
+ <code>value</code> is the value of the attribute</p>
+<dl class="section return"><dt>Returns</dt><dd>an array of objects that hold the complete set of attributes </dd></dl>
 
 </div>
 </div>
@@ -217,23 +217,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac88166712a9e92f42ecd5da4ff12b6c4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DOMString NavDocItem::getItemName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get the name of the element</p>
-<dl class="section return"><dt>Returns</dt><dd>DOMString </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a4f21f01031904ed23e8786852b3b3b46"></a>
 <div class="memitem">
 <div class="memproto">
@@ -251,23 +234,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aab1d2911935b3d0b71bbcbc69a5b8d9e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer NavDocItem::getNodeType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the DOM3 Node type value for the element wrapped by the current item.</p>
-<dl class="section return"><dt>Returns</dt><dd>the Node type value </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li><a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
 </ul>
@@ -278,7 +244,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_nav_doc_item.html">NavDocItem</a></li>
-    <li class="footer">Generated on Thu Sep 15 2016 10:55:28 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 16 2016 10:26:58 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

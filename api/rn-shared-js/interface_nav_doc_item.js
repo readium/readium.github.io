@@ -4,7 +4,5 @@ var interface_nav_doc_item =
     [ "getChild", "interface_nav_doc_item.html#a1a2e5fab20b4b1b9f179227f6699f4b2", null ],
     [ "getChildCount", "interface_nav_doc_item.html#afaed1d36abfa3601da9552ddb02a5e62", null ],
     [ "getHref", "interface_nav_doc_item.html#a209b133758bd5c09b32ae8de94ee8342", null ],
-    [ "getItemName", "interface_nav_doc_item.html#ac88166712a9e92f42ecd5da4ff12b6c4", null ],
-    [ "getNode", "interface_nav_doc_item.html#a4f21f01031904ed23e8786852b3b3b46", null ],
-    [ "getNodeType", "interface_nav_doc_item.html#aab1d2911935b3d0b71bbcbc69a5b8d9e", null ]
+    [ "getNode", "interface_nav_doc_item.html#a4f21f01031904ed23e8786852b3b3b46", null ]
 ];

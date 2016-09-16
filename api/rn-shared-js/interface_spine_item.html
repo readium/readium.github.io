@@ -128,8 +128,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac18acc29880a7e00b7124e1fa628443e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64f45c67579a1af56e6892b9b0f808ca"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_spine_item.html#a64f45c67579a1af56e6892b9b0f808ca">getNode</a> ()</td></tr>
 <tr class="separator:a64f45c67579a1af56e6892b9b0f808ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e840ef084bd63033c0aaab8aaf5eba0"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_spine_item.html#a9e840ef084bd63033c0aaab8aaf5eba0">getNodeType</a> ()</td></tr>
-<tr class="separator:a9e840ef084bd63033c0aaab8aaf5eba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb8484c7b61359610226e40d45e13d6"><td class="memItemLeft" align="right" valign="top">DOMString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_spine_item.html#acfb8484c7b61359610226e40d45e13d6">getIdref</a> ()</td></tr>
 <tr class="separator:acfb8484c7b61359610226e40d45e13d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3476d406d3c359308ce19364de9619af"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_spine_item.html#a3476d406d3c359308ce19364de9619af">getAttributes</a> ()</td></tr>
@@ -139,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Methods for managing the spine. </p>
 <p>TODO: Need to provide access to spine-level overrides </p>
 
-<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01495">1495</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
+<p>Definition at line <a class="el" href="_readium_8idl_source.html#l01478">1478</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a3476d406d3c359308ce19364de9619af"></a>
 <div class="memitem">
@@ -153,14 +151,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a JSON object that is the complete set of attributes for this item, where the array is of the form:</p>
+<p>Returns an array of objects that is the complete set of attributes for this item, where the array is of the form:</p>
 <div class="fragment"><div class="line">[</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> },</div>
-<div class="line">   { <span class="stringliteral">&quot;name&quot;</span>:string, <span class="stringliteral">&quot;value&quot;</span>:<span class="keywordtype">string</span> }</div>
+<div class="line">   { ns:string, name:string, value:<span class="keywordtype">string</span> },</div>
+<div class="line">   { ns:string, name:string, value:<span class="keywordtype">string</span> },</div>
+<div class="line">   { ns:string, name:string, value:<span class="keywordtype">string</span> }</div>
 <div class="line">                etc.</div>
 <div class="line">]</div>
-</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the JSON array that holds the complete set of attributes </dd></dl>
+</div><!-- fragment --><p> where<br/>
+ <code>ns</code> is the fully qualified namespace<br/>
+ <code>name</code> is the short name of the attribute (without prefix or namespace)<br/>
+ <code>value</code> is the value of the attribute</p>
+<dl class="section return"><dt>Returns</dt><dd>an array of objects that hold the complete set of attributes </dd></dl>
 
 </div>
 </div>
@@ -239,23 +241,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9e840ef084bd63033c0aaab8aaf5eba0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">integer SpineItem::getNodeType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the DOM3 Node type value for the current item.</p>
-<dl class="section return"><dt>Returns</dt><dd>DOM3 Node type value for the item </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li><a class="el" href="_readium_8idl_source.html">Readium.idl</a></li>
 </ul>
@@ -266,7 +251,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_spine_item.html">SpineItem</a></li>
-    <li class="footer">Generated on Thu Sep 15 2016 10:55:28 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 16 2016 10:26:58 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
