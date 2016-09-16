@@ -126,15 +126,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0aab0a90a66aadda0aa06318a6474260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46bcadcb46d52a7aa63e27dbbb2c575b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_location.html#a46bcadcb46d52a7aa63e27dbbb2c575b">getLocationPrecision</a> ()</td></tr>
 <tr class="separator:a46bcadcb46d52a7aa63e27dbbb2c575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f4fff24bebe43ac072ef85bd0e181b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_location.html#a50f4fff24bebe43ac072ef85bd0e181b">compare</a> (DOMString otherLoc, Object callback)</td></tr>
-<tr class="separator:a50f4fff24bebe43ac072ef85bd0e181b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f4d99f9a8ef303da8235a9deb30256"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_location.html#ac6f4d99f9a8ef303da8235a9deb30256">compare</a> (DOMString otherLoc)</td></tr>
+<tr class="separator:ac6f4d99f9a8ef303da8235a9deb30256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a single location, which may be a single point or a range. </p>
 
 <p>Definition at line <a class="el" href="_readium_8idl_source.html#l00409">409</a> of file <a class="el" href="_readium_8idl_source.html">Readium.idl</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a50f4fff24bebe43ac072ef85bd0e181b"></a>
+<a class="anchor" id="ac6f4d99f9a8ef303da8235a9deb30256"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -142,25 +142,14 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Location::compare </td>
           <td>(</td>
           <td class="paramtype">DOMString&#160;</td>
-          <td class="paramname"><em>otherLoc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>otherLoc</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">Object&#160;</td>
-          <td class="paramname"><em>callback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compare this location with another one. The second parameter is the callback function that will be called when the comparison is complete.</p>
-<p>The signature of the callback function must be:</p>
-<div class="fragment"><div class="line">callback( integer:result, <span class="keywordtype">boolean</span>:precise)</div>
-</div><!-- fragment --><p>where <code>result</code> will be<br/>
+<p>Compare this location with another one.</p>
+<p>TDOD Implement with Promises</p>
+<p>where <code>result</code> will be<br/>
  -1 if the supplied value is before this one<br/>
  0 if the supplied value is the same as this one<br/>
  1 if the supplied value is after this one<br/>
@@ -220,7 +209,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_location.html">Location</a></li>
-    <li class="footer">Generated on Fri Sep 16 2016 10:26:58 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 16 2016 11:52:49 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

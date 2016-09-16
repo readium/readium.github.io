@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['search',['search',['../interface_search.html#a19d6d5534e288c90f2454699630b7311',1,'Search']]],
+  ['search',['search',['../interface_search.html#a96e1eca14c5335bf5b4ae87a067e1ab8',1,'Search']]],
   ['setaudiovolume',['setAudioVolume',['../interface_media_overlay.html#a5da55e210268cdc263ae17dfdd02de1c',1,'MediaOverlay']]],
   ['setcolor',['setColor',['../interface_highlight_item.html#ae52b19652122987e69907440513ac9dc',1,'HighlightItem']]],
   ['setcolumngap',['setColumnGap',['../interface_text_rendering.html#a4ec379c9b5b082b5bd7088ce111a7a18',1,'TextRendering']]],
