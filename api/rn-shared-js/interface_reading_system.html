@@ -134,6 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9f10b405876f3f3a1b068d489d49ecdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2b634d222d195c940bc23a25427e180"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#af2b634d222d195c940bc23a25427e180">injectStyleSheet</a> (DOMString url)</td></tr>
 <tr class="separator:af2b634d222d195c940bc23a25427e180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90b8c702a62e527ea4e4cb1126ea781"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#aa90b8c702a62e527ea4e4cb1126ea781">injectUAStyleSheet</a> ()</td></tr>
+<tr class="separator:aa90b8c702a62e527ea4e4cb1126ea781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed897c6e99585624bd86e3b3d247d68d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#aed897c6e99585624bd86e3b3d247d68d">injectJavaScript</a> (DOMString url)</td></tr>
 <tr class="separator:aed897c6e99585624bd86e3b3d247d68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3653a4f8c1c8ad4acf3e7b8ec2ccea3f"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_reading_system.html#a3653a4f8c1c8ad4acf3e7b8ec2ccea3f">getRSO</a> ()</td></tr>
@@ -284,7 +286,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Provides method of injecting user/app stylesheet such as for setting night-mode or other non-default color schemes</p>
+<p>Provides method of injecting user stylesheet document-level styling</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">url</td><td>the url to the stylesheet to be injected</td></tr>
@@ -292,6 +294,23 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>false if not supported </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa90b8c702a62e527ea4e4cb1126ea781"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean ReadingSystem::injectUAStyleSheet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inect a user-agent style sheet</p>
+<dl class="section return"><dt>Returns</dt><dd>true if successful else false </dd></dl>
 
 </div>
 </div>
@@ -309,6 +328,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Basic method to open an EPUB. Also performs any other initialization required.</p>
+<p>TODO Needs to be asynchronous using Promises</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">url</td><td>the url to the EPUB to be opened</td></tr>
@@ -329,7 +349,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_reading_system.html">ReadingSystem</a></li>
-    <li class="footer">Generated on Fri Sep 16 2016 11:52:49 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 16 2016 12:43:14 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

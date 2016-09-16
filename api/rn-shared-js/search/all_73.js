@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['search',['Search',['../interface_search.html',1,'Search'],['../interface_search.html#a96e1eca14c5335bf5b4ae87a067e1ab8',1,'Search::search()']]],
+  ['search',['Search',['../interface_search.html',1,'Search'],['../interface_search.html#ac49444216d3a9c9bb8c222058932b3c9',1,'Search::search()']]],
   ['selection',['Selection',['../interface_selection.html',1,'']]],
   ['setaudiovolume',['setAudioVolume',['../interface_media_overlay.html#a5da55e210268cdc263ae17dfdd02de1c',1,'MediaOverlay']]],
   ['setcolor',['setColor',['../interface_highlight_item.html#ae52b19652122987e69907440513ac9dc',1,'HighlightItem']]],

@@ -7,5 +7,6 @@ var interface_reading_system =
     [ "initRenderer", "interface_reading_system.html#aa8ee2952832188e3fd799e2747e20e75", null ],
     [ "injectJavaScript", "interface_reading_system.html#aed897c6e99585624bd86e3b3d247d68d", null ],
     [ "injectStyleSheet", "interface_reading_system.html#af2b634d222d195c940bc23a25427e180", null ],
+    [ "injectUAStyleSheet", "interface_reading_system.html#aa90b8c702a62e527ea4e4cb1126ea781", null ],
     [ "openBook", "interface_reading_system.html#ae497dcbf5bfe0db72c8088059231d1a5", null ]
 ];

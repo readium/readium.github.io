@@ -244,6 +244,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getCurrentLocation()
 : <a class="el" href="interface_navigator.html#a9c0fe7e828c149b940f7935225fe9b4a">Navigator</a>
 </li>
+<li>getCurrentSelection()
+: <a class="el" href="interface_selection.html#a2121017a5049adf459f2654c60f7b904">Selection</a>
+</li>
 <li>getDeviceSize()
 : <a class="el" href="interface_reading_system.html#a9f10b405876f3f3a1b068d489d49ecdb">ReadingSystem</a>
 </li>
@@ -329,9 +332,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_media_overlay.html#a68a47e943a9a340dc635b86087922ed9">MediaOverlay</a>
 </li>
 <li>getName()
-: <a class="el" href="interface_manifest_item.html#a96bd2da54a7a67d4d1beebab9ad37c28">ManifestItem</a>
+: <a class="el" href="interface_reading_system_object.html#a170dc3714cb9ab977e6f5310456ee1f7">ReadingSystemObject</a>
+, <a class="el" href="interface_manifest_item.html#a96bd2da54a7a67d4d1beebab9ad37c28">ManifestItem</a>
 , <a class="el" href="interface_reading_system.html#a432c97e4b19afe94a1a87e6b03d1646b">ReadingSystem</a>
-, <a class="el" href="interface_reading_system_object.html#a170dc3714cb9ab977e6f5310456ee1f7">ReadingSystemObject</a>
 </li>
 <li>getNavElm()
 : <a class="el" href="interface_document.html#aac5d25d41ee39be95129c99c88803ad1">Document</a>
@@ -340,11 +343,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="interface_document.html#a859566cde9e720b65ad1edc0130747fe">Document</a>
 </li>
 <li>getNode()
-: <a class="el" href="interface_nav_doc_item.html#a4f21f01031904ed23e8786852b3b3b46">NavDocItem</a>
+: <a class="el" href="interface_metadata_item.html#a9dead810e6e45e93903f21e4cd048ebe">MetadataItem</a>
+, <a class="el" href="interface_nav_doc_item.html#a4f21f01031904ed23e8786852b3b3b46">NavDocItem</a>
 , <a class="el" href="interface_spine_item.html#a64f45c67579a1af56e6892b9b0f808ca">SpineItem</a>
-, <a class="el" href="interface_metadata_item.html#a9dead810e6e45e93903f21e4cd048ebe">MetadataItem</a>
-, <a class="el" href="interface_collection_item.html#a88381996e6a64f8ea92766a4c2703990">CollectionItem</a>
 , <a class="el" href="interface_manifest_item.html#ac06de78aea43d27384301778cbf9eecf">ManifestItem</a>
+, <a class="el" href="interface_collection_item.html#a88381996e6a64f8ea92766a4c2703990">CollectionItem</a>
 </li>
 <li>getNumColumns()
 : <a class="el" href="interface_text_rendering.html#a548c2c168a981be2c0dbc8557e1e3b87">TextRendering</a>
@@ -397,12 +400,6 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>getScreenFromLocation()
 : <a class="el" href="interface_navigator.html#ab52f9f9abe6fc3dde19aaac879c1d85a">Navigator</a>
 </li>
-<li>getSelectedLocation()
-: <a class="el" href="interface_selection.html#a526162a8f9aba853ded4f105373b11aa">Selection</a>
-</li>
-<li>getSelectedText()
-: <a class="el" href="interface_selection.html#af20af0bde024d751b0a83254f8f9f23d">Selection</a>
-</li>
 <li>getSeverity()
 : <a class="el" href="interface_error_item.html#a37fcfcea01b88b1f02efea1290d3fe4f">ErrorItem</a>
 </li>
@@ -452,6 +449,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>injectStyleSheet()
 : <a class="el" href="interface_reading_system.html#af2b634d222d195c940bc23a25427e180">ReadingSystem</a>
+</li>
+<li>injectUAStyleSheet()
+: <a class="el" href="interface_reading_system.html#aa90b8c702a62e527ea4e4cb1126ea781">ReadingSystem</a>
 </li>
 <li>isFinalScreen()
 : <a class="el" href="interface_navigator.html#afecd3c7f55a3a92baff8521f4e1eec98">Navigator</a>
@@ -529,7 +529,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>search()
-: <a class="el" href="interface_search.html#a96e1eca14c5335bf5b4ae87a067e1ab8">Search</a>
+: <a class="el" href="interface_search.html#ac49444216d3a9c9bb8c222058932b3c9">Search</a>
 </li>
 <li>setAudioVolume()
 : <a class="el" href="interface_media_overlay.html#a5da55e210268cdc263ae17dfdd02de1c">MediaOverlay</a>
@@ -598,7 +598,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 16 2016 11:52:50 for Readium IDL by
+    <li class="footer">Generated on Fri Sep 16 2016 12:43:14 for Readium IDL by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
