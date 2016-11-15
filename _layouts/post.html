@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="http://readium.org">Home</a></li>
+      <li><a href="/" class="active-trail">Readium Projects</a></li>
+      <li class="active">{{ page.title | escape }}</li>
+    </ol>
+  </div>
+</div>
+
+<div class="main-container container">
+  <div class="row">
+    <section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+          <h1 class="post-title"  itemprop="name headline">{{ page.title | escape }}</h1>
+          <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+        </header>
+        <hr>
+
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+      </article>
+    </section>  
+  </div>
+</div>

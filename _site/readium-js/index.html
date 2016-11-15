@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="canonical" href="http://localhost:4000/readium-js/">
+  <title>Overview of Readium JS</title>
+  <meta name="description" content="Readium JS comprises two sub-projects, Readium Chrome Extension and the Readium CloudReader. Both consist of three major pieces:">
+  <link rel="stylesheet" type="text/css" href="/css/system.base.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/date.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/datepicker.1.7.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/field.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/node.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/views.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/ctools.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="/js/jquery.min.js?v=1.11.2"></script>
+  <script src="/js/jquery.once.js?v=1.2"></script>
+
+  
+
+  <script src="/js/bootstrap/affix.js"></script>
+  <script src="/js/bootstrap/alert.js"></script>
+  <script src="/js/bootstrap/button.js"></script>
+  <script src="/js/bootstrap/carousel.js"></script>
+  <script src="/js/bootstrap/collapse.js"></script>
+  <script src="/js/bootstrap/dropdown.js"></script>
+  <script src="/js/bootstrap/modal.js"></script>
+  <script src="/js/bootstrap/tooltip.js"></script>
+  <script src="/js/bootstrap/popover.js"></script>
+  <script src="/js/bootstrap/scrollspy.js"></script>
+  <script src="/js/bootstrap/tab.js"></script>
+  <script src="/js/bootstrap/transition.js"></script>
+</head>
+
+  <body role="document">
+
+    <div class="navbar-wrapper">
+
+      <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="logo navbar-btn pull-left" href="/">
+        <img src="/assets/logos/readium-logo.png" alt="Home" />
+      </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <nav role="navigation">
+        
+        <ul class="menu nav navbar-nav">
+
+<!--             <li class="first expanded dropdown"><a class="page-link" href=""></a></li> -->
+
+              
+
+              <li class="first expanded dropdown">
+                <a href="/membership" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+                  
+        <ul class="dropdown-menu">
+              <li class="first leaf">
+                <a href="http://readium.org/about/project-goals">Project Goals</a>
+              </li>
+              <li class="leaf">
+                <a href="http://readium.org/about/applications-based-on-readium">Applications Based on Readium</a>
+                    </li>
+                  </ul>
+              </li>
+
+              <li class="first leaf">
+                <a href="/table-of-contents/">Table Of Contents</a>
+              </li>
+
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      
+    </div>
+    <div class="main-container-wrapper">
+
+      <div class="breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="http://readium.org">Home</a></li>
+      <li><a href="/" class="active-trail">Readium Projects</a></li>
+      <li class="active">Overview of Readium JS</li>
+    </ol>
+  </div>
+</div>
+
+<div class="main-container container">
+  <div class="row">
+    <section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+          <h1 class="post-title"  itemprop="name headline">Overview of Readium JS</h1>
+          <p class="post-meta"><time datetime="2016-11-08T13:30:00+01:00" itemprop="datePublished">Nov 8, 2016</time></p>
+        </header>
+        <hr>
+
+        <div class="post-content" itemprop="articleBody">
+          <p>Readium JS comprises two sub-projects, Readium Chrome Extension and the Readium CloudReader. Both consist of three major pieces:</p>
+
+<ul>
+  <li>readium-js, which is the core (equivalent to the C++ Core in the SDK) and provides basic services, manages the EPUB package, metadata, navigating and fetching resources and so on,</li>
+  <li>readium-shared-js: This is exactly the same code as used in the SDK implementation (hence the ‘shared’ name),</li>
+  <li>readium-js-viewer: This is the application layer which manages the user-interface.</li>
+</ul>
+
+<p>The Chrome Extension and the CloudReader share approximately 95% of their code, the primary difference is where their EPUB “library” is located and how they fetch EPUB resources. The diagram below illustrates the major aspects of their architectures.</p>
+
+<p><img src="/assets/images/readium-js.png" alt="readium-js" /></p>
+
+<h3 id="readium-chrome-extension-rce">Readium Chrome Extension (RCE)</h3>
+
+<p>This sub-project consists of an extension to Google Chrome. It is a full-fledged, functional EPUB reading system. It supports virtually all of the EPUB 3.0.1 specification. Unlike the Readium SDK Launchers, RCE is a relatively polished, full-featured application. It is under constant development to provide more features and capabilities. It only works with Google Chrome since it leverages the built-in capabilities provided by the Chrome framework. It imports the user’s books into a private file-system on the user’s computer.</p>
+
+<h3 id="readium-cloudreader">Readium CloudReader</h3>
+
+<p>The CloudReader is very similar to the Chrome extension – and they share almost all their code. The key difference is that RCE is tightly wedded to Google Chrome and therefor works only where Chrome is available. The CloudReader, on the other hand, runs in almost all browsers. Another distinction is while RCS loads the user’s books into a private filesystem managed by Chrome on the user’s computer, the CloudReader loads its books from a “bookshelf” located somewhere on the web. The CloudReader is downloaded each time the user creates a new instance of the CloudReader. The bookshelf and the CloudReader’s deployed location are typically the same, but do not need to be so.</p>
+
+<p>The only supported platform for RCE is of course Google Chrome. It is validated (tested) on Windows (7 and 8), OSX, and ChromeOS (ChromeBook). It may work on other platforms but we do not test it elsewhere. Chrome apps are not supported on iOS or Android.</p>
+
+<p>The CloudReader is currently validated against the latest version of all major browsers, including:</p>
+
+<ul>
+  <li>Safari (OSX and iOS only),</li>
+  <li>Firefox (iOS, OSX, Windows, Android),</li>
+  <li>Chrome (iOS, OSX, Windows, Android).</li>
+</ul>
+
+<p>Again, the CloudReader may (and usually does) run properly on other browser/platform combinations, but Readium does not validate against them.</p>
+
+        </div>
+      </article>
+    </section>  
+  </div>
+</div>
+
+
+    </div>
+
+    <footer>
+  <div class="prefooter">
+    <div class="container">
+      <div class="region region-prefooter">
+        <section id="block-block-19" class="block block-block clearfix">    
+          <div class="related-site-logo related-site-logo-idpf">
+            <a href="http://idpf.org/"><img src="/assets/logos/idpf-logo-gray.png"></a>
+          </div>
+          <div class="related-site-logo related-site-logo-epub">
+            <a href="http://idpf.org/epub"><img class="related-site-logo-epub" src="/assets/logos/epub-logo-gray.png"></a>
+          </div>
+          <div class="related-site-logo related-site-logo-epubzone">
+            <a href="http://epubzone.org/"><img class="related-site-logo-epubzone" src="/assets/logos/epubzone-logo-gray.png"></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="region region-footer">
+        <section id="social-links" class="block block-block col-sm-4 col-sm-push-5 twitter-accounts">
+          <div>
+            <span style="padding-right: 2em;">Twitter:</span> <a href="https://twitter.com/readiumjs" style="padding-right: 2em;">@readiumjs</a> <a href="https://twitter.com/epub3zone">@epub3zone</a>
+          </div>
+        </section>
+        <section id="block-menu-menu-secondary-menu" class="block block-menu col-sm-3 col-sm-push-5">    
+          <ul class="menu nav">
+            <li class="first leaf"><a href="http://readium.org/about/faq" title="">FAQ</a></li>
+            <li class="last leaf"><a href="http://readium.org/contact">Contact</a></li>
+          </ul>
+        </section>
+        <section id="copyright-notice" class="block block-block col-sm-5 col-sm-pull-7">    
+          <div class="copyright-notice">Copyright 2016 Readium Foundation. All rights reserved.</div>
+        </section>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

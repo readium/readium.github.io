@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="canonical" href="http://localhost:4000/history/">
+  <title>A Bit Of History</title>
+  <meta name="description" content="The Readium project was started by the IDPF in 2012 because the EPUB 3.0 specification had been released late in 2011, but no implementation yet existed (or,...">
+  <link rel="stylesheet" type="text/css" href="/css/system.base.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/date.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/datepicker.1.7.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/field.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/node.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/views.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/ctools.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="/js/jquery.min.js?v=1.11.2"></script>
+  <script src="/js/jquery.once.js?v=1.2"></script>
+
+  
+
+  <script src="/js/bootstrap/affix.js"></script>
+  <script src="/js/bootstrap/alert.js"></script>
+  <script src="/js/bootstrap/button.js"></script>
+  <script src="/js/bootstrap/carousel.js"></script>
+  <script src="/js/bootstrap/collapse.js"></script>
+  <script src="/js/bootstrap/dropdown.js"></script>
+  <script src="/js/bootstrap/modal.js"></script>
+  <script src="/js/bootstrap/tooltip.js"></script>
+  <script src="/js/bootstrap/popover.js"></script>
+  <script src="/js/bootstrap/scrollspy.js"></script>
+  <script src="/js/bootstrap/tab.js"></script>
+  <script src="/js/bootstrap/transition.js"></script>
+</head>
+
+  <body role="document">
+
+    <div class="navbar-wrapper">
+
+      <header id="navbar" role="banner" class="navbar container navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="logo navbar-btn pull-left" href="/">
+        <img src="/assets/logos/readium-logo.png" alt="Home" />
+      </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <nav role="navigation">
+        
+        <ul class="menu nav navbar-nav">
+
+<!--             <li class="first expanded dropdown"><a class="page-link" href=""></a></li> -->
+
+              
+
+              <li class="first expanded dropdown">
+                <a href="/membership" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+                  
+        <ul class="dropdown-menu">
+              <li class="first leaf">
+                <a href="http://readium.org/about/project-goals">Project Goals</a>
+              </li>
+              <li class="leaf">
+                <a href="http://readium.org/about/applications-based-on-readium">Applications Based on Readium</a>
+                    </li>
+                  </ul>
+              </li>
+
+              <li class="first leaf">
+                <a href="/table-of-contents/">Table Of Contents</a>
+              </li>
+
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      
+    </div>
+    <div class="main-container-wrapper">
+
+      <div class="breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="http://readium.org">Home</a></li>
+      <li><a href="/" class="active-trail">Readium Projects</a></li>
+      <li class="active">A Bit Of History</li>
+    </ol>
+  </div>
+</div>
+
+<div class="main-container container">
+  <div class="row">
+    <section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+          <h1 class="post-title"  itemprop="name headline">A Bit Of History</h1>
+          <p class="post-meta"><time datetime="2016-11-15T10:30:00+01:00" itemprop="datePublished">Nov 15, 2016</time></p>
+        </header>
+        <hr>
+
+        <div class="post-content" itemprop="articleBody">
+          <p>The Readium project was started by the IDPF in 2012 because the EPUB 3.0 specification had been released late in 2011, but no implementation yet existed (or, at least, had been publicly released). So IDPF provided some funding and encouragement and two firms, Evident Point and Bluefire, took the lead in developing a JavaScript implementation of a significant part of the EPUB 3 spec.</p>
+
+<p>However, while this was a real step in the right direction, it was not a complete implementation and it was written as a Google Chrome extension.  This was fine as a demo, but did not provide an implementation for native devices (iOS and Android as well as desktops) and since it was in JavaScript, it couldn’t support DRM securely.  Therefore the IDPF began seeking out other companies and individuals who, in addition to Bluefire and Evident Point, could help create a native implementation.</p>
+
+<p>One of these companies was Kobo, of Toronto, Ontario. Kobo had several eReaders but had wanted to consolidate the work and generate one, stable, maintainable codebase. So they asked one of the senior engineers, Jim Dovey to write and/or consolidate the available code into one. Then when IDPF came around asking for contributions, Kobo decided to let the C++ library developed by Jim be released into Open Source as the Readium SDK core.</p>
+
+<p>However, the SDK core was just that, a core on which to build apps so Readium needed to do that.  At the same time, it was realized that the Chrome Extension provided much of a “web-app” framework - in JavaScript - so the decision was made to undertake two subprojects:</p>
+<ul>
+  <li>Revamp the existing JS code base, factoring it into 3 parts:
+    <ul>
+      <li>The low-level parsing and support, equivalent to the SDK,</li>
+      <li>A browser-management and utility layer,</li>
+      <li>The actual Chrome Extension application layer,</li>
+    </ul>
+  </li>
+  <li>Create actual apps based on the SDK which would comprise:
+    <ul>
+      <li>The actual SDK core,</li>
+      <li>The same browser-management and utility layer as in the Chrome Extension,</li>
+      <li>Four native code application layers (iOS, Android, OSX and Windows),</li>
+    </ul>
+  </li>
+</ul>
+
+<p>All of the above was (largely) done in 2013.  The native applications (termed ‘Launchers’) were deliberately kept very crude and limited in order to not compete with Readium Foundation members who were building polished EPUB readers for themselves and clients.  At the same time, the Chrome Extension was re-factored a bit to produce a cross-browser application (now called the CloudReader) in addition to the Chrome Extension. It’s worth noting that the Windows Launcher was never really developed, primarily due to a lack of interest by both developers and Readium Foundation members.</p>
+
+<p>The SDK was designed from the beginning to support DRM (<em> Digital Rights Management </em>), a mandatory feature for digital library lending, and also required by many publisher for anti-piracy matters. It was moreover designed to be DRM-agnostic, able to support multiple DRM implementations. However, while that capability existed in the SDK, there was also an increasing perception over time that the existing DRM implementations (Adobe, Kobo, Sony) were too heavyweight and proprietary and there existed a need for a new open-source DRM specification and implementation.  The result was the Readium LCP (Licensed Content Protection) specification and implementation, which is rolling out in 2016.</p>
+
+        </div>
+      </article>
+    </section>  
+  </div>
+</div>
+
+
+    </div>
+
+    <footer>
+  <div class="prefooter">
+    <div class="container">
+      <div class="region region-prefooter">
+        <section id="block-block-19" class="block block-block clearfix">    
+          <div class="related-site-logo related-site-logo-idpf">
+            <a href="http://idpf.org/"><img src="/assets/logos/idpf-logo-gray.png"></a>
+          </div>
+          <div class="related-site-logo related-site-logo-epub">
+            <a href="http://idpf.org/epub"><img class="related-site-logo-epub" src="/assets/logos/epub-logo-gray.png"></a>
+          </div>
+          <div class="related-site-logo related-site-logo-epubzone">
+            <a href="http://epubzone.org/"><img class="related-site-logo-epubzone" src="/assets/logos/epubzone-logo-gray.png"></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="region region-footer">
+        <section id="social-links" class="block block-block col-sm-4 col-sm-push-5 twitter-accounts">
+          <div>
+            <span style="padding-right: 2em;">Twitter:</span> <a href="https://twitter.com/readiumjs" style="padding-right: 2em;">@readiumjs</a> <a href="https://twitter.com/epub3zone">@epub3zone</a>
+          </div>
+        </section>
+        <section id="block-menu-menu-secondary-menu" class="block block-menu col-sm-3 col-sm-push-5">    
+          <ul class="menu nav">
+            <li class="first leaf"><a href="http://readium.org/about/faq" title="">FAQ</a></li>
+            <li class="last leaf"><a href="http://readium.org/contact">Contact</a></li>
+          </ul>
+        </section>
+        <section id="copyright-notice" class="block block-block col-sm-5 col-sm-pull-7">    
+          <div class="copyright-notice">Copyright 2016 Readium Foundation. All rights reserved.</div>
+        </section>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
