@@ -1,0 +1,5 @@
+<map id="CustomRenderer" name="CustomRenderer">
+<area shape="rect" id="node2" href="$class_content_handler.xhtml" title="ContentHandler" alt="" coords="155,177,269,205"/>
+<area shape="rect" id="node3" href="$class_pointer_type.xhtml" title="PointerType\&lt; ContentHandler \&gt;" alt="" coords="5,99,213,127"/>
+<area shape="rect" id="node5" href="$class_owned_by.xhtml" title="OwnedBy\&lt; Package \&gt;" alt="" coords="238,99,391,127"/>
+</map>

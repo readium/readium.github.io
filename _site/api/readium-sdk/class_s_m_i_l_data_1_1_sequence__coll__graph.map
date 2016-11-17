@@ -1,0 +1,7 @@
+<map id="SMILData::Sequence" name="SMILData::Sequence">
+<area shape="rect" id="node2" href="$class_s_m_i_l_data_1_1_time_container.xhtml" title="SMILData::TimeContainer" alt="" coords="635,86,810,114"/>
+<area shape="rect" id="node3" href="$class_s_m_i_l_data_1_1_time_node.xhtml" title="SMILData::TimeNode" alt="" coords="332,65,481,93"/>
+<area shape="rect" id="node4" href="$class_owned_by.xhtml" title="OwnedBy\&lt; SMILData \&gt;" alt="" coords="9,5,170,33"/>
+<area shape="rect" id="node7" href="$classstring.xhtml" title="string" alt="" coords="380,157,434,185"/>
+<area shape="rect" id="node8" href="$classshared__vector.xhtml" title="shared_vector\&lt; const\l SMILData::TimeContainer \&gt;" alt="" coords="628,219,818,263"/>
+</map>

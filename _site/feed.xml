@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readium Projects</title>
+    <description>The Readium Projects primary goal is to provide rock-solid,  performant building blocks and applications for EPUB3 publications.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 17 Nov 2016 22:20:53 +0100</pubDate>
+    <lastBuildDate>Thu, 17 Nov 2016 22:20:53 +0100</lastBuildDate>
+    <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Readium LCP Specifications</title>
+        <description>&lt;p&gt;Readium LCP (“Licensed Content Protection”) is an initiative to establish a vendor-neutral interoperable DRM (Digital Rights Management) ecosystem for eBooks and other digital publications, with public specifications and open-source software.&lt;/p&gt;
+
+&lt;p&gt;Readium LCP principles have already been used as the basis of several production solutions and has also helped advance Readium SDK’s core DRM architecture, which supports integration of a number of 3rd-party DRM solutions.&lt;/p&gt;
+
+&lt;p&gt;The interoperability of Readium LCP services will be guaranteed by EDRLab (European Digital Reading Lab), i.e. the Readium headquarter in Europe. For more information about how to join this open DRM ecosystem, please contact EDRLab (&lt;a href=&quot;https://edrlab.org&quot;&gt;https://edrlab.org&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;published-documents&quot;&gt;Published documents&lt;/h3&gt;
+
+&lt;p&gt;Readium Licensed Content Protection (LCP) 1.0 defines a standard License Document and an Encryption Profile for encrypting resources in EPUB 3 Publications, expressing rights and restrictions, and for securely delivering decryption keys to Reading Systems via licenses for specific Users. Readium LCP also defines a simple passphrase-based authentication method for Reading Systems to access encrypted resources and verify a license.&lt;/p&gt;
+
+&lt;p&gt;Readium License Status Document 1.0 defines a standard Status Document for representing the status of a DRM license along with interactions that might affect its status. These interactions put additional responsibilities on both Content Providers and Reading Systems. One of the primary objectives is to support lending in public libraries where a user may have the ability to renew a time-limited loan or cancel one before it expires.&lt;/p&gt;
+
+&lt;h3 id=&quot;open-source-software&quot;&gt;Open-source software&lt;/h3&gt;
+
+&lt;p&gt;The Readium repositories relative to Readium LCP are currently still private, as the core development team is working on providing a working testbed for Readium LCP deployments.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Readium LCP Client library&lt;/strong&gt;, written in C++, is very easy to deploy as a “content module” in a Reading System based on the Readium SDK. It’s code may be adapted to any other Reading System implementation.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Download it on: &lt;a href=&quot;https://github.com/readium/readium-lcp-client&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The multi-platform reference &lt;strong&gt;Readium LCP Server&lt;/strong&gt; is written in Golang. It provides a command line utility for content encryption, a Readium LCP License Server and a License Status Server. The REST API allows for a seamless integration with front-end systems and offers immediate interaction with Readium LCP compliant Reading Systems.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Download it on: &lt;a href=&quot;https://github.com/readium/readium-lcp-server&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 15 Nov 2016 11:30:00 +0100</pubDate>
+        <link>http://localhost:4000/lcp-specs/</link>
+        <guid isPermaLink="true">http://localhost:4000/lcp-specs/</guid>
+        
+        
+        <category>specifications</category>
+        
+      </item>
+    
+      <item>
+        <title>A Bit Of History</title>
+        <description>&lt;p&gt;The Readium project was started by the IDPF in 2012 because the EPUB 3.0 specification had been released late in 2011, but no implementation yet existed (or, at least, had been publicly released). So IDPF provided some funding and encouragement and two firms, Evident Point and Bluefire, took the lead in developing a JavaScript implementation of a significant part of the EPUB 3 spec.&lt;/p&gt;
+
+&lt;p&gt;However, while this was a real step in the right direction, it was not a complete implementation and it was written as a Google Chrome extension.  This was fine as a demo, but did not provide an implementation for native devices (iOS and Android as well as desktops) and since it was in JavaScript, it couldn’t support DRM securely.  Therefore the IDPF began seeking out other companies and individuals who, in addition to Bluefire and Evident Point, could help create a native implementation.&lt;/p&gt;
+
+&lt;p&gt;One of these companies was Kobo, of Toronto, Ontario. Kobo had several eReaders but had wanted to consolidate the work and generate one, stable, maintainable codebase. So they asked one of the senior engineers, Jim Dovey to write and/or consolidate the available code into one. Then when IDPF came around asking for contributions, Kobo decided to let the C++ library developed by Jim be released into Open Source as the Readium SDK core.&lt;/p&gt;
+
+&lt;p&gt;However, the SDK core was just that, a core on which to build apps so Readium needed to do that.  At the same time, it was realized that the Chrome Extension provided much of a “web-app” framework - in JavaScript - so the decision was made to undertake two subprojects:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Revamp the existing JS code base, factoring it into 3 parts:
+    &lt;ul&gt;
+      &lt;li&gt;The low-level parsing and support, equivalent to the SDK,&lt;/li&gt;
+      &lt;li&gt;A browser-management and utility layer,&lt;/li&gt;
+      &lt;li&gt;The actual Chrome Extension application layer,&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Create actual apps based on the SDK which would comprise:
+    &lt;ul&gt;
+      &lt;li&gt;The actual SDK core,&lt;/li&gt;
+      &lt;li&gt;The same browser-management and utility layer as in the Chrome Extension,&lt;/li&gt;
+      &lt;li&gt;Four native code application layers (iOS, Android, OSX and Windows),&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All of the above was (largely) done in 2013.  The native applications (termed ‘Launchers’) were deliberately kept very crude and limited in order to not compete with Readium Foundation members who were building polished EPUB readers for themselves and clients.  At the same time, the Chrome Extension was re-factored a bit to produce a cross-browser application (now called the CloudReader) in addition to the Chrome Extension. It’s worth noting that the Windows Launcher was never really developed, primarily due to a lack of interest by both developers and Readium Foundation members.&lt;/p&gt;
+
+&lt;p&gt;The SDK was designed from the beginning to support DRM (&lt;em&gt; Digital Rights Management &lt;/em&gt;), a mandatory feature for digital library lending, and also required by many publisher for anti-piracy matters. It was moreover designed to be DRM-agnostic, able to support multiple DRM implementations. However, while that capability existed in the SDK, there was also an increasing perception over time that the existing DRM implementations (Adobe, Kobo, Sony) were too heavyweight and proprietary and there existed a need for a new open-source DRM specification and implementation.  The result was the Readium LCP (Licensed Content Protection) specification and implementation, which is rolling out in 2016.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Nov 2016 10:30:00 +0100</pubDate>
+        <link>http://localhost:4000/history/</link>
+        <guid isPermaLink="true">http://localhost:4000/history/</guid>
+        
+        
+        <category>history</category>
+        
+      </item>
+    
+      <item>
+        <title>Contributing</title>
+        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;As an open-source project, the Readium Foundation welcomes contributions from everyone - from individuals, groups and corporations. The best way to get started with Readium is to read through the introductory materials on this site, subscribe to the mailing list and, of course, get the source code and start spelunking through it.&lt;/p&gt;
+
+&lt;p&gt;An important note to bear in mind is that YOU are the Readium team. Readium has no “dedicated team”. Other than a consultant or two and a couple of part-time employees, everything in Readium is done by the Readium contributors - some employed by Readium Foundation members, some simply individual contributors.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-communication&quot;&gt;Project Communication&lt;/h2&gt;
+
+&lt;h3 id=&quot;mailing-list&quot;&gt;Mailing List&lt;/h3&gt;
+
+&lt;p&gt;There is an active mailing list for the Readium projects. To join, simply send mail to &lt;a href=&quot;rkwright@readium.org&quot;&gt;Ric Wright&lt;/a&gt;, requesting access. Alternatively, visit the &lt;a href=&quot;https://groups.google.com/forum/?fromgroups#!forum/readium-dev&quot;&gt;Google Readium mailing-list&lt;/a&gt; page (where you can also browse the archives) and request access.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-weekly-meetings&quot;&gt;The Weekly Meetings&lt;/h3&gt;
+
+&lt;p&gt;There are three regular Readium Meetings each week:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Readium-1 Engineering:	Tuesdays at 16.00h UTC,&lt;/li&gt;
+  &lt;li&gt;Readium-2 Engineering:	Wednesdays at 16.00h UTC,&lt;/li&gt;
+  &lt;li&gt;Readium Triage/Planning:	Thursdays at 16.00h UTC.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Note:  The meetings are at 1600 UTC during the summer (in daylight savings) and 1700 UTC in the winter (non-daylight savings).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;All three meetings are hosted in GoToMeeting with the same call-in info:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Access Code: 334-772-733,&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;On the web, click &lt;a href=&quot;https://global.gotomeeting.com/join/334772733&quot;&gt;here&lt;/a&gt; or call in by phone:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/others/phones.png&quot; alt=&quot;phones&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Use your microphone and speakers (VoIP) - a headset is recommended.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An invitation to each meeting and a separate agenda for each meeting and all the login and call-in info is sent out to the readium-dev mailing list each week.&lt;/p&gt;
+
+&lt;h3 id=&quot;slack---real-time-chat&quot;&gt;Slack - Real-time Chat&lt;/h3&gt;
+
+&lt;p&gt;The Readium Dev group uses Slack for real-time chats.&lt;/p&gt;
+
+&lt;p&gt;Head here to get an invite:
+&lt;a href=&quot;http://readium-slack.herokuapp.com&quot;&gt;http://readium-slack.herokuapp.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The actual Readium chat room is here:
+&lt;a href=&quot;https://readium.slack.com&quot;&gt;https://readium.slack.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(several channels in there, including “sdk”, “concall”, etc.)
+During meetings, we use the “concall” channel to post links, etc. Other times, the “general” channel is most often used.&lt;/p&gt;
+
+&lt;h3 id=&quot;face-to-face-meetings&quot;&gt;Face to Face Meetings&lt;/h3&gt;
+
+&lt;p&gt;Several times a year (it varies) we try to arrange a face-to-face meeting of the developers and contributors. These usually but not always coicide with Readium membership meetings and/or major eBook conferences like Book Expo America, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;meeting-archives&quot;&gt;Meeting Archives&lt;/h3&gt;
+
+&lt;p&gt;The agenda and notes from all the meetings are archived in the Readium Google doc tree. Access to all the archives can be found &lt;a href=&quot;https://drive.google.com/drive/folders/0BzaNaBNAB6FjRmFocHotbV9nMFU?hl=en&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-readiumjs-meeting&quot;&gt;The ReadiumJS Meeting&lt;/h3&gt;
+
+&lt;p&gt;The ReadiumJS meeting is focused primarily on the Readium Chrome Extension and CloudReader development. However, since the JS and SDK sides share the readium-shared-js layer, there is often a little bit of overlap.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-readium-sdk-meeting&quot;&gt;The Readium SDK Meeting&lt;/h3&gt;
+
+&lt;p&gt;The Readium SDK meeting is of course focused primarily on the SDK development. However, there is often a little bit of overlap with ReadiumJS. The SDK meeting also covers some of the DRM-related development.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-triageplanning-meeting&quot;&gt;The Triage/Planning Meeting&lt;/h3&gt;
+
+&lt;p&gt;The Thursday meeting varies in its content, but tends to be broader in scope than the JS or SDK engineering meetings. Sometimes if focuses on reviewing the open issues or some particular topic (e.g. user interface changes to the Chrome Extension, etc.). Other times, the meeting focuses on planning for one or more facets of the project over the near or medium term. Longer term planning tends to be held at the membership and board level.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Nov 2016 15:59:00 +0100</pubDate>
+        <link>http://localhost:4000/contributing/</link>
+        <guid isPermaLink="true">http://localhost:4000/contributing/</guid>
+        
+        
+        <category>contributing</category>
+        
+      </item>
+    
+      <item>
+        <title>Releases</title>
+        <description>&lt;h2 id=&quot;current-plan-for-the-next-release&quot;&gt;Current Plan for the Next Release&lt;/h2&gt;
+
+&lt;h3 id=&quot;readium-025&quot;&gt;Readium 0.25&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This release is targeted for early October 2016,&lt;/li&gt;
+  &lt;li&gt;Candidate features include:
+    &lt;ul&gt;
+      &lt;li&gt;Better support for page-refresh on font-changes,&lt;/li&gt;
+      &lt;li&gt;Support for selectin new fonts as well as Dyslexix font support,&lt;/li&gt;
+      &lt;li&gt;Better handling of page-break markup,&lt;/li&gt;
+      &lt;li&gt;More bug fixes (exact ones TBD).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;recent-releases&quot;&gt;Recent Releases&lt;/h2&gt;
+
+&lt;h3 id=&quot;release-of-readium-024&quot;&gt;Release of Readium 0.24&lt;/h3&gt;
+
+&lt;p&gt;Readium.org is pleased to announce that 0.24 version of Readium has been released.  This release was pushed 16 August 2016.&lt;/p&gt;
+
+&lt;p&gt;This release, 0.24, is a new release that has one significant feature in the Chrome Extensions and number of minor improvements in both the Chrome Extension and Cloud Reader - as well as a large number of bug fixes.&lt;/p&gt;
+
+&lt;p&gt;In the SDK, there were a number of minor bug fixes, plus the removal of some obsolete libraries (OpenSSL for Android and Boos).&lt;/p&gt;
+
+&lt;p&gt;The new feature in the Chrome Extension (which is NOT in the Cloud Reader) is the support for importing more than one file at a time. Multiple files can be added via drag and drop onto the library pane or via the normal “Add File” dialog. Once the import has started, the user CAN cancel the import process but the file being imported when the cancel button is pressed will still be imported but subsequent queued files will not be imported.&lt;/p&gt;
+
+&lt;p&gt;In addition, there were two regressions in the previous releases:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An experimental highlighting plugin was inadvertently included in the previous 2.23 build. While this is a nice feature, it is not yet complete - there’s no way to save the highlights. We are working on this but have no ETA when it will be available (volunteers are welcome).&lt;/li&gt;
+  &lt;li&gt;Navigation using the TOC was not working correctly for TOC items that were not top level (i.e. sub-headers). This is now fixed in this release.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The complete release notes can be found &lt;a href=&quot;https://docs.google.com/document/d/1ioOVtGK00m8TUtGfKA8DCq428wXREfmexc0_fuyHTUs/edit#&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;release-of-readium---023&quot;&gt;Release of Readium - 0.23&lt;/h3&gt;
+
+&lt;p&gt;Readium.org is pleased to announce that 0.23 version of Readium has been released.  This release was pushed 10 June 2016.&lt;/p&gt;
+
+&lt;p&gt;This release, 0.23, is a new release that is has one major change and a number of minor improvements - as well as a large number of bug fixes, primarily affecting CFI/navigation. The major change is that we have switched Android build support from Eclipse (now deprecated) to Android Studio (currently 2.1). We also enabled (experimental) support for debugging from Java into C++ (see release notes for more info). Also, HTTP header caching has been enabled which can provide significant performance improvements for some resource-heavy EPUBs.&lt;/p&gt;
+
+&lt;p&gt;There are also some minor UX improvements to the Chrome Extensions. Finally, a subset of OPDS support was added to the CloudReader (it was experimental before). You can see a demonstration of it &lt;a href=&quot;https://readium-master.surge.sh/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The complete release notes can be found &lt;a href=&quot;https://docs.google.com/document/d/1vOHtIyppPHuLwIW9Ip2Kl4Y87GmnHvEWCWOS0lg6Vy4/edit#&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;release-of-readium---022&quot;&gt;Release of Readium - 0.22&lt;/h3&gt;
+
+&lt;p&gt;Readium.org is pleased to announce that 0.22 version of Readium has been released.  This release was pushed 2 February 2016.&lt;/p&gt;
+
+&lt;p&gt;This release, 0.22, is a new release that is comprised primarily of improvements and bug fixes to shared-js and the CFI library. It also includes an update to Mathjax 2.6.&lt;/p&gt;
+
+&lt;p&gt;The complete release notes can be found &lt;a href=&quot;https://docs.google.com/document/d/1LcMjSpZR1ho5N2wo9R2O1FxXsFUScUPWVLjLmvrPrL4/edit#&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;release-of-readium---021&quot;&gt;Release of Readium - 0.21&lt;/h3&gt;
+
+&lt;p&gt;Readium.org is pleased to announce that 0.21 version of Readium has been released.  This release was pushed 2 September 2015.&lt;/p&gt;
+
+&lt;p&gt;This release, 0.21, is a new release that is comprised primarily of bug fixes.&lt;/p&gt;
+
+&lt;p&gt;The complete release notes can be found &lt;a href=&quot;https://docs.google.com/document/d/1V5LtEtpMvOLCZCRf60PMH1cyDBVTPRsDTd7Iz0NBb9Y/edit#&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;release-of-readium---020&quot;&gt;Release of Readium - 0.20&lt;/h3&gt;
+
+&lt;p&gt;Readium.org is pleased to announce that 0.19 version of Readium has been released.  This release was pushed 18 June 2015.&lt;/p&gt;
+
+&lt;p&gt;This release, 0.20, is a new release that is comprised primarily of improvements and bug fixes.&lt;/p&gt;
+
+&lt;p&gt;The complete release notes can be found &lt;a href=&quot;https://docs.google.com/document/d/1Io3CDScwm5tj_0tRa4qSm_bGXi3bUb_uoiHXoxTktAQ/edit#heading=h.ybo2phzex0y2&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;release-of-readium---019&quot;&gt;Release of Readium - 0.19&lt;/h3&gt;
+
+&lt;p&gt;Readium.org is pleased to announce that 0.19 version of Readium has been released.  This release was pushed 18 June 2015.&lt;/p&gt;
+
+&lt;p&gt;This release, 0.19, is a new release that is comprised primarily of improvements and bug fixes to the ContentFilter support, especially for encrypted resources.&lt;/p&gt;
+
+&lt;p&gt;The complete release notes can be found &lt;a href=&quot;https://docs.google.com/document/d/13NJJPDd_Q_tFVVvFYFdDIUHJlEZY0gZ8C3WtPmdV5Eo/edit#&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;release-of-readium---018&quot;&gt;Release of Readium - 0.18&lt;/h3&gt;
+
+&lt;p&gt;Readium.org is pleased to announce that 0.18 version of Readium has been released.  This release was pushed 21 April 2015.&lt;/p&gt;
+
+&lt;p&gt;This release, 0.18, is a new release that is comprised primarily of bug fixes for the Chrome Extension. Significantly, though, it adds support for Chrome Extension Packaging 2.0.  The primary aspect of this new packaging format that users will see right now is the the Reader will have its own window and icon in the taskbar when running (all platforms).&lt;/p&gt;
+
+&lt;p&gt;The complete release notes can be found &lt;a href=&quot;https://docs.google.com/document/d/1GUdWAJ7_Zgg2eXgDK-4ty4e4_pCJ2fHC7S5jKjJhz7w/edit#heading=h.ybo2phzex0y2&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;release-of-readium-sdk---sprint-17&quot;&gt;Release of Readium SDK - Sprint 17&lt;/h3&gt;
+
+&lt;p&gt;Readium.org is pleased to announce that 0.17 version of the Readium SDK has been released.  This release was pushed 23 March 2015.&lt;/p&gt;
+
+&lt;p&gt;This release includes a significant fix for media handling under Android, which fixes a number of serious stability issues. This release comprises updates to the readium github repositories for readium-sdk, readium-shared-js and the SDK sample applications (including configurations for Android, iOS, and OS/X that have been validated against the EPUB Test Suite, and a Windows configuration that is still in development).  This marks the 17th push (formally tagged as version 0.17) of the source code for SDK.  This release has achieved substantially complete support for the EPUB 3.0 spec including MathML, Reading System object, font-deobfuscation and many more features. The complete release notes can be found &lt;a href=&quot;https://docs.google.com/document/d/1poM6j7rbO1P-hdGczsK-2lIJPSVGBZmFoL5g_qXvARA/edit#h&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;release-of-readium-sdk---sprint-16&quot;&gt;Release of Readium SDK - Sprint 16&lt;/h3&gt;
+
+&lt;p&gt;Readium.org is pleased to announce that the “1.0” version of the Readium SDK has been released. With this release, the first version of the Readium SDK is essentially complete (hence the “1.0” label). This release was pushed 30 December 2014.&lt;/p&gt;
+
+&lt;p&gt;The 1.0 version comprises updates to the readium github repositories for readium-sdk, readium-shared-js and the SDK sample applications (including configurations for Android, iOS, and OS/X that have been validated against the EPUB Test Suite, and a Windows configuration that is still in development).  1.0 marks the 16th push (formally tagged as version 0.16.1) of the source code for SDK.  This release has achieved substantially complete support for the EPUB 3.0 spec including MathML, Reading System object, font-deobfuscation and many more features.  The complete release notes can be found &lt;a href=&quot;https://docs.google.com/document/d/1AW2Ja9HArF8f9YJCiTSdkMuqZvQgP7oVplA3DJ-ssTY/edit#heading=h.lqh1c9gooqsh&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;older-releases&quot;&gt;Older Releases&lt;/h3&gt;
+
+&lt;p&gt;The release notes for older releases can be found in Readium’s GoogleDoc archives &lt;a href=&quot;https://drive.google.com/drive/folders/0BzaNaBNAB6FjbloySkdKRHZzdGM/0BzaNaBNAB6FjTE1PVkhWcTM0cU0/0BzaNaBNAB6FjMllWSjQwa2lwVkU?hl=en&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Nov 2016 15:30:00 +0100</pubDate>
+        <link>http://localhost:4000/releases/</link>
+        <guid isPermaLink="true">http://localhost:4000/releases/</guid>
+        
+        
+        <category>releases</category>
+        
+      </item>
+    
+      <item>
+        <title>Overview of Readium LCP</title>
+        <description>&lt;h3 id=&quot;useful-links&quot;&gt;Useful Links&lt;/h3&gt;
+
+&lt;p&gt;You can find the full Readium LCP Specifications here: &lt;a href=&quot;/lcp-specs/&quot;&gt;Readium LCP Specifications&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;More informations about Readium LCP on the &lt;a href=&quot;https://edrlab.org/edrlab/readium-lcp-principles/&quot;&gt;EDRLab website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;There are four major parts to the Readium LCP workflow:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The server, which packages the books provided by the publisher,&lt;/li&gt;
+  &lt;li&gt;The client code which manages the user’s authentication and opens and decrypts the book,&lt;/li&gt;
+  &lt;li&gt;The certificate authority, provides the necessary certificates for the packaging code,&lt;/li&gt;
+  &lt;li&gt;The infrastructure which manages the storing of the packaged books, handling user transactions and the download of books to the user.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The diagram below illustrates a high-level view of a LCP-enabled workflow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/readium-lcp.png&quot; alt=&quot;readium-lcp&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;lcp-server&quot;&gt;LCP Server&lt;/h3&gt;
+
+&lt;p&gt;This is the server which encrypts and packages a raw EPUB. The server can also take an exploded EPUB contents and package the contents, encrypting some parts of it. The server has been written in the GO language and is available from the Readium github repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;lcp-client&quot;&gt;LCP Client&lt;/h3&gt;
+
+&lt;p&gt;This is the piece which reads the necessary information from the encrypted EPUB and decrypts the encrypted portions of the EPUB and provides them to the Readium rendering module. This decryption is done on-the-fly so that the decrypted contents are never on disk where they might be sniffed and/or extracted.&lt;/p&gt;
+
+&lt;p&gt;In addition to the basic decryption of the EPUB, there are also several steps required to authenticate the user, obtain and/or store the pass-phrase and so on. These are normally specific to the vendor implementing the Reading System based on the Readium SDK. The Readium SDK does provide some facilities to enable these workflows, but much of the implementation is vendor-specific and outside the SDK itself.&lt;/p&gt;
+
+&lt;h3 id=&quot;server-infrastructure&quot;&gt;Server Infrastructure&lt;/h3&gt;
+
+&lt;p&gt;In addition to the server which packages the books for deployment and the DRM-enabled SDK which decrypts the books for reading, there is also some necessary server-side infrastructure needed to support the servers by providing certificates for the encryption process. In order for books to be shared across reading systems, and especially across different Reading Systems, there needs to be a central “certificate authority (CA)” which provides the necessary certificates.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Nov 2016 13:30:00 +0100</pubDate>
+        <link>http://localhost:4000/readium-lcp/</link>
+        <guid isPermaLink="true">http://localhost:4000/readium-lcp/</guid>
+        
+        
+        <category>overview</category>
+        
+      </item>
+    
+      <item>
+        <title>Overview of Readium JS</title>
+        <description>&lt;p&gt;Readium JS comprises two sub-projects, Readium Chrome Extension and the Readium CloudReader. Both consist of three major pieces:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;readium-js, which is the core (equivalent to the C++ Core in the SDK) and provides basic services, manages the EPUB package, metadata, navigating and fetching resources and so on,&lt;/li&gt;
+  &lt;li&gt;readium-shared-js: This is exactly the same code as used in the SDK implementation (hence the ‘shared’ name),&lt;/li&gt;
+  &lt;li&gt;readium-js-viewer: This is the application layer which manages the user-interface.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The Chrome Extension and the CloudReader share approximately 95% of their code, the primary difference is where their EPUB “library” is located and how they fetch EPUB resources. The diagram below illustrates the major aspects of their architectures.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/readium-js.png&quot; alt=&quot;readium-js&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;readium-chrome-extension-rce&quot;&gt;Readium Chrome Extension (RCE)&lt;/h3&gt;
+
+&lt;p&gt;This sub-project consists of an extension to Google Chrome. It is a full-fledged, functional EPUB reading system. It supports virtually all of the EPUB 3.0.1 specification. Unlike the Readium SDK Launchers, RCE is a relatively polished, full-featured application. It is under constant development to provide more features and capabilities. It only works with Google Chrome since it leverages the built-in capabilities provided by the Chrome framework. It imports the user’s books into a private file-system on the user’s computer.&lt;/p&gt;
+
+&lt;h3 id=&quot;readium-cloudreader&quot;&gt;Readium CloudReader&lt;/h3&gt;
+
+&lt;p&gt;The CloudReader is very similar to the Chrome extension – and they share almost all their code. The key difference is that RCE is tightly wedded to Google Chrome and therefor works only where Chrome is available. The CloudReader, on the other hand, runs in almost all browsers. Another distinction is while RCS loads the user’s books into a private filesystem managed by Chrome on the user’s computer, the CloudReader loads its books from a “bookshelf” located somewhere on the web. The CloudReader is downloaded each time the user creates a new instance of the CloudReader. The bookshelf and the CloudReader’s deployed location are typically the same, but do not need to be so.&lt;/p&gt;
+
+&lt;p&gt;The only supported platform for RCE is of course Google Chrome. It is validated (tested) on Windows (7 and 8), OSX, and ChromeOS (ChromeBook). It may work on other platforms but we do not test it elsewhere. Chrome apps are not supported on iOS or Android.&lt;/p&gt;
+
+&lt;p&gt;The CloudReader is currently validated against the latest version of all major browsers, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Safari (OSX and iOS only),&lt;/li&gt;
+  &lt;li&gt;Firefox (iOS, OSX, Windows, Android),&lt;/li&gt;
+  &lt;li&gt;Chrome (iOS, OSX, Windows, Android).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Again, the CloudReader may (and usually does) run properly on other browser/platform combinations, but Readium does not validate against them.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Nov 2016 13:30:00 +0100</pubDate>
+        <link>http://localhost:4000/readium-js/</link>
+        <guid isPermaLink="true">http://localhost:4000/readium-js/</guid>
+        
+        
+        <category>overview</category>
+        
+      </item>
+    
+      <item>
+        <title>Overview of Readium SDK</title>
+        <description>&lt;p&gt;Readium SDK consists of three major parts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;readium-sdk&lt;/li&gt;
+  &lt;li&gt;Readium-shared-js&lt;/li&gt;
+  &lt;li&gt;SDKLauncher-*
+The diagram below illustrates the high-level relationship of the parts of the architecture.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/readium-sdk.png&quot; alt=&quot;readium-sdk&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;readium-sdk&quot;&gt;readium-sdk&lt;/h3&gt;
+
+&lt;p&gt;This is is the Core C++ code that manages the EPUB package, metadata, navigating and fetching resources and so on. The Core is platform-independent. In addition to the C++ core, there are also platform-dependent code layers that provide the interfaces to the platform-specific language layers:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;iOS and OSX: There is no interface layer since Objective-C can call C++ directly. However, there is an interface layer (in Objective-C) called RDServices
+Android: This is the Java/C JNI layer.&lt;/li&gt;
+  &lt;li&gt;Windows:
+    &lt;ul&gt;
+      &lt;li&gt;MFC: There is no interface layer as MFC can call the C++ core directly&lt;/li&gt;
+      &lt;li&gt;RT: As Windows RT framework-based code is managed code, there is a C#/C++ layer&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;readium-shared-js&quot;&gt;readium-shared-js&lt;/h3&gt;
+
+&lt;p&gt;This layer, as its name implies, is pure JavaScript. It provides the interfaces and services between the application layer (in Objective-C, C++, Java or C#) and the Core as well as the web-browser engine instance. This layer is shared across all platforms and sub-projects, including both ReadiumJS sub-projects and all SDK-based applications. It manages messaging between the native layers as well as providing the management of views and other facilities of the browser engine.&lt;/p&gt;
+
+&lt;h3 id=&quot;sdklauncher-&quot;&gt;SDKLauncher-*&lt;/h3&gt;
+
+&lt;p&gt;These are platform-specific applications that facilitate testing of the rest of the SDK as well as providing a rudimentary demonstration of how to integrate native applications with the SDK. They are deliberately rather limited and crude since it is not the intent of Readium to compete with its own members, many of whose value proposition is integrating the SDK into their sophisticated applications and workflows.&lt;/p&gt;
+
+&lt;p&gt;The platforms supported by Readium SDK (as of summer 2015) are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;iOS 7 and above&lt;/li&gt;
+  &lt;li&gt;Android 4.x and above&lt;/li&gt;
+  &lt;li&gt;OSX 10.7 and above&lt;/li&gt;
+  &lt;li&gt;Windows 7 and 8
+    &lt;ul&gt;
+      &lt;li&gt;MFC framework&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Windows 8 and 10
+    &lt;ul&gt;
+      &lt;li&gt;RT framework&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course, developers are welcome to tackle porting to and integration with other platforms, but the above are the only platforms against which the Readium SDK is validated and for which Launchers exist.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Nov 2016 11:30:00 +0100</pubDate>
+        <link>http://localhost:4000/readium-sdk/</link>
+        <guid isPermaLink="true">http://localhost:4000/readium-sdk/</guid>
+        
+        
+        <category>overview</category>
+        
+      </item>
+    
+  </channel>
+</rss>

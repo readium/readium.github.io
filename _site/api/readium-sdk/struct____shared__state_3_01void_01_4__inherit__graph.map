@@ -1,0 +1,9 @@
+<map id="__shared_state&lt; void &gt;" name="__shared_state&lt; void &gt;">
+<area shape="rect" id="node4" href="$struct____future__async__shared__state__base.xhtml" title="__future_async_shared\l_state_base\&lt; void \&gt;" alt="" coords="642,38,803,82"/>
+<area shape="rect" id="node7" href="$struct____future__deferred__continuation__shared__state_3_01___fut_00_01void_00_01___fp_01_4.xhtml" title="__future_deferred_continuation\l_shared_state\&lt; _Fut, void, _Fp \&gt;" alt="" coords="614,106,832,150"/>
+<area shape="rect" id="node8" href="$struct____future__deferred__shared__state_3_01void_00_01___fp_01_4.xhtml" title="__future_deferred_shared\l_state\&lt; void, _Fp \&gt;" alt="" coords="635,174,810,218"/>
+<area shape="rect" id="node9" href="$struct____future__executor__continuation__shared__state_3_01___fut_00_01void_00_01___fp_01_4.xhtml" title="__future_executor_continuation\l_shared_state\&lt; _Fut, void, _Fp \&gt;" alt="" coords="614,242,832,286"/>
+<area shape="rect" id="node2" href="$struct____shared__state__base.xhtml" title="__shared_state_base" alt="" coords="205,149,355,177"/>
+<area shape="rect" id="node5" href="$struct____future__async__continuation__shared__state_3_01___fut_00_01void_00_01___fp_01_4.xhtml" title="__future_async_continuation\l_shared_state\&lt; _Fut, void, _Fp \&gt;" alt="" coords="880,5,1098,49"/>
+<area shape="rect" id="node6" href="$struct____future__async__shared__state_3_01void_00_01___fp_01_4.xhtml" title="__future_async_shared\l_state\&lt; void, _Fp \&gt;" alt="" coords="909,73,1070,117"/>
+</map>

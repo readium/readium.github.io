@@ -1,0 +1,5 @@
+<map id="xml::exception" name="xml::exception">
+<area shape="rect" id="node3" href="$classxml_1_1_internal_error.xhtml" title="xml::InternalError" alt="" coords="5,161,128,189"/>
+<area shape="rect" id="node4" href="$classxml_1_1_parser_error.xhtml" title="xml::ParserError" alt="" coords="153,161,271,189"/>
+<area shape="rect" id="node5" href="$classxml_1_1_validation_error.xhtml" title="xml::ValidationError" alt="" coords="296,161,432,189"/>
+</map>

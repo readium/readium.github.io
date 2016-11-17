@@ -1,0 +1,3034 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Readium SDK APIs</title>
+
+<link href="../readium_styles.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.datatables.net/u/dt/jq-2.2.3,dt-1.10.12/datatables.min.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="shortcut icon" type="image/png" href="../../images/favicon.png" />
+<script type="text/javascript" src="https://cdn.datatables.net/u/dt/jq-2.2.3,dt-1.10.12/datatables.min.js"></script>
+<script type="text/javascript" src="http://alasql.org/console/xlsx.core.min.js"></script>
+<script type="text/javascript" src="http://alasql.org/console/alasql.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/u/dt/jq-2.2.3,dt-1.10.12/datatables.min.js"></script>
+</head>
+<body>
+<div id="page-top-wrapper"><br />
+<br />
+</div>
+<div id="normal_div">
+<p> <a href="http://www.readium.org"> <img src="../images/ReadiumLogo.png" alt="Readium Logo" height="97" width="321" /> </a></p>
+<h1>CloudReader Results</h1>
+<p>This page contains the results from testing of the Readium
+CloudReader across a large number of browsers and platforms. The score
+in each row is linked to the actual spreadsheet, so just click on the
+link to download the Excel spreadsheet.</p>
+</div>
+<div id="results">
+<table id="results_table" style="width: 100%; height: 100%;" border="1" cellpadding="4" cellspacing="1">
+<caption>&nbsp; </caption> <tbody id="results_tbody">
+<tr>
+<th scope="col">Tester</th>
+<th scope="col">Date</th>
+<th scope="col">CR Version</th>
+<th scope="col">Device</th>
+<th scope="col">OS</th>
+<th scope="col">Locale</th>
+<th scope="col">Browser</th>
+<th scope="col">Score</th>
+</tr>
+<tr>
+<td>Gothami Rasnakawewa</td>
+<td>03-09-2015</td>
+<td>2.17</td>
+<td style="width: 282px;">TOSHIBA LAPTOP</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome</td>
+<td><a href="spreadsheets/spreadsheets/gotharas-WIN-8.1-Chrome-20150309.xlsx">88</a></td>
+</tr>
+<tr>
+<td>Gothami Rasnakawewa</td>
+<td>3-5-15</td>
+<td>2.17&nbsp;</td>
+<td style="width: 282px;">&nbsp;TOSHIBA LAPTOP</td>
+<td style="width: 181px;">&nbsp;Windows 8.1</td>
+<td style="width: 87px;">&nbsp;en-us</td>
+<td>&nbsp;Internet Explorer</td>
+<td><a href="spreadsheets/gotharas-WIN-8.1-IE-20150305%20%281%29.xlsx">87</a></td>
+</tr>
+<tr>
+<td>Gurwinder Dhaliwal</td>
+<td>10/03/2015</td>
+<td>2.17</td>
+<td style="width: 282px;">MacBook Pro</td>
+<td style="width: 181px;">OSX 10.10.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome(41.0.2272.76(64-bit))</td>
+<td><a href="spreadsheets/gurwinderdhaliwal-OSX-10.10.2-Chrome-20150312.xlsx">71</a></td>
+</tr>
+<tr>
+<td>Gurwinder Dhaliwal</td>
+<td>20/03/2015</td>
+<td>2.17</td>
+<td style="width: 282px;">MacBook Pro</td>
+<td style="width: 181px;">OSX 10.10.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox(36.0.1)</td>
+<td><a href="spreadsheets/gurwinderdhaliwal-OSX10.10.2-Firefox-20150321.xlsx">59</a></td>
+</tr>
+<tr>
+<td>Gurwinder Dhaliwal</td>
+<td>31/03/2015</td>
+<td>2.17</td>
+<td style="width: 282px;">MacBook Pro</td>
+<td style="width: 181px;">OSX 10.10.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera(28.0.1750.48)</td>
+<td><a href="spreadsheets/gurwinderdhaliwal-OSX10.10.2-Opera-20150331.xlsx">68</a>
+</td>
+</tr>
+<tr>
+<td>Gurwinder Dhaliwal</td>
+<td>04/03/2015</td>
+<td>2.17</td>
+<td style="width: 282px;">MacBook Pro</td>
+<td style="width: 181px;">OSX 10.10.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari(8.0.3)</td>
+<td><a href="spreadsheets/gurwinderdhaliwal-OSX-10.10.2-Safari-20150304.xlsx">71</a>
+</td>
+</tr>
+<tr>
+<td>Jinu Thomas</td>
+<td>4-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Dell Laptop</td>
+<td style="width: 181px;">Window 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome Version 40.0.2214.115 m</td>
+<td><a href="spreadsheets/JinuThomas-WIN-8.1-Chrome-20150306.xlsx">81</a>
+</td>
+</tr>
+<tr>
+<td>Jinu Thomas</td>
+<td>9-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Dell Laptop</td>
+<td style="width: 181px;">Window 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 27.0.1689.76</td>
+<td><a href="spreadsheets/JinuThomas-WIN-8.1-Opera-20150309.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>APR-02-2015</td>
+<td>2.17</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Window 7</td>
+<td style="width: 87px;">en-us</td>
+<td>IE 11</td>
+<td><a href="spreadsheets/lbrigadier-WIN-7-IE-20150402%20%281%29.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>APR-05-2015</td>
+<td>2.17</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Window 7</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome - Version 41.0.2272.101</td>
+<td><a href="spreadsheets/lbrigadier-WIN-7-IE-20150406.xlsx">90</a>
+</td>
+</tr>
+<tr>
+<td>Luba Chernov</td>
+<td>15-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">ipad 2</td>
+<td style="width: 181px;">iOS 8.2</td>
+<td style="width: 87px;">ea-ca</td>
+<td>safari</td>
+<td><a href="spreadsheets/lovetoread-iOS-8.2-Safari-2015-03-15.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Luba Chernov</td>
+<td>31-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">MacBook Pro</td>
+<td style="width: 181px;">OS X 10.9.5 </td>
+<td style="width: 87px;">ea-ca</td>
+<td>Safari version 7.1.4</td>
+<td><a href="spreadsheets/lovetoread-OSX-10.9.5-Safari-2015-03-31.xlsx">74</a>
+</td>
+</tr>
+<tr>
+<td>Luba Chernov</td>
+<td>6-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Aser Aspire E1-470-6806</td>
+<td style="width: 181px;">windows 8.1</td>
+<td style="width: 87px;">ea-ca</td>
+<td>google chrome version 40.0.2214.115m</td>
+<td><a href="spreadsheets/lovetoread-WIN-8.1-Chrome-20150306.xlsx">83</a>
+</td>
+</tr>
+<tr>
+<td>Luba Chernov</td>
+<td>9-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Aser Aspire E1-470-6806</td>
+<td style="width: 181px;">windows 8.1</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Mozilla Firefox 36.0.1</td>
+<td><a href="spreadsheets/lovetoread-WIN-8.1-Chrome-20150306.xlsx">64</a>
+</td>
+</tr>
+<tr>
+<td>Roustam Baimatov</td>
+<td>26-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Desktop, HP Pavillion HPE
+h8-1022</td>
+<td style="width: 181px;">WIN 7 Home Premium</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Mozilla Firefox 36.0.1</td>
+<td><a href="spreadsheets/Roustam%20Baimatov-Windows%207%20Home%20Premium-Firefox-March%2026,%202015%20%283%29.xlsx">61</a>
+</td>
+</tr>
+<tr>
+<td>Roustam Baimatov</td>
+<td>5-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Desktop, HP Pavillion HPE
+h8-1022</td>
+<td style="width: 181px;">WIN 7 Home Premium</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Google Chrome</td>
+<td><a href="spreadsheets/Roustam%20Baimatov-Windows%207%20Home%20Premium-Google%20Chrome-March%205,%202015%20%283%29.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Roustam Baimatov</td>
+<td>13-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Desktop, HP Pavillion HPE
+h8-1022</td>
+<td style="width: 181px;">WIN 7 Home Premium</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Internet Explorer 11</td>
+<td><a href="spreadsheets/Roustam%20Baimatov-Windows%207%20Home%20Premium-IE11-March%2013,%202015%20%283%29.xlsx">59</a>
+</td>
+</tr>
+<tr>
+<td>Roustam Baimatov</td>
+<td>2-Apr-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Desktop, HP Pavillion HPE
+h8-1022</td>
+<td style="width: 181px;">WIN 7 Home Premium</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Opera 28.0 (28.0.1750.48)</td>
+<td><a href="spreadsheets/Roustam%20Baimatov-Windows%207%20Home%20Premium-Opera-April%202,%202015.xlsx">84</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>28-Feb-15</td>
+<td>2.17</td>
+<td style="width: 282px;">phone Sony Experia M2
+Dual, Model D2302</td>
+<td style="width: 181px;">Android 4.4.4 (D2303
+Build/18.3.1.B.0.18)</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Chrome 40.0.2214.109</td>
+<td><a href="spreadsheets/serg_a-AND-4.4.4-Chrome-20150228.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>19-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">phone Sony Experia M2
+Dual, Model D2302</td>
+<td style="width: 181px;">Android 4.4.4 (D2303
+Build/18.3.1.B.0.18)</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Firefox 36.0.2</td>
+<td><a href="spreadsheets/serg_a-AND-4.4.4-Firefox-20150319.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>09-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">phone Sony Experia M2
+Dual, Model D2302</td>
+<td style="width: 181px;">Android 4.4.4 (D2303
+Build/18.3.1.B.0.18)</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Opera 27.0.1698.89115</td>
+<td><a href="spreadsheets/serg_a-AND-4.4.4-Opera-20150309.xlsx">71</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>06-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">PC Intel Core2 Quad CPU
+Q8300 @ 2.5GHz</td>
+<td style="width: 181px;">Windows 7</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Google Chrome 41.0.2272.76m</td>
+<td><a href="spreadsheets/serg_a-WIN-7-Chrome-20150306.xlsx">87</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>11-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">PC Intel Core2 Quad CPU
+Q8300 @ 2.5GHz</td>
+<td style="width: 181px;">Windows 7</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Internet Explorer 11.0.9600.17633</td>
+<td><a href="spreadsheets/serg_a-WIN-7-IE-20150311.xlsx">56</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>09-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">PC Intel Core2 Quad CPU
+Q8300 @ 2.5GHz</td>
+<td style="width: 181px;">Windows 7</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Opera 27.0.1689.76</td>
+<td><a href="spreadsheets/serg_a-WIN-7-Opera-20140309.xlsx">69</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>03-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Google Chrome 40,0,2214,115</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Chrome-20150303.xlsx">86</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>03-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Firefox 36.0</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Firefox-20150227.xlsx">61</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>02-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Internet Explorer 11 (11.0.9600.17631)</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-IE-20150302.xlsx">57</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>02-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Internet Explorer 11 (11.0.9600.17631)</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-IE-20150302.xlsx">57</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>02-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Opera 27.0.1689.76</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Opera-20150309.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>02-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Opera 27.0.1689.76</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Opera-20150309.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Slava Smirnov</td>
+<td>10-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">TOSHIBA</td>
+<td style="width: 181px;">WIN-7</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome</td>
+<td><a href="spreadsheets/slavspb-WIN-7-Chrom-201504-28.xlsx">83</a>
+</td>
+</tr>
+<tr>
+<td>Slava Smirnov</td>
+<td>25-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">TOSHIBA</td>
+<td style="width: 181px;">WIN-7</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox</td>
+<td><a href="spreadsheets/slavspb-WIN-7-Farefox-201504.xlsx">66</a>
+</td>
+</tr>
+<tr>
+<td>Slava Smirnov</td>
+<td>16-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">TOSHIBA</td>
+<td style="width: 181px;">WIN-7</td>
+<td style="width: 87px;">en-us</td>
+<td>IE</td>
+<td><a href="spreadsheets/slavspb-WIN-7-IE-11-201504.xlsx">66</a>
+</td>
+</tr>
+<tr>
+<td>Slava Smirnov</td>
+<td>31-Mar-15</td>
+<td>2.17</td>
+<td style="width: 282px;">TOSHIBA</td>
+<td style="width: 181px;">WIN-7</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera</td>
+<td><a href="spreadsheets/slavspb-WIN-7-Opera-201504%20%281%29.xlsx">83</a>
+</td>
+</tr>
+<tr>
+<td>Nikolay Gorb</td>
+<td>3/22/2015</td>
+<td>2.17</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">WIN</td>
+<td style="width: 87px;">RU</td>
+<td>Firefox</td>
+<td><a href="spreadsheets/trane294-WIN-7-Firefox-20150322.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Nikolay Gorb</td>
+<td>3/19/2015</td>
+<td>2.17</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">WIN</td>
+<td style="width: 87px;">RU</td>
+<td>IE 11.0.7</td>
+<td><a href="spreadsheets/trane294-WIN-7-IE-20150319.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>10-Apr-15</td>
+<td>2.17</td>
+<td style="width: 282px;">phone Sony Experia M2
+Dual, Model D2302</td>
+<td style="width: 181px;">Android 4.4.4 (D2303
+Build/18.3.1.B.0.18)</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome 41.0</td>
+<td><a href="spreadsheets/serg_a-AND-4.4.4-Chrome-20150410.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>10-Apr-15</td>
+<td>2.17</td>
+<td style="width: 282px;">phone Sony Experia M2
+Dual, Model D2302</td>
+<td style="width: 181px;">Android 4.4.4 (D2303
+Build/18.3.1.B.0.18)</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 28.0</td>
+<td><a href="spreadsheets/serg_a-AND-4.4.4-Opera-20150410.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Luba Chernov</td>
+<td>5-Apr-15</td>
+<td>2.17</td>
+<td style="width: 282px;">MacBook Pro</td>
+<td style="width: 181px;">OS X 10.9.5</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Google Chrome version 41.0.2272.118</td>
+<td><a href="spreadsheets/lovetoread-OSX-10.9.5-Chrome-20150405.xlsx">84</a>
+</td>
+</tr>
+<tr>
+<td>Gurwinder Dhaliwal</td>
+<td>10/04/2015</td>
+<td>2.17</td>
+<td style="width: 282px;">iPad mini</td>
+<td style="width: 181px;">iOS 8.3</td>
+<td style="width: 87px;">ea-ca</td>
+<td>Safari</td>
+<td><a href="spreadsheets/gurwinderdhaliwal-iOS8.3-Safari-20150413.xlsx">62</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>13-Apr-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 37.0.1</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Firefox-20150413.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>APR-02-2015</td>
+<td>2.17</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Windows 7</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox - Version 35.0.1</td>
+<td><a href="spreadsheets/lbrigadier-WIN-7-IE-20150414.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>17-Apr-15</td>
+<td>2.17</td>
+<td style="width: 282px;">phone Sony Experia M2
+Dual, Model D2302</td>
+<td style="width: 181px;">Android 4.4.4</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome 41.0</td>
+<td><a href="spreadsheets/serg_a-AND-4.4.4-Chrome-20150417.xlsx">88</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>APR-16-2015</td>
+<td>2.17</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Window 7</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 28.0</td>
+<td><a href="spreadsheets/lbrigadier-WIN-7-IE-20150416%20%281%29.xlsx">85</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>20-Apr-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extention 42.0</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-RCE-20150420.xlsx">85</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>23-Apr-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-IE-20150423.xlsx">85</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>23-Apr-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 28.0</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Opera-20150423.xlsx">85</a>
+</td>
+</tr>
+<tr>
+<td>Nikolay Gorb</td>
+<td>4/28/2015</td>
+<td>2.15.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">ru</td>
+<td>RCE</td>
+<td><a href="spreadsheets/trane294-WIN-7-RCE-20150428.xlsx">91</a>
+</td>
+</tr>
+<tr>
+<td>Luba Chernov</td>
+<td>13-Apr-15</td>
+<td>2.17</td>
+<td style="width: 282px;">Aser Aspire E1-470-6806</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Opera 28.0.1750.51</td>
+<td><a href="spreadsheets/lovetoread-WIN-8.1-Opera_20150413.xlsx">79</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>27-Apr-15</td>
+<td>2.17.0</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome 42.0.2311.90</td>
+<td><a href="spreadsheets/serg-a-WIN-8.1-Chrome-20150427.xlsx">84</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>27-Apr-15</td>
+<td>2.17.0</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 37.0.2</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Firefox-20150427.xlsx">59</a>
+</td>
+</tr>
+<tr>
+<td>Roustam Baimatov</td>
+<td>29-Apr-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">Desktop, HP Pavillion HPE
+h8-1022</td>
+<td style="width: 181px;">WIN 7 Home Premium</td>
+<td style="width: 87px;">en-ca</td>
+<td>Google Chrome (Version 42.0.2311.90 m)</td>
+<td><a href="spreadsheets/RoustamBaimatov-Windows_7_HomePremium-GoogleChromeExtension-20150429.xlsx">79</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>APR-27-2015</td>
+<td>2.17.0</td>
+<td style="width: 282px;">Tablet IPAD 3</td>
+<td style="width: 181px;">OS: IOS 8.3</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari</td>
+<td><a href="spreadsheets/lbrigadier-iOS-8.3-Safari-20150430.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>APR-24-2015</td>
+<td>2.17.0</td>
+<td style="width: 282px;">Phone Samsung Galaxy
+SCH-I545</td>
+<td style="width: 181px;">OS: Android version 4.4.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 42.0.2311.108</td>
+<td><a href="spreadsheets/lbrigadier-AND-4.4.2-Chrome-20150424.xlsx">79</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>29-Apr-15</td>
+<td>2.17.0</td>
+<td style="width: 282px;">phone Sony Experia M2
+Dual, Model D2302</td>
+<td style="width: 181px;">Android 4.4.4 (D2303
+Build/18.3.1.B.0.18)</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 29.2.1809.91837</td>
+<td><a href="spreadsheets/serg_a-AND-4.4.4-Opera-20150429.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>30-Apr-15</td>
+<td>2.17.0</td>
+<td style="width: 282px;">phone Sony Experia M2
+Dual, Model D2302</td>
+<td style="width: 181px;">Android 4.4.4 (D2303
+Build/18.3.1.B.0.18)</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 37.0.2</td>
+<td><a href="spreadsheets/serg_a-AND-4.4.4-Firefox-20150430.xlsx">61</a>
+</td>
+</tr>
+<tr>
+<td>Gurwinder Dhaliwal</td>
+<td>27/04/2015</td>
+<td>2.15.2</td>
+<td style="width: 282px;">MacBook Pro</td>
+<td style="width: 181px;">OSX 10.10.2</td>
+<td style="width: 87px;">en-ca</td>
+<td>"Readium Chrome Extension" Google
+Chrome(41.0.2272.76(64-bit))</td>
+<td><a href="spreadsheets/gurwinderdhaliwal-OSX-10.10.2-RCE-20150430.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Luba Chernov</td>
+<td>27/04/2015</td>
+<td>2.18.1</td>
+<td style="width: 282px;">Aser Aspire E1-470-6806</td>
+<td style="width: 181px;">windows 8.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome extention , Google Chrome version 42.0.2311.90m</td>
+<td><a href="spreadsheets/lovetoread-wim-8.1-RCE-20150427.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Bhavna Singh</td>
+<td>27-4-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">32-Bit OS - Windows Vista
+Home Premium</td>
+<td style="width: 87px;">en-ca</td>
+<td>Google Chrome - Version 41.0.2272.118 m</td>
+<td><a href="spreadsheets/Bhavna_Singh_RediumChromeExtention.xlsx">85</a>
+</td>
+</tr>
+<tr>
+<td>Roustam Baimatov</td>
+<td>29-Apr-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">Desktop, HP Pavillion HPE
+h8-1022</td>
+<td style="width: 181px;">WIN 7 Home Premium</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome extention , Google Chrome version 42.0.2311.90m</td>
+<td><a href="spreadsheets/RoustamBaimatov-Windows7HomePremium-GoogleChrome-20150429.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Roustam Baimatov</td>
+<td>6-May-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">MacBook Air (13 inch early
+2014)</td>
+<td style="width: 181px;">OS X Yosemite (Version
+10.10.2)</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome extention , Google Chrome version 42.0.2311.90m</td>
+<td><a href="spreadsheets/Roustam%20Baimatov-OS%20X%20Yosemite-GoogleChrome-20150506.xlsx">79</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>APR-02-2015</td>
+<td>2.17.0</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Window 8.1 PRO</td>
+<td style="width: 87px;">en-us</td>
+<td>IE 11</td>
+<td><a href="spreadsheets/lbrigadier-WIN-8.1-IE-20150508.xlsx">64</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>11-May-15</td>
+<td>2.18.0</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Window 8.1 PRO</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome 42.0.2311.135</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Chrome-20150511.xlsx">84</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>11-May-15</td>
+<td>2.17.0</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Window 8.1 PRO</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome Version 40.0.2214.91 m (64-bit)</td>
+<td><a href="spreadsheets/lbrigadier-WIN-8.1-Chrome-20150511.xlsx">85</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>12-May-15</td>
+<td>2.17.0</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Window 8.1 PRO</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox - Version 35.0</td>
+<td><a href="spreadsheets/lbrigadier-WIN-8.1-Firefox-20150512.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>11-May-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Window 8.1 PRO</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 29.0.1795.47</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Opera-20150511.xlsx">82</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>May-13-2015</td>
+<td>2.20.0</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Window 8.1 PRO</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 29.0.1795.47</td>
+<td><a href="spreadsheets/lbrigadier-WIN-8.1-Opera-20150513.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>16-May-15</td>
+<td>2.20.0</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Window 8.1 PRO</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome 42.0.2311.152</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Chrome-20150516.xlsx">84</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>16-May-15</td>
+<td>2.20.0</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Window 8.1 PRO</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11 (11.0.9600.17801)</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-IE-20150516.xlsx">84</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>17-May-15</td>
+<td>2.20.0</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Window 8.1 PRO</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 29.0.1795.47</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Opera-20150517.xlsx">83</a>
+</td>
+</tr>
+<tr>
+<td>Ludmila Brigadier</td>
+<td>18-May-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">PC HP</td>
+<td style="width: 181px;">Window 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome - Version 42.0.2311.152 m</td>
+<td><a href="spreadsheets/lbrigadier-WIN-8.1-RCE-20150518.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Gurwinder Dhaliwal</td>
+<td>20/05/2015</td>
+<td>2.20.0</td>
+<td style="width: 282px;">MacBook Pro</td>
+<td style="width: 181px;">OSX 10.10.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari(8.0.6)</td>
+<td><a href="spreadsheets/gurwinderdhaliwal-OSX-10.10.3-Safari-20150520.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Sergey Almazov</td>
+<td>20/05/2015</td>
+<td>2.20.0</td>
+<td style="width: 282px;">Notebook AMD A10-7300</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 38.0.1</td>
+<td><a href="spreadsheets/serg_a-WIN-8.1-Firefox-20150520.xlsx">60</a>
+</td>
+</tr>
+<tr>
+<td>RIPANDEEP SINGH BHATTI</td>
+<td>26-Apr-15</td>
+<td>2.17.0</td>
+<td style="width: 282px;">Laptop</td>
+<td style="width: 181px;">window 7</td>
+<td style="width: 87px;">en-us</td>
+<td>Google chrome 41.0.2272.118 m</td>
+<td><a href="spreadsheets/RIPANDEEP-win7-chromeEXT-4-26-15.xlsx">60</a>
+</td>
+</tr>
+<tr>
+<td>Cassandra Arnold</td>
+<td>24-Jun-15</td>
+<td>2.20.0</td>
+<td style="width: 282px;">Acer Aspire notebook 64
+bit i5-3317U CPU 1.70GHz</td>
+<td style="width: 181px;">WinHome Premium 7</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome v 43.0.2357.130 m</td>
+<td><a href="spreadsheets/CassandraA-Win-7-Chrome-20150624.xlsx">90</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Prushak</td>
+<td>25-June-2015</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Laptop HP Probook 4530s</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">ru</td>
+<td>Readium Chrome Extension (version 2.20.0), Google
+Chrome (version 43.0.2357.130 m)</td>
+<td><a href="spreadsheets/AndreiPrushak-WIN-7-RCE-20150625.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Cassandra Arnold</td>
+<td>25/06/2015</td>
+<td>2.20.1-alpha</td>
+<td style="width: 282px;">Acer Aspire notebook 64
+bit i5-3317U CPU 1.70GHz</td>
+<td style="width: 181px;">WinHome Premium 7</td>
+<td style="width: 87px;">en-ca</td>
+<td>Firefox 38.0.5</td>
+<td><a href="spreadsheets/CassandraA-Win-7-Firefox-20150625.xlsx">58</a>
+</td>
+</tr>
+<tr>
+<td>Olga Anisimova</td>
+<td>29-Jun-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">HP G60 Notebook PC</td>
+<td style="width: 181px;">Windows7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension 43.0.2357.130 m</td>
+<td><a href="spreadsheets/ovasun-Win-7-RCE-20150629.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Wendy Xu</td>
+<td>29-Jun-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">HP Model dv2-1028ca</td>
+<td style="width: 181px;">Windows7</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome43.0</td>
+<td><a href="spreadsheets/wendyqcmtl-WIN-7.0-CHROME-20150629.xlsx">85</a>
+</td>
+</tr>
+<tr>
+<td>Wendy Xu</td>
+<td>30-Jun-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">HP Model dv2-1028ca</td>
+<td style="width: 181px;">Windows7</td>
+<td style="width: 87px;">en-ca</td>
+<td>RCE</td>
+<td><a href="spreadsheets/wendyqcmtl-WIN-7.0-RCE-20150630.xlsx">83</a>
+</td>
+</tr>
+<tr>
+<td>Olga Anisimova</td>
+<td>30-Jun-15</td>
+<td>2.18.1</td>
+<td style="width: 282px;">Dell with Intel® Core™
+i5-4210U</td>
+<td style="width: 181px;">Windows8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension 43.0.2357.130 m</td>
+<td><a href="spreadsheets/ovasun-Win-8.1-RCE-20150630.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Prushak</td>
+<td>02-July-2015</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Laptop HP Probook 4530s</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">ru</td>
+<td>Firefox, version 39.0</td>
+<td><a href="spreadsheets/AndreiPrushak-WIN-7-Firefox-20150702.xlsx">57</a>
+</td>
+</tr>
+<tr>
+<td>Cassandra Arnold</td>
+<td>3-Jul-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Acer Aspire notebook 64
+bit i5-3317U CPU 1.70GHz</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-ca</td>
+<td>internet explorer 11.0.9600.17843</td>
+<td><a href="spreadsheets/CassandraA-Win-7-IE-20150703.xlsx">52</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Prushak</td>
+<td>04-July-2015</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Laptop HP Probook 4530s </td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">ru</td>
+<td>internet explorer 11.0.9600.17843</td>
+<td><a href="spreadsheets/AndreiPrushak-WIN-7-InernetExplorer-20150704.xlsx">52</a>
+</td>
+</tr>
+<tr>
+<td>Cassandra Arnold</td>
+<td>7-Jul-15</td>
+<td>RCE 2.18.1</td>
+<td style="width: 282px;">Acer Aspire notebook 64
+bit i5-3317U CPU 1.70GHz</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome 43.0.2357.132 m</td>
+<td><a href="spreadsheets/CassandraA-WIN-7-RCE-20150707.xlsx">79</a>
+</td>
+</tr>
+<tr>
+<td>Cassandra Arnold</td>
+<td>12-Jul-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Samsung Galaxy S Note 3
+phone</td>
+<td style="width: 181px;">Android 5.0</td>
+<td style="width: 87px;">en-ca</td>
+<td>Internet v 2.1.34.25-0_11500_390561</td>
+<td><a href="spreadsheets/CassandraA-And-5.0-internet-20150712.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Cassandra Arnold</td>
+<td>15-Jul-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Samsung Galaxy S Note 3
+phone</td>
+<td style="width: 181px;">Android 5.0</td>
+<td style="width: 87px;">en-ca</td>
+<td>Internet v 2.1.34.25-0_11500_390561</td>
+<td><a href="spreadsheets/CassandraA-AND-5.0-Chrome-20150715.xlsx">70</a>
+</td>
+</tr>
+<tr>
+<td>Jurijs Grigorjevs</td>
+<td>15-Jul-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">MacBook PRO (15-inch,Late
+2011)</td>
+<td style="width: 181px;">OS X Yosemite</td>
+<td style="width: 87px;">en-us</td>
+<td>Safary Version 8.0.7</td>
+<td><a href="spreadsheets/JurijsGrigorjevs-OSX-10.10.4-Safary-20150712.xlsx">88</a>
+</td>
+</tr>
+<tr>
+<td>Cassandra Arnold</td>
+<td>20-Jul-15</td>
+<td>CRE pre-release 2.20.0-alpha</td>
+<td style="width: 282px;">Acer Aspire notebook 64
+bit i5-3317U CPU 1.70GHz</td>
+<td style="width: 181px;">WinHome Premium 7</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome 43.0.2357.134 m</td>
+<td><a href="spreadsheets/Cassandra-WIN-7-RCE-20150720.xlsx">81</a>
+</td>
+</tr>
+<tr>
+<td>Duan Walker</td>
+<td>28-Jul-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Dell Latitude E6520 Intel
+Core i5 64 bit</td>
+<td style="width: 181px;">Windows 7 Pro</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome Version 44.0.2403.125 m</td>
+<td><a href="spreadsheets/duanwalker-WIN-7-Chrome-20150728.xlsx">81</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Prushak</td>
+<td>04-August-2015</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Laptop HP Probook 4530s</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">ru</td>
+<td>Readium Chrome Extension, Google Chrome (version
+44.0.2403.125 m)</td>
+<td><a href="spreadsheets/AndreiPrushak-WIN-7-RCE-20150804.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>5-Sep-15</td>
+<td>2.20.0-alpha</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension, Google Chrome 45.0.2454.85 m</td>
+<td><a href="spreadsheets/AnnaOrlova-Win-7-RCE-20150905.xlsx">74</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>19-Sep-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox, version 40.0.3</td>
+<td><a href="spreadsheets/Anna%20Orlova-WIN-7-Firefox-20150919.xlsx">59</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>2-Oct-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 40.03</td>
+<td><a href="spreadsheets/Ivana-WIN-8.1-Firefox-20151002.xlsx">53</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>2-Oct-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>IE 11.0</td>
+<td><a href="spreadsheets/Ivana-WIN-8.1-IE-20151002.xlsx">52</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>4-Oct-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 32.0</td>
+<td><a href="spreadsheets/Ivana-WIN-8.1-Opera-20151004.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Oleg Tkachev</td>
+<td>29-Sep-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">MacBook Pro</td>
+<td style="width: 181px;">OS 10.7.5</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox</td>
+<td><a href="spreadsheets/olegtkachev-OS-10.7.5-Firefox-20150929%28version%201.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>6-Oct-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">iPhone 6s</td>
+<td style="width: 181px;">iOS 9.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari</td>
+<td><a href="spreadsheets/Ivana-iOS-9.0.2-20151006.xlsx">69</a>
+</td>
+</tr>
+<tr>
+<td>Oleg Tkachev</td>
+<td>5-Oct-15</td>
+<td>2.18.2</td>
+<td style="width: 282px;">Apple Mac</td>
+<td style="width: 181px;">Mac OS X 10.7.5</td>
+<td style="width: 87px;">en-us</td>
+<td>RCE, Chrome 45.0.2454.101</td>
+<td><a href="spreadsheets/olegtkachev-OS-10.7.5-Chrome-20151005.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>4-Oct-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">Samsung Galaxy Tab 2</td>
+<td style="width: 181px;">Android version 4.2.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 45.0.2454.94</td>
+<td><a href="spreadsheets/Anna%20Orlova-AND-4.2.2-Chrome-20151003.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>7-Oct-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">iPad2</td>
+<td style="width: 181px;">iOS 8.1.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari/600.1.4</td>
+<td><a href="spreadsheets/Ivana-iOS-8.1.1-20151007.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>8-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 8.1 </td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 45.0</td>
+<td><a href="spreadsheets/Ivana-WIN-8.1-Chrome-20151008.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>8-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 8.1 </td>
+<td style="width: 87px;">en-us</td>
+<td>IE 11.0</td>
+<td><a href="spreadsheets/Ivana-WIN-8.1-IE-20151008.xlsx">53</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>8-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 8.1 </td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 40.03</td>
+<td><a href="spreadsheets/Ivana-WIN-8.1-Firefox-20151008.xlsx">55</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>3-Oct-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1 </td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 40.0.3</td>
+<td><a href="spreadsheets/bsihnushrestha-WIN-8.1-Firefox-2015-10-07.xlsx">64</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>10-Oct-15</td>
+<td>2.22.0-Alpha</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 8.1 </td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 32.0</td>
+<td><a href="spreadsheets/Ivana-WIN-8.1-Opera-20151010.xlsx">79</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>11-Oct-15</td>
+<td>2.22.0-Alpha</td>
+<td style="width: 282px;">iPhone 6s</td>
+<td style="width: 181px;">iOS 9.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera Mini 11.0</td>
+<td><a href="spreadsheets/Ivana-iOS-9.0.2-OperaMini-20151011.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>12-Oct-15</td>
+<td>2.22.0-Alpha</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera Mini 11.0</td>
+<td><a href="spreadsheets/Ivana-WIN-8.1-RCE-20151012.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>8-Jan-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 40.0.3</td>
+<td><a href="spreadsheets/bishnushrestha-WIN-8.1-RCE-2015-10-08.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Oleg Tkachev</td>
+<td>8-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">iMac OS X 10.9.5</td>
+<td style="width: 87px;">en-us</td>
+<td>Safary 7.1.8.</td>
+<td><a href="spreadsheets/olegtkachev-iOS-7.1.8-Safari-20150810.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Oleg Tkachev</td>
+<td>12-Oct-15</td>
+<td>2.20.1</td>
+<td style="width: 282px;">iMac OS X</td>
+<td style="width: 181px;">OS X 10.9.5</td>
+<td style="width: 87px;">en-us</td>
+<td>RCE 45.0.2454.101</td>
+<td><a href="spreadsheets/olegtkachev-iOS-45.0-RCE-20151012.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>14-Oct-15</td>
+<td>2.22.0</td>
+<td style="width: 282px;">iPad2</td>
+<td style="width: 181px;">iOS 8.1.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari/600.1.4</td>
+<td><a href="spreadsheets/Ivana-iOS-8.1.1-Safari-20151014.xlsx">74</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>12-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Internet%20Explorer-2015-10-14.xlsx">53</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>12-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-GoogleChrome-2015-10-14.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>12-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 32.0.1.1948.69</td>
+<td><a href="spreadsheets/Bishnu%20Shrestha-WIN-8.1-Opera-2015-10-15.xlsx">68</a>
+</td>
+</tr>
+<tr>
+<td>Ivana Gaudreau</td>
+<td>15-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">iPhone 6s</td>
+<td style="width: 181px;">iOS 9.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari 601.1</td>
+<td><a href="spreadsheets/Ivana-iOS-9.0.2-20151015.xlsx">74</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>15-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension, Google Chrome 45.0.2454.85 m</td>
+<td>
+<a href="spreadsheets/AnnaOrlova-Win-7-RCE-20151015.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>12-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">iphone</td>
+<td style="width: 181px;">IOS 8.1.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari 5.1</td>
+<td>
+<a href="spreadsheets/BishnuShrestha-IOS-8.1.1-Safari-2015-10-18.xlsx">63</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>18-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox, version 41.0.2</td>
+<td><a href="spreadsheets/AnnaOrlova-WIN-7-Firefox-20151023.xlsx">59</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>26-Oct-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 41.0.2</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Firefox-41.0.2-2015-10-26.xlsx">60</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>27-Oct-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome Version 46.0.2490.80 m</td>
+<td><a href="spreadsheets/Bishnu%20Shrestha-WIN-8.1-GoogleChrome-46.0.2490.80m-2015-10-27.xlsx">74</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>28-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-InternetExplorer-11-2015-10-28.xlsx">55</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>29-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 33.0.1990.43</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Opera-33.0.1990.43-2015-10-29.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>31-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">Samsung Galaxy Tab 2</td>
+<td style="width: 181px;">Android version 4.2.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 45.0.2454.94</td>
+<td><a href="spreadsheets/AnnaOrlova-AND-4.2.2-Chrome-20151031.xlsx">66</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>2-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">iphone</td>
+<td style="width: 181px;">IOS 8.1.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari 5.1</td>
+<td><a href="spreadsheets/BishnuShrestha-IOS-8.1.1-Safari-5.1-2015-11-02.xlsx">61</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>5-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 42.0</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Firefox%20-42.0-2015-11-05.xlsx">56</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>5-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-InternetExplorer-11-2015-11-05.xlsx">56</a>
+</td>
+</tr>
+<tr>
+<td>Yan Pei</td>
+<td>5-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">Laptop TOSHIBA Satellite
+A8-4500M</td>
+<td style="width: 181px;">Windows8.1 (64-bit)</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension 46.0</td>
+<td><a href="spreadsheets/ypei-WIN-8.1-RCE-20151105.xlsx">52</a>
+</td>
+</tr>
+<tr>
+<td>Nadiya Beztsinna</td>
+<td>8-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">MacBook Pro (Retina,
+13-inch, Early 2015)</td>
+<td style="width: 181px;">OS X El Capitan (version
+10.11.1)</td>
+<td style="width: 87px;">uk</td>
+<td>Safari</td>
+<td><a href="spreadsheets/insidezx-OSX-10.11-Safari-20151108.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>27-Oct-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome Version 46.0.2490.80 m</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-GoogleChrome-46.0.2490.80m-2015-11-08.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>9-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">MacBook Pro (Retina,
+13-inch, Early 2015)</td>
+<td style="width: 181px;">OS X El Capitan (version
+10.11.1)</td>
+<td style="width: 87px;">uk</td>
+<td>Google Chrome App</td>
+<td><a href="spreadsheets/insidezx-OSX-10.11-Google%20Chrome-20151109.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>9-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">uk</td>
+<td>Opera 33.0.1990.58</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Opera-33.0.1990.58-2015-11-09.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Alla Knurik</td>
+<td>4-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC Laptop TOSHIBA Satellite</td>
+<td style="width: 181px;">Windows 10</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome Version 44.0.2403.107</td>
+<td><a href="spreadsheets/AllaKnurik-WIN10-RCE-20151103.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>4-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">Samsung Galaxy S6 Edge</td>
+<td style="width: 181px;">Android version 5.1.1;
+SM-G925T</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 46.0.2490.76</td>
+<td><a href="spreadsheets/AnnaOrlova-AND-5.1.1-Chrome-20151114.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Alla Knurik</td>
+<td>14-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC Laptop TOSHIBA Satellite</td>
+<td style="width: 181px;">Windows 10</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome Version 44.0.2403.107</td>
+<td><a href="spreadsheets/AllaKnurik-WIN-10-RCE-20151114.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>18-Nov-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>GoogleChrome Version 46.0.2490.86 m </td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-RCE-2015-11-18.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>5-Dec-15</td>
+<td>2.22.0-alpha</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-InternetExplorer-11-2015-12-05.xlsx">55</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>7-Dec-15</td>
+<td>2.22.0</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 42.0</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Firefox-42.0-2015-12-07.xlsx">57</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>7-Dec-15</td>
+<td>2.22.0</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google ChromeVersion 47.0.2526.73 m</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-GoogleChrome-47.0.2526.73m-2015-12-07.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>8-Dec-15</td>
+<td>2.22.0</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 33.0.1990.115</td>
+<td><a href="BishnuShrestha-WIN-8.1-Opera-33.0.1990.115-2015-12-08.xlsx">74</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>9-Dec-15</td>
+<td>2.22.0</td>
+<td style="width: 282px;">iphone</td>
+<td style="width: 181px;">IOS 8.1.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Safari 5.1</td>
+<td><a href="spreadsheets/BishnuShrestha-IOS-8.1.1-Safari-5.1-2015-12-09.xlsx">64</a>
+</td>
+</tr>
+<tr>
+<td>Julia Kulbeda</td>
+<td>7-Nov-15</td>
+<td>2.22.0</td>
+<td style="width: 282px;">desktop computer</td>
+<td style="width: 181px;">Windows XP Professional
+Version 2002</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 42.0</td>
+<td><a href="spreadsheets/Julia-WIN-2002-Firefox-200151212.xlsx">65</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>22-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google ChromeVersion 47.0.2526.80 m</td>
+<td><a href="spreadsheets/Julia-WIN-2002-Firefox-200151212.xlsx">65</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>14-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 34.0.2036.25 </td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Opera-34.0.1990.43-2015-12-14.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>15-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Lenovo</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome 47.0.2526.80</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-Chrome-20151215.xlsx">83</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>15-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Lenovo</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>RCE 47.0.2526</td>
+<td><a href="spreadsheets/albina_sabir-Win-8.1-RCE-20151215.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>16-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">acer Model ASPIRE 5100</td>
+<td style="width: 181px;">Win 7 pack 1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome,Version 47.0.2526.80 m</td>
+<td><a href="spreadsheets/natalia33-WIN7-Chrome-20151216.xlsx">70</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>19-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">acer Model ASPIRE 5100</td>
+<td style="width: 181px;">Win 7 pack 1</td>
+<td style="width: 87px;">en-us</td>
+<td>FireFox,Version 42.0</td>
+<td><a href="spreadsheets/natalia33-WIN7-Firefox-20151219.xlsx">50</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>19-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension, Google Chrome 47.0.2526.106 m</td>
+<td><a href="spreadsheets/AnnaOrlova-Win-7-RCE-20151219.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>21-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Lenovo</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11.0</td>
+<td><a href="spreadsheets/albina_sabir-Win-8.1-IE-20151221.xlsx">54</a>
+</td>
+</tr>
+<tr>
+<td>Yan Pei</td>
+<td>22-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Laptop TOSHIBA Satellite
+A8-4500M</td>
+<td style="width: 181px;">Windows10 (64-bit)</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome Version 47.0.2526.80 m</td>
+<td><a href="spreadsheets/ypei-WIN-10-RCE-20151222.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>20-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox, version 43.0.1</td>
+<td><a href="spreadsheets/AnnaOrlova-WIN-7-Firefox-20151220.xlsx">55</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>23-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">acer Model ASPIRE 5100</td>
+<td style="width: 181px;">Win 7 pack 1</td>
+<td style="width: 87px;">en-us</td>
+<td>IE11,11.09600.18124</td>
+<td><a href="spreadsheets/natalia33-WIN7-IE-20151223.xlsx">44</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>23-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Lenovo</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 33.0.1990</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-Opera-20151223.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Yan Pei</td>
+<td>24-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Laptop TOSHIBA Satellite
+A8-4500M</td>
+<td style="width: 181px;">Windows10 (64-bit)</td>
+<td style="width: 87px;">en-ca</td>
+<td>Google Chrome Version 47.0.2526.80 m</td>
+<td><a href="spreadsheets/ypei-WIN-10-RCE-20151224.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Sergei Osmachko</td>
+<td>24-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC,Asus x205ta</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>IE11,11.09600.18125</td>
+<td><a href="spreadsheets/Letun-WIN-8.1-IE-20151224.xlsx">44</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>26-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">iPhone 5</td>
+<td style="width: 181px;">iOS 7.0.2</td>
+<td style="width: 87px;">en-ca</td>
+<td>Safari</td>
+<td><a href="spreadsheets/mmagadia-iOS-7.0.2-Safari-20151227.xlsx">56</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>11-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">HP Envy 17" laptop</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Mozilla Firefox 42.0</td>
+<td><a href="spreadsheets/mmagadia-WIN-8.1-Firefox-20151210.xlsx">59</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>25-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-ca</td>
+<td>OPERA, VERSION 34.0.2036.41</td>
+<td><a href="spreadsheets/AnnaOrlova-WIN-7-Opera-20151225.xlsx">79</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>28-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC (HP Envy laptop)</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Readium Chrome Extension 47.0.2</td>
+<td><a href="spreadsheets/mmagadia-WIN-8.1-RCE-20151228.xlsx">73</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>28-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Sony xperia M-2</td>
+<td style="width: 181px;">AND 4.4.4</td>
+<td style="width: 87px;">en-us</td>
+<td>chrome 44.0</td>
+<td><a href="spreadsheets/albina_sabir-AND-4.4-Chrome-20151228.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Yan Pei</td>
+<td>29-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Laptop TOSHIBA Satellite
+A8-4500M</td>
+<td style="width: 181px;">Windows10 (64-bit)</td>
+<td style="width: 87px;">en-ca</td>
+<td>Google Chrome Version 47.0.2526.80 m</td>
+<td><a href="spreadsheets/ypei-WIN-10-RCE-20151229.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>29-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC (HP Envy laptop)</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Internet Explorer 11.0.9</td>
+<td><a href="spreadsheets/mmagadia-WIN-8.1-IE-20151229.xlsx">52</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>30-Dec-15</td>
+<td>2.22.1</td>
+<td style="width: 282px;">iPad 4G</td>
+<td style="width: 181px;">iOS 8.4.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Opera 12.1.1</td>
+<td><a href="spreadsheets/mmagadia-iOS-8.4.1-Opera-20151230.xlsx">66</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>5-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Dell XPS L502X. Intel®
+Core™ i5-2410M CPU 2@2.30 GHz</td>
+<td style="width: 181px;">WIN 10</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome 47.0.2526</td>
+<td><a href="spreadsheets/albina_sabir-WIN-10-Chrome-20160104.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>4-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Dell XPS L502X. Intel®
+Core™ i5-2410M CPU 2@2.30 GHz</td>
+<td style="width: 181px;">WIN 10</td>
+<td style="width: 87px;">en-ca</td>
+<td>Opera 34.0</td>
+<td><a href="spreadsheets/albina_sabir-WIN-10-Opera-20160105.xlsx">65</a>
+</td>
+</tr>
+<tr>
+<td>Alla Knurik</td>
+<td>4-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Laptop TOSHIBA Satellite</td>
+<td style="width: 181px;">WIN 10</td>
+<td style="width: 87px;">en-ca</td>
+<td>Microsoft Edge 25.10586.0.0</td>
+<td><a href="spreadsheets/AllaKnurik-WIN-10-MicrosoftEdge-20160104.xlsx">65</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>7-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Dell XPS L502X. Intel®
+Core™ i5-2410M CPU 2@2.30 GHz</td>
+<td style="width: 181px;">WIN 10</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11.20</td>
+<td><a href="spreadsheets/albina_sabir-WIN-10-IE-20160107.xlsx">59</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>7-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">iPad4G</td>
+<td style="width: 181px;">iOS 8.4.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Safari</td>
+<td><a href="spreadsheets/mmagadia-iOS-8.4.1-Safari-20160107.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>8-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Acer Model Aspire One 722</td>
+<td style="width: 181px;">Win7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension Version 47.0.2526.106 m</td>
+<td><a href="spreadsheets/natalia33-Win7-RCE-20160108.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>11-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Dell XPS L502X. Intel®
+Core™ i5-2410M CPU 2@2.30 GHz</td>
+<td style="width: 181px;">WIN 10</td>
+<td style="width: 87px;">en-us</td>
+<td>Microsoft Edge 25.10586</td>
+<td><a href="spreadsheets/albina_sabir-WIN-10-MicrosoftEdge-20160111.xlsx">53</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>12-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Sony xperia M-2</td>
+<td style="width: 181px;">AND 4.4.4</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 34.0.2044</td>
+<td><a href="spreadsheets/albina_sabir-AND-4.4-Opera-20160112.xlsx">59</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>14-Jan-16</td>
+<td>2.18.2</td>
+<td style="width: 282px;">PC Dell XPS L502X. Intel®
+Core™ i5-2410M CPU 2@2.30 GHz</td>
+<td style="width: 181px;">WIN 10</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension 47.0.2526</td>
+<td><a href="spreadsheets/albina_sabir-WIN-10-RCE-20160114.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>19-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Dell Inspiration 14z
+Intel® Core™ i3-2367 M CPU @1.40 GHz</td>
+<td style="width: 181px;">WIN 7</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 47.0.2526</td>
+<td><a href="spreadsheets/albina_sabir-WIN-7-Chrome-20160119.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>20-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Dell Inspiration 14z
+Intel® Core™ i3-2367 M CPU @1.40 GHz</td>
+<td style="width: 181px;">WIN 7</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11.0.9600</td>
+<td><a href="spreadsheets/albina_sabir-WIN-7-IE-20160120.xlsx">53</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>24-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Intel-R Core-TM i7-4510U
+CPU@2.00GHz</td>
+<td style="width: 181px;">Ubuntu 15.10</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome 48.0.2564</td>
+<td><a href="spreadsheets/albina_sabir-LNX-Chrome-20160124.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>25-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Acer Model Aspire 5100</td>
+<td style="width: 181px;">Win7 pack1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera,version 34.0.2036.50</td>
+<td><a href="spreadsheets/natalia33-WIN7-Opera-20160125.xlsx">63</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>26-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Samsung tablet </td>
+<td style="width: 181px;">android version 5.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome version 47.0.2526.83</td>
+<td><a href="spreadsheets/natalia33-WIN7-Opera-20160125.xlsx">66</a>
+</td>
+</tr>
+<tr>
+<td>Sergei Osmachko</td>
+<td>25-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">Samsung Galaxy Tab 4</td>
+<td style="width: 181px;">Android version 5.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome, Version 47.0.2526.83</td>
+<td><a href="spreadsheets/Letun-AND-5.0.2-Chrome-20160125.xlsx">66</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>26-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;"> Intel® Core™ i7-4510U
+CPU@2.00GHz</td>
+<td style="width: 181px;">Ubuntu 15.10</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 36.0.2106</td>
+<td><a href="spreadsheets/albina_sabir-LNX-Opera-20160126.xlsx">60</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>21-Jan-16</td>
+<td>2.22.1</td>
+<td style="width: 282px;">PC Dell Inspiration 14z
+Intel® Core™ i3-2367 M CPU @1.40 GHz</td>
+<td style="width: 181px;">WIN 7</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 34.0</td>
+<td><a href="spreadsheets/albina_sabir-WIN-7-Opera-20160121.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>28-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 44.0</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Firefox-44.0-2016-01-28.xlsx">63</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>27-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google ChromeVersion 48.0.2564.82 m</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Google%20Chrome-Version%2048.0.2564.82%20m-2016-01-27.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>27-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 34.0.2036.50</td>
+<td><a href="spreadsheets/BishnuShrestha-WIN-8.1-Opera-34.0.2036.50-2016-01-27.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>29-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Samsung tablet </td>
+<td style="width: 181px;">android version 5.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome version 47.0.2526.83</td>
+<td><a href="spreadsheets/natalia33-AND-5.0.2-Chrome-20160129.xlsx">66</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>28-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google ChromeVersion 48.0.2564.82 m</td>
+<td><a href="spreadsheets/BishnuShrestha-Win-8.1-GoogleChrome-Version48.0.2564.82m-2016-01-29.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>28-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 34.0.2036.50</td>
+<td><a href="spreadsheets/BishnuShrestha-Win-8.1-Opera-version-34.0.2036.50-2016-01-29.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Sergei Osmachko</td>
+<td>30-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Samsung tab</td>
+<td style="width: 181px;">Android version 5.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome, Version 47.0.2526.83</td>
+<td><a href="spreadsheets/Letun-AND-5.0.2-Chrome-20160130.xlsx">66</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>28-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 7 Service Pack 1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Firefox 44</td>
+<td><a href="spreadsheets/mmagadia-WIN-7-Firefox-20160128.xlsx">57</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>31-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Intel® Core™ i7-4510U
+CPU@2.00GHz</td>
+<td style="width: 181px;">Ubuntu 15.10</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 41.0.2</td>
+<td><a href="spreadsheets/albina_sabir-LNX-Firefox-20160131.xlsx">47</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>1-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11</td>
+<td><a href="spreadsheets/BishnuShrestha-Win-8.1-InternetExplorer-11-2016-02-01.xlsx">56</a>
+</td>
+</tr>
+<tr>
+<td>Bishnu Shrestha</td>
+<td>28-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 44.0</td>
+<td><a href="spreadsheets/BishnuShrestha-Win-8.1-Firefox-44.0-2016-02-01.xlsx">62</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>1-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Samsung tablet</td>
+<td style="width: 181px;">android version 5.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>IE 6.0</td>
+<td><a href="spreadsheets/natalia33-AND-5.0.2-IE-20160201.xlsx">63</a>
+</td>
+</tr>
+<tr>
+<td>Duan Walker</td>
+<td>29-Jan-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Desktop PC dell lattitude
+E6520</td>
+<td style="width: 181px;">windows 7 64 bit svc pk 1</td>
+<td style="width: 87px;">en-us</td>
+<td>chrome Version 47.0.2526.111 m</td>
+<td><a href="spreadsheets/duanwalker-Win7-chrome-20160129.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>2-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 43.0.1</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8-Firefox-20160202.xlsx">54</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>2-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Samsung tablet</td>
+<td style="width: 181px;">android version 5.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 34.0.2044.98679</td>
+<td><a href="spreadsheets/natalia33-AND-5.0.2-Opera-20160202.xlsx">65</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>3-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>RCE 48.0.2564</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-RCE-20160203.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>1-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 7</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome 48</td>
+<td><a href="spreadsheets/mmagadia-WIN-7-Chrome-20160201.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>5-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11.0</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-IE-20160205.xlsx">54</a>
+</td>
+</tr>
+<tr>
+<td>Sergei Osmachko</td>
+<td>6-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC,Acer Aspire</td>
+<td style="width: 181px;">Windows 10</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome version 48.0.2564.103m</td>
+<td><a href="spreadsheets/Letun-WIN10-Chrome-20160206.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>8-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension, Google Chrome 48.0.2564.103 m</td>
+<td><a href="spreadsheets/Anna%20Orlova-WIN-7-RCE-20160208.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Duan Walker</td>
+<td>8-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Desktop PC dell lattitude
+E6520</td>
+<td style="width: 181px;">windows 7 64 bit svc pk 1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera Version 34.0.2036.39 </td>
+<td><a href="spreadsheets/duanwalker-Win7-Opera-20160129.xlsx">76</a>
+</td>
+</tr>
+<tr>
+<td>Yan Pei</td>
+<td>1-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Laptop TOSHIBA Satellite
+A8-4500M</td>
+<td style="width: 181px;">Windows10(64-bit)</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome Version 48.0.2564.97m</td>
+<td><a href="spreadsheets/ypei-WIN-10-RCE-20160201.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>9-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 35.0.2066</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-Opera-20160209.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>10-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC </td>
+<td style="width: 181px;">Windows 7</td>
+<td style="width: 87px;">en-ca</td>
+<td>Internet Explorer 11</td>
+<td><a href="spreadsheets/mmagadia-WIN-7-IE-20160210.xlsx">43</a>
+</td>
+</tr>
+<tr>
+<td>Sergei Osmachko</td>
+<td>10-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Samsung tab</td>
+<td style="width: 181px;">android version 5.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 34.0.2044.98679</td>
+<td><a href="spreadsheets/Letun-AND-5.0.2-Opera-20160210.xlsx">65</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>13-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 48.0</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-Chrome-20160213.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>14-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">acer Model ASPIRE 5100</td>
+<td style="width: 181px;">Win 7 pack 1</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome verison 48.0.2564.109 m</td>
+<td><a href="spreadsheets/natalia33-WIN7-Chrome-20160214.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>14-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera, version 34.0.2036.36</td>
+<td><a href="spreadsheets/Anna%20Orlova-WIN-7-Opera-20160214.xlsx">82</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>17-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">acer Model ASPIRE 5100</td>
+<td style="width: 181px;">Win 7 pack 1</td>
+<td style="width: 87px;">en-us</td>
+<td>IE version 11.0.9600.18204</td>
+<td><a href="spreadsheets/natalia33-WIN7-IE-20160217.xlsx">52</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>17-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;"> Intel® Core™ i7-4510U
+CPU@2.00GHz</td>
+<td style="width: 181px;">Ubuntu 15.10</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 36.0.2106</td>
+<td><a href="spreadsheets/albina_sabir-LNX-Opera-20160217.xlsx">62</a>
+</td>
+</tr>
+<tr>
+<td>Sergei Osmachko</td>
+<td>21-Feb-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">PC,Acer Aspire</td>
+<td style="width: 181px;">Windows 10</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome version 48.0.2564.103m</td>
+<td><a href="spreadsheets/Letun-WIN10-Chrome-20160221.xlsx">77</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>21-Feb-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 48.0</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-Chrome-20160221.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>22-Feb-16</td>
+<td>2.22.2</td>
+<td style="width: 282px;">Samsung Galaxy Tab 2</td>
+<td style="width: 181px;">Android version 4.2.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 48.0.2564.95</td>
+<td><a href="spreadsheets/AnnaOrlova-AND-4.2.2-Chrome-20160222.xlsx">67</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>23-Feb-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">acer Model Aspire 5100</td>
+<td style="width: 181px;">Win7 pack1</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension Version 48.0.2564.109 m</td>
+<td><a href="spreadsheets/natalia33-Win7-RCE-20160223.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>23-Feb-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 44.0</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-Firefox-20160223.xlsx">61</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>24-Feb-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">acer Model ASPIRE 5100</td>
+<td style="width: 181px;">Win 7 pack 1</td>
+<td style="width: 87px;">en-us</td>
+<td>IE version 11.0.9600.18204</td>
+<td><a href="spreadsheets/natalia33-WIN7-IE-20160224.xlsx">52</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>24-Feb-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera 35.0</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8-Opera-20160224.xlsx">52</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>25-Feb-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>RCE 48.0</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-RCE-20160225.xlsx">52</a>
+</td>
+</tr>
+<tr>
+<td>Sergei Osmachko</td>
+<td>27-Feb-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">acer aspire</td>
+<td style="width: 181px;">Win10</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension Version 48.0.2564.109 m</td>
+<td><a href="spreadsheets/Letun-Win10-RCE-20160227.xlsx">72</a>
+</td>
+</tr>
+<tr>
+<td>Yan Pei</td>
+<td>27-Feb-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">Laptop TOSHIBA Satellite
+A8-4500M</td>
+<td style="width: 181px;">Windows10(64-bit)</td>
+<td style="width: 87px;">English(Canada)</td>
+<td>Google Chrome Version 48.0.2564.97m</td>
+<td><a href="spreadsheets/ypei-WIN-10-RCE-20160227.xlsx">80</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>2-Mar-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">PC Lenovo, Intel ® Core™
+i7-4510U CPU@2.00GHz</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Internet Explorer 11.0</td>
+<td><a href="spreadsheets/albina_sabir-WIN-8.1-IE-20160302.xlsx">54</a>
+</td>
+</tr>
+<tr>
+<td>Ric Wright</td>
+<td>1-Mar-16</td>
+<td>48.0.2564.116</td>
+<td style="width: 282px;">MacBookPro</td>
+<td style="width: 181px;">OSX 10.10</td>
+<td style="width: 87px;">us-en</td>
+<td>Chrome, 48.0.2564.116 (64-bit)</td>
+<td><a href="spreadsheets/rkwright-OSX-2-22-3-CR-20160301.xlsx">89</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>3-Mar-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">Intel® Core™ i7-4510U
+CPU@2.00GHz</td>
+<td style="width: 181px;">Ubuntu 15.10</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 41.0.2</td>
+<td><a href="spreadsheets/albina-sabir-LNX-Firefox-20160303.xlsx">54</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>4-Mar-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">Sony xperia M-2</td>
+<td style="width: 181px;">AND 4.4.4 D2306</td>
+<td style="width: 87px;">en-us</td>
+<td>chrome 48.0</td>
+<td><a href="spreadsheets/albina-sabir-AND-4.4-Chrome-20160304.xlsx">70</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>3-Mar-16</td>
+<td>2.22.3-alpha</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox, version 44.0.2</td>
+<td><a href="spreadsheets/AnnaOrlova-WIN-7-Firefox-20160303.xlsx">53</a>
+</td>
+</tr>
+<tr>
+<td>Natalia Lyaskovets</td>
+<td>6-Mar-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">Samsung tablet </td>
+<td style="width: 181px;">android version 5.0.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome version 48.0.2564.95</td>
+<td><a href="spreadsheets/natalia33-AND-5.0.2-Chrome-20160306.xlsx">74</a>
+</td>
+</tr>
+<tr>
+<td>Albina Sabirova</td>
+<td>7-Mar-16</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">PC Dell XPS L502X. Intel®
+Core™ i5-2410M CPU 2@2.30 GHz</td>
+<td style="width: 181px;">WIN 10</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 43.0.4</td>
+<td><a href="spreadsheets/natalia33-AND-5.0.2-Chrome-20160306.xlsx">65</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>2016-Mar-09</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">iPad 4G</td>
+<td style="width: 181px;">iOS 8.4.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Safari</td>
+<td><a href="spreadsheets/mmagadia-iOS-8.4.1-Safari-20160309.xlsx">74</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>2016-Mar-09</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 7</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome 48</td>
+<td><a href="spreadsheets/mmagadia-WIN-7-chrome-20160309.xlsx">74</a>
+</td>
+</tr>
+<tr>
+<td>Maribel Magadia</td>
+<td>2016-Mar-10</td>
+<td>2.23.0-alpha</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 8.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Mozilla Firefox 44.0.2</td>
+<td><a href="spreadsheets/mmagadia-WIN-8.1-Firefox-20160310.xlsx">64</a>
+</td>
+</tr>
+<tr>
+<td>Alla Levenberg</td>
+<td>11-Mar-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">HP 2000 notebook PC (AMD
+E-300 processor)</td>
+<td style="width: 181px;">Win 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>IE 11.0.9600.18230</td>
+<td><a href="spreadsheets/alev-WIN-7-IE-11.0.9600.18230.xlsx">55</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>15-Mar-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Opera, version 34.0.2036.36</td>
+<td><a href="spreadsheets/AnnaOrlova-WIN-7-Opera-20160315.xlsx">82</a>
+</td>
+</tr>
+<tr>
+<td>Alla Levenberg</td>
+<td>11-Mar-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">HP 2000 notebook PC (AMD
+E-300 processor)</td>
+<td style="width: 181px;">Win 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>IE 11.0.9600.18230</td>
+<td><a href="spreadsheets/alev-WIN-7-IE-11.0.9600.18230-20160311.xlsx">57</a>
+</td>
+</tr>
+<tr>
+<td>Alla Levenberg</td>
+<td>19-Mar-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">HP 2000 notebook PC (AMD
+E-300 processor)</td>
+<td style="width: 181px;">Win 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome Version 49.0.2623.87 m</td>
+<td><a href="spreadsheets/alev-WIN-7-Chrome-49.0.2623.87m-20160319.xlsx">81</a>
+</td>
+</tr>
+<tr>
+<td>Marina Garina</td>
+<td>16-Mar-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Lenovo IdeaPad Yoga 11S,
+Model 20246</td>
+<td style="width: 181px;">WIN 10.0</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension Version 43.0.2357.130 m</td>
+<td><a href="spreadsheets/mgarina-Win-10.0-RCE-20150321.xlsx">84</a>
+</td>
+</tr>
+<tr>
+<td>Alla Levenberg</td>
+<td>21-Mar-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">SM-T230NU</td>
+<td style="width: 181px;">Android 4.4.2</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome Version 49.0.2623.91</td>
+<td><a href="spreadsheets/alev-AND-4.2.2-Chrome-49.0.2623.91-20160321.xlsx">70</a>
+</td>
+</tr>
+<tr>
+<td>Anna Orlova</td>
+<td>20-Mar-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Desktop computer</td>
+<td style="width: 181px;">Windows 7 Home Premium</td>
+<td style="width: 87px;">en-us</td>
+<td>Readium Chrome Extension, Google Chrome 49.0.2623.87 m</td>
+<td><a href="spreadsheets/AnnaOrlova-WIN-7-RCE-20160320.xlsx">88</a>
+</td>
+</tr>
+<tr>
+<td>Alla Levenberg</td>
+<td>23-Mar-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">LG-D852 Build /LRX21Y</td>
+<td style="width: 181px;">Android 5.0.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Chrome 49.0.2623.91</td>
+<td><a href="spreadsheets/alev-AND-5.0.1-Chrome-49.0.2623.91-20160324.xlsx">70</a>
+</td>
+</tr>
+<tr>
+<td>Alla Levenberg</td>
+<td>31-Mar-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Lenovo notebook (Intel®
+core i5)</td>
+<td style="width: 181px;">Win 10 pro</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 45.0.1</td>
+<td><a href="spreadsheets/alev-WIN-10-Firefox%2045.0.1-20160331.xlsx">70</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Tenea</td>
+<td>11-Apr-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">PC Lenovo IDeaPad U530
+Touch</td>
+<td style="width: 181px;">Windows 10 Home</td>
+<td style="width: 87px;">en-ca</td>
+<td>Google Chrome Version 49.0.2623.110 m</td>
+<td><a href="spreadsheets/Andrei_T-WIN-10.0-Chrome-20160411.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Vasilisa Platonova</td>
+<td>11-Apr-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Notebook Samsung
+Electronics Intel® Core™ i3-2377M CPU@1.50 GHz</td>
+<td style="width: 181px;">Windows 7 Home Basic</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 45.0.1</td>
+<td><a href="spreadsheets/VasilisaPlatonova-WIN-7-FireFox-20160411.xlsx">58</a>
+</td>
+</tr>
+<tr>
+<td>Viji Alagappan</td>
+<td>12-Apr-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Windows 10</td>
+<td style="width: 87px;">en-ca</td>
+<td>Firefox,version 45.0.2</td>
+<td><a href="spreadsheets/VijiAlagappan-WIN-10-FireFox-20160414.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Alexander Kotenkov</td>
+<td>15-Apr-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 45.0.2</td>
+<td><a href="spreadsheets/AlexanderKotenkov-Win-8.1-Firefox-20150417.xlsx">75</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Tenea</td>
+<td>18-Apr-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">PC Lenovo IDeaPad U530
+Touch</td>
+<td style="width: 181px;">Windows 10 Home</td>
+<td style="width: 87px;">en-ca</td>
+<td>Microsoft Edge 25.10586.0.0</td>
+<td><a href="spreadsheets/Andrei_T-WIN-10.0-Edge-20160418.xlsx">48</a>
+</td>
+</tr>
+<tr>
+<td>Alexander Kotenkov</td>
+<td>21-Apr-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">PC</td>
+<td style="width: 181px;">Win 8.1</td>
+<td style="width: 87px;">en-us</td>
+<td>Firefox 45.0.2</td>
+<td><a href="spreadsheets/Andrei_T-WIN-10.0-Edge-20160418.xlsx">85</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Tenea</td>
+<td>18-Apr-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">PC Lenovo IDeaPad U530
+Touch</td>
+<td style="width: 181px;">Windows 10 Home</td>
+<td style="width: 87px;">en-ca</td>
+<td>Opera 36.0.2130.70</td>
+<td><a href="spreadsheets/Andrei_T-WIN-10.0-Opera-20160421.xlsx">58</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Tenea</td>
+<td>25-Apr-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Nexus 5</td>
+<td style="width: 181px;">Android 6.0.1</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome 49.0.2623.105</td>
+<td><a href="spreadsheets/Andrei_T-Android-6.0-Chrome-20160425.xlsx">58</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Tenea</td>
+<td>29-Apr-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">HP Pavilion dv6500
+Notebook PC</td>
+<td style="width: 181px;">Ubuntu 14.04 LTS</td>
+<td style="width: 87px;">en-ca</td>
+<td>Chrome 50.0.2661.94</td>
+<td><a href="spreadsheets/Andrei_T-Ubuntu-14.04LTS-Chrome-20160429.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Tenea</td>
+<td>10-May-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">PC Lenovo IDeaPad U530
+Touch</td>
+<td style="width: 181px;">Windows 10 Home</td>
+<td style="width: 87px;">en-ca</td>
+<td>Readium Chrome Extension Version 50.0.2661.94 m</td>
+<td><a href="spreadsheets/Andrei_T-WIN-10.0-RCE-20160510.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Tenea</td>
+<td>16-May-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">IPAD4 Model MD511C/A</td>
+<td style="width: 181px;">IOS 9.3.1 (13E238)</td>
+<td style="width: 87px;">en-ca</td>
+<td>Safari 9</td>
+<td><a href="spreadsheets/Andrei_T-IOS-9.3-Safari-20160516.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Liwayway Galang</td>
+<td>20/Apr/16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Laptop</td>
+<td style="width: 181px;">Windows 10 Pro version 1511</td>
+<td style="width: 87px;">En-ca</td>
+<td>Chrome 50.0.2661.75 m</td>
+<td><a href="spreadsheets/farmbee2016-WIN-10-Chrome-20160420.xlsx">81</a>
+</td>
+</tr>
+<tr>
+<td>Liwayway Galang</td>
+<td>16/May/16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Laptop</td>
+<td style="width: 181px;">Windows 10 Pro version 1511</td>
+<td style="width: 87px;">En-ca</td>
+<td>RCE and Chrome Version 50.0.2661.94 m</td>
+<td><a href="spreadsheets/farmbee2016-WIN-10-RCE-20160516.xlsx">85</a>
+</td>
+</tr>
+<tr>
+<td>Vasilisa Platonova</td>
+<td>19-May-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Notebook Samsung
+Electronics Intel® Core™ i3-2377M CPU@1.50 GHz</td>
+<td style="width: 181px;">Windows 7 Home Basic</td>
+<td style="width: 87px;">en-us</td>
+<td>Google Chrome 50.0.2661.102 m</td>
+<td><a href="spreadsheets/VasilisaPlatonova-WIN-7-Chrome-20160519.xlsx">78</a>
+</td>
+</tr>
+<tr>
+<td>Alla Levenberg</td>
+<td>07.05.2016</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Intel® i5-2520M</td>
+<td style="width: 181px;">WIN 10</td>
+<td style="width: 87px;">en-us</td>
+<td>RCE (chrome version: 50.0.2661.102m)</td>
+<td><a href="spreadsheets/alev-WIN-10-RCE-20160507.xlsx">84</a>
+</td>
+</tr>
+<tr>
+<td>Liwayway Galang</td>
+<td>19/May/16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">Laptop</td>
+<td style="width: 181px;">Windows 10 Pro version 1511</td>
+<td style="width: 87px;">En-ca</td>
+<td>Firefox 44.0.2</td>
+<td><a href="spreadsheets/farmbee2016-WIN-10-Firefox-20160519.xlsx">69</a>
+</td>
+</tr>
+<tr>
+<td>Andrei Tenea</td>
+<td>30-May-16</td>
+<td>2.22.3</td>
+<td style="width: 282px;">PC Lenovo IDeaPad U530
+Touch</td>
+<td style="width: 181px;">Windows 10 Home</td>
+<td style="width: 87px;">en-ca</td>
+<td>Google Chrome Version 51.0.2704.63 m</td>
+<td><a href="spreadsheets/Andrei_T-WIN-10.0-Chrome-20160530.xlsx">78</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="siteInfo">
+<br />
+<br />
+<p><a href="http://readium.github.io/pages/index.html">Readium
+Pages Home</a></p>
+</div>
+<script>
+$(document).ready(function () {
+/*here is where you add the filename of the new spreadsheets to be parsed and placed in the table*/
+/*simply create a new filename[n] for the array and set it equal to url */
+var filenames = [];
+filenames[0] = "http://readium.github.io/test-results/cloudreader/spreadsheets/EricXia-WIN-8.1-Chrome-20160606.xlsx";
+filenames[1] = "http://readium.github.io/test-results/cloudreader/spreadsheets/farmbee2016-WIN-10-Firefox-20160519.xlsx";
+filenames[2] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-WIN-10.0-Chrome-20160530.xlsx";
+filenames[3] = "http://readium.github.io/test-results/cloudreader/spreadsheets/DeanNgo-WIN-7-Firefox-20160612.xlsx";
+filenames[4] = "http://readium.github.io/test-results/cloudreader/spreadsheets/EricXia-WIN-8.1-RCE-20160610.xlsx";
+filenames[5] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-WIN-10.0-Chrome-20160613.xlsx";
+filenames[6] = "http://readium.github.io/test-results/cloudreader/spreadsheets/EricXia-WIN-8.1-Chrome-20160613.xlsx";
+filenames[7] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-IOS-9.3-Safari-20160614.xlsx";
+filenames[8] = "http://readium.github.io/test-results/cloudreader/spreadsheets/rfayner-WIN-7-Firefox-20160608.xlsx";
+filenames[9] = "http://readium.github.io/test-results/cloudreader/spreadsheets/EricXia-WIN-8.1-RCE-20160616.xlsx";
+filenames[10] = "http://readium.github.io/test-results/cloudreader/spreadsheets/DeanNgo-WIN-7-Chrome-20160619.xlsx";
+filenames[11] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Andrei_T-Android-6.0.1-Chrome-20160620.xlsx";
+filenames[12] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Anna Orlova-WIN-7-Firefox-20160625.xlsx";
+filenames[13] = "http://readium.github.io/test-results/cloudreader/spreadsheets/DeanNgo-WIN-7-Chrome-20160626.xlsx";
+filenames[14] = "http://readium.github.io/test-results/cloudreader/spreadsheets/somiya-WIN-10-IE-20160708.xlsx";
+filenames[15] = "http://readium.github.io/test-results/cloudreader/spreadsheets/VasilisaPlatonova-Win-7-IE-20160713.xlsx";
+filenames[16] = "http://readium.github.io/test-results/cloudreader/spreadsheets/somiya-WIN-10-Firefox-47-20160715.xlsx";
+filenames[17] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Dean Ngo-Android 6-Chrome-17072016.xlsx";
+filenames[18] = "http://readium.github.io/test-results/cloudreader/spreadsheets/somiya-ios-9.2.1-Safari-20160718.xlsx";
+filenames[19] = "http://readium.github.io/test-results/cloudreader/spreadsheets/somiya-WIN-10-RCE-GoogleChrome-52.0.2743.82-20160722.xlsx";
+filenames[20] = "http://readium.github.io/test-results/cloudreader/spreadsheets/somiya-WIN-10-GoogleChrome-52.0.2743.82-20160727.xlsx";
+filenames[21] = "http://readium.github.io/test-results/cloudreader/spreadsheets/somiya-WIN-10-MicrosoftEdge25.10586.0.0-20160802.xlsx";
+filenames[22] = "http://readium.github.io/test-results/cloudreader/spreadsheets/DeanNgo-WIN-7-IE-08082016.xls";
+filenames[23] = "http://readium.github.io/test-results/cloudreader/spreadsheets/somiya-BlackBerryOS10.3.2.2174-DolphingBrowser-20160822.xlsx";
+filenames[24] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Maverick-OSX-10.12-Chrome-20160927.xlsx";
+filenames[25] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Maverick-OSX-10.12-Safari-20161002.xlsx";
+filenames[26] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Maverick-OSX-10.12-FireFox-20161005.xlsx";
+filenames[27] = "http://readium.github.io/test-results/cloudreader/spreadsheets/AlexanderBobrov-Windows10-2.24.0-chrome-20161013.xlsx"; filenames[28] = "http://readium.github.io/test-results/cloudreader/spreadsheets/AlexanderBobrov-Windows10-2.24.0-Firefox-2016.10.17.xlsx"; 
+filenames[29] = "http://readium.github.io/test-results/cloudreader/spreadsheets/Maverick-OSX-10.12-CRX-20161019.xlsx"; getData();
+function getData() {
+for (var i = 0; i <= filenames.length; i++) {
+console.log(filenames[i]);
+alasql.promise('select * from xlsx(" ' + filenames[i] + ' ") ')
+.then(function (data) {
+console.log(filenames[i]);
+var text2 = "<tr>";
+var tester = data[4];
+text2 += "<td>" + JSON.stringify(tester.D).replace(/['"]+/g, '') + "</td>";
+var date = data[7];
+text2 += "<td>" + JSON.stringify(date.D).replace(/['"]+/g, '') + "</td>";
+var crVersion = data[9];
+text2 += "<td>" + JSON.stringify(crVersion.D).replace(/['"]+/g, '') + "</td>";
+var device = data[16];
+text2 += "<td>" + JSON.stringify(device.D).replace(/['"]+/g, '') + "</td>";
+var os = data[18];
+text2 += "<td>" + JSON.stringify(os.D).replace(/['"]+/g, '') + "</td>";
+var locale = data[19];
+text2 += "<td>" + JSON.stringify(locale.D).replace(/['"]+/g, '') + "</td>";
+var browser = data[20];
+text2 += "<td>" + JSON.stringify(browser.D).replace(/['"]+/g, '') + "</td>";
+console.log(filenames[i]);
+var score = data[37];
+console.log(filenames[i]);
+text2 += "<td><a href='" + filenames[i] + "'>" + JSON.stringify(score.C).replace(/['" %]+/g, '') + "</a></td>";
+text2 += "</tr>"
+$("#results_tbody").append(text2);
+}).catch(function (err) {
+console.log('Error:', err);
+});
+};
+};
+});
+</script>
+</body></html>
