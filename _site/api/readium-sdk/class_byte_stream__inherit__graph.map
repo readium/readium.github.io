@@ -1,0 +1,7 @@
+<map id="ByteStream" name="ByteStream">
+<area shape="rect" id="node2" href="$class_filter_chain_byte_stream.xhtml" title="FilterChainByteStream" alt="" coords="5,83,160,111"/>
+<area shape="rect" id="node3" href="$class_filter_chain_byte_stream_range.xhtml" title="FilterChainByteStreamRange" alt="" coords="184,83,379,111"/>
+<area shape="rect" id="node4" href="$class_seekable_byte_stream.xhtml" title="SeekableByteStream" alt="" coords="403,83,548,111"/>
+<area shape="rect" id="node5" href="$class_file_byte_stream.xhtml" title="FileByteStream" alt="" coords="346,161,459,189"/>
+<area shape="rect" id="node6" href="$class_zip_file_byte_stream.xhtml" title="ZipFileByteStream" alt="" coords="483,161,613,189"/>
+</map>

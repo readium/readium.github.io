@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Nov 2016 14:15:49 +0100</pubDate>
-    <lastBuildDate>Tue, 15 Nov 2016 14:15:49 +0100</lastBuildDate>
+    <pubDate>Thu, 17 Nov 2016 22:20:53 +0100</pubDate>
+    <lastBuildDate>Thu, 17 Nov 2016 22:20:53 +0100</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -20,25 +20,25 @@
 
 &lt;h3 id=&quot;published-documents&quot;&gt;Published documents&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://readium.github.io/drm/lcp1-0.html&quot;&gt;Readium Licensed Content Protection (LCP) 1.0&lt;/a&gt; defines a standard License Document and an Encryption Profile for encrypting resources in EPUB 3 Publications, expressing rights and restrictions, and for securely delivering decryption keys to Reading Systems via licenses for specific Users. Readium LCP also defines a simple passphrase-based authentication method for Reading Systems to access encrypted resources and verify a license.&lt;/p&gt;
+&lt;p&gt;Readium Licensed Content Protection (LCP) 1.0 defines a standard License Document and an Encryption Profile for encrypting resources in EPUB 3 Publications, expressing rights and restrictions, and for securely delivering decryption keys to Reading Systems via licenses for specific Users. Readium LCP also defines a simple passphrase-based authentication method for Reading Systems to access encrypted resources and verify a license.&lt;/p&gt;
 
-&lt;p&gt;&amp;gt; See also: &lt;a href=&quot;https://github.com/readium/readium.github.io&quot;&gt;GitHub repository&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://readium.github.io/drm/lsd1-0.html&quot;&gt;Readium License Status Document 1.0&lt;/a&gt; defines a standard Status Document for representing the status of a DRM license along with interactions that might affect its status. These interactions put additional responsibilities on both Content Providers and Reading Systems. One of the primary objectives is to support lending in public libraries where a user may have the ability to renew a time-limited loan or cancel one before it expires.&lt;/p&gt;
-
-&lt;p&gt;&amp;gt; See also: &lt;a href=&quot;https://github.com/readium/readium.github.io&quot;&gt;GitHub repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Readium License Status Document 1.0 defines a standard Status Document for representing the status of a DRM license along with interactions that might affect its status. These interactions put additional responsibilities on both Content Providers and Reading Systems. One of the primary objectives is to support lending in public libraries where a user may have the ability to renew a time-limited loan or cancel one before it expires.&lt;/p&gt;
 
 &lt;h3 id=&quot;open-source-software&quot;&gt;Open-source software&lt;/h3&gt;
 
 &lt;p&gt;The Readium repositories relative to Readium LCP are currently still private, as the core development team is working on providing a working testbed for Readium LCP deployments.&lt;/p&gt;
 
-&lt;p&gt;The Readium LCP Client library, written in C++, is very easy to deploy as a “content module” in a Reading System based on the Readium SDK. It’s code may be adapted to any other Reading System implementation.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Readium LCP Client library&lt;/strong&gt;, written in C++, is very easy to deploy as a “content module” in a Reading System based on the Readium SDK. It’s code may be adapted to any other Reading System implementation.&lt;/p&gt;
 
-&lt;p&gt;&amp;gt; Download it on: &lt;a href=&quot;https://github.com/readium/readium-lcp-client&quot;&gt;GitHub repository&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download it on: &lt;a href=&quot;https://github.com/readium/readium-lcp-client&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;The multi-platform reference Readium LCP Server is written in Golang. It provides a command line utility for content encryption, a Readium LCP License Server and a License Status Server. The REST API allows for a seamless integration with front-end systems and offers immediate interaction with Readium LCP compliant Reading Systems.  &lt;/p&gt;
+&lt;p&gt;The multi-platform reference &lt;strong&gt;Readium LCP Server&lt;/strong&gt; is written in Golang. It provides a command line utility for content encryption, a Readium LCP License Server and a License Status Server. The REST API allows for a seamless integration with front-end systems and offers immediate interaction with Readium LCP compliant Reading Systems.&lt;/p&gt;
 
-&lt;p&gt;&amp;gt; Download it on: &lt;a href=&quot;https://github.com/readium/readium-lcp-server&quot;&gt;GitHub repository&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download it on: &lt;a href=&quot;https://github.com/readium/readium-lcp-server&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Tue, 15 Nov 2016 11:30:00 +0100</pubDate>
         <link>http://localhost:4000/lcp-specs/</link>
