@@ -25,6 +25,6 @@ permalink: /history/
 
 The layout parameter must be `post`(it triggers the proper template in `_layouts`), the title will appear as h1 in the post, the date also appear in the post and will be used to sort latest posts, the category is free, but may be used to group posts later, the permalink is useful.
 
-CSS tuning has been done in the css/styles.css stylesheet. Especially, the <<b>> element is used for MUST, SHOULD etc. expressionsetc in  (LCP) specification pages. So be careful if you want to enhance style ...
+CSS tuning has been done in the css/styles.css stylesheet. Especially, the `b` element is used for MUST, SHOULD etc. expressionsetc in  (LCP) specification pages. So be careful if you want to enhance style ...
 
  
