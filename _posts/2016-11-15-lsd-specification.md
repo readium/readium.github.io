@@ -6,6 +6,8 @@ categories: specifications
 permalink: /readium-lsd-specification/
 ---
 
+Copyright 2016, Readium Foundation. All Rights Reserved.
+
 Revision: 1
 
 ## 1. Overview

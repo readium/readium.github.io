@@ -7,6 +7,8 @@ permalink: /readium-lcp-specification/
 
 ---
 
+Copyright 2016, Readium Foundation. All Rights Reserved.
+
 Revision: 1
 
 ## 1. Overview
@@ -90,7 +92,7 @@ A set of encryption algorithms used in a specific Protected Publication and asso
 
 **Content Provider (or Provider)**
 
-	An entity that delivers LCP licenses for Protected Publications to Users.
+An entity that delivers LCP licenses for Protected Publications to Users.
 
 **Provider Certificate**
 
