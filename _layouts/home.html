@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="http://readium.org">Home</a></li>
+      <li class="active">{{ page.title | escape }}</li>
+    </ol>
+  </div>
+</div>
+
+<div class="main-container container">
+  <div class="row">
+    <section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <h1>{{ page.title | escape }}</h1>
+
+      <article>
+
+        {{ content }}
+
+      </article>
+
+      <hr>
+      <h2>Latest Posts</h2>
+      <ul class="post-list">
+        {% for post in site.posts limit:5 %}
+          <li>
+            <h4>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h4>
+          </li>
+        {% endfor %}
+      </ul>
+      {% include ad-footer.html %}
+    </section>
+  </div>
+
+</div>
+
