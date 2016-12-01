@@ -6,6 +6,7 @@ permalink: /table-of-contents/
 ---
 
 - [A Bit Of History](/history/)
+- [Applications Based on Readium](/applications/)
 - Readium JS
     - [Overview](/readium-js/)
 - Readium SDK
