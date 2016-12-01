@@ -6,7 +6,7 @@ categories: applications
 permalink: /applications/
 ---
 
-Last Update: May 2016
+#### _Last Update: May 2016_
 
 The following is a list of organizations and/or products based on Readium technology (ReadiumJS, Readium SDK and/or Readium LCP).  We try to keep this list up-to-date but as we don’t always get notified when new products are rolled out the list might not be complete.  If anyone reading this document knows of any errors or omissions in this list, [please let us know](mailto:rkwright@readium.org).
 
