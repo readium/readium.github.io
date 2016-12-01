@@ -207,84 +207,84 @@ The following is a list of organizations and/or products based on Readium techno
 
 1. CircularFLO (cloud reader hosted on DropBox)
 
-*   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../CircularFLO_Published_EPUBs/InteractiveEbooks](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../CircularFLO_Published_EPUBs/InteractiveEbooks)
+    *   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../CircularFLO_Published_EPUBs/InteractiveEbooks](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../CircularFLO_Published_EPUBs/InteractiveEbooks)
 
-*   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/baby_jigsaw](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/baby_jigsaw)
+    *   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/baby_jigsaw](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/baby_jigsaw)
 
-*   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/CircularFLO_v5_1_promo](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/CircularFLO_v5_1_promo)
+    *   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/CircularFLO_v5_1_promo](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/CircularFLO_v5_1_promo)
 
-*   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/SkillsShow4](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/SkillsShow4)
+    *   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/SkillsShow4](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/SkillsShow4)
 
-*   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/read-aloud-demo-rabbit](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/read-aloud-demo-rabbit)
+    *   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/read-aloud-demo-rabbit](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/read-aloud-demo-rabbit)
 
-*   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/CircularFLO_web_code_and_widgets_2015](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/CircularFLO_web_code_and_widgets_2015)
+    *   [https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/CircularFLO_web_code_and_widgets_2015](https://dl.dropboxusercontent.com/u/38631221/CircularFLO_Online/readium.html?epub=../../../u/38631221/CircularFLO_Published_EPUBs/CircularFLO_web_code_and_widgets_2015)
 
-*   Via HTTP CORS too:
+    *   Via HTTP CORS too:
 
-*   [http://readium.surge.sh/?epub=https%3A%2F%2Fdl.dropboxusercontent.com%2Fu%2F38631221%2FCircularFLO_Published_EPUBs%2Fread-aloud-demo-rabbit](http://readium.surge.sh/?epub=https%3A%2F%2Fdl.dropboxusercontent.com%2Fu%2F38631221%2FCircularFLO_Published_EPUBs%2Fread-aloud-demo-rabbit)
- 
-1. New York University  - NYU Digital Library Technology Services (DLTS)
+    *   [http://readium.surge.sh/?epub=https%3A%2F%2Fdl.dropboxusercontent.com%2Fu%2F38631221%2FCircularFLO_Published_EPUBs%2Fread-aloud-demo-rabbit](http://readium.surge.sh/?epub=https%3A%2F%2Fdl.dropboxusercontent.com%2Fu%2F38631221%2FCircularFLO_Published_EPUBs%2Fread-aloud-demo-rabbit)
 
-*   [http://blog.dlib.nyu.edu/2014/05/30/open-access-books](http://blog.dlib.nyu.edu/2014/05/30/open-access-books)
+1. New York University - NYU Digital Library Technology Services (DLTS)
 
-*   [http://openaccessbooks.nyupress.org](http://openaccessbooks.nyupress.org)
+    *   [http://blog.dlib.nyu.edu/2014/05/30/open-access-books](http://blog.dlib.nyu.edu/2014/05/30/open-access-books)
 
-*   [https://github.com/NYULibraries/dlts-rjs-plugin-oa-books/tree/develop](https://github.com/NYULibraries/dlts-rjs-plugin-oa-books/tree/develop)
+    *   [http://openaccessbooks.nyupress.org](http://openaccessbooks.nyupress.org)
 
-*   [https://github.com/NYULibraries/nyupress-epubs-site](https://github.com/NYULibraries/nyupress-epubs-site)
+    *   [https://github.com/NYULibraries/dlts-rjs-plugin-oa-books/tree/develop](https://github.com/NYULibraries/dlts-rjs-plugin-oa-books/tree/develop)
+
+    *   [https://github.com/NYULibraries/nyupress-epubs-site](https://github.com/NYULibraries/nyupress-epubs-site)
 
 1. Mobidys (Ali Baba)
 
-*   [http://www.mobidys.com](http://www.mobidys.com)
+    *   [http://www.mobidys.com](http://www.mobidys.com)
 
-*   [http://fr.ulule.com/mobidys-alibaba/](http://fr.ulule.com/mobidys-alibaba/)
+    *   [http://fr.ulule.com/mobidys-alibaba/](http://fr.ulule.com/mobidys-alibaba/)
 
 1. ReadBeyond
 
-*   [http://www.readbeyond.it/readium/?epub=epub_content/ad1db71e](http://www.readbeyond.it/readium/?epub=epub_content/ad1db71e)
+    *   [http://www.readbeyond.it/readium/?epub=epub_content/ad1db71e](http://www.readbeyond.it/readium/?epub=epub_content/ad1db71e)
 
-*   [http://www.readbeyond.it/ebooks/ad1db71e.html](http://www.readbeyond.it/ebooks/ad1db71e.html)
+    *   [http://www.readbeyond.it/ebooks/ad1db71e.html](http://www.readbeyond.it/ebooks/ad1db71e.html)
 
 1. Korean [http://www.diypia.com](http://www.diypia.com/) [https://twitter.com/DIYPIA](https://twitter.com/DIYPIA)
 
-*   [http://mobile.nextpub.net/dev/reader_01.html?epub=https%3A%2F%2Freadium.firebaseapp.com%2Fepub_content%2FepubReadingSystem&](http://mobile.nextpub.net/dev/reader_01.html?epub=https%3A%2F%2Freadium.firebaseapp.com%2Fepub_content%2FepubReadingSystem&)
+    *   [http://mobile.nextpub.net/dev/reader_01.html?epub=https%3A%2F%2Freadium.firebaseapp.com%2Fepub_content%2FepubReadingSystem&](http://mobile.nextpub.net/dev/reader_01.html?epub=https%3A%2F%2Freadium.firebaseapp.com%2Fepub_content%2FepubReadingSystem&)
 
-*   GitHub:
+    *   GitHub:
 
-*   [https://github.com/jaysbae](https://github.com/jaysbae)
+    *   [https://github.com/jaysbae](https://github.com/jaysbae)
 
-*   CORS:
+    *   CORS:
 
-*   [https://readium.firebaseapp.com/?epubs=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fepub_library.json&](https://readium.firebaseapp.com/?epubs=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fepub_library.json&)
+    *   [https://readium.firebaseapp.com/?epubs=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fepub_library.json&](https://readium.firebaseapp.com/?epubs=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fepub_library.json&)
 
-*   [https://readium.firebaseapp.com/?epub=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fdol_damron&epubs=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fepub_library.json&](https://readium.firebaseapp.com/?epub=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fdol_damron&epubs=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fepub_library.json&)
+    *   [https://readium.firebaseapp.com/?epub=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fdol_damron&epubs=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fepub_library.json&](https://readium.firebaseapp.com/?epub=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fdol_damron&epubs=https%3A%2F%2Fcrossorigin.me%2Fhttp%3A%2F%2Fmobile.nextpub.net%2Fepub_content%2Fepub_library.json&)
 
 1. CHiLO books
 
-*   [http://chilos.jp/en/](http://chilos.jp/en/)
+    *   [http://chilos.jp/en/](http://chilos.jp/en/)
 
-*   [http://chilos.jp/b/?b=61](http://chilos.jp/b/?b=61)
+    *   [http://chilos.jp/b/?b=61](http://chilos.jp/b/?b=61)
 
-*   [http://dev.chilobook.net/online/?epub=../in1/cb00101](http://dev.chilobook.net/online/?epub=../in1/cb00101)
+    *   [http://dev.chilobook.net/online/?epub=../in1/cb00101](http://dev.chilobook.net/online/?epub=../in1/cb00101)
 
-*   [http://dev.chilobook.net/online/index.html?epub=../cb11/cb01102](http://dev.chilobook.net/online/index.html?epub=../cb11/cb01102)
+    *   [http://dev.chilobook.net/online/index.html?epub=../cb11/cb01102](http://dev.chilobook.net/online/index.html?epub=../cb11/cb01102)
 
-*   [http://www.cccties.org/en/activities/chilo/trying-out-chilo/](http://www.cccties.org/en/activities/chilo/trying-out-chilo/)
+    *   [http://www.cccties.org/en/activities/chilo/trying-out-chilo/](http://www.cccties.org/en/activities/chilo/trying-out-chilo/)
 
-*   [https://github.com/cccties/chilo-producer](https://github.com/cccties/chilo-producer)
+    *   [https://github.com/cccties/chilo-producer](https://github.com/cccties/chilo-producer)
 
-*   [http://nsa1.chilobook.net/1/00501002.html](http://nsa1.chilobook.net/1/00501002.html)
+    *   [http://nsa1.chilobook.net/1/00501002.html](http://nsa1.chilobook.net/1/00501002.html)
 
-*   [http://www.cccties.org/blog/system/readium-js-viewer%E3%81%A7%E9%96%8B%E3%81%84%E3%81%9F%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E8%A8%98%E6%86%B6%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%82%8B%E6%96%B9%E6%B3%95/](http://www.cccties.org/blog/system/readium-js-viewer%E3%81%A7%E9%96%8B%E3%81%84%E3%81%9F%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E8%A8%98%E6%86%B6%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%82%8B%E6%96%B9%E6%B3%95/)
+    *   [http://www.cccties.org/blog/system/readium-js-viewer%E3%81%A7%E9%96%8B%E3%81%84%E3%81%9F%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E8%A8%98%E6%86%B6%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%82%8B%E6%96%B9%E6%B3%95/](http://www.cccties.org/blog/system/readium-js-viewer%E3%81%A7%E9%96%8B%E3%81%84%E3%81%9F%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E8%A8%98%E6%86%B6%E3%81%95%E3%81%9B%E3%81%A6%E3%81%84%E3%82%8B%E6%96%B9%E6%B3%95/)
 
 1. University Of Minnesota
 
-*   [http://www.cehd.umn.edu/the-changing-story/](http://www.cehd.umn.edu/the-changing-story/)
+    *   [http://www.cehd.umn.edu/the-changing-story/](http://www.cehd.umn.edu/the-changing-story/)
 
-*   [http://www.cehd.umn.edu/Readium/cloud-reader-lite/index.html?epub=epub_content/the-changing-story](http://www.cehd.umn.edu/Readium/cloud-reader-lite/index.html?epub=epub_content/the-changing-story)
+    *   [http://www.cehd.umn.edu/Readium/cloud-reader-lite/index.html?epub=epub_content/the-changing-story](http://www.cehd.umn.edu/Readium/cloud-reader-lite/index.html?epub=epub_content/the-changing-story)
 
 1. AER.io (Ingram)
 
-*   [http://www.aer.io/main/](http://www.aer.io/main/)
+    *   [http://www.aer.io/main/](http://www.aer.io/main/)
 
-*   Uses ReadiumJS embedded reader
+    *   Uses ReadiumJS embedded reader
