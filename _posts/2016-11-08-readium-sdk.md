@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Overview of Readium SDK"
-date:   2016-11-08 11:30:00 +0100
+date:   2016-12-28 11:30:00 +0100
 categories: overview
 permalink: /readium-sdk/
 ---
