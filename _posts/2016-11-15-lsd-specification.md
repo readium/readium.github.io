@@ -190,6 +190,7 @@ This is the default value if the License Document does not contain a registratio
     <td>The license is no longer active because it has expired.</td>
   </tr>
 </table>
+
 ### 2.4. Timestamps
 
 A Status Document <b>MUST</b> include an `updated` object where the following keys and associated timestamps are provided:
