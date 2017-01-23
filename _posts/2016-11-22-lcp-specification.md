@@ -901,7 +901,7 @@ To make sure that the Provider Certificate has not been revoked, the Reading Sys
 
 Content Providers <b>MUST</b> have a Certificate in the [[X509](#normative-references)] v3 format issued and signed by the License Authority using the Root Certificate: this is referred to here as the Provider Certificate. The subject of the Provider Certificate <b>SHOULD</b> represent the Content Provider. 
 
-Content Providers <b>MUST</b> distribute their Provider Certificate in any License Document they issue in the `signature/certificate` field. They also <b>MUST</b> use the private key paired with their Provider Certificate’s public key to sign the License Document. For a License Document to be considered valid, the Provider Certificate <b>MUST</b>  have been valid at the time the License Document was issued (as indicated by the `issued` field), and the Provider Certificate *MUSdT NOT**t have been revoked.
+Content Providers <b>MUST</b> distribute their Provider Certificate in any License Document they issue in the `signature/certificate` field. They also <b>MUST</b> use the private key paired with their Provider Certificate’s public key to sign the License Document. For a License Document to be considered valid, the Provider Certificate <b>MUST</b>  have been valid at the time the License Document was issued (as indicated by the `issued` field), and the Provider Certificate <b>MUST NOT</b> have been revoked.
 
 ### 5.2.2 Root Certificate
 
