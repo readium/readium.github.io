@@ -56,7 +56,7 @@ An individual that consumes an [EPUB Publication](http://www.idpf.org/epub/30/sp
 
 **EPUB Reading System (or Reading System)**
 
-A system that processes [EPUB Publications for presentation to a ](http://www.idpf.org/epub/30/spec/#gloss-epub-publication)[User](http://www.idpf.org/epub/30/spec/#gloss-user)[ in a manner conformant with the ](http://www.idpf.org/epub/30/spec/#gloss-epub-publication)[EPUB 3 specifications](http://www.idpf.org/epub/30/spec/#sibling-specs)[.](http://www.idpf.org/epub/30/spec/#gloss-epub-publication)
+A system that processes [EPUB Publications](http://www.idpf.org/epub/30/spec/#gloss-epub-publication) for presentation to a [User](http://www.idpf.org/epub/30/spec/#gloss-user) in a manner conformant with the [EPUB 3 specifications](http://www.idpf.org/epub/30/spec/#sibling-specs).
 
 ### LCP terms
 
