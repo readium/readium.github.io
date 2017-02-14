@@ -31,7 +31,7 @@ Note that the Readium SDK Core C++ library is dual-licensed: publicly via [Gnu A
 
 Several members of Readium Foundation are pursuing, as a sub-project of Readium SDK, an implementation of a  DRM technology. Readium LCP (for "Licensed Content Protection") is providing a module for Readium SDK as well as server-side components. Note that the use of Readium SDK does not require the use of Readium LCP. 
 
-You can find the LCP Specifications, along with information about the related open-source software, in [Readium LCP Specs and codebase](/lcp-specs-codebase/).
+You can find the LCP Specifications, along with information about the related open-source software, in [Readium LCP Specs and codebase](/readium-lcp-specifications-codebase/).
 
 More informations about Readium LCP on the [EDRLab website](https://edrlab.org/edrlab/readium-lcp-overview/).
 

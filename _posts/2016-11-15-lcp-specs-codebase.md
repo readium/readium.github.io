@@ -22,9 +22,7 @@ The specifications of the Readium LCP DRM are now public:
 
 The Readium LCP Client library, written in C++, is very easy to deploy as a “content module” in a Reading System based on the Readium SDK. It’s code may be adapted to any other Reading System implementation.
 
-<!-- &gt; Download it on: [GitHub repository](https://github.com/readium/readium-lcp-client) -->
-
-&gt; The github repository containing this reference implementation will be made public in December 2016.
+&gt; Download it on: [GitHub repository](https://github.com/readium/readium-lcp-client)
 
 ### Readium LCP Server 
 
@@ -32,7 +30,7 @@ The multi-platform reference Readium LCP Server is written in Golang. It provide
 
 <!-- &gt; Download it on: [GitHub repository](https://github.com/readium/readium-lcp-server) -->
 
-&gt; The github repository containing this reference implementation will be made public in December 2016.
+&gt; The github repository containing this reference implementation will be made public in February 2017.
 
 ## Be part of the Readium LCP ecosystem
 The interoperability and security of the Readium LCP ecosystem will be guaranteed by EDRLab (European Digital Reading Lab), i.e. the European Readium headquarter. This implies a specific encryption profile, different from the basic one defined in the LCP specification, and a secure implementation of this encryption profile. 

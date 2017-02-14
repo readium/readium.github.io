@@ -56,7 +56,7 @@ An individual that consumes an [EPUB Publication](http://www.idpf.org/epub/30/sp
 
 **EPUB Reading System (or Reading System)**
 
-A system that processes [EPUB Publications for presentation to a ](http://www.idpf.org/epub/30/spec/#gloss-epub-publication)[User](http://www.idpf.org/epub/30/spec/#gloss-user)[ in a manner conformant with the ](http://www.idpf.org/epub/30/spec/#gloss-epub-publication)[EPUB 3 specifications](http://www.idpf.org/epub/30/spec/#sibling-specs)[.](http://www.idpf.org/epub/30/spec/#gloss-epub-publication)
+A system that processes [EPUB Publications](http://www.idpf.org/epub/30/spec/#gloss-epub-publication) for presentation to a [User](http://www.idpf.org/epub/30/spec/#gloss-user) in a manner conformant with the [EPUB 3 specifications](http://www.idpf.org/epub/30/spec/#sibling-specs).
 
 ### LCP terms
 
@@ -809,7 +809,7 @@ For more information on how the signature and the certificate <b>SHOULD</b> be c
   "rights": … ,
   "user": … ,
   "signature": {
-    "algorithm": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256",
+    "algorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
     "certificate": "MIIDEjCCAfoCCQDwMOjkYYOjPjANBgkqhkiG9w0BAQUFADBLMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTETMBEGA1UEBxMKRXZlcnl3aGVyZTESMBAGA1UEAxMJbG9jYWxob3N0MB4XDTE0MDEwMjIxMjYxNloXDTE1MDEwMjIxMjYxNlowSzELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExEzARBgNVBAcTCkV2ZXJ5d2hlcmUxEjAQBgNVBAMTCWxvY2FsaG9zdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOpCRECG7icpf0H37kuAM7s42oqggBoikoTpo5yapy+s5eFSp8HSqwhIYgZ4SghNLkj3e652SALav7chyZ2vWvitZycY+aq50n5UTTxDvdwsC5ZNeTycuzVWZALKGhV7VUPEhtWZNm0gruntronNa8l2WS0aF7P5SbhJ65SDQGprFFaYOSyN6550P3kqaAO7tDddcA1cmuIIDRf8tOIIeMkBFk1Qf+lh+3uRP2wztOTECSMRxX/hIkCe5DRFDK2MuDUyc/iY8IbY0hMFFGw5J7MWOwZLBOaZHX+Lf5lOYByPbMH78O0dda6T+tLYAVzsmJdHJFtaRguCaJVtSXKQUAMCAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAi9HIM+FMfqXsRUY0rGxLlw403f3YtAG/ohzt5i8DKiKUG3YAnwRbL/VzXLZaHru7XBC40wmKefKqoA0RHyNEddXgtY/aXzOlfTvp+xirop+D4DwJIbaj8/wHKWYGBucA/VgGY7JeSYYTUSuz2RoYtjPNRELIXN8A+D+nkJ3dxdFQ6jFfVfahN3nCIgRqRIOt1KaNI39CShccCaWJ5DeSASLXLPcEjrTi/pyDzC4kLF0VjHYlKT7lq5RkMO6GeC+7YFvJtAyssM2nqunA2lUgyQHb1q4Ih/dcYOACubtBwW0ITpHz8N7eO+r1dtH/BF4yxeWl6p5kGLvuPXNU21ThgA==",
     "value": "q/3IInic9c/EaJHyG1Kkqk5v1zlJNsiQBmxz4lykhyD3dA2jg2ZzrOenYU9GxP/xhe5H5Kt2WaJ/hnt8+GWrEx1QOwnNEij5CmIpZ63yRNKnFS5rSRnDMYmQT/fkUYco7BUi7MPPU6OFf4+kaToNWl8m/ZlMxDcS3BZnVhSEKzUNQn1f2y3sUcXjes7wHbImDc6dRthbL/E+assh5HEqakrDuA4lM8XNfukEYQJnivqhqMLOGM33RnS5nZKrPPK/c2F/vGjJffSrlX3W3Jlds0/MZ6wtVeKIugR06c56V6+qKsnMLAQJaeOxxBXmbFdAEyplP9irn4D9tQZKqbbMIw=="
   }
@@ -867,7 +867,7 @@ The security of LCP depends in large part on the security of the User Key and Us
 
 Given the importance of the precise expression of various objects in the License Document, it is critical that the Reading System be able to verify that the content of the License Document is authentic and has not been altered. This is done via a digital signature that is verified via a Public Key Infrastructure as defined in [[X509](#normative-references)].
 
-Calculating a signature using the ECDSA set of algorithms is done on a byte stream, which is unique, while the License Document is a JSON document where multiple representations might lead to the same structure. Thus, to ensure a stable signature between the Reading System and the Content Provider, some transformations must be applied prior to signing the Document and verifying the signature.
+Calculating a signature is done on a byte stream, which is unique, while the License Document is a JSON document where multiple representations might lead to the same structure. Thus, to ensure a stable signature between the Reading System and the Content Provider, some transformations must be applied prior to signing the Document and verifying the signature.
 
 The steps <b>REQUIRED</b> of the Provider to sign the License Document are:
 
@@ -901,7 +901,7 @@ To make sure that the Provider Certificate has not been revoked, the Reading Sys
 
 Content Providers <b>MUST</b> have a Certificate in the [[X509](#normative-references)] v3 format issued and signed by the License Authority using the Root Certificate: this is referred to here as the Provider Certificate. The subject of the Provider Certificate <b>SHOULD</b> represent the Content Provider. 
 
-Content Providers <b>MUST</b> distribute their Provider Certificate in any License Document they issue in the `signature/certificate` field. They also <b>MUST</b> use the private key paired with their Provider Certificate’s public key to sign the License Document. For a License Document to be considered valid, the Provider Certificate <b>MUST</b>  have been valid at the time the License Document was issued (as indicated by the `issued` field), and the Provider Certificate *MUSdT NOT**t have been revoked.
+Content Providers <b>MUST</b> distribute their Provider Certificate in any License Document they issue in the `signature/certificate` field. They also <b>MUST</b> use the private key paired with their Provider Certificate’s public key to sign the License Document. For a License Document to be considered valid, the Provider Certificate <b>MUST</b>  have been valid at the time the License Document was issued (as indicated by the `issued` field), and the Provider Certificate <b>MUST NOT</b> have been revoked.
 
 ### 5.2.2 Root Certificate
 
@@ -1018,7 +1018,7 @@ Given the License Document in its canonical form
 {"encryption":{"content_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#aes256-cbc","encrypted_value":"/k8RpXqf4E2WEunCp76E8PjhS051NXwAXeTD1ioazYxCRGvHLAck/KQ3cCh5JxDmCK0nRLyAxs1X0aA3z55boQ=="},"profile":"http://readium.org/lcp/basic-profile","user_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#sha256","key_check":"jJEjUDipHK3OjGt6kFq7dcOLZuicQFUYwQ+TYkAIWKm6Xv6kpHFhF7LOkUK/Owww","text_hint":"Enter your email address"}},"id":"ef15e740-697f-11e3-949a-0800200c9a66","issued":"2013-11-04T01:08:15+01:00","links":[{"rel":"hint","href":"http://www.imaginaryebookretailer.com/lcp/hint","type":"text/html"}],"provider":"http://www.imaginaryebookretailer.com","updated":"2014-02-21T09:44:17+01:00","user":{"id":"d9f298a7-7f34-49e7-8aae-4378ecb1d597"}}
 ```
 
-Using the Basic Encryption Profile 1.0 signature algorithm, `http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256`, a Content Provider must first hash the License Document using SHA256, giving the following byte sequence, represented here in hexadecimal:
+Using the signature algorithm required by the Encryption Profile, a Content Provider must first hash the License Document, giving the following byte sequence, represented here in hexadecimal:
 
 ```json
 ce3fd2220fc26c89ed2190fd27af39c4016b623dd2bd5e5a3562dc0795769c92
@@ -1056,7 +1056,7 @@ With this signature and the certificate, a valid license <b>MAY</b> be created:
   ],  
   "user": {"id": "d9f298a7-7f34-49e7-8aae-4378ecb1d597"},
   "signature": {
-    "algorithm": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256",
+    "algorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
     "certificate": "MIIDEjCCAfoCCQDwMOjkYYOjPjANBgkqhkiG9w0BAQUFADBLMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTETMBEGA1UEBxMKRXZlcnl3aGVyZTESMBAGA1UEAxMJbG9jYWxob3N0MB4XDTE0MDEwMjIxMjYxNloXDTE1MDEwMjIxMjYxNlowSzELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExEzARBgNVBAcTCkV2ZXJ5d2hlcmUxEjAQBgNVBAMTCWxvY2FsaG9zdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOpCRECG7icpf0H37kuAM7s42oqggBoikoTpo5yapy+s5eFSp8HSqwhIYgZ4SghNLkj3e652SALav7chyZ2vWvitZycY+aq50n5UTTxDvdwsC5ZNeTycuzVWZALKGhV7VUPEhtWZNm0gruntronNa8l2WS0aF7P5SbhJ65SDQGprFFaYOSyN6550P3kqaAO7tDddcA1cmuIIDRf8tOIIeMkBFk1Qf+lh+3uRP2wztOTECSMRxX/hIkCe5DRFDK2MuDUyc/iY8IbY0hMFFGw5J7MWOwZLBOaZHX+Lf5lOYByPbMH78O0dda6T+tLYAVzsmJdHJFtaRguCaJVtSXKQUAMCAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAi9HIM+FMfqXsRUY0rGxLlw403f3YtAG/ohzt5i8DKiKUG3YAnwRbL/VzXLZaHru7XBC40wmKefKqoA0RHyNEddXgtY/aXzOlfTvp+xirop+D4DwJIbaj8/wHKWYGBucA/VgGY7JeSYYTUSuz2RoYtjPNRELIXN8A+D+nkJ3dxdFQ6jFfVfahN3nCIgRqRIOt1KaNI39CShccCaWJ5DeSASLXLPcEjrTi/pyDzC4kLF0VjHYlKT7lq5RkMO6GeC+7YFvJtAyssM2nqunA2lUgyQHb1q4Ih/dcYOACubtBwW0ITpHz8N7eO+r1dtH/BF4yxeWl6p5kGLvuPXNU21ThgA==",
     "value": "q/3IInic9c/EaJHyG1Kkqk5v1zlJNsiQBmxz4lykhyD3dA2jg2ZzrOenYU9GxP/xhe5H5Kt2WaJ/hnt8+GWrEx1QOwnNEij5CmIpZ63yRNKnFS5rSRnDMYmQT/fkUYco7BUi7MPPU6OFf4+kaToNWl8m/ZlMxDcS3BZnVhSEKzUNQn1f2y3sUcXjes7wHbImDc6dRthbL/E+assh5HEqakrDuA4lM8XNfukEYQJnivqhqMLOGM33RnS5nZKrPPK/c2F/vGjJffSrlX3W3Jlds0/MZ6wtVeKIugR06c56V6+qKsnMLAQJaeOxxBXmbFdAEyplP9irn4D9tQZKqbbMIw=="
   }
@@ -1148,8 +1148,8 @@ The following algorithms are associated to the Basic Encryption Profile 1.0:
   </tr>
   <tr>
     <td>Signature</td>
-    <td>ECDSA with SHA-256</td>
-    <td>http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256
+    <td>RSA with SHA-256</td>
+    <td>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
 </td>
     <td>License Document</td>
   </tr>
