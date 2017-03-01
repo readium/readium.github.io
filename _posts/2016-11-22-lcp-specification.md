@@ -1131,13 +1131,13 @@ The following algorithms are associated to the Basic Encryption Profile 1.0:
   <tr>
     <td>Publication Resources</td>
     <td>AES 256 bits CBC</td>
-    <td>http://www.w3.org/2009/xmlenc11#aes256-cbc</td>
+    <td>http://www.w3.org/2001/04/xmlenc#aes256-cbc</td>
     <td>encryption.xml</td>
   </tr>
   <tr>
     <td>Content Key, User fields (if encrypted)</td>
     <td>AES 256 bits CBC</td>
-    <td>http://www.w3.org/2009/xmlenc11#aes256-cbc</td>
+    <td>http://www.w3.org/2001/04/xmlenc#aes256-cbc</td>
     <td>License Document</td>
   </tr>
   <tr>
