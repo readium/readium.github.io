@@ -78,6 +78,10 @@ The following is a list of organizations and/or products based on Readium techno
 
     *   [http://kobo.com/desktop](http://kobo.com/desktop)
 
+1.  Datalogics
+    *    Bookvia: [http://www.datalogics.com/products/ebook/bookvia/](http://www.datalogics.com/products/ebook/bookvia/)
+    *    READynamic: [http://www.datalogics.com/products/ebook/readynamic/](http://www.datalogics.com/products/ebook/readynamic/)
+ 
 1.  Aldiko
 
     *   [http://www.aldiko.com/](http://www.aldiko.com/)
