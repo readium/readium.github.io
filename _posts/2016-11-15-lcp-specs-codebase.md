@@ -28,9 +28,7 @@ The Readium LCP Client library, written in C++, is very easy to deploy as a “c
 
 The multi-platform reference Readium LCP Server is written in Golang. It provides a command line utility for content encryption, a Readium LCP License Server and a License Status Server. The REST API allows for a seamless integration with front-end systems and offers immediate interaction with Readium LCP compliant Reading Systems.  
 
-<!-- &gt; Download it on: [GitHub repository](https://github.com/readium/readium-lcp-server) -->
-
-&gt; The github repository containing this reference implementation will be made public in February 2017.
+&gt; Download it on: [GitHub repository](https://github.com/readium/readium-lcp-server)
 
 ## Be part of the Readium LCP ecosystem
 The interoperability and security of the Readium LCP ecosystem will be guaranteed by EDRLab (European Digital Reading Lab), i.e. the European Readium headquarter. This implies a specific encryption profile, different from the basic one defined in the LCP specification, and a secure implementation of this encryption profile. 
