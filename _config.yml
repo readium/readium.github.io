@@ -16,13 +16,13 @@
 title: Readium Projects
 email: contact@edrlab.org
 description: > # this means to ignore newlines until "baseurl:"
-  The Readium Projects primary goal is to provide rock-solid,
+  The Readium Projects primary goal is to provide rock-solid, 
   performant building blocks and applications for EPUB3 publications.
 baseurl: "" # the subpath of your site, e.g. /blog
 # the base hostname & protocol for your site, e.g. http://example.com
 url: "http://127.0.0.1:4000/" #DEV
 #url: "http://readium.github.io/" #PROD
-copyright_notice: Copyright 2016 Readium Foundation. All rights reserved.
+copyright_notice: Copyright 2017 Readium Foundation. All rights reserved.
 
 google_analytics: true
 
@@ -36,4 +36,5 @@ exclude:
   - Gemfile.lock
 
 # custom
-readium-url: "http://readium.org/"
+readium-url: "http://127.0.0.1:4000/" #DEV
+# readium-url: "http://readium.org/" # PROD
