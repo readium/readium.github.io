@@ -4,7 +4,8 @@ layout: default
 <div class="breadcrumbs">
   <div class="container">
     <ol class="breadcrumb">
-      <li><a href="{{ site.url }}">Home</a></li>
+      <li><a href="{{ site.readium-url }}">Readium.org</a></li>
+      <li><a href="/" class="active-trail">Developers</a></li>
       <li class="active">{{ page.title | escape }}</li>
     </ol>
   </div>
@@ -13,15 +14,11 @@ layout: default
 <div class="main-container container">
   <div class="row">
     <section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-      <article>
-        <header class="post-header">
-          <h1 class="post-title">{{ page.title | escape }}</h1>
-        </header>
-
-        {{ content }}
-
-        {% include ad-footer.html %}
-
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+      </br>
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
       </article>
     </section>
   </div>

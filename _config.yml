@@ -19,8 +19,10 @@ description: > # this means to ignore newlines until "baseurl:"
   The Readium Projects primary goal is to provide rock-solid, 
   performant building blocks and applications for EPUB3 publications.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-copyright_notice: Copyright 2016 Readium Foundation. All rights reserved.
+# the base hostname & protocol for your site, e.g. http://example.com
+#url: "http://127.0.0.1:4000/" #DEV
+url: "http://readium.github.io/" #PROD
+copyright_notice: Copyright 2017 Readium Foundation. All rights reserved.
 
 google_analytics: true
 
@@ -32,3 +34,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
