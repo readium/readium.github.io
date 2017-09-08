@@ -35,6 +35,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-# custom
-readium-url: "http://127.0.0.1:4000/" #DEV
-# readium-url: "http://readium.org/" # PROD
