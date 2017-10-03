@@ -1,9 +1,10 @@
 ---
-layout: home
+layout: page
+permalink: "/development/projects.html/"
 title: Readium Projects
 excerpt: The Readium Projects primary goal is to provide rock-solid, performant building blocks and applications for EPUB3 publications.
 ---
-ZZZ The Readium Projects primary goal is to provide rock-solid, performant building blocks and applications for EPUB3 publications. 
+Blah The Readium Projects primary goal is to provide rock-solid, performant building blocks and applications for EPUB3 publications. 
 We invite you to make a detour around the [history of the project](/history/) if you are curious.
 
 New versions of the different open-source codebases are communicate on the [Release page](/releases), contributor's information is found in the [Contributing page](/contributing/), and you'll find a table of contents of the project documentation in the top navbar. 
