@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Readium Projects
+title: readium.org
 email: contact@edrlab.org
 description: > # this means to ignore newlines until "baseurl:"
   The Readium Projects primary goal is to provide rock-solid, 
   performant building blocks and applications for EPUB3 publications.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-copyright_notice: Copyright 2016 Readium Foundation. All rights reserved.
+copyright_notice: Copyright 2017 Readium Foundation. All rights reserved.
 
 google_analytics: true
 
