@@ -10,7 +10,7 @@ There is a range of guidance available for creating Accessible EPUB files - some
 
 See idpf.org for comprehensive guidance on creating accessible EPUB files:   <http://www.idpf.org/accessibility/guidelines/>
  
-The [EPUB 3 Resources and Guidance](epub_a11y.html) and [EPUB Tools and Solution Gallery](epub_a11y_solutions.html).
+The [EPUB 3 Resources and Guidance](/epub_zone/epub_a11y.html) and [EPUB Tools and Solution Gallery](/epub_zone/epub_a11y_solutions.html).
 provide a directory of EPUB tools and resources for all areas of the industry. Use the search functions to find the perfect solution for you or submit your own tool for listing within the gallery.
 
 ### epubcheck
