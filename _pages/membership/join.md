@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/membership/overview.html/"
+permalink: "/membership/join.html/"
 title: Joining the Readium Foundation
 ---
 Thank you for your interest in joining the Readium Foundation! Readium Foundation is a non-profit membership association, open to all. You dues support the mission of the Foundation to develop commercial-grade open source software that advances an open interoperable ecosystem for the creation and distribution of digital content in order to foster innovation, accessibility, and a global sharing of knowledge. Members are also entitled to participate in the governance of the Foundation, including electing the Board of Directors and approving matters put to votes of the membership. 
