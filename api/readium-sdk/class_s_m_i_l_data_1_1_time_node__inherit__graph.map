@@ -1,9 +1,0 @@
-<map id="SMILData::TimeNode" name="SMILData::TimeNode">
-<area shape="rect" id="node4" href="$class_s_m_i_l_data_1_1_media.xhtml" title="SMILData::Media" alt="" coords="138,177,261,205"/>
-<area shape="rect" id="node7" href="$class_s_m_i_l_data_1_1_time_container.xhtml" title="SMILData::TimeContainer" alt="" coords="286,177,460,205"/>
-<area shape="rect" id="node2" href="$class_owned_by.xhtml" title="OwnedBy\&lt; SMILData \&gt;" alt="" coords="113,14,273,42"/>
-<area shape="rect" id="node5" href="$class_s_m_i_l_data_1_1_audio.xhtml" title="SMILData::Audio" alt="" coords="4,254,125,282"/>
-<area shape="rect" id="node6" href="$class_s_m_i_l_data_1_1_text.xhtml" title="SMILData::Text" alt="" coords="150,254,263,282"/>
-<area shape="rect" id="node8" href="$class_s_m_i_l_data_1_1_parallel.xhtml" title="SMILData::Parallel" alt="" coords="294,254,425,282"/>
-<area shape="rect" id="node9" href="$class_s_m_i_l_data_1_1_sequence.xhtml" title="SMILData::Sequence" alt="" coords="450,254,597,282"/>
-</map>

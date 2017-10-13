@@ -8355,5 +8355,10 @@ b {
  }
 
 .information > strong {
-    color: brown; }
+    color: brown; 
+	}
+	
+.block-views {
+	margin-left:10%;
+	margin-right:10%;
 }

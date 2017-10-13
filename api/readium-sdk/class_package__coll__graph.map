@@ -1,7 +1,0 @@
-<map id="Package" name="Package">
-<area shape="rect" id="node2" href="$class_package_base.xhtml" title="PackageBase" alt="" coords="352,149,456,177"/>
-<area shape="rect" id="node3" href="$classstring.xhtml" title="string" alt="" coords="77,45,131,73"/>
-<area shape="rect" id="node7" href="$class_pointer_type.xhtml" title="PointerType\&lt; Package \&gt;" alt="" coords="320,230,488,258"/>
-<area shape="rect" id="node9" href="$class_property_holder.xhtml" title="PropertyHolder" alt="" coords="348,282,460,310"/>
-<area shape="rect" id="node10" href="$class_owned_by.xhtml" title="OwnedBy\&lt; Container \&gt;" alt="" coords="324,334,484,362"/>
-</map>

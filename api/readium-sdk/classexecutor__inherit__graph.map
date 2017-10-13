@@ -1,8 +1,0 @@
-<map id="executor" name="executor">
-<area shape="rect" id="node3" href="$classinline__executor.xhtml" title="inline_executor" alt="" coords="4,177,115,205"/>
-<area shape="rect" id="node4" href="$classloop__executor.xhtml" title="loop_executor" alt="" coords="139,177,244,205"/>
-<area shape="rect" id="node5" href="$classscheduled__executor.xhtml" title="scheduled_executor" alt="" coords="268,177,408,205"/>
-<area shape="rect" id="node7" href="$classserial__executor.xhtml" title="serial_executor" alt="" coords="433,177,544,205"/>
-<area shape="rect" id="node8" href="$classthread__executor.xhtml" title="thread_executor" alt="" coords="569,177,687,205"/>
-<area shape="rect" id="node6" href="$classthread__pool.xhtml" title="thread_pool" alt="" coords="293,254,384,282"/>
-</map>
