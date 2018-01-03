@@ -8,7 +8,7 @@ permalink: /readium-lsd-specification/
 
 Copyright 2016, Readium Foundation. All Rights Reserved.
 
-Revision: 1
+Document Revision: 1.1
 
 ## 1. Overview
 
@@ -27,7 +27,7 @@ This specification uses the following EPUB and Licensed Content Protection [[LCP
 
 **Publication**
 
-A logical document entity consisting of a set of interrelated [resources](http://www.idpf.org/epub/30/spec/#gloss-publication-resource-cmt-or-foreign) and packaged in an EPUB Container, as defined by the [EPUB 3 specifications](http://www.idpf.org/epub/30/spec/#sibling-specs).
+A logical document entity consisting of a set of interrelated [resources](https://www.idpf.org/epub/30/spec/#gloss-publication-resource-cmt-or-foreign) and packaged in an EPUB Container, as defined by the [EPUB 3 specifications](https://www.idpf.org/epub/30/spec/#sibling-specs).
 
 **User**
 
@@ -35,7 +35,7 @@ An individual that consumes an EPUB Publication using an EPUB Reading System.
 
 **EPUB Reading System (or Reading System)**
 
-A system that processes EPUB Publications for presentation to a User in a manner conformant with the [EPUB 3 specifications](http://www.idpf.org/epub/30/spec/#sibling-specs).
+A system that processes EPUB Publications for presentation to a User in a manner conformant with the [EPUB 3 specifications](https://www.idpf.org/epub/30/spec/#sibling-specs).
 
 Additionally, it uses the following terms:
 
@@ -56,7 +56,7 @@ Document that contains information about the history of a License Document, alon
 {:.information}
 **This section is informative**
 
-<em> In the following example, the Status Document indicates that the License has been activated on a single device and may be updated, renewed or returned.</em>
+<em> In the following example, the Status Document indicates that the License has been registered for a single device and may be renewed or returned.</em>
 
 
     {
@@ -71,29 +71,29 @@ Document that contains information about the history of a License Document, alon
 
       "links": [
         {"rel": "license",
-         "href": "http://example.org/license/35d9b2d6",
-         "type": "application/vnd.readium.lcp.license.v1.0+json"},
+         "href": "https://example.org/license/35d9b2d6",
+         "type": "application/vnd.readium.lcp.license-1.0+json"},
         {"rel": "register",
-         "href": "http://example.org/license/35d9b2d6/register{?id,name}",
+         "href": "https://example.org/license/35d9b2d6/register{?id,name}",
          "type": "application/vnd.readium.license.status.v1.0+json",
          "templated": true},
         {"rel": "return", 
-         "href": "http://example.org/license/35d9b2d6/return{?id,name}",
-         "type": "application/vnd.readium.lcp.license.v1.0+json",
+         "href": "https://example.org/license/35d9b2d6/return{?id,name}",
+         "type": "application/vnd.readium.license.status.v1.0+json",
          "templated": true},
         {"rel": "renew",
-         "href": "http://example.org/license/35d9b2d6/renew",
+         "href": "https://example.org/license/35d9b2d6/renew",
          "type": "text/html"},
         {"rel": "renew",
-         "href": "http://example.org/license/35d9b2d6/renew{?end,id,name}",
-         "type": "application/vnd.readium.lcp.license.v1.0+json",
+         "href": "https://example.org/license/35d9b2d6/renew{?end,id,name}",
+         "type": "application/vnd.readium.license.status.v1.0+json",
          "templated": true}
       ],
       "potential_rights": {
         "end": "2014-09-13T00:00:00Z"
       },
       "events": [
-        {"type": "activate", "name": "eBook App (Android)", "timestamp": "2016-07-14T00:00:00Z", "id": "709e1380-3528-11e5-a2cb-0800200c9a66"}
+        {"type": "register", "name": "eBook App (Android)", "timestamp": "2016-07-14T00:00:00Z", "id": "709e1380-3528-11e5-a2cb-0800200c9a66"}
       ]
     }
 
@@ -376,7 +376,9 @@ When a client opens a License Document for the first time and gets access to its
 
 * It <b>MUST</b> attempt to register itself again if it couldn't do so the first time that the License Document was opened
 
-During the registration, the client <b>MUST</b> always send the same unique identifier for a specific device, no matter which Status Document it interacts with. Any further interaction <b>SHOULD</b> use the same identifier/name.
+During the registration, the client <b>MUST</b> always try to send the same unique identifier for a specific device, no matter which Status Document it interacts with. Any further interaction with a provider <b>SHOULD</b> use the same identifier/name. The client <b>SHOULD</b> consider user privacy when generating a unique identifier, for example by generating a random string during software installation. To prevent user tracking across providers, the client <b>MAY</b> generate device unique ids for each provider.
+
+If a provider uses registration to monitor license abuse, the provider <b>SHOULD</b> take care to prevent forged registrations.
 
 <table class="table-bordered large">
   <tr>
@@ -426,7 +428,7 @@ During the registration, the client <b>MUST</b> always send the same unique iden
     {
       "links": [
         {"rel": "register", 
-         "href": "http://example.org/license/aaa-bbbb-ccc/register{?id,name}",
+         "href": "https://example.org/license/aaa-bbbb-ccc/register{?id,name}",
          "type": "application/vnd.readium.license.status.v1.0+json",
          "templated": true}
       ]
@@ -527,8 +529,8 @@ If returning is unsuccessful, the client <b>SHOULD</b> attempt to return the Lic
     {
       "links": [
         {"rel": "return",
-         "href": "http://example.org/license/aaa-bbbb-ccc/return{?id,name}",
-         "type": "application/vnd.readium.lcp.license-1.0+json",
+         "href": "https://example.org/license/aaa-bbbb-ccc/return{?id,name}",
+         "type": "application/vnd.readium.license.status.v1.0+json",
          "templated": true}
       ]
     }
@@ -544,17 +546,17 @@ If returning is unsuccessful, the client <b>SHOULD</b> attempt to return the Lic
   </tr>
   <tr>
     <td>The server <b>MUST</b> return an updated Status Document.
-The Status Document <b>MUST</b> also return a `status` with its value set to "returned" if the status was previously set to "active" or "cancelled" if the status was previously set to "ready".
+The Status Document <b>MUST</b> contain a `status` with its value set to "returned" if the status was previously set to "active" or "cancelled" if the status was previously set to "ready".
 
 The server <b>MUST</b> update the timestamp of both License and Status Document contained in the `status` and `license` keys of the `updated` object. 
 
 The server <b>MAY</b> also add a new event in the `events` object of the Status Document.</td>
     <td>200</td>
-    <td>The client <b>MUST</b> download an updated License Document.
+    <td>The client <b>MUST</b> download an updated Status Document.
 
 The client <b>MUST NOT</b> allow the user to open the publication anymore. 
 
-The client <b>MUST NOT</b> attempt to return the License anymore.</td>
+The client <b>SHOULD NOT</b> attempt to return the License anymore.</td>
   </tr>
 </table>
 
@@ -617,20 +619,20 @@ Renewing a License is also meant primarily for library use cases, where a patron
   </tr>
   <tr>
     <td>text/html</td>
-    <td>A URL where human interactions will be required. These interactions <b>SHOULD</b> ultimately result in the extension of the term of a License Document.</td>
+    <td>A URL where human interactions will be required. Returns an HTML page. These interactions <b>SHOULD</b> ultimately result in the extension of the term of a License Document.</td>
     <td>No</td>
     <td>GET</td>
   </tr>
   <tr>
-    <td>application/vnd.readium.lcp.license-1.0+json</td>
-    <td>A URL where the License Document can be programmatically renewed.</td>
+    <td>application/vnd.readium.license.status.v1.0+json</td>
+    <td>A URL where the License Document can be programmatically renewed. Returns a Status Document.</td>
     <td>Yes</td>
     <td>PUT</td>
   </tr>
 </table>
 
 <br />
-These parameters are strictly for the case where the link returns a License Document.
+These parameters are strictly for the case where the License Document is programmatically renewed.
 
 <table class="table-bordered large">
   <tr>
@@ -660,21 +662,22 @@ These parameters are strictly for the case where the link returns a License Docu
 </table>
 
 <br />
-*An example with two renewal links: one meant for human interactions (HTML) and another for clients that can send the proper information to the server (returns a License Document).*
+
+*An example with two renewal links: one meant for human interactions (HTML) and another for clients that can send the proper information to the server (returns a Status Document).*
 
     {
       "links": [
         {"rel": "renew",
-         "href": "http://example.org/license/aaa-bbbb-ccc/renew",
+         "href": "https://example.org/license/aaa-bbbb-ccc/renew",
          "type": "text/html"},
         {"rel": "renew"
-         "href": "http://example.org/license/aaa-bbbb-ccc/renew{?end,id,name}",
-         "type": "application/vnd.readium.lcp.license-1.0+json",
+         "href": "https://example.org/license/aaa-bbbb-ccc/renew{?end,id,name}",
+         "type": "application/vnd.readium.license.status.v1.0+json",
          "templated": true}
       ]
     }
 
-These status codes and behaviors are strictly for the case where the link returns a License Document.
+These status codes and behaviors are strictly for the case where the link returns a Status Document.
 
 *Expected Behavior*
 
@@ -690,7 +693,8 @@ The server <b>MUST</b> update the timestamp of both License and Status Document 
 
 The server <b>MAY</b> also add a new event in the `events` object of the Status Document.</td>
     <td>200</td>
-    <td style="width:150px">The client <b>MUST</b> download an updated License Document.</td>
+    <td style="width:150px">The client <b>MUST</b> download an updated Status Document.
+    The client <b>MAY</b> attempt to renew the License again later.</td>
   </tr>
 </table>
 <br/>
@@ -748,18 +752,17 @@ This specification defines one new link relation which may be used in the `links
   </tr>
 </table>
 
-
 <br />
 
 If a link with the relation status is not present in the `links` object, the client <b>MUST</b> process the LCP License Document according to the core LCP specification. 
 
-If a link with the relation status is present in the `links` object, the client <b>MUST</b> process the Status Document according to the extended rules listed in [section 3](#interactions) of this specification.
+If a link with the relation status is present in the `links` object, the client <b>MUST</b> process the Status Document according to the extended rules listed in [section 3](#3-interactions) of this specification.
 
 The representation of the URI mentioned in the status link <b>MUST</b> be a valid Status Document.
 
 ## Normative references
 
-[JSON] [The application/json Media Type for JavaScript Object Notation (JSON)](http://www.ietf.org/rfc/rfc4627).
+[JSON] [The application/json Media Type for JavaScript Object Notation (JSON)](https://www.ietf.org/rfc/rfc4627).
 
 [RFC2119] [Key words for use in RFCs to Indicate Requirement Levels](https://tools.ietf.org/html/rfc2119).
 
