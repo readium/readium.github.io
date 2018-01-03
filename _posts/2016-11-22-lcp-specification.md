@@ -9,7 +9,7 @@ permalink: /readium-lcp-specification/
 
 Copyright 2016, Readium Foundation. All Rights Reserved.
 
-Revision: 1
+Document Revision: 1.1
 
 ## 1. Overview
 
@@ -28,35 +28,35 @@ LCP also defines a simple passphrase-based authentication method for Reading Sys
 
 ### EPUB terms
 
-This specification adopts [terms defined in the EPUB 3 family of specifications](http://www.idpf.org/epub/30/spec/#sec-gloss).  Important terms used include:
+This specification adopts [terms defined in the EPUB 3 family of specifications](https://www.idpf.org/epub/30/spec/#sec-gloss).  Important terms used include:
 
 **Publication**
 
-A logical document entity consisting of a set of interrelated [resources](http://www.idpf.org/epub/30/spec/#gloss-publication-resource-cmt-or-foreign) and packaged in an [EPUB Container](http://www.idpf.org/epub/30/spec/#gloss-container), as defined by the [EPUB 3 specifications](http://www.idpf.org/epub/30/spec/#sibling-specs).
+A logical document entity consisting of a set of interrelated [resources](https://www.idpf.org/epub/30/spec/#gloss-publication-resource-cmt-or-foreign) and packaged in an [EPUB Container](https://www.idpf.org/epub/30/spec/#gloss-container), as defined by the [EPUB 3 specifications](https://www.idpf.org/epub/30/spec/#sibling-specs).
 
 **Publication Resource (or Resource)**
 
-A resource that contains content or instructions that contribute to the logic and rendering of the [EPUB Publication](http://www.idpf.org/epub/30/spec/#gloss-epub-publication). In the absence of this resource, the Publication might not render as intended by the [Author](http://www.idpf.org/epub/30/spec/#gloss-author). Examples of Publication Resources include the [Package Document](http://www.idpf.org/epub/30/spec/#gloss-package-document), [EPUB Content Document](http://www.idpf.org/epub/30/spec/#gloss-content-document-epub)s, [EPUB Style Sheets](http://www.idpf.org/epub/30/spec/#gloss-stylesheet), audio, video, images, embedded fonts and scripts.
+A resource that contains content or instructions that contribute to the logic and rendering of the [EPUB Publication](https://www.idpf.org/epub/30/spec/#gloss-epub-publication). In the absence of this resource, the Publication might not render as intended by the [Author](https://www.idpf.org/epub/30/spec/#gloss-author). Examples of Publication Resources include the [Package Document](https://www.idpf.org/epub/30/spec/#gloss-package-document), [EPUB Content Document](https://www.idpf.org/epub/30/spec/#gloss-content-document-epub)s, [EPUB Style Sheets](https://www.idpf.org/epub/30/spec/#gloss-stylesheet), audio, video, images, embedded fonts and scripts.
 
-With the exception of the Package Document itself, Publication Resources must be listed in the [manifest](http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-manifest-elem) element from [[Publications](#normative-references)] and must be bundled in the EPUB container file unless specified otherwise in [Publication Resource Locations](http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-resource-locations) from [[Publications](#normative-references)].
+With the exception of the Package Document itself, Publication Resources must be listed in the [manifest](https://www.idpf.org/epub/30/spec/epub30-publications.html#sec-manifest-elem) element from [[Publications](#normative-references)] and must be bundled in the EPUB container file unless specified otherwise in [Publication Resource Locations](https://www.idpf.org/epub/30/spec/epub30-publications.html#sec-resource-locations) from [[Publications](#normative-references)].
 
-Examples of resources that are not Publication Resources include those identified by the Package Document [link](http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-link-elem) element from [[Publications](#normative-references)] and those identified in outbound hyperlinks that resolve outside the [EPUB Container](http://www.idpf.org/epub/30/spec/#gloss-container) (e.g., referenced from an HTML5 a element href attribute).
+Examples of resources that are not Publication Resources include those identified by the Package Document [link](https://www.idpf.org/epub/30/spec/epub30-publications.html#sec-link-elem) element from [[Publications](#normative-references)] and those identified in outbound hyperlinks that resolve outside the [EPUB Container](https://www.idpf.org/epub/30/spec/#gloss-container) (e.g., referenced from an HTML5 a element href attribute).
 
 **Package Document**
 
-A [Publication Resource](http://www.idpf.org/epub/30/spec/#gloss-publication-resource-cmt-or-foreign) carrying bibliographical and structural metadata about the [EPUB Publication](http://www.idpf.org/epub/30/spec/#gloss-epub-publication), as defined in [Package Documents](http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-package-documents) from [[Publications](#normative-references)].
+A [Publication Resource](https://www.idpf.org/epub/30/spec/#gloss-publication-resource-cmt-or-foreign) carrying bibliographical and structural metadata about the [EPUB Publication](https://www.idpf.org/epub/30/spec/#gloss-epub-publication), as defined in [Package Documents](https://www.idpf.org/epub/30/spec/epub30-publications.html#sec-package-documents) from [[Publications](#normative-references)].
 
 **EPUB Container (or Container)**
 
-The ZIP-based packaging and distribution format for [EPUB Publication](http://www.idpf.org/epub/30/spec/#gloss-epub-publication)s defined in [[OCF](#normative-references)].
+The ZIP-based packaging and distribution format for [EPUB Publication](https://www.idpf.org/epub/30/spec/#gloss-epub-publication)s defined in [[OCF](#normative-references)].
 
 **User**
 
-An individual that consumes an [EPUB Publication](http://www.idpf.org/epub/30/spec/#gloss-epub-publication) using an [EPUB Reading System](http://www.idpf.org/epub/30/spec/#gloss-epub-reading-system).
+An individual that consumes an [EPUB Publication](https://www.idpf.org/epub/30/spec/#gloss-epub-publication) using an [EPUB Reading System](https://www.idpf.org/epub/30/spec/#gloss-epub-reading-system).
 
 **EPUB Reading System (or Reading System)**
 
-A system that processes [EPUB Publications](http://www.idpf.org/epub/30/spec/#gloss-epub-publication) for presentation to a [User](http://www.idpf.org/epub/30/spec/#gloss-user) in a manner conformant with the [EPUB 3 specifications](http://www.idpf.org/epub/30/spec/#sibling-specs).
+A system that processes [EPUB Publications](https://www.idpf.org/epub/30/spec/#gloss-epub-publication) for presentation to a [User](https://www.idpf.org/epub/30/spec/#gloss-user) in a manner conformant with the [EPUB 3 specifications](https://www.idpf.org/epub/30/spec/#sibling-specs).
 
 ### LCP terms
 
@@ -236,11 +236,11 @@ In addition, this specification defines that the following files <b>MUST NOT</b>
 
 * `META-INF/license.lcpl`
 
-* Navigation Documents referenced in any Package Document from the Publication (all Publication Resources listed in the Publication manifest with the ["nav" property](http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-item-property-values))
+* Navigation Documents referenced in any Package Document from the Publication (all Publication Resources listed in the Publication manifest with the ["nav" property](https://www.idpf.org/epub/30/spec/epub30-publications.html#sec-item-property-values))
 
 * NCX documents referenced in any Package Document from the Publication (all Publication Resources listed in the Publication manifest with the media type "application/x-dtbncx+xml")
 
-* Cover images (all Publication Resources listed in the Publication manifest with the ["cover-image" property](http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-item-property-values))
+* Cover images (all Publication Resources listed in the Publication manifest with the ["cover-image" property](https://www.idpf.org/epub/30/spec/epub30-publications.html#sec-item-property-values))
 
 ## 2.2. Using META-INF/encryption.xml for LCP
 
@@ -435,7 +435,7 @@ The `encryption/user_key` object contains information regarding the User Key use
   "id": "ef15e740-697f-11e3-949a-0800200c9a66",
   "issued": "2013-11-04T01:08:15+01:00",
   "updated": "2014-02-21T09:44:17+01:00",
-  "provider": "http://www.imaginaryebookretailer.com",
+  "provider": "https://www.imaginaryebookretailer.com",
   "encryption": {
     "profile": "http://readium.org/lcp/basic-profile",
     "content_key": {
@@ -448,9 +448,9 @@ The `encryption/user_key` object contains information regarding the User Key use
         "key_check": "jJEjUDipHK3OjGt6kFq7dcOLZuicQFUYwQ+TYkAIWKm6Xv6kpHFhF7LOkUK/Owww"
     }
   },
-  "links": …,
-  "rights": …,
-  "signature": …
+  "links": "...",
+  "rights": "...",
+  "signature": "..."
 }
 ```
 
@@ -569,17 +569,17 @@ Templated URIs follow the [[URI-Template]](#informative-references) specificatio
   "id": "ef15e740-697f-11e3-949a-0800200c9a66",
   "issued": "2013-11-04T01:08:15+01:00",
   "updated": "2014-02-21T09:44:17+01:00",
-  "provider": "http://www.imaginaryebookretailer.com",
-  "encryption": … ,
+  "provider": "https://www.imaginaryebookretailer.com",
+  "encryption": "...",
   "links": [
     { "rel": "publication",
-      "href": "http://www.example.com/file.epub",
+      "href": "https://www.example.com/file.epub",
       "type": "application/epub+zip",
       "length": "264929",
       "hash": "8b752f93e5e73a3efff1c706c1c2e267dffc6ec01c382cbe2a6ca9bd57cc8378"
     },
     { "rel": "hint",
-      "href": "http://www.example.com/passphraseHint?user_id=1234",
+      "href": "https://www.example.com/passphraseHint?user_id=1234",
       "type": "text/html"
     },
     { "rel": "support",
@@ -589,24 +589,24 @@ Templated URIs follow the [[URI-Template]](#informative-references) specificatio
       "href": "tel:1800836482"
     },
     { "rel": "support",
-      "href": "http://example.com/support",
+      "href": "https://example.com/support",
       "type": "text/html"
     }, 
-    { "rel": "http://mylcpextension.com/authentication",
-      "href": "http://www.example.com/authenticateMe",
+    { "rel": "https://mylcpextension.com/authentication",
+      "href": "https://www.example.com/authenticateMe",
       "title": "Authentication service",
       "type": "application/vnd.myextension.authentication+json"
     },
-    { "rel": "http://mylcpextension.com/book_recommendations",
-      "href": "http://www.example.com/recommended/1", 
+    { "rel": "https://mylcpextension.com/book_recommendations",
+      "href": "https://www.example.com/recommended/1", 
       "type": "text/html"
     },
-    { "rel": "http://mylcpextension.com/book_recommendations",
-      "href": "http://www.example.com/recommended/1.opds",
+    { "rel": "https://mylcpextension.com/book_recommendations",
+      "href": "https://www.example.com/recommended/1.opds",
       "type": "application/atom+xml; profile=opds-catalog; kind=acquisition"}
   ], 
-  "rights": …,
-  "signature": …
+  "rights": "...",
+  "signature": "..."
 }
 ```
 
@@ -663,7 +663,7 @@ For the `print` right, a page is defined as follows:
 
 1. The page as defined in the Publication, if it is pre-paginated (fixed layout) OR
 
-2. The page as defined by the [page-list nav element](http://www.idpf.org/epub/30/spec/epub30-contentdocs.html#sec-xhtml-nav-def-types-pagelist) of the [EPUB Navigation Document](http://www.idpf.org/epub/30/spec/epub30-contentdocs.html#sec-xhtml-nav), if this exists OR
+2. The page as defined by the [page-list nav element](https://www.idpf.org/epub/30/spec/epub30-contentdocs.html#sec-xhtml-nav-def-types-pagelist) of the [EPUB Navigation Document](https://www.idpf.org/epub/30/spec/epub30-contentdocs.html#sec-xhtml-nav), if this exists OR
 
 3. 1024 Unicode characters for all other cases
 
@@ -681,17 +681,17 @@ There is also a vendor extension granting the right to tweet parts of this book.
   "id": "ef15e740-697f-11e3-949a-0800200c9a66",
   "issued": "2013-11-04T01:08:15+01:00",
   "updated": "2014-02-21T09:44:17+01:00",
-  "provider": "http://www.imaginaryebookretailer.com",
-  "encryption": … ,
-  "links": … ,
+  "provider": "https://www.imaginaryebookretailer.com",
+  "encryption": "...",
+  "links": "...",
   "rights": {
     "print": 0,
     "copy": 2048,
     "start": "2013-11-04T01:08:15+01:00",
     "end": "2013-11-25T01:08:15+01:00",
-    "http://www.imaginaryebookretailer.com/lcp/rights/tweet": true
+    "https://www.imaginaryebookretailer.com/lcp/rights/tweet": true
   },
-  "signature": …
+  "signature": "..."
 }
 ```
 
@@ -752,17 +752,17 @@ To protect private User data, any of these fields <b>MAY</b> be encrypted, excep
   "id": "ef15e740-697f-11e3-949a-0800200c9a66",
   "issued": "2013-11-04T01:08:15+01:00",
   "updated": "2014-02-21T09:44:17+01:00",
-  "provider": "http://www.imaginaryebookretailer.com",
-  "encryption": … ,
-  "links": … ,
-  "rights": … ,
+  "provider": "https://www.imaginaryebookretailer.com",
+  "encryption": "...",
+  "links": "...",
+  "rights": "...",
   "user": {
     "id": "d9f298a7-7f34-49e7-8aae-4378ecb1d597",
     "email": "EnCt2b8c6d2afd94ae4ed201b27049d8ce1afe31a90ceb8c6d2afd94ae4ed201b2704RjkaXRveAAarHwdlID1KCIwEmS",
     "encrypted": ["email"],
-      "http://www.imaginaryebookretailer.com/lcp/user/language": "tlh"
+      "https://www.imaginaryebookretailer.com/lcp/user/language": "tlh"
   },
-  "signature": …
+  "signature": "..."
 }
 ```
 
@@ -803,11 +803,11 @@ For more information on how the signature and the certificate <b>SHOULD</b> be c
   "id": "ef15e740-697f-11e3-949a-0800200c9a66",
   "issued": "2013-11-04T01:08:15+01:00",
   "updated": "2014-02-21T09:44:17+01:00",
-  "provider": "http://www.imaginaryebookretailer.com",
-  "encryption": … ,
-  "links": … ,
-  "rights": … ,
-  "user": … ,
+  "provider": "https://www.imaginaryebookretailer.com",
+  "encryption": "...",
+  "links": "...",
+  "rights": "...",
+  "user": "...",
   "signature": {
     "algorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
     "certificate": "MIIDEjCCAfoCCQDwMOjkYYOjPjANBgkqhkiG9w0BAQUFADBLMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTETMBEGA1UEBxMKRXZlcnl3aGVyZTESMBAGA1UEAxMJbG9jYWxob3N0MB4XDTE0MDEwMjIxMjYxNloXDTE1MDEwMjIxMjYxNlowSzELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExEzARBgNVBAcTCkV2ZXJ5d2hlcmUxEjAQBgNVBAMTCWxvY2FsaG9zdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOpCRECG7icpf0H37kuAM7s42oqggBoikoTpo5yapy+s5eFSp8HSqwhIYgZ4SghNLkj3e652SALav7chyZ2vWvitZycY+aq50n5UTTxDvdwsC5ZNeTycuzVWZALKGhV7VUPEhtWZNm0gruntronNa8l2WS0aF7P5SbhJ65SDQGprFFaYOSyN6550P3kqaAO7tDddcA1cmuIIDRf8tOIIeMkBFk1Qf+lh+3uRP2wztOTECSMRxX/hIkCe5DRFDK2MuDUyc/iY8IbY0hMFFGw5J7MWOwZLBOaZHX+Lf5lOYByPbMH78O0dda6T+tLYAVzsmJdHJFtaRguCaJVtSXKQUAMCAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAi9HIM+FMfqXsRUY0rGxLlw403f3YtAG/ohzt5i8DKiKUG3YAnwRbL/VzXLZaHru7XBC40wmKefKqoA0RHyNEddXgtY/aXzOlfTvp+xirop+D4DwJIbaj8/wHKWYGBucA/VgGY7JeSYYTUSuz2RoYtjPNRELIXN8A+D+nkJ3dxdFQ6jFfVfahN3nCIgRqRIOt1KaNI39CShccCaWJ5DeSASLXLPcEjrTi/pyDzC4kLF0VjHYlKT7lq5RkMO6GeC+7YFvJtAyssM2nqunA2lUgyQHb1q4Ih/dcYOACubtBwW0ITpHz8N7eO+r1dtH/BF4yxeWl6p5kGLvuPXNU21ThgA==",
@@ -935,7 +935,7 @@ For this example, we'll use a License Document which contains a link (hint) and 
   "id": "ef15e740-697f-11e3-949a-0800200c9a66",
   "issued": "2013-11-04T01:08:15+01:00",
   "updated": "2014-02-21T09:44:17+01:00",
-  "provider": "http://www.imaginaryebookretailer.com",
+  "provider": "https://www.imaginaryebookretailer.com",
   "encryption": {
     "profile": "http://readium.org/lcp/basic-profile",
     "content_key": {
@@ -949,7 +949,7 @@ For this example, we'll use a License Document which contains a link (hint) and 
     }
   },
   "links": [
-    { "rel": "hint", "href": "http://www.imaginaryebookretailer.com/lcp/hint", "type": "text/html"}
+    { "rel": "hint", "href": "https://www.imaginaryebookretailer.com/lcp/hint", "type": "text/html"}
   ],
   "user": { "id": "d9f298a7-7f34-49e7-8aae-4378ecb1d597"}
 }
@@ -977,11 +977,11 @@ First of all, let's sort this document. Every [[JSON](#normative-references)] ob
   "links": [
     {
       "rel": "hint",
-      "href": "http://www.imaginaryebookretailer.com/lcp/hint",
+      "href": "https://www.imaginaryebookretailer.com/lcp/hint",
       "type": "text/html"
     }
   ],
-  "provider": "http://www.imaginaryebookretailer.com",
+  "provider": "https://www.imaginaryebookretailer.com",
   "updated": "2014-02-21T09:44:17+01:00",
   "user": {"id": "d9f298a7-7f34-49e7-8aae-4378ecb1d597"}
 }
@@ -991,7 +991,7 @@ First of all, let's sort this document. Every [[JSON](#normative-references)] ob
 Now that our document is sorted, we can strip all whitespaces and end of lines:
 
 ```json
-{"encryption":{"content_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#aes256-cbc","encrypted_value":"/k8RpXqf4E2WEunCp76E8PjhS051NXwAXeTD1ioazYxCRGvHLAck/KQ3cCh5JxDmCK0nRLyAxs1X0aA3z55boQ=="},"profile":"http://readium.org/lcp/basic-profile","user_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#sha256","key_check":"jJEjUDipHK3OjGt6kFq7dcOLZuicQFUYwQ+TYkAIWKm6Xv6kpHFhF7LOkUK/Owww","text_hint":"Enter your email address"}},"id":"ef15e740-697f-11e3-949a-0800200c9a66","issued":"2013-11-04T01:08:15+01:00","links":[{"rel":"hint","href":"http://www.imaginaryebookretailer.com/lcp/hint","type":"text/html"}],"provider":"http://www.imaginaryebookretailer.com","updated":"2014-02-21T09:44:17+01:00","user":{"id":"d9f298a7-7f34-49e7-8aae-4378ecb1d597"}}
+{"encryption":{"content_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#aes256-cbc","encrypted_value":"/k8RpXqf4E2WEunCp76E8PjhS051NXwAXeTD1ioazYxCRGvHLAck/KQ3cCh5JxDmCK0nRLyAxs1X0aA3z55boQ=="},"profile":"http://readium.org/lcp/basic-profile","user_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#sha256","key_check":"jJEjUDipHK3OjGt6kFq7dcOLZuicQFUYwQ+TYkAIWKm6Xv6kpHFhF7LOkUK/Owww","text_hint":"Enter your email address"}},"id":"ef15e740-697f-11e3-949a-0800200c9a66","issued":"2013-11-04T01:08:15+01:00","links":[{"rel":"hint","href":"https://www.imaginaryebookretailer.com/lcp/hint","type":"text/html"}],"provider":"https://www.imaginaryebookretailer.com","updated":"2014-02-21T09:44:17+01:00","user":{"id":"d9f298a7-7f34-49e7-8aae-4378ecb1d597"}}
 ```
 
 
@@ -1015,13 +1015,13 @@ In order to sign a License Document, the Content Provider <b>MUST</b> go through
 Given the License Document in its canonical form
 
 ```json
-{"encryption":{"content_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#aes256-cbc","encrypted_value":"/k8RpXqf4E2WEunCp76E8PjhS051NXwAXeTD1ioazYxCRGvHLAck/KQ3cCh5JxDmCK0nRLyAxs1X0aA3z55boQ=="},"profile":"http://readium.org/lcp/basic-profile","user_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#sha256","key_check":"jJEjUDipHK3OjGt6kFq7dcOLZuicQFUYwQ+TYkAIWKm6Xv6kpHFhF7LOkUK/Owww","text_hint":"Enter your email address"}},"id":"ef15e740-697f-11e3-949a-0800200c9a66","issued":"2013-11-04T01:08:15+01:00","links":[{"rel":"hint","href":"http://www.imaginaryebookretailer.com/lcp/hint","type":"text/html"}],"provider":"http://www.imaginaryebookretailer.com","updated":"2014-02-21T09:44:17+01:00","user":{"id":"d9f298a7-7f34-49e7-8aae-4378ecb1d597"}}
+{"encryption":{"content_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#aes256-cbc","encrypted_value":"/k8RpXqf4E2WEunCp76E8PjhS051NXwAXeTD1ioazYxCRGvHLAck/KQ3cCh5JxDmCK0nRLyAxs1X0aA3z55boQ=="},"profile":"http://readium.org/lcp/basic-profile","user_key":{"algorithm":"http://www.w3.org/2001/04/xmlenc#sha256","key_check":"jJEjUDipHK3OjGt6kFq7dcOLZuicQFUYwQ+TYkAIWKm6Xv6kpHFhF7LOkUK/Owww","text_hint":"Enter your email address"}},"id":"ef15e740-697f-11e3-949a-0800200c9a66","issued":"2013-11-04T01:08:15+01:00","links":[{"rel":"hint","href":"https://www.imaginaryebookretailer.com/lcp/hint","type":"text/html"}],"provider":"https://www.imaginaryebookretailer.com","updated":"2014-02-21T09:44:17+01:00","user":{"id":"d9f298a7-7f34-49e7-8aae-4378ecb1d597"}}
 ```
 
 Using the signature algorithm required by the Encryption Profile, a Content Provider must first hash the License Document, giving the following byte sequence, represented here in hexadecimal:
 
 ```json
-ce3fd2220fc26c89ed2190fd27af39c4016b623dd2bd5e5a3562dc0795769c92
+23c68442c7214ba294ddd1a2902756e9fe575116a88f36e55baf94590a90c2ad
 ```
 
 This SHA-256 form must then be signed using the Content Provider’s Private Key, giving the following result, in Base 64:
@@ -1050,7 +1050,7 @@ With this signature and the certificate, a valid license <b>MAY</b> be created:
   "id": "ef15e740-697f-11e3-949a-0800200c9a66",
   "links": [
     { "rel": "hint",
-      "href": "http://www.imaginaryebookretailer.com/lcp/hint",
+      "href": "https://www.imaginaryebookretailer.com/lcp/hint",
       "type": "text/html"
     }
   ],  
@@ -1078,11 +1078,13 @@ With this signature and the certificate, a valid license <b>MAY</b> be created:
 
 In order to validate the signature, the following steps <b>MUST</b> be followed in order:
 
-1. The Reading System <b>MUST</b> calculate the canonical form of the License Document following the rules as expressed in [5.3. Canonical form of the License Document](#canonical-form-of-the-license-document).
+1. The Reading System <b>MUST</b> extract and remove the signature from the License Document. 
 
-2. It <b>MUST</b> calculate the signature as defined in [5.4. Generating the signature](#generating-the-signature).
+2. It <b>MUST</b> calculate the canonical form of the License Document following the rules as expressed in [5.3. Canonical form of the License Document](#canonical-form-of-the-license-document).
 
-3. It <b>MUST</b> verify that the calculated signature value is consistent with the one embedded in the License Document.
+3. It <b>MUST</b> recalculate the signature as defined in [5.4. Generating the signature](#generating-the-signature).
+
+4. It <b>MUST</b> verify that the calculated signature value is consistent with the one previously extracted from the License Document.
 
 # 6. Encryption Profiles
 
@@ -1256,19 +1258,19 @@ Reading Systems <b>MUST NOT</b>:
 
 # Normative references
 
-[JSON] [The application/json Media Type for JavaScript Object Notation (JSON)](http://www.ietf.org/rfc/rfc4627).
+[JSON] [The application/json Media Type for JavaScript Object Notation (JSON)](https://www.ietf.org/rfc/rfc4627).
 
-[JSON Pointer] [JavaScript Object Notation (JSON) Pointer](http://tools.ietf.org/html/rfc6901).
+[JSON Pointer] [JavaScript Object Notation (JSON) Pointer](https://tools.ietf.org/html/rfc6901).
 
-[OCF] [Open Container Format 3.0.1](http://www.idpf.org/epub/301/spec/epub-ocf.html).
+[OCF] [Open Container Format 3.0.1](https://www.idpf.org/epub/301/spec/epub-ocf.html).
 
-[Publications] [EPUB Publications 3.0.1](http://www.idpf.org/epub/301/spec/epub-publications.html).
+[Publications] [EPUB Publications 3.0.1](https://www.idpf.org/epub/301/spec/epub-publications.html).
 
-[X509] [Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](http://tools.ietf.org/html/rfc5280).
+[X509] [Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280).
 
-[XML-ENC] [XML Encryption Syntax and Processing Version 1.1](http://www.w3.org/TR/xmlenc-core1/).
+[XML-ENC] [XML Encryption Syntax and Processing Version 1.1](https://www.w3.org/TR/xmlenc-core1/).
 
-[XML-SIG] [XML Signature Syntax and Processing (Second Edition)](http://www.w3.org/TR/xmldsig-core/).
+[XML-SIG] [XML Signature Syntax and Processing (Second Edition)](https://www.w3.org/TR/xmldsig-core/).
 
 [URI-Template] [URI Template](https://tools.ietf.org/html/rfc6570).
 
@@ -1283,5 +1285,6 @@ LCP Rights Registry
 LCP User Fields Registry
 
 LCP Encryption Profiles Registry
+
 
 
