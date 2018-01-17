@@ -9,7 +9,7 @@ permalink: /readium-lcp-specification/
 
 Copyright 2016, Readium Foundation. All Rights Reserved.
 
-Document Revision: 1.1
+Document Revision: 1.2
 
 ## 1. Overview
 
