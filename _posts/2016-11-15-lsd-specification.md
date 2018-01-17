@@ -8,7 +8,7 @@ permalink: /readium-lsd-specification/
 
 Copyright 2016, Readium Foundation. All Rights Reserved.
 
-Document Revision: 1.1
+Document Revision: 1.2
 
 ## 1. Overview
 
@@ -321,7 +321,7 @@ These events are documented in an `events` object where the following keys are u
   <tr>
     <td>type</td>
     <td>Identifies the type of event.</td>
-    <td>Link relations as defined in section 2. Status Document or in 3. Interactions</td>
+    <td>See the enumeration below.</td>
   </tr>
   <tr>
     <td>name</td>
@@ -337,6 +337,36 @@ These events are documented in an `events` object where the following keys are u
     <td>timestamp</td>
     <td>Time and date when the event occurred.</td>
     <td>ISO 8601 time and date</td>
+  </tr>
+</table>
+
+
+The following `type` values are allowed:
+
+<table class="table-bordered large">
+  <tr>
+    <th>Name</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>register</td>
+    <td>Signals a successful registration event by a device.</td>
+  </tr>
+  <tr>
+    <td>renew</td>
+    <td>Signals a successful renew event.</td>
+  </tr>
+  <tr>
+    <td>return</td>
+    <td>Signals a successful return event.</td>
+  </tr>
+  <tr>
+    <td>revoke</td>
+    <td>Signals a revocation event.</td>
+  </tr>
+  <tr>
+    <td>cancel</td>
+    <td>Signals a cancellation event.</td>
   </tr>
 </table>
 
@@ -455,7 +485,7 @@ The server <b>MAY</b> also add a new event in the events object of the Status Do
   </tr>
 </table>
 
-<br />
+
 *Failure Modes*
 
 <table class="table-bordered large">
@@ -522,7 +552,7 @@ If returning is unsuccessful, the client <b>SHOULD</b> attempt to return the Lic
   </tr>
 </table>
 
-<br />
+
 *An example of a simple return link.*
 
 
@@ -560,7 +590,7 @@ The client <b>SHOULD NOT</b> attempt to return the License anymore.</td>
   </tr>
 </table>
 
-<br />
+
 *Failure Modes*
 
 <table class="table-bordered large">
@@ -751,6 +781,7 @@ This specification defines one new link relation which may be used in the `links
     <td>No</td>
   </tr>
 </table>
+
 
 <br />
 
