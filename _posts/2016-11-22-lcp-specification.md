@@ -301,7 +301,7 @@ File properties
 
 * Its filename <b>MUST</b> use the file extension `.lcpl`.
 
-* Its MIME media type is `application/vnd.readium.lcp.license-1.0+json`
+* Its MIME media type is `application/vnd.readium.lcp.license.v1.0+json`
 
 * Its location in the Container <b>MUST</b> be `META-INF/license.lcpl`
 
