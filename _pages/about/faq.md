@@ -18,15 +18,13 @@ There are many ways to help the Readium projects. You don’t have to be a C++ d
 
 ### FAQs about the Readium Foundation (Readium.org)
 
-- What is the relationship between Readium Foundation and IDPF?
+- What is the relationship between Readium and standards bodies such as the IDPF and W3C?
 
-Readium began as a project of the International Digital Publishing Forum (IDPF), and IDPF helped instigate the Readium Foundation. But the Readium Foundation is a completely independent non-profit corporation, governed by its members. Readium Foundation is focusing specifically on open source implementations, complementary to IDPF's work developing the EPUB standards. IDPF has recently combined with the World Wide Web Consortium (W3C), which also primarily a standards-setting organization, 
+In early 2017, IDPF  combined with the World Wide Web Consortium (W3C), which is responsible for HTML and other Web Standards, thus standards development for EPUB and other publishing technology for the Web Platform is now taking place within W3C. For more information see Publishing@W3C [ link to https://w3.org/publishing]. A number of Readium Foundation members and contributors are participating in Publishing@W3C activities to help ensure coordination. 
 
-- Will Readium.org support vendor extensions to EPUB?
+Governance of Readium Foundation is by board of directors elected by representatives of its member organizations.
 
-Readium.org's initial focus is on accelerating full adoption of complete and consistent implementations of the EPUB 3 standard. Support for extensions that are not officially part of EPUB will therefore be discouraged in Readium.org projects. However, as an open source community, extensions that are widely supported may be adopted. For example, Readium Chrome Extension already supports the Apple extension for specifying fixed-layout EPUB metadata (META-INF/com.apple.ibooks.display-options.xml, etc.)
 
- 
 
 ## FAQs About the ReadiumJS Project
 
@@ -70,9 +68,9 @@ Yes!  And it is very easy.  Please see the instructions here.  If you have probl
 
 ## FAQs About the Readium SDK
 
-- Do I have to buy a commercial license to use the Readium SDK?
+- Do I have to obtain a commercial license to use the Readium SDK?
 
-It depends. If you are going to use the SDK for a non-commercial case, then you don’t need to get a commercial license as it is licensed under the user-friendly BSD license.  HOWEVER, if you intend to build a commercial application then yes, you must obtain a commercial license as such usage is available only under the terms of the Gnu Affero license. You can find much more info on this here.
+No. Effective January, 2018 all Readium SDK software is permissively licensed free of charge under the 3-part BSD license and the previous fee-based Alternative License is not longer offered. Adopters are encouraged to help support Readium SDK development and maintenance by paying an optional annual support fee. Those parties paying support will receive priority attention from the Readium SDK team.
 
 - Does the SDK support DRM?
 

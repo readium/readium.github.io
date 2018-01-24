@@ -25,7 +25,7 @@ Readium strives to create a courteous, welcoming environment that feels approach
 
 Readium aims for compliance with the latest EPUB specification, and to be a testbed for support of emerging EPUB modules. EPUB Publications are expected to have longevity and to be interoperable across multiple, indirect distribution channels, and reliably manipulated by intermediate workflows. Being a comprehensive reference system, Readium places a high priority on compatibility with the EPUB 3 specifications.
 
-The Readium Project also provides feedback to the IDPF EPUB standards community as well as to the broader W3C and web standards community, introducing new technologies and making sure new standards can be implemented in our engine. We use regression testing to maintain our standards compliance.
+The Readium Project also provides feedback to the EPUB and overall web standards community as well as to the broader W3C and web standards community, introducing new technologies and making sure new standards can be implemented in our engine. We use regression testing to maintain our standards compliance.
 
 ### Compatibility
 
