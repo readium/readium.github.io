@@ -31,82 +31,50 @@ permalink: /index/
     </section>
   </div>
 
-
-<section id="block-views-news-front-news" class="block block-views clearfix" >
-
-	<h2 class="block-title">Readium Updates</h2>
+<div class="main-container container">
+  <div class="row">
+    <section class="col-sm-12">
+      <div class="region region-content">      
+        <section id="block-views-news-front-news" class="block block-views clearfix" >
+          <br/>
+	        <h2 class="block-title">Readium News</h2>
     
-  <div class="view view-news view-id-news view-display-id-front_news front-news row view-dom-id-350c0aedcbfc89162529455538e47e53" >
-  	<div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first col-sm-6 col-md-3">
-      
-  				<div class="views-field views-field-title">        
-          		<h3 class="field-content"><a href="http://readium.org/news/nominations-open-through-feb-28-for-readium-foundation-board">Nominations Open Through Feb. 28 for Readium Foundation Board</a></h3>  
-           </div>  
-  				<div class="views-field views-field-entity-id-1">       
-          		<div class="field-content views-field-body">Candidates are solicited for three seats on the Readium Foundation Board of Directors.&nbsp;Any Readium Foundation member organization in good standing is eligible to nominate an employee as a candidate.&nbsp;The three Directors whose seats are up for election this cycle (Micah Bowers, Hadrien Gardeur, and Bill McCoy) are all eligible to stand for re-election for a second full term according to
-            </div>  
-          </div>  
-          
-  				<div class="views-field views-field-view-node">        
-          		<span class="field-content"><a href="http://readium.org/news/nominations-open-through-feb-28-for-readium-foundation-board">Read more</a></span>  
-           </div>  
-         </div>
-         
-  			<div class="views-row views-row-2 views-row-even col-sm-6 col-md-3">
-  				<div class="views-field views-field-title">        
-          		<h3 class="field-content">
-              <a href="http://readium.org/news/readium-open-meeting-jan-17-2017-nyc">Readium Open Meeting - Jan 17, 2017 NYC</a>
-            </h3>  
-          </div>  
-  				<div class="views-field views-field-entity-id-1">        
-          		<div class="field-content views-field-body">All Readium Foundation members, adopters, and other interested parties are invited 
-              to attend an open meeting on January 17, 2017 from 4:00pm until 6:00pm at the New York Public Library&nbsp;main building 
-              (42nd St and Fifth Ave, NYC) Berger Forum, Room 227.
-            </div>  
-          </div>  
-  				<div class="views-field views-field-view-node">        
-            <span class="field-content"><a href="http://readium.org/news/readium-open-meeting-jan-17-2017-nyc">Read more</a></span> 
-          </div>  
-        </div>
-        
-        <div class="views-row views-row-3 views-row-odd col-sm-6 col-md-3">
-      
-          <div class="views-field views-field-title">        
-            <h3 class="field-content">
-              <a href="http://readium.org/news/bluefire-releases-readium-based-cloudshelf-reader-app">Bluefire Releases Readium Based Cloudshelf Reader App</a>
-            </h3>  
-          </div>  
-          <div class="views-field views-field-entity-id-1">        
-            <div class="field-content views-field-body">Bluefire Productions, founded in 2001 by current CEO Micah Bowers, has 
-              released a new, free ereader app on the iTunes App Store:&nbsp;Cloudshelf Reader.
-          </div>  
-        </div>  
-        <div class="views-field views-field-view-node">        
-          <span class="field-content"><a href="http://readium.org/news/bluefire-releases-readium-based-cloudshelf-reader-app">Read more</a></span>  
-        </div>  
+          <div class="view view-news view-id-news view-display-id-front_news front-news row view-dom-id-350c0aedcbfc89162529455538e47e53" >
+  	        <div class="view-content">
+
+              {% for post in site.categories.news %}
+                  <div class={% if forloop.index == 0 %}
+                      "views-row views-row-1 views-row-odd views-row-first col-sm-6 col-md-3"
+                      {% else if forloop.index == 1 %}
+                      "views-row views-row-2 views-row-even col-sm-6 col-md-3"
+                      {% else if forloop.index == 2  %}
+                      "views-row views-row-3 views-row-odd col-sm-6 col-md-3"
+                      {% else %}
+                      "views-row views-row-4 views-row-even col-sm-6 col-md-3"
+                      {% endif %}>
+
+              <h3>{{post.title}}</h3>
+              <p>{{ post.date | date: "%b %d, %Y" }}</p>   
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url }}">Read More...</a> 
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </section>
       </div>
-  
-      <div class="views-row views-row-4 views-row-even views-row-last col-sm-6 col-md-3">
-        <div class="views-field views-field-title">        
-          <h3 class="field-content">
-            <a href="http://readium.org/news/readium-open-meeting-may-11-bea-chicago">Readium Open Meeting - May 11 @ BEA Chicago</a>
-          </h3>  
-        </div>  
-        <div class="views-field views-field-entity-id-1">        
-          <div class="field-content views-field-body">An open meeting for Readium Foundation members, adopters, and other interested parties 
-            will take place at BEA 2016 (Chicago) on Wednesday, May 11 from 4:00pm to 5:30pm, immediately after the conclusion of the 
-            May 10-11 IDPF DigiCon event and a subsequent 
-        </div>  
-      </div>  
-      <div class="views-field views-field-view-node">        
-        <span class="field-content"><a href="http://readium.org/news/readium-open-meeting-may-11-bea-chicago">Read more</a></span>  
-      </div>  
+    </section>
+  </div>
+</div>
+
     </div>
   </div>
 
   <div class="view-footer">
-    <a class="btn btn-default" href="news/news.html">More Readium Updates</a>    </div>
+    <div style="text-align: center">
+      <a  class="btn btn-default" href="news/news.html">More Readium Updates</a> 
+    </div>   
+  </div>
   </div>
 </div>
 </section>
