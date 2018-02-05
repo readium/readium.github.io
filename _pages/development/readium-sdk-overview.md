@@ -22,12 +22,11 @@ This is is the Core C++ code that manages the EPUB package, metadata, navigating
 - iOS and OSX: There is no interface layer since Objective-C can call C++ directly. However, there is an interface layer (in Objective-C) called RDServices
 Android: This is the Java/C JNI layer.
 - Windows:
-    - MFC: There is no interface layer as MFC can call the C++ core directly
-    - RT: As Windows RT framework-based code is managed code, there is a C#/C++ layer
+    - There is no functional Windows Launcher as interest in it was minimal.
 
 ### readium-shared-js
 
-This layer, as its name implies, is pure JavaScript. It provides the interfaces and services between the application layer (in Objective-C, C++, Java or C#) and the Core as well as the web-browser engine instance. This layer is shared across all platforms and sub-projects, including both ReadiumJS sub-projects and all SDK-based applications. It manages messaging between the native layers as well as providing the management of views and other facilities of the browser engine.
+This layer, as its name implies, is pure JavaScript. It provides the interfaces and services between the application layer (in Objective-C, C++, or Java) and the Core as well as the web-browser engine instance. This layer is shared across all platforms and sub-projects, including both ReadiumJS sub-projects and all SDK-based applications. It manages messaging between the native layers as well as providing the management of views and other facilities of the browser engine.
 
 ### SDKLauncher-*
 
@@ -38,9 +37,5 @@ The platforms supported by Readium SDK (as of summer 2015) are
 - iOS 7 and above
 - Android 4.x and above
 - OSX 10.7 and above
-- Windows 7 and 8
-    - MFC framework
-- Windows 8 and 10
-    - RT framework
 
 Of course, developers are welcome to tackle porting to and integration with other platforms, but the above are the only platforms against which the Readium SDK is validated and for which Launchers exist.

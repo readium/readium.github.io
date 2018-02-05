@@ -9,7 +9,7 @@ permalink: "/development/releases.html/"
 ## Current Plan for the Next Release
 ### Readium 0.30
 
-This release is targeted for early 2018.
+This release is targeted for February 2018.
 
 The primary features will be:
 

@@ -142,8 +142,9 @@ CARE Readium LCP
 - <http://apps.microsoft.com/windows/en-gb/app/jouve-digital-publishing/486c0cc9-961a-4f37-9801-a0ae8c6dc0b4>
 
 #### CirularFlo
-- ???
-- 
+- Tooling for creating eBooks
+- <https://www.circularflo.com/>
+
 #### New York University 
 
 - NYU Digital Library Technology Services (DLTS)
@@ -182,3 +183,10 @@ CARE Readium LCP
 - Embedded CloudReader
     - <http://www.aer.io/main/>
 
+#### Infinity Reader
+- SDK based reader for Android
+- <http://infinityreader.com/>
+
+#### Lea Reader
+- SDK-based reader for Android (and soon iOS)
+- <https://play.google.com/store/apps/details?id=com.adilibre.leareader>
