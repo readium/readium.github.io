@@ -2886,7 +2886,7 @@ th {
   .table-bordered > tbody > tr > td,
   .table-bordered > tfoot > tr > th,
   .table-bordered > tfoot > tr > td {
-    border: 1px solid #333; 
+    border: 1px solid #333;
     padding: 0px 5px 2px 8px; }
   /* line 101, ../sass/vendor/bootstrap/_tables.scss */
   .table-bordered > thead > tr > th,
@@ -4630,7 +4630,7 @@ tbody.collapse.in {
 /* line 11, ../sass/vendor/bootstrap/_navbar.scss */
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 105px;
   margin-bottom: 0;
   border: 1px solid transparent; }
   /* line 14, ../sass/vendor/bootstrap/mixins/_clearfix.scss */
