@@ -56,8 +56,6 @@ Candidate features include:
 - More bug fixes (exact ones TBD)
 - Other features still TBD
 
-## Recent Releases
-
 ### Readium 0.27
 
 Readium.org is pleased to announce that 0.27 version of Readium has been released.  This release was pushed 12 June 2017.
@@ -108,7 +106,7 @@ In addition, there were a fair number of bug fixes.
 
 The complete release notes can be found [here](https://docs.google.com/document/d/1OBBCrjWNOrhFmZRN9z37sd2_SXV_n6NVARLf43-MroM/edit#heading=h.qtxpy4mgkpwz).
 
-### Release of Readium 0.24
+### Readium 0.24
 
 Readium.org is pleased to announce that 0.24 version of Readium has been released.  This release was pushed 16 August 2016.
 
@@ -125,7 +123,7 @@ In addition, there were two regressions in the previous releases:
 
 The complete release notes can be found [here](https://docs.google.com/document/d/1ioOVtGK00m8TUtGfKA8DCq428wXREfmexc0_fuyHTUs/edit#).
 
-### Release of Readium - 0.23
+### Readium - 0.23
 
 Readium.org is pleased to announce that 0.23 version of Readium has been released.  This release was pushed 10 June 2016.
 
@@ -135,7 +133,7 @@ There are also some minor UX improvements to the Chrome Extensions. Finally, a s
 
 The complete release notes can be found [here](https://docs.google.com/document/d/1vOHtIyppPHuLwIW9Ip2Kl4Y87GmnHvEWCWOS0lg6Vy4/edit#).
 
-### Release of Readium - 0.22
+### Readium - 0.22
 
 Readium.org is pleased to announce that 0.22 version of Readium has been released.  This release was pushed 2 February 2016.
 
@@ -143,7 +141,7 @@ This release, 0.22, is a new release that is comprised primarily of improvements
 
 The complete release notes can be found [here](https://docs.google.com/document/d/1LcMjSpZR1ho5N2wo9R2O1FxXsFUScUPWVLjLmvrPrL4/edit#).
 
-### Release of Readium - 0.21
+### Readium - 0.21
 
 Readium.org is pleased to announce that 0.21 version of Readium has been released.  This release was pushed 2 September 2015.
 
@@ -151,7 +149,7 @@ This release, 0.21, is a new release that is comprised primarily of bug fixes.
 
 The complete release notes can be found [here](https://docs.google.com/document/d/1V5LtEtpMvOLCZCRf60PMH1cyDBVTPRsDTd7Iz0NBb9Y/edit#).
 
-### Release of Readium - 0.20
+### Readium - 0.20
 
 Readium.org is pleased to announce that 0.19 version of Readium has been released.  This release was pushed 18 June 2015.
 
@@ -159,7 +157,7 @@ This release, 0.20, is a new release that is comprised primarily of improvements
 
 The complete release notes can be found [here](https://docs.google.com/document/d/1Io3CDScwm5tj_0tRa4qSm_bGXi3bUb_uoiHXoxTktAQ/edit#heading=h.ybo2phzex0y2).
 
-### Release of Readium - 0.19
+### Readium - 0.19
 
 Readium.org is pleased to announce that 0.19 version of Readium has been released.  This release was pushed 18 June 2015.
 
@@ -167,7 +165,7 @@ This release, 0.19, is a new release that is comprised primarily of improvements
 
 The complete release notes can be found [here](https://docs.google.com/document/d/13NJJPDd_Q_tFVVvFYFdDIUHJlEZY0gZ8C3WtPmdV5Eo/edit#).
 
-### Release of Readium - 0.18
+### Readium - 0.18
 
 Readium.org is pleased to announce that 0.18 version of Readium has been released.  This release was pushed 21 April 2015.
 
@@ -175,13 +173,13 @@ This release, 0.18, is a new release that is comprised primarily of bug fixes fo
 
 The complete release notes can be found [here](https://docs.google.com/document/d/1GUdWAJ7_Zgg2eXgDK-4ty4e4_pCJ2fHC7S5jKjJhz7w/edit#heading=h.ybo2phzex0y2).
 
-### Release of Readium SDK - Sprint 17
+### Readium - 0.17
 
 Readium.org is pleased to announce that 0.17 version of the Readium SDK has been released.  This release was pushed 23 March 2015.
 
 This release includes a significant fix for media handling under Android, which fixes a number of serious stability issues. This release comprises updates to the readium github repositories for readium-sdk, readium-shared-js and the SDK sample applications (including configurations for Android, iOS, and OS/X that have been validated against the EPUB Test Suite, and a Windows configuration that is still in development).  This marks the 17th push (formally tagged as version 0.17) of the source code for SDK.  This release has achieved substantially complete support for the EPUB 3.0 spec including MathML, Reading System object, font-deobfuscation and many more features. The complete release notes can be found [here](https://docs.google.com/document/d/1poM6j7rbO1P-hdGczsK-2lIJPSVGBZmFoL5g_qXvARA/edit#h).
 
-### Release of Readium SDK - Sprint 16
+### Readium - 0.16
 
 Readium.org is pleased to announce that the “1.0” version of the Readium SDK has been released. With this release, the first version of the Readium SDK is essentially complete (hence the “1.0” label). This release was pushed 30 December 2014.
 
