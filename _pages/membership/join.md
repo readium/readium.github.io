@@ -9,14 +9,15 @@ Member dues are calculated by the revenue of our member companies. First year du
 
 The dues structure is as follows:
 
-  Company Type  | Total Company Revenue | Member Dues
-------------- | ------------- | ------------
-Startup Company or Individual  | Under $1 million (*) |  $750 per year Company
-Company  | Under $5 million | $1200 per year
-Company  | Between $5 million and $250 million | $180 per year
-Company  | Between $250 million and $2 billion | $2750 per year
-Company  | Over $2 billion | $4500 per year
-Non-profit Organizations  | -- | $750 per year
+
+|  Company Type  | Total Company Revenue | Member Dues |
+|:-------------:|:-------------:|:------------:|
+| Startup Company or Individual  | Under $1 million (*) |  $750 per year Company |
+| Company  | Under $5 million | $1200 per year |
+| Company  | Between $5 million and $250 million | $180 per year |
+| Company  | Between $250 million and $2 billion | $2750 per year |
+| Company  | Over $2 billion | $4500 per year |
+| Non-profit Organizations  |  | $750 per year |
 
 To join the Readium Foundation, please fill out the membership application here.  If you have questions, please contact us at 206-451-7250 or via [email](emailto:bmccoy@readium.org).
 
