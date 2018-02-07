@@ -56,3 +56,60 @@ The key elements are:
 - _pages: which has a folder for each main menu-item and each folder has the markdown that comprises the actual page content
 - `_site`: which holds all the generated content for the whole site from which the website is served
  
+### Adding or Modifying Content on the Site
+Adding or modifying content is pretty straightforward (which was one of the goals of the rewrite, after all).
+
+#### Modifying Content
+Any markdown file (with extension .md) can simply be edited, then pushed/committed to github and the website will be updated automatically.
+
+#### Adding Content
+If you want to add a new "page" there are two steps:
+
+##### New Markdown/Webpage
+Create the new markdown file in the menu/folder where you want the new page to appear.  Note that you MUST add the appropriate "front matter" at the top of the file.  The "front matter" MUST be of the form:
+
+```
+---
+layout: page
+permalink: "/<menu-folder>/<page-name>/"
+title: Title of the New Page
+excerpt: Your excerpt here, if any
+---
+```
+
+where `<menu-folder>` is the menu-item where the new page will appear, e.g. `About` or `Development` and `<page-name>` is the name of the new page.
+
+##### Add a New Item to the Menu
+You need to edit the file header.html in the _layout folder.  Find the appropriate spot in the HTML content and add an element like this:
+
+```
+<li class="leaf">
+   <a href="/<menu-folder>/<page-name>/</a>                      
+</li>
+```
+
+where the href is the permalink on the new page.
+                             
+Then push/commit both the new page and the header.html file
+
+#### News Items
+Adding a new News item is pretty easy.  Navigate to the `_pages/News/_posts` folder and create a new markdown document.  Again, the frontmatter is pretty specific.  It MUST be of the form
+
+```
+---
+layout: post
+title:  <news item title>
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Duis fringilla nulla eu nunc elementum molestie. Quisque 
+ porttitor arcu in lorem condimentum, at sagittis risus mattis.  
+date:   2018-02-02 13:45:00 +0100
+categories: news
+permalink: /news/_posts/<news-item-name>/
+---
+
+```
+
+where title is a good, clear descriptive title, typically 4 or 5 words.  THe excerpt is what is going to be shown on the home page, so it should make it clear to the reader what the news item is about.  It should be around a 150-200 characters. The date MUST be of the form shown above and MUST be the date when the news item is created.  It MUST include the `categories: news` line. The permalink must point to the news/_posts folder with the name of the news item.
+
+#### Other Files
+The other files (layout, etc.) should not need to be edited except in very unusual circumstances.
