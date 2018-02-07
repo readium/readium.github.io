@@ -13,6 +13,7 @@ This release is targeted for February 2018.
 
 The primary features will be:
 
+- Update the SDK Licenses to be BSD 3-clause
 - Fix for the event handling in continuous scroll mode that interferes with proper functioning of the Hypothes.is plugin
 - Some additional fixes for the Hypothes.is support
 - Fixes for some media-overlay bugs on Android
