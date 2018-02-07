@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  R2 Roadmap
 date:   2016-11-25 10:00:00 +0100
 categories: specifications

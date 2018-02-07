@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/epub_zone/epub_a11y_solutions.html/"
+permalink: "/epub_zone/epub_a11y_solutions/"
 title: EPUB Acessibility Solutions
 
 ---

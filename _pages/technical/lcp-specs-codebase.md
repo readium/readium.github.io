@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Readium LCP Specs and Codebase"
 date:   2016-11-15 11:30:00 +0100
 categories: specifications

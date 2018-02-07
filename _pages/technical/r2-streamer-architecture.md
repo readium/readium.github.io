@@ -1,7 +1,6 @@
 ---
-layout: post
-title:  "Readium2 Streamer Architecture
-"
+layout: page
+title:  "Readium2 Streamer Architecture"
 date:   2017-03-23 11:36:00 +0100
 categories: overview
 permalink: /technical/r2-streamer-architecture.html/

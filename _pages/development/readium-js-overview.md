@@ -3,7 +3,7 @@ layout: post
 title:  "Overview of Readium JS"
 date:   2016-11-08 13:30:00 +0100
 categories: overview
-permalink: /development/readium-js-overview.html/
+permalink: /development/readium-js-overview/
 ---
 
 Readium JS comprises two sub-projects, Readium Chrome Application and the Readium CloudReader. Both consist of three major pieces:

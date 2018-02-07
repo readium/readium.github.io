@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/epub_zone/resources.html/"
+permalink: "/epub_zone/resources/"
 title: EPUB Resources
 ---
 

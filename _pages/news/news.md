@@ -1,5 +1,5 @@
 ---
 layout: news
-permalink: "/news/news.html/"
+permalink: "/news/news/"
 title: Readium News
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/membership/application.html/"
+permalink: "/membership/application/"
 title: Membership Application
 ---
 Contact Ric Wright

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/membership/organization.html/"
+permalink: "/membership/organization/"
 title: Organization Documents
 ---
 The Readium Foundation makes its corporate documents available to the public. They are as follows:

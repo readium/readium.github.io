@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Readium License Status Document Specification 1.0"
 date:   2016-11-25 10:00:00 +0100
 categories: specifications

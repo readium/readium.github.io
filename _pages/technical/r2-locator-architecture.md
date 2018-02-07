@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Readium2 Locator Architecture"
 date:   2017-03-23 11:36:00 +0100
 categories: overview

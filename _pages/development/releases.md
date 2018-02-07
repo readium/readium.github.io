@@ -3,7 +3,7 @@ layout: page
 title:  "Releases"
 date:   2016-11-08 15:30:00 +0100
 categories: releases
-permalink: "/development/releases.html/"
+permalink: "/development/releases/"
 ---
 
 ## Current Plan for the Next Release

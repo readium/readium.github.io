@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/development/contributing.html/"
+permalink: "/development/contributing/"
 title:  "Contributing"
 categories: contributing
 ---

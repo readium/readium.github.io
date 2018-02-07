@@ -3,7 +3,7 @@ layout: post
 title:  "Overview of Readium 2"
 date:   2017-03-23 11:36:00 +0100
 categories: overview
-permalink: /development/readium-2-overview.html/
+permalink: /development/readium-2-overview/
 ---
 
 The ultimate goal of the project is to develop a framework for interpreting and rendering EPUB digital publishing markup. This framework will consist of leveraging all the capabilities of the existing browser engines and supplementing those capabilities with separate modules (polyfills, if you will) that provide additional functionality. These additional modules are intended to be, insofar as possible, independent of one or another so that they can be used independently of the overall framework. At the same time, these polyfills will be designed so that they can be easily and seamlessly combined to produce complete reading systems.

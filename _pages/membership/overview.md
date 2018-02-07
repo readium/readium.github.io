@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/membership/overview.html/"
+permalink: "/membership/overview/"
 title: Membership Overview
 ---
 The Readium.org community is supported by organizations that join the Readium Foundation as members. Member organizations typically use Readium technologies to build solutions. You can participate in a Readium open source project or use Readium technologies without being a member, but membership is an important way to support the community.

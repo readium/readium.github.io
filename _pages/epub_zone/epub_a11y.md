@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/epub_zone/epub_a11y.html/"
+permalink: "/epub_zone/epub_a11y/"
 title: EPUB Acessibility - Resources and Guidance
 ---
 There is a range of guidance available for creating Accessible EPUB files - some high level and some more technical. Please contact us (sarah@idpf.org) if you would like to see additions or updates made to this list:

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/technical/website-org/"
+permalink: "/development/website-org/"
 title: Readium Website Organizaton
 excerpt: .
 ---
@@ -23,7 +23,7 @@ The content is in the file FAQ.md, written as markdown (actually Kramdown, diale
 In turn, `page.html` has two sections:
 
 - the "breadcrumbs" section which enables the breadcrumb-style navigation
-- the main container which provides some basic styling and a `{{content}}` include directive where the transformed markdown will be placed.
+- the main container which provides some basic styling and a `content` include directive where the transformed markdown will be placed.
 
 `page.html` in turn, indicates in its frontmatter that it should be placed into the default.html layout template.
 

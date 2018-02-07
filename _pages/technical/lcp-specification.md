@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Readium Licensed Content Protection Specification 1.0"
 date:   2016-11-25 10:00:00 +0100
 categories: specification

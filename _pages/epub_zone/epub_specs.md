@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/epub_zone/epub_specs.html/"
+permalink: "/epub_zone/epub_specs/"
 title: EPUB Specifications
 ---
 The following list is the complete list (as of mid-2017) of all the EPUB specifications.

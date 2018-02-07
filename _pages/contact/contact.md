@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: "/contact/contact.html/"
+permalink: "/contact/contact/"
 title: Contact Us
 ---
 For information about membership in the Readium Foundation or other Readium-related subjects, please contact 
