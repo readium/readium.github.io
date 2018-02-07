@@ -1,3 +1,11 @@
+---
+layout: post
+title:  R2 Navigator Design Dilemmas
+date:   2016-11-25 10:00:00 +0100
+categories: specifications
+permalink: /technical/r2-navigator-design-dilemmas/
+---
+
 # Navigator Design Dilemmas
 
 ## 1. Pagination

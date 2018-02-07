@@ -1,14 +1,8 @@
-
 ---
-layout: post
-title:  WebpPub Manifest
-date:   2016-11-25 10:00:00 +0100
-categories: specifications
+layout: page
+title: Readium Web Publication Manifest
 permalink: /technical/webpub-manifest/
 ---
-
-# Readium Web Publication Manifest
-
 ## Example
 
 ```json

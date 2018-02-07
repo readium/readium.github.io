@@ -1,99 +1,61 @@
 ---
-layout: page
-navtitle: Table Of Contents
-title: Readium 2
+layout: post
+title:  R2 Roadmap
+date:   2016-11-25 10:00:00 +0100
+categories: specifications
 permalink: /technical/r2-streamer-roadmap/
 ---
 
-# Search
+# Streamer Roadmap
 
-Keyword search is one of the most common features in reading apps, and one of the missing piece of Readium-1.
+This document is based on the current consensus between implementers of what the core set of features and priorities should be.
 
-The Readium-2 architecture has a lot of room for extensibility, for instance through the ability for the streamer to expose additional APIs. The search module is built with that principle in mind, and can easily be deployed either inside an app or as an external service on a server.
+## Feature Complete Requirements
 
-## URI Template
+* Opens either zipped or unzipped packages
+* Streams the contents via HTTP server
+  * [Readium Web Publication Manifest](https://github.com/readium/webpub-manifest)
+  * all resources in `spine`/`resources`
+* Can fully parse EPUB 2.x/3.x into the manifest/model
+  * full support for metadata
+  * clear distinction between `spine`/`resources`
+  * new expression of the `properties` attribute as a Properties Object
+  * support for both NCX and navigation documents
+* De-obfuscate fonts (both IDPF and Adobe algorithms)
+  * covers basic support for encrypted content (encryption.xml + new property)
 
-The search service is exposed in `links` in the Web Publication Manifest using a link object with:
+## Revision 1
 
-* its `rel` set to search
-* a URI template that contains `{searchTerms}`
-
-```
-"links": [
-  {
-    "href": "/search?q={searchTerms}",
-    "rel": "search",
-    "templated": true
-  }
-]
-```
-
-## Response Document
-
-### Search Context
-
-Most reading applications return a number of context elements in their UI for search, such as:
-
-* highlighted text that was matched by the search module
-* text before and after the match
-* position in the publication (page number or %)
-* name of the chapter/section where the match was found
-
-No matter what the response document format is, this module highly recommends including these information.
-
-### HTML
-
-A search module can return an HTML document as a response to a search query, but should make its best attempt to link back to resources that are part of the publication.
-
-### JSON
-
-> Syntax TBD, but the core idea is that we'll respond with locators. 
-> 
-> `numberOfItems`, `currentPage` and `itemsPerPage` are aligned with OPDS 2.0.
+* Media Overlays
+  * per publication
+  * per resource
+* Encrypted content
+  * access model for encrypted content
+  * support for LCP
+  * link to LCP license
+  * API to interact with license
+  * ability to defer parsing of table of contents and media overlays
+* Optimize HTTP usage
+  * cache strategy
+  * preloading/prerendering
+  * GZip support
 
 
-```
-{
-  "query": "Laurent",
-  "numberOfItems": 256,
-  "currentPage": 1,
-  "itemsPerPage": 10,
-  "results":
-  [
-    {
-       "href": "chapter1.html",
-       "text": {
-         "highlight": "Laurentides",
-         "before": "Lors de ses vacances dans les ",
-         "after": "il a décidé de réecrire Readium SDK",
-       }
-       "locations": {
-         "cfi": "...",
-         "position": 147,
-         "progression": 0.1267
-       }
-    }
-  ]
-}
-```
+## Revision 2
 
-## Handling Search
+* Search
+  * basic keyword search across the entire publication
+  * returns at least one or two locators
+* Synthetic Page List
+* Optimized support for decryption (range)
 
-Keyword search is potentially very complex and advanced implementations of a search module may have to deal with:
 
-* tokenizers
-* token & character filters
-* analyzers
-* stemming
-* stop words
+## TBD
 
-This search module does not require any specific implementation but recommends at least the following things:
-
-* support for the [Unicode Text Segmentation algorithm](http://unicode.org/reports/tr29/)
-* language specific features such as stemming and stop words should rely on the value of `language` element specified by the publication
-
-## Questions
-
-* Reading apps usually display search results asynchronously instead of waiting for the search to complete. Is this something that we'd like to cover in the search module?
-* Do we need support for anything more complex than keyword search?
-* Can we extend this design to a dictionary or index module?
+* Locator resolver
+* Dictionaries/Index
+* Multiple renditions
+* EDUPUB
+* Audiobooks
+* Comics
+* PDF
