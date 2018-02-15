@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/" class="active-trail">Home</a></li>
+      <li class="active">{{ page.title | escape }}</li>
+    </ol>
+  </div>
+</div>
+
+<div class="main-container container">
+  <div class="row">
+    <section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <h1>Readium Technical Notes</h1>
+      <ul class="post-list">
+        {% for post in site.categories.tech-notes %}
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+             
+            <p>{{ post.date | date: "%b %d, %Y" }}</p>   
+            <p>{{ post.excerpt }}</p>
+            <a href="{{ post.url }}">Read More...</a> 
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</div>
+
