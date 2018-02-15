@@ -1,90 +1,144 @@
 <header id="navbar" role="banner" class="navbar container navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="logo navbar-btn pull-left" href="{{ site.url }}">
-                <img src="/assets/logos/readium-logo.png" alt="Home" />
-            </a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse">
-            <nav role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="logo navbar-btn pull-left" href="index.html">
+        <img src="/assets/logos/readium-logo.png" alt="Home" />
+      </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <nav role="navigation">
+        
+        <ul class="menu nav navbar-nav">
 
-                <ul class="menu nav navbar-nav">
+          <li>
+            <a href="" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+                  
+            <ul class="dropdown-menu">
+              <li class="first leaf">
+               <a href="/about/project_goals.html">Project Goals</a>
+              </li>
+              <li class="leaf">
+                <a href="/about/applications.html">Applications Based on Readium</a>
+              </li>
+              <li class="leaf">
+                <a href="/about/faq.html">FAQ</a>
+              </li>
+              <li class="last leaf">
+                <a href="/about/history.html">A Bit of History</a>
+              </li>                
+            </ul>
+          </li>
 
-                    <li class="first expanded dropdown">
-                        <a data-target="#" class="dropdown-toggle" data-toggle="dropdown">
-                            About <span class="caret"></span>
-                        </a>
+          <li class="first leaf">
+            <a href="/news/news/">News</a>
+          </li>
+                            
+          <li>
+            <a href="#" title=""  class="dropdown-toggle" data-toggle="dropdown" >Development<span class="caret"></span></a>
+            
+            <ul class="dropdown-menu">                                
+              <li class="first leaf">
+                <a href="/development/readium-js-overview">Readium JS</a>                           
+              </li>                                   
+              <li class="leaf">
+                <a href="/development/readium-sdk-overview">Readium SDK</a>                           
+              </li>                                   
+              <li class="leaf">
+                <a href="/development/readium-2-overview">Readium 2</a>                           
+              </li>                                   
+              <li class="leaf">
+                <a href="/development/readium-lcp-overview">Readium LCP</a>                           
+              </li>                                   
+              <li class="leaf">
+                <a href="/development/releases">Releases</a>
+              </li>
+              <li class="leaf">
+                <a href="/development/contributing">Contributing</a>
+              </li>  
+              <li class="last leaf">
+                <a href="/development/website-org">Website Organization</a>
+              </li>  
+            </ul>      
+                     
+          </li>
 
-                        <ul class="dropdown-menu">
-                            <li class="first leaf">
-                                <a href="/readium-project/">The Readium Project</a>
-                            </li>
-                            <li class="leaf">
-                                <a href="/history/">A Bit Of History</a>
-                            </li>
-                            <li class="leaf">
-                                <a href="/releases/">Releases</a>
-                            </li>
-                            <li class="leaf">
-                                <a href="/Contributing/">Contributing</a>
-                            </li>
-                            <li class="last leaf">
-                                <a href="/applications/">Applications Based on Readium</a>
-                            </li>
-                        </ul>
-                    </li>
+          <li>
+            <a href="" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Technical Resources</a>
+            <ul class="dropdown-menu">
+              <li class="first leaf">
+                  <a href="/technical/r2-toc/">Readium 2</a>
+              </li>
+              <hr style="margin: 3px;">
+              <li class="leaf">
+                  <a href="/technical/readium-lcp-specifications-codebase/">Readium LCP Codebase</a>
+              </li>
+              <li class="leaf">
+                  <a href="/technical/readium-lcp-specification/">Readium LCP Specification</a>
+              </li>
+              <li class="leaf">
+                  <a href="/technical/readium-lsd-specification/">Readium LSD Specification</a>
+              </li>
+              <li class="leaf">
+                  <a href="/technical/webpub-manifest/">WebPub Manifest Specification</a>
+              </li>
+              <hr style="margin: 3px;">
+              <li class="last leaf">
+                  <a href="/technical/tech-notes/tech-notes/">Technical Notes</a>
+              </li>
+          </ul>
+        </li>
 
-                    <li class="expanded dropdown">
-                        <a data-target="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Projects Overviews <span class="caret"></span>
-                        </a>
+          <li>
+            <a href="#" title=""  class="dropdown-toggle" data-toggle="dropdown" >EPUB Zone<span class="caret"></span></a>
+            
+            <ul class="dropdown-menu">
+              <li class="first leaf">
+                <a href="/epub_zone/epub_specs/">EPUB Specifications</a>                           
+              </li>                                   
+              <li class="leaf">
+                <a href="/epub_zone/resources/">EPUB Resources</a>                           
+              </li>                                   
+              <li class="last leaf">
+                <a href="https://readium.firebaseapp.com/?" target="_blank">EPUB Samples Library</a>
+              </li>
+            </ul>      
+                     
+          </li>
 
-                        <ul class="dropdown-menu">
-                            <li class="first leaf">
-                                <a href="/readium-js-overview/">Readium JS</a>
-                            </li>
-                            <li class="leaf">
-                                <a href="/readium-sdk-overview/">Readium SDK</a>
-                            </li>
-                            <li class="leaf">
-                                <a href="/readium-2-overview/">Readium 2</a>
-                            </li>
-                            <li class="last leaf">
-                                <a href="/readium-lcp-overview/">Readium LCP</a>
-                            </li>
-                        </ul>
-                    </li>
+          <li>
+            <a href="#" title=""  class="dropdown-toggle" data-toggle="dropdown" >Membership<span class="caret"></span></a>
+            
+            <ul class="dropdown-menu">
+              <li class="first leaf">
+                <a href="/membership/overview/">Overview</a>                           
+              </li>                                   
+              <li class="leaf">
+                <a href="/membership/application/">Membership Application</a>
+              </li>  
+              <li class="leaf">
+                <a href="/membership/organization/">Organizational Documents</a>
+              </li>  
+              <li class="leaf">
+                <a href="/membership/join/">Join the Foundation</a>
+              </li>  
+              <li class="last leaf">
+                <a href="/membership/licensing/">About Licensing</a>
+              </li>  
+            </ul>      
+                     
+          </li>
 
-                    <li class="last expanded dropdown">
-                        <a data-target="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Technical Resources <span class="caret"></span>
-                        </a>
+        <li class="first leaf">
+          <a href="/contact/contact">Contact Us</a>
+        </li>
 
-                        <ul class="dropdown-menu">
-                            <li class="first leaf">
-                                <a href="/table-of-contents-readium-2/">Readium 2</a>
-                            </li>
-                            <hr style="margin: 3px;">
-                            <li class="leaf">
-                                <a href="/readium-lcp-specifications-codebase/">Readium LCP Codebase</a>
-                            </li>
-                            <li class="leaf">
-                                <a href="/readium-lcp-specification/">Readium LCP Spec. </a>
-                            </li>
-                            <li class="leaf">
-                                <a href="/readium-lsd-specification/">Readium LSD Spec.</a>
-                            </li>
-                            <li class="last leaf">
-                                <a href="/web-pub-manifest/">WebPub Manifest Spec.</a>
-                            </li>
-                        </ul>
-                    </li>
+                    
             </ul>
         </nav>
     </div>

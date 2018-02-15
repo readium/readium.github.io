@@ -1,7 +1,0 @@
-<map id="XML Engine" name="XML Engine">
-<area shape="rect" id="node4" href="$group__validation.xhtml" title="Content Validation" alt="" coords="147,5,277,33"/>
-<area shape="rect" id="node2" href="$group__parsing.xhtml" title="XML Parsers" alt="" coords="163,57,261,85"/>
-<area shape="rect" id="node3" href="$group__tree.xhtml" title="DOM Tree" alt="" coords="171,109,253,137"/>
-<area shape="rect" id="node6" href="$group__xml-utils.xhtml" title="Utilities" alt="" coords="180,161,244,189"/>
-<area shape="rect" id="node5" href="$group__xmlsec.xhtml" title="XML Security" alt="" coords="162,213,262,241"/>
-</map>

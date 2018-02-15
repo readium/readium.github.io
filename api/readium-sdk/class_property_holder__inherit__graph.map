@@ -1,6 +1,0 @@
-<map id="PropertyHolder" name="PropertyHolder">
-<area shape="rect" id="node2" href="$class_collection.xhtml" title="Collection" alt="" coords="4,83,83,111"/>
-<area shape="rect" id="node3" href="$class_manifest_item.xhtml" title="ManifestItem" alt="" coords="109,83,205,111"/>
-<area shape="rect" id="node4" href="$class_package.xhtml" title="Package" alt="" coords="230,83,303,111"/>
-<area shape="rect" id="node5" href="$class_spine_item.xhtml" title="SpineItem" alt="" coords="327,83,408,111"/>
-</map>

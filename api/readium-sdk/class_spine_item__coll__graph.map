@@ -1,8 +1,0 @@
-<map id="SpineItem" name="SpineItem">
-<area shape="rect" id="node2" href="$class_pointer_type.xhtml" title="PointerType\&lt; SpineItem \&gt;" alt="" coords="318,13,493,41"/>
-<area shape="rect" id="node4" href="$class_owned_by.xhtml" title="OwnedBy\&lt; Package \&gt;" alt="" coords="328,65,482,93"/>
-<area shape="rect" id="node5" href="$class_property_holder.xhtml" title="PropertyHolder" alt="" coords="350,117,461,145"/>
-<area shape="rect" id="node6" href="$class_x_m_l_identifiable.xhtml" title="XMLIdentifiable" alt="" coords="349,169,462,197"/>
-<area shape="rect" id="node8" href="$classstring.xhtml" title="string" alt="" coords="62,319,116,347"/>
-<area shape="rect" id="node10" href="$class_i_r_i.xhtml" title="IRI" alt="" coords="386,354,425,382"/>
-</map>

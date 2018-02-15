@@ -7995,7 +7995,7 @@ img, media {
 
 /* line 1, ../sass/components/_breadcrumbs.scss */
 .breadcrumbs {
-  background: #444 url(/sites/default/files/images/heros/ny-library-room-hero-bg.jpg) center 25% no-repeat;
+  background: #444 url(/assets/images/ny-library-room-hero-bg.jpg) center 25% no-repeat;
   background-size: cover; }
   /* line 4, ../sass/components/_breadcrumbs.scss */
   .breadcrumbs .breadcrumb {
@@ -8087,7 +8087,7 @@ img, media {
 
 /* line 3, ../sass/components/_hero.scss */
 .region-hero {
-  background: #444 url(/sites/default/files/images/heros/ny-library-room-hero-bg.jpg) center 25% no-repeat;
+  background: #444 url(/assets/images/ny-library-room-hero-bg.jpg) center 10% no-repeat;
   background-size: cover; }
 
 /* line 7, ../sass/components/_hero.scss */
@@ -8111,7 +8111,7 @@ img, media {
 
 /* line 22, ../sass/components/_hero.scss */
 .hero-text-element {
-  font-family: LatoLight;
+  font-family: Lato;
   color: #fff;
   font-weight: normal;
   text-align: center; }
@@ -8355,5 +8355,10 @@ b {
  }
 
 .information > strong {
-    color: brown; }
+    color: brown; 
+	}
+	
+.block-views {
+	margin-left:10%;
+	margin-right:10%;
 }

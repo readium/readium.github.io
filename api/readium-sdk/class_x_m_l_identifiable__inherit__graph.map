@@ -1,7 +1,0 @@
-<map id="XMLIdentifiable" name="XMLIdentifiable">
-<area shape="rect" id="node2" href="$class_collection.xhtml" title="Collection" alt="" coords="4,83,83,111"/>
-<area shape="rect" id="node3" href="$class_manifest_item.xhtml" title="ManifestItem" alt="" coords="109,83,205,111"/>
-<area shape="rect" id="node4" href="$class_property.xhtml" title="Property" alt="" coords="231,83,301,111"/>
-<area shape="rect" id="node5" href="$class_property_extension.xhtml" title="An extension to an existing property, providing additional related metadata." alt="" coords="327,83,456,111"/>
-<area shape="rect" id="node6" href="$class_spine_item.xhtml" title="SpineItem" alt="" coords="481,83,561,111"/>
-</map>

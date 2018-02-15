@@ -1,7 +1,0 @@
-<map id="NavigationTable" name="NavigationTable">
-<area shape="rect" id="node2" href="$class_navigation_element.xhtml" title="NavigationElement" alt="" coords="591,17,724,45"/>
-<area shape="rect" id="node3" href="$classshared__vector.xhtml" title="shared_vector\&lt; Navigation\lElement \&gt;" alt="" coords="254,5,434,49"/>
-<area shape="rect" id="node5" href="$class_pointer_type.xhtml" title="PointerType\&lt; NavigationTable \&gt;" alt="" coords="552,77,763,105"/>
-<area shape="rect" id="node7" href="$class_owned_by.xhtml" title="OwnedBy\&lt; Package \&gt;" alt="" coords="580,129,734,157"/>
-<area shape="rect" id="node8" href="$classstring.xhtml" title="string" alt="" coords="630,221,684,249"/>
-</map>
