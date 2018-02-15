@@ -12,7 +12,7 @@ The following is a list of organizations and/or products based on Readium techno
 
 #### Bluefire
 
-<http://www.bluefirereader.com/ios-and-android-apps.html>
+<http://www.bluefirereader.com/cloudshelf-reader.html>
 
 #### Tea-Book
 
