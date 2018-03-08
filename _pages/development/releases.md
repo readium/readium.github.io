@@ -7,26 +7,47 @@ permalink: "/development/releases/"
 ---
 
 ## Current Plan for the Next Release
-### Readium 0.30
+### Readium 0.31
 
-This release is targeted for February 2018.
+This release is targeted for April-May 2018.
 
 The primary features will be:
 
-- Update the SDK Licenses to be BSD 3-clause
-- Fix for the event handling in continuous scroll mode that interferes with proper functioning of the Hypothes.is plugin
-- Some additional fixes for the Hypothes.is support
-- Fixes for some media-overlay bugs on Android
-- Other features or bug fixes as feasible in the targeted time frame
+- New TypeScript-based wrappers for readium-shared-js 
+
+- A number of significant changes to the buid processes to suport the new shared-js wrappers
 
 ## Recent Releases
 
+### Readium 0.30
+The Readium development community is pleased to announce the release of 0.30. This release was pushed to master and the Chrome store on 8 March 2018.
+
+This release is primarily some minor updates:
+
+- A regression bug was fixed that caused the reader’s place in the book to be not restored properly when the book was re-opened.
+- The licenses in the SDK have been changed from GNU-Affero to BSD-3-Clause
+- Additional fixes and improvements to the Hypothes.is support in the Readium CloudReader
+- Updating the Android support in the SDK to the latest releases for Android tooling and the NDK
+- A number of minor bug fixes across the various modules (please see detailed release notes here)
+
+The tag for this release is 0.29 on GitHub. 
+
+####  Improvements and Enhancements in this Release
+##### Readium SDK
+There are  only real change to the SDK is the change in the licensing from GNU Affero to BSD 3-clause.  The Android tools have also been upgraded to the latest release.
+
+##### Cloud Reader/Chrome App
+The primary fix in this release is the correct restoring of the user’s place in the book between sessions.  This was a regression introduced in release 0.29.  There were several minor updates and fixes to the Hypothes.is support. 
+In addition, MathJax now has AssistiveMML enabled and this has been integrated into the Readium codebases (both ReadiumJS and SDK). See a MathJax note about Assistive MML here  and legacy accessibility support here.
+
 ### Readium 0.29
 The Readium development community is pleased to announce the release of 0.29. This release was pushed to master and the Chrome store on 22 December 2017.
+
 This release is primarily some minor updates:
-Additional fixes and improvements to the Hypothes.is support in the Readium CloudReader
-Updating the Android support in the SDK to the latest releases for Android tooling and the NDK
-A number of minor bug fixes across the various modules (please see detailed release notes here)
+
+- Additional fixes and improvements to the Hypothes.is support in the Readium CloudReader
+- Updating the Android support in the SDK to the latest releases for Android tooling and the NDK
+- A number of minor bug fixes across the various modules (please see detailed release notes here)
 The tag for this release is 0.29 on GitHub. 
 
 #### Improvements and Enhancements in this Release
