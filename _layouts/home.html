@@ -1,39 +1,84 @@
 ---
 layout: default
-permalink: /layout-home/
+permalink: /index/
 ---
 <div class="breadcrumbs">
   <div class="container">
     <ol class="breadcrumb">
-      <li class="active"><a href="{{ site.url }}">Home</a></li>
+
+      <li><a href="index.html">Home</a></li>
+      <li class="active">{{ page.title | escape }}</li>
+
     </ol>
   </div>
 </div>
 
-<div class="main-container container">
-  <div class="row">
-    <section class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-      <h1>{{ page.title | escape }}</h1>
-
-      <article>
-
-        {{ content }}
-
-      </article>
-
-      <hr>
-      <h2>Latest Posts</h2>
-      <ul class="post-list">
-        {% for post in site.posts limit:5 %}
-          <li>
-            <h4>
-              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h4>
-          </li>
-        {% endfor %}
-      </ul>
-      {% include ad-footer.html %}
+<div class="main-container-wrapper">
+    <div class="region region-hero">
+      <section id="block-block-16" class="block block-block clearfix">
+      
+      <div class="container">
+        <div class="hero-text col-sm-5">
+          <h1 class="hero-text-element hero-heading">Open Source Technology for EPUB 3 and the Open Web Platform</h1>
+          <p class="hero-text-element hero-description">The Readium Foundation is an Open Source Foundation collaboratively developing technology to accelerate the adoption of EPUB 3 and the Open Web Platform by the Digital Publishing Industry.</p>
+        </div>
+        <div class="hero-actions col-sm-7">
+          <div class="hero-action hero-install-readium"><a class="btn btn-primary" href="https://chrome.google.com/webstore/detail/readium/fepbnnnkkadjhjahcafoaglimekefifl" target="_blank">Install Readium</a>
+            <div class="hero-action-description">For Google Chrome</div>
+            </div>
+            <div class="hero-action hero-participate"><a class="btn btn-primary" href="development/contributing.html">Participate</a>
+            </div>
+        </div>
+      </div>
     </section>
   </div>
 
+<div class="main-container container">
+  <div class="row">
+    <section class="col-sm-12">
+      <div class="region region-content">      
+        <section id="block-views-news-front-news" class="block block-views clearfix" >
+          <br/>
+	        <h2 class="block-title">Readium News</h2>
+    
+          <div class="view view-news view-id-news view-display-id-front_news front-news row view-dom-id-350c0aedcbfc89162529455538e47e53" >
+  	        <div class="view-content">
+
+              {% for post in site.categories.news %}
+                  <div class={% if forloop.index == 0 %}
+                      "views-row views-row-1 views-row-odd views-row-first col-sm-6 col-md-3"
+                      {% else if forloop.index == 1 %}
+                      "views-row views-row-2 views-row-even col-sm-6 col-md-3"
+                      {% else if forloop.index == 2  %}
+                      "views-row views-row-3 views-row-odd col-sm-6 col-md-3"
+                      {% else %}
+                      "views-row views-row-4 views-row-even col-sm-6 col-md-3"
+                      {% endif %}>
+
+              <h3>{{post.title}}</h3>
+              <p>{{ post.date | date: "%b %d, %Y" }}</p>   
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ post.url }}">Read More...</a> 
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
 </div>
+
+    </div>
+  </div>
+
+  <div class="view-footer">
+    <div style="text-align: center">
+      <a  class="btn btn-default" href="news/news.html">More Readium Updates</a> 
+    </div>   
+  </div>
+  </div>
+</div>
+
+</section>
+

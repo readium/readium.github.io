@@ -6,6 +6,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="/images/favicon.png" />
   <link rel="stylesheet" type="text/css" href="/css/system.base.css"/>
   <link rel="stylesheet" type="text/css" href="/css/date.css"/>
@@ -16,6 +17,19 @@
   <link rel="stylesheet" type="text/css" href="/css/ctools.css"/>
   <link rel="stylesheet" type="text/css" href="/css/fonts.css"/>
   <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+  
+  <style>
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+</style>
+
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

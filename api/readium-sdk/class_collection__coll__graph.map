@@ -1,7 +1,0 @@
-<map id="Collection" name="Collection">
-<area shape="rect" id="node2" href="$class_pointer_type.xhtml" title="PointerType\&lt; Collection \&gt;" alt="" coords="222,13,396,41"/>
-<area shape="rect" id="node4" href="$class_owned_by.xhtml" title="OwnedBy\&lt; Package \&gt;" alt="" coords="232,65,386,93"/>
-<area shape="rect" id="node5" href="$class_x_m_l_identifiable.xhtml" title="XMLIdentifiable" alt="" coords="253,117,366,145"/>
-<area shape="rect" id="node6" href="$class_property_holder.xhtml" title="PropertyHolder" alt="" coords="254,169,365,197"/>
-<area shape="rect" id="node7" href="$classbasic__string__view.xhtml" title="basic_string_view\&lt;\l _CharT, _Traits \&gt;" alt="" coords="242,225,377,269"/>
-</map>

@@ -8,3 +8,4 @@ Open Source Technology for EPUB 3 and the Open Web Platform.
 
 The Readium Foundation is an Open Source Foundation collaboratively developing technology 
 to accelerate the adoption of EPUB 3 and the Open Web Platform by the Digital Publishing Industry.
+

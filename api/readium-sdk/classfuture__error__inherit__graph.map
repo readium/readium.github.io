@@ -1,9 +1,0 @@
-<map id="future_error" name="future_error">
-<area shape="rect" id="node3" href="$classbroken__promise.xhtml" title="broken_promise" alt="" coords="331,5,448,33"/>
-<area shape="rect" id="node4" href="$classfuture__already__retrieved.xhtml" title="future_already_retrieved" alt="" coords="306,57,472,85"/>
-<area shape="rect" id="node5" href="$classfuture__uninitialized.xhtml" title="future_uninitialized" alt="" coords="323,109,456,137"/>
-<area shape="rect" id="node6" href="$classpromise__already__satisfied.xhtml" title="promise_already_satisfied" alt="" coords="301,161,477,189"/>
-<area shape="rect" id="node7" href="$classpromise__moved.xhtml" title="promise_moved" alt="" coords="331,213,447,241"/>
-<area shape="rect" id="node8" href="$classtask__already__started.xhtml" title="task_already_started" alt="" coords="317,265,462,293"/>
-<area shape="rect" id="node9" href="$classtask__moved.xhtml" title="task_moved" alt="" coords="343,317,436,345"/>
-</map>

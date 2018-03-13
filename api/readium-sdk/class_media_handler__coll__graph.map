@@ -1,7 +1,0 @@
-<map id="MediaHandler" name="MediaHandler">
-<area shape="rect" id="node2" href="$class_content_handler.xhtml" title="ContentHandler" alt="" coords="269,211,384,239"/>
-<area shape="rect" id="node3" href="$class_pointer_type.xhtml" title="PointerType\&lt; ContentHandler \&gt;" alt="" coords="5,102,213,130"/>
-<area shape="rect" id="node5" href="$class_owned_by.xhtml" title="OwnedBy\&lt; Package \&gt;" alt="" coords="238,102,391,130"/>
-<area shape="rect" id="node6" href="$classstring.xhtml" title="string" alt="" coords="426,102,480,130"/>
-<area shape="rect" id="node7" href="$class_i_r_i.xhtml" title="IRI" alt="" coords="433,211,471,239"/>
-</map>
