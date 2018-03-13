@@ -12,9 +12,9 @@ Readium LCP (“Licensed Content Protection”) establishes a vendor-neutral int
 
 The specifications of the Readium LCP DRM are now public:
 
-[Readium Licensed Content Protection (LCP) 1.0](/readium-lcp-specification/) defines a standard license format for expressing rights and restrictions associated with protected EPUB 3 Publications. It also defines a processing model for Reading Systems to verify user specific licenses and access encrypted resources.
+[Readium Licensed Content Protection (LCP) 1.0](/technical/readium-lcp-specification/) defines a standard license format for expressing rights and restrictions associated with protected EPUB 3 Publications. It also defines a processing model for Reading Systems to verify user specific licenses and access encrypted resources.
 
-[Readium License Status Document 1.0](/readium-lsd-specification/) defines a standard status document format for representing the status of a DRM license along with interactions that might affect its status. One of the primary objectives of this specification is to support lending in public libraries where a user may have the ability to renew a time-limited loan or cancel one before it expires.
+[Readium License Status Document 1.0](/technical/readium-lsd-specification/) defines a standard status document format for representing the status of a DRM license along with interactions that might affect its status. One of the primary objectives of this specification is to support lending in public libraries where a user may have the ability to renew a time-limited loan or cancel one before it expires.
 
 ## Open-source software
 
