@@ -62,7 +62,12 @@ The diagram below illustrates a high-level view of an LCP-enabled workflow.
 
 ## Useful links
 
+The [LCP specification](/technical/readium-lcp-specification/) itself.
+
+Information about the [LCP Licenses Specification](/technical/readium-lsd-specification/)
+
 If you want to know more about Readium LCP, or if you want to implement a Readium LCP compliant service,
 please read [Readium LCP Specs and Codebase](/lcp-specs-codebase/).
 
-You will also find detailed information about the Readium LCP ecossytem on the [EDRLab website](https://edrlab.org/edrlab/readium-lcp-principles/).
+You will also find detailed information about the Readium LCP ecosystem on the [EDRLab website](https://edrlab.org/edrlab/readium-lcp-principles/).
+
