@@ -72,7 +72,7 @@ Document that contains information about the history of a License Document, alon
       "links": [
         {"rel": "license",
          "href": "https://example.org/license/35d9b2d6",
-         "type": "application/vnd.readium.lcp.license-1.0+json"},
+         "type": "application/vnd.readium.lcp.license.v1.0+json"},
         {"rel": "register",
          "href": "https://example.org/license/35d9b2d6/register{?id,name}",
          "type": "application/vnd.readium.license.status.v1.0+json",
