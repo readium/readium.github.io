@@ -28,9 +28,9 @@ This release is primarily some minor updates:
 - The licenses in the SDK have been changed from GNU-Affero to BSD-3-Clause
 - Additional fixes and improvements to the Hypothes.is support in the Readium CloudReader
 - Updating the Android support in the SDK to the latest releases for Android tooling and the NDK
-- A number of minor bug fixes across the various modules (please see detailed release notes here)
+- A number of minor bug fixes across the various modules (please see detailed release notes [here](https://docs.google.com/document/d/11yETD9-VR80UMiXRPd-x7T-87SBQYbh0OGSSI5S7-Eg/edit)
 
-The tag for this release is 0.29 on GitHub. 
+The tag for this release is 0.30 on GitHub. 
 
 ####  Improvements and Enhancements in this Release
 ##### Readium SDK
