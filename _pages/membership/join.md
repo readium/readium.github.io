@@ -3,6 +3,12 @@ layout: page
 permalink: "/membership/join/"
 title: Joining the Readium Foundation
 ---
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black; padding:10px;
+        }
+</style>
+
 Thank you for your interest in joining the Readium Foundation! Readium Foundation is a non-profit membership association, open to all. Your dues support the mission of the Foundation to develop commercial-grade open source software that advances an open interoperable ecosystem for the creation and distribution of digital content in order to foster innovation, accessibility, and a global sharing of knowledge. Members are also entitled to participate in the governance of the Foundation, including electing the Board of Directors and approving matters put to votes of the membership. 
 
 Member dues are calculated by the revenue of our member companies. First year dues are payable at time of application. Subsequent annual dues will be billed on a rolling annual basis on the month that you joined the organization. Payment can be made online by credit card, by check, or by bank transfer.
@@ -18,6 +24,8 @@ The dues structure is as follows:
 | Company  | Between $250 million and $2 billion | $2750 per year |
 | Company  | Over $2 billion | $4500 per year |
 | Non-profit Organizations  |  | $750 per year |
+{: .tablelines}
+<br/>
 
 To join the Readium Foundation, please fill out the membership application here.  If you have questions, please contact us at 206-451-7250 or via [email](emailto:bmccoy@readium.org).
 
