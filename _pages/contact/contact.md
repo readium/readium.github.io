@@ -18,6 +18,6 @@ For information about EDRLab or Readium-Europe, including LCP,  please contact:
 For information on the EPUB standard and the W3C DPUB Working Group, please contact
 
 [Micah Bowers](mailto:mbowers@bluefirereader.com?subject=Readium Enquiry)  
-  CEO Bluefire  
-  Seattle, WA
+  Secretary  
+  Readium Foundation Board
     
