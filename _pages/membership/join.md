@@ -24,10 +24,9 @@ The dues structure is as follows:
 | Company  | Between $250 million and $2 billion | $2750 per year |
 | Company  | Over $2 billion | $4500 per year |
 | Non-profit Organizations  |  | $750 per year |
-{: .tablelines}
-<br/>
 
-To join the Readium Foundation, please fill out the membership application here.  If you have questions, please contact us at 206-451-7250 or via [email](emailto:bmccoy@readium.org).
+
+To join the Readium Foundation, please fill out the membership application here.  If you have questions, please contact us at via [email](emailto:rkwright@readium.org).
 
 ---
 

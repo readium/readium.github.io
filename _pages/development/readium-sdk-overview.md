@@ -9,8 +9,9 @@ permalink: /development/readium-sdk-overview/
 Readium SDK consists of three major parts:
 
 - readium-sdk
-- Readium-shared-js
+- readium-shared-js
 - SDKLauncher-*
+
 The diagram below illustrates the high-level relationship of the parts of the architecture.
 
 ![readium-sdk](/assets/images/readium-sdk.png)

@@ -136,8 +136,8 @@ A number of Readium-2 modules are also plugins themselves, and should rely on th
 
 The current list includes:
 
-* [Media Overlay](../media-overlay)
-* [Search](../search)
+* [Media Overlay](/technical/r2-media-overlays-syntax)
+* [Search](/technical/r2-search-architecture)
 
 ## Security
 
