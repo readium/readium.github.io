@@ -12,9 +12,9 @@ An important note to bear in mind is that YOU are the Readium team. Readium has 
 
 ## Contributing as a developers
 
-The [Readium Projects index](/) contains links to the Github repositories wher you'll find the Readium open-source codebase.
+The Navigation bar contains a Development entry that leads to an overviw of each project, with links to the Github repositories where you'll find the Readium open-source codebase.
 
-Before contributing to the different projects with your Pull Requests, make sure you've signed and sent the [Readium ICLA]("/documents/Individual Contributor License Agreement.pdf") (for Individual Contributor License Agreement).
+Before contributing to the different projects with your Pull Requests, make sure you've signed and sent the [Readium ICLA](/documents/Individual Contributor License Agreement.pdf) (for Individual Contributor License Agreement).
 
 ## Project Communication
 
