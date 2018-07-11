@@ -4,7 +4,7 @@ permalink: "/membership/join/"
 title: Joining the Readium Foundation
 ---
 <style>
-.tablelines table, .tablelines td, .tablelines th {
+table, td, th {
         border: 1px solid black; padding:10px;
         }
 </style>
@@ -25,8 +25,9 @@ The dues structure is as follows:
 | Company  | Over $2 billion | $4500 per year |
 | Non-profit Organizations  |  | $750 per year |
 
+<br/>
 
-To join the Readium Foundation, please fill out the membership application here.  If you have questions, please contact us at via [email](emailto:rkwright@readium.org).
+If you wish to join the Readium Foundation or if you have questions, please contact us via [email](emailto:rkwright@readium.org).
 
 ---
 
