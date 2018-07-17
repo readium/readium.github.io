@@ -3,14 +3,14 @@ layout: page
 title:  "Readium LCP Specs and Codebase"
 date:   2016-11-15 11:30:00 +0100
 categories: specifications
-permalink: /technical/readium-lcp-specifications-codebase/
+permalink: /technical/readium-lcp-specs-codebase/
 ---
 
-Readium LCP (“Licensed Content Protection”) establishes a vendor-neutral interoperable DRM (Digital Rights Management) ecosystem for eBooks and other digital publications, with public specifications and open-source software. 
+Readium LCP (“Licensed Content Protection”) establishes a vendor-neutral interoperable DRM (Digital Rights Management) ecosystem for eBooks and other digital publications, with public specification and open-source software. 
 
 ## Published documents
 
-The specifications of the Readium LCP DRM are now public:
+The specifications of the Readium LCP DRM are public:
 
 [Readium Licensed Content Protection (LCP) 1.0](/technical/readium-lcp-specification/) defines a standard license format for expressing rights and restrictions associated with protected EPUB 3 Publications. It also defines a processing model for Reading Systems to verify user specific licenses and access encrypted resources.
 
