@@ -14,4 +14,4 @@ Upon submission, the primary representative will receive an email acknowledgemen
 
 If you have any questions, please contact our Director of Engineering, Ric Wright via email or Skype.
 
-<!-- iframe src="https://docs.google.com/forms/d/e/1FAIpQLScailYPbPU0o1bWBz8tCHoJVLrEHj4tBwIZ9i5Y8ObQYnVPUw/viewform?embedded=true" width="500" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe -->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScailYPbPU0o1bWBz8tCHoJVLrEHj4tBwIZ9i5Y8ObQYnVPUw/viewform?embedded=true" width="500" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
