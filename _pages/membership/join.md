@@ -20,14 +20,14 @@ The dues structure is as follows:
 |:-------------:|:-------------:|:------------:|
 | Startup Company or Individual  | Under $1 million (*) |  $750 per year Company |
 | Company  | Under $5 million | $1200 per year |
-| Company  | Between $5 million and $250 million | $180 per year |
+| Company  | Between $5 million and $250 million | $1800 per year |
 | Company  | Between $250 million and $2 billion | $2750 per year |
 | Company  | Over $2 billion | $4500 per year |
 | Non-profit Organizations  |  | $750 per year |
 
 <br/>
 
-If you wish to join the Readium Foundation or if you have questions, please contact us via [email](emailto:rkwright@readium.org).
+If you wish to join the Readium Foundation or if you have questions, please contact us via [email](mailto:rkwright@readium.org).
 
 
 ---
