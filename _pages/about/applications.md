@@ -118,11 +118,10 @@ CARE Readium LCP
     - <http://blog.xercode.es/presentacion-de-leo-la-plataforma-de-prestamo-digital-de-la-universidad-de-murcia-con-la-tecnologia-xebook/>
     - <http://www.um.es/web/biblioteca/contenido/servicios/prestamo-digital>
 
-#### Texidium (Gregory Muirhead, Kivuto)
+#### Texidium (Kivuto Solutions)
 
-- <http://texidium.com/>
 - Cross-platform eReader: Web, Windows, macOS, iOS, Android
-    - <https://reader.texidium.com/>
+    - <https://texidium.com/>
 
 #### Helicon Books Reader
 
