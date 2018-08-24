@@ -121,7 +121,7 @@ CARE Readium LCP
 #### Texidium (Gregory Muirhead, Kivuto)
 
 - <http://texidium.com/>
-- Android, iOS, Windows, CloudReader
+- Cross-platform eReader: Web, Windows, macOS, iOS, Android
     - <https://reader.texidium.com/>
 
 #### Helicon Books Reader
