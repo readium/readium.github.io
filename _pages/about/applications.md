@@ -121,7 +121,7 @@ CARE Readium LCP
 #### Texidium (Kivuto Solutions)
 
 - Cross-platform eReader: Web, Windows, macOS, iOS, Android
-    - <https://texidium.com/>
+    - <http://texidium.com/>
 
 #### Helicon Books Reader
 
