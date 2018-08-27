@@ -27,7 +27,7 @@ The dues structure is as follows:
 
 <br/>
 
-If you wish to join the Readium Foundation or if you have questions, please contact us via [email](mailto:rkwright@readium.org).
+If you wish to join the Readium Foundation or if you have questions, please navigate to the [membership application page](/membership/application).
 
 
 ---
