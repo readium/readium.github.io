@@ -23,10 +23,12 @@ permalink: /index/
           <p class="hero-text-element hero-description">The Readium Foundation is an Open Source Foundation collaboratively developing technology to accelerate the adoption of EPUB 3 and the Open Web Platform by the Digital Publishing Industry.</p>
         </div>
         <div class="hero-actions col-sm-7">
-          <div class="hero-action hero-install-readium"><a class="btn btn-primary" href="https://chrome.google.com/webstore/detail/readium/fepbnnnkkadjhjahcafoaglimekefifl" target="_blank">Install Readium</a>
+          <!-- div class="hero-action hero-install-readium">
+            <a class="btn btn-primary" href="https://chrome.google.com/webstore/detail/readium/fepbnnnkkadjhjahcafoaglimekefifl" target="_blank">Install Readium</a>
             <div class="hero-action-description">For Google Chrome</div>
-            </div>
-            <div class="hero-action hero-participate"><a class="btn btn-primary" href="development/contributing/index.html">Participate</a>
+            </div -->
+            <div class="hero-action hero-participate">
+              <a class="btn btn-primary" href="development/contributing/index.html">How To Participate!</a>
             </div>
         </div>
       </div>
@@ -44,7 +46,7 @@ permalink: /index/
           <div class="view view-news view-id-news view-display-id-front_news front-news row view-dom-id-350c0aedcbfc89162529455538e47e53" >
   	        <div class="view-content">
 
-              {% for post in site.categories.news %}
+              {% for post in site.categories.news limit:4 %}
                   <div class={% if forloop.index == 0 %}
                       "views-row views-row-1 views-row-odd views-row-first col-sm-6 col-md-3"
                       {% else if forloop.index == 1 %}

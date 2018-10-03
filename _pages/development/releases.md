@@ -7,17 +7,31 @@ permalink: "/development/releases/"
 ---
 
 ## Current Plan for the Next Release
-### Readium 0.31
+Readium-1 (the original development projects for Readium, started in 2012) as now in maintenance mode.  As a result, there are no plans at this time for a 0.32 release.  However, if serious bugs (e.g. crash or data loss) are found then we may consider  a new release.
 
-This release is targeted for April-May 2018.
-
-The primary features will be:
-
-- New TypeScript-based wrappers for readium-shared-js 
-
-- A number of significant changes to the buid processes to suport the new shared-js wrappers
+Development efforts are now focused on "Readium-2", which is now the mainstram development area for Readium.  For more information, please see further documentation [here](https://github.com/readium/architecture) and/or contact [Ric Wright](mailto:rkwright@readium.org) 
 
 ## Recent Releases
+
+### Readium 0.31
+
+This release of Readium SDK and ReadiumJS (Chrome Application and Cloud Reader) comprises the final release of the Chrome Application and a number of changes to the ReadiumJS stack as part of the work transitioning to “Readium Web”. 
+
+Of significant importance are the following points:
+
+- This will be the final release of the Readium Chrome application.  Google has warned that the Chrome framework (on which the app is based) is deprecated and will be disabled sometime in 2018.  In addition, Google’s changes to their security rules (e.g. no inline scripts) has already partially crippled the application.  Therefore we have made the decision to cease supporting and releasing the app. The final change to the app is that it puts up a modal dialog every time the library view is refreshed.  The dialog states that the app is being deprecated and will be taken down before the end of 2018.
+- The Readium CloudReader will continue to be supported and bad bugs (i.e. crash and/or data loss) fixed, but no new features are planned.
+- The Readium SDK and the CloudReader (i.e. the ReadiumJS stack) will officially be put into maintenance mode.  We will of course fix bad bugs (i.e. crash and/or data loss) but there is no plan to develop new features.
+
+#### Improvements and Enhancements in this Release
+##### Readium SDK
+There are no significant changes to the SDK in this release.
+##### Cloud Reader/Chrome App
+The only real change to the Chrome Application in this release is the addition of the modal dialog which pops up every time the user refreshes the library view.  The dialog states:
+ “As Google has deprecated Chrome apps, this app is longer actively supported, and will no longer be 
+updated after the 0.31, October 01, 2018 release.  A list of other apps that are powered by Readium
+ can be found at [Readium.org]( https://readium.org/about/applications.html/)"
+There are no significant external changes to the CloudReader per se in this release, but there are a fair number of restructuring and refactoring changes as part of the migration to the new architecture.
 
 ### Readium 0.30
 The Readium development community is pleased to announce the release of 0.30. This release was pushed to master and the Chrome store on 8 March 2018.
