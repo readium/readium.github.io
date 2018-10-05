@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: "/development/projects"
 title: Projects
 ---
 
