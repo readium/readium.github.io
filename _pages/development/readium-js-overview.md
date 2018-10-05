@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Overview of Readium JS"
+title:  "Readium JS"
 date:   2016-11-08 13:30:00 +0100
 categories: overview
 permalink: /development/readium-js-overview/
 ---
+
+## Overview
 
 Readium JS comprises two sub-projects, Readium Chrome Application and the Readium CloudReader. Both consist of three major pieces:
 
@@ -15,7 +17,7 @@ Readium JS comprises two sub-projects, Readium Chrome Application and the Readiu
 The Chrome Application and the CloudReader share approximately 95% of their code, the primary difference is where their EPUB "library" is located and how they fetch EPUB resources. The diagram below illustrates the major aspects of their architectures.
 
 
-![readium-js](/assets/images/readium-js.png)
+![readium-js](../../assets/images/readium-js.png)
 
 
 ### Readium Chrome Application (RCA)
@@ -35,3 +37,7 @@ The CloudReader is currently validated against the latest version of all major b
 - Chrome (iOS, OSX, Windows, Android).
 
 Again, the CloudReader may (and usually does) run properly on other browser/platform combinations, but Readium does not validate against them.
+
+## Releases
+
+[View the release notes for Readium SDK and JS](releases.md).

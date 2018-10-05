@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Overview of Readium SDK"
+title:  "Readium SDK"
 date:   2016-12-28 11:30:00 +0100
 categories: overview
 permalink: /development/readium-sdk-overview/
 ---
+
+## Overview
 
 Readium SDK consists of three major parts:
 
@@ -14,7 +16,7 @@ Readium SDK consists of three major parts:
 
 The diagram below illustrates the high-level relationship of the parts of the architecture.
 
-![readium-sdk](/assets/images/readium-sdk.png)
+![readium-sdk](../../assets/images/readium-sdk.png)
 
 ### readium-sdk
 
@@ -40,3 +42,7 @@ The platforms supported by Readium SDK (as of summer 2015) are
 - OSX 10.7 and above
 
 Of course, developers are welcome to tackle porting to and integration with other platforms, but the above are the only platforms against which the Readium SDK is validated and for which Launchers exist.
+
+## Releases
+
+[View the release notes for Readium SDK and JS](releases.md).
