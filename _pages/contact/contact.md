@@ -11,8 +11,9 @@ For information about membership in the Readium Foundation or other Readium-rela
 
 ---
 
-For information about EDRLab or Readium-Europe, including LCP,  please contact:
+For information about EDRLab or Readium Europe, including LCP,  please contact:
 
 [Laurent Le Meur](mailto:laurent.lemeur@edrlab.org?subject=Readium Enquiry)  
-  CTO EDRLab  
-  Paris, France    
+  Chief Technical Officer  
+  EDRLab
+  

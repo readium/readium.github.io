@@ -11,7 +11,7 @@ title: Readium FAQ
 
 There are **many** ways to help the Readium projects. You don’t have to be a developer or publishing guru.  
 
-If you have these skills and want to help, you are of course very welcome!  But we also have great needs for testers, documentation, translators and many other areas.  If you want to help please [contact us](../contact/contact) and [visit the following page](../development/contributing/).
+If you have these skills and want to help, you are of course very welcome!  But we also have great needs for testers, documentation, translators and many other areas.  If you want to help please [contact us](/contact/contact) and [visit the following page](/development/contributing/).
 
  
 
@@ -83,7 +83,7 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 
 Yes, it does but the SDK is DRM-agnostic. This means the SDK has been developed so it can be used with many different kinds of DRM-encrypted books or no DRM at all.  No DRM at all is the default.  
 
-Readium of course supports [Readium LCP]([LCP FAQ published by EDRLab](https://www.edrlab.org/readium/readium-lcp/faq/)). For other DRMs, the support must be added by the vendor and is specific to their particular application,
+Readium of course supports [Readium LCP published by EDRLab](https://www.edrlab.org/readium/readium-lcp/faq/). For other DRMs, the support must be added by the vendor and is specific to their particular application,
 
 - Does the SDK support other book formats than EPUB?
 

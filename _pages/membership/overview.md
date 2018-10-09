@@ -26,17 +26,17 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 
 - Access for All Swiss Foundation
 - Actialuna
-- AM Consulting LLC (DITA)
+- AM Consulting (DITA)
 - American Printing House for the Blind
 - Benetech
 - Bibliovault
-- Blackwell Ltd
+- Blackwell
 - Bluefire Productions
-- Bokbasen AS
+- Bokbasen
 - Brooklyn Public Library
 - CSA Group
 - DAISY Consortium
-- Datalogics Inc.
+- Datalogics
 - De Marque
 - Digital Public Library of America
 - Dilicom
@@ -52,15 +52,15 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 - Hypothes.is
 - Immanens
 - Ingram Content Group / Vital Source Technologies
-- Kivuto Solutions Inc.
+- Kivuto Solutions
 - Learning Ally
 - Libri Italiani Accessibili (Italian Publishers Association)
 - New York Public Library
-- Nook Digital LLC
+- Nook Digital
 - Nord Compo
-- ProQuest LLC
-- Ravn Webveveriat AS
-- Sony Corporation
+- ProQuest
+- Ravn Webveveriat
+- Sony
 - The Ebook Alternative
-- Yahoo Corp. Japan
+- Yahoo Japan
 - Youboox
