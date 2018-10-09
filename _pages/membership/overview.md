@@ -24,87 +24,43 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 
 ## Current Members
 
-- ACCESS
 - Access for All Swiss Foundation
-- Adobe, Albin Michel
+- Actialuna
+- AM Consulting LLC (DITA)
 - American Printing House for the Blind
-- Aptara, Art Book Magazine
-- Aschehoug
-- Atomic Software
-- Baker & Taylor
 - Benetech
-- Bibliotheca
 - Bibliovault
-- BISG
 - Blackwell Ltd
 - Bluefire Productions
-- Bokbasen
-- Book2Read
-- Bookshout
+- Bokbasen AS
 - Brooklyn Public Library
-- Cappelen Damm
-- Ciber Netherlands
-- Courseload
 - CSA Group
 - DAISY Consortium
-- Datalogics
+- Datalogics Inc.
 - De Marque
-- Deutsche Telekom
 - Digital Public Library of America
 - Dilicom
-- Disney Publishing
-- DIYPIA
-- DRMinside
-- E Dantes
-- Eden Livre (a joint venture of Gallimard, La Martinière and Flammarion)
-- Editis
-- Ekitabu
+- Disney Publishing Worldwide
+- Eden Livre
 - Ellibs Oy
 - ePagine
-- ePublish
 - Evident Point
-- Fasoo
 - Feedbooks
 - Fingerprint Digital
-- Gallego Pardo
-- Gantec
 - Google
-- Hachette Livre
 - Houghton Mifflin Harcourt
 - Hypothes.is
 - Immanens
 - Ingram Content Group / Vital Source Technologies
-- Intel
-- Izneo
-- Jouve
-- KERIS (Korea Education and Research Information Service)
-- Kibano
-- Kivuto
-- Koninklijike Bibliotheek
+- Kivuto Solutions Inc.
 - Learning Ally
-- LIA (by Italian Publishers Association)
-- Madshout
-- Mantano
-- Minitex
-- MIT Press
+- Libri Italiani Accessibili (Italian Publishers Association)
 - New York Public Library
+- Nook Digital LLC
 - Nord Compo
-- Norwegian Library of Talking Books
-- Numilog
-- Suntec
-- Page Foundry
-- Prismallia
-- Publiwide
-- Penguin Random House
-- Ravn Webveveriat
-- Reseau Carel
-- Sify Technologies
-- Snapplify
-- Sony
+- ProQuest LLC
+- Ravn Webveveriat AS
+- Sony Corporation
 - The Ebook Alternative
-- Tralalere
-- VersaPub
-- Vibal Publishing House
 - Yahoo Corp. Japan
-- Yedioth Information Technologies
-- Youboox. 
+- Youboox
