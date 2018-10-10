@@ -24,43 +24,43 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 
 ## Current Members
 
-- Access for All Swiss Foundation
-- Actialuna
+- [Access for All](https://www.access-for-all.ch/ch/)
+- [Actialuna](https://www.actialuna.com/)
 - AM Consulting (DITA)
-- American Printing House for the Blind
-- Benetech
-- Bibliovault
-- Blackwell
-- Bluefire Productions
-- Bokbasen
-- Brooklyn Public Library
-- CSA Group
-- DAISY Consortium
-- Datalogics
-- De Marque
-- Digital Public Library of America
-- Dilicom
-- Disney Publishing Worldwide
-- Eden Livre
-- Ellibs Oy
-- ePagine
-- Evident Point
-- Feedbooks
-- Fingerprint Digital
-- Google
-- Houghton Mifflin Harcourt
-- Hypothes.is
-- Immanens
-- Ingram Content Group / Vital Source Technologies
-- Kivuto Solutions
-- Learning Ally
-- Libri Italiani Accessibili (Italian Publishers Association)
-- New York Public Library
-- Nook Digital
-- Nord Compo
-- ProQuest
-- Ravn Webveveriat
-- Sony
-- The Ebook Alternative
-- Yahoo Japan
-- Youboox
+- [American Printing House for the Blind](https://www.aph.org/)
+- [Benetech](https://benetech.org/)
+- [Bibliovault](https://www.bibliovault.org)
+- [Blackwell](https://blackwells.co.uk/)
+- [Bluefire Productions](http://www.bluefirereader.com/)
+- [Bokbasen](https://www.bokbasen.no/)
+- [Brooklyn Public Library](https://www.bklynlibrary.org/)
+- [CSA Group](https://www.csagroup.org/)
+- [DAISY Consortium](http://www.daisy.org/home)
+- [Datalogics](https://www.datalogics.com/)
+- [De Marque](https://www.demarque.com/)
+- [Digital Public Library of America](https://dp.la/)
+- [Dilicom](http://www.dilicom.net)
+- [Disney Publishing Worldwide](https://books.disney.com/)
+- [Eden Livre](https://www.edenlivres.fr/)
+- [Ellibs](https://www.edenlivres.fr/)
+- [ePagine](https://www.epagine.fr/)
+- [Evident Point](http://www.evidentpoint.com/)
+- [Feedbooks](http://www.feedbooks.com)
+- [Fingerprint Digital](http://www.fingerprintplay.com/)
+- [Google](https://www.google.org/)
+- [Houghton Mifflin Harcourt](https://www.hmhco.com/)
+- [Hypothes.is](https://web.hypothes.is/)
+- [Immanens](http://www.immanens.com/)
+- [Ingram Content Group](https://www.ingramcontent.com/) / [Vital Source Technologies](https://www.vitalsource.com/)
+- [Kivuto Solutions](https://kivuto.com/)
+- [Learning Ally](https://learningally.org/)
+- [Libri Italiani Accessibili](https://catalogo.fondazionelia.org/)
+- [New York Public Library](https://www.nypl.org/)
+- [Nook Digital](http://www.barnesandnobleinc.com/)
+- [Nord Compo](http://www.nordcompo.com/)
+- [ProQuest](https://www.proquest.com/)
+- [Ravn Webveveriet](https://www.ravn.no/)
+- [Sony](https://www.sony.net/)
+- [The Ebook Alternative](https://www.tea-ebook.com/)
+- [Yahoo Japan](https://about.yahoo.co.jp/info/en/)
+- [Youboox](https://youboox.fr/)

@@ -83,7 +83,7 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 
 Yes, it does but the SDK is DRM-agnostic. This means the SDK has been developed so it can be used with many different kinds of DRM-encrypted books or no DRM at all.  No DRM at all is the default.  
 
-Readium of course supports [Readium LCP published by EDRLab](https://www.edrlab.org/readium/readium-lcp/faq/). For other DRMs, the support must be added by the vendor and is specific to their particular application,
+Readium of course supports [Readium LCP](https://www.edrlab.org/readium/readium-lcp/faq/). For other DRMs, the support must be added by the vendor and is specific to their particular application,
 
 - Does the SDK support other book formats than EPUB?
 
