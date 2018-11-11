@@ -5,6 +5,15 @@ title: Applications Based on Readium
 ---
 The following is a list of organizations and/or products based on Readium technology (ReadiumJS, Readium SDK and/or Readium LCP).  We try to keep this list up-to-date but as we don’t always get notified when new products are rolled out the list might not be complete.  If anyone reading this document knows of any errors or omissions in this list, please let us know.
 
+#### Readium Test Apps
+These are newer, native Readium test apps intended to demonstrate the   current Readium technology.  But they are full-fledged apps which are under active development.
+
+iOS Test App in the Apple store
+- <https://itunes.apple.com/us/app/r2-reader/id1363963230?mt=8>
+
+Android Test App in the GooglePlay store
+- <https://play.google.com/store/apps/details?id=org.readium.r2reader&hl=en_US>
+
 #### Evident Point
 
 - <http://evidentpoint.com>
