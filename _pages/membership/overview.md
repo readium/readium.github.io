@@ -22,6 +22,17 @@ Effective January, 2018 all Readium SDK software is permissively licensed **free
 
 Adopters are encouraged to help support Readium SDK development and maintenance by paying an _optional_ annual support fee. Those parties paying support will receive priority attention from the Readium Support team.
 
+## Board Members
+
+- Micah Bowers ([Bluefire Productions](http://www.bluefirereader.com/))
+- James English
+- Stephen Ferranti ([Learning Ally](https://learningally.org/))
+- Bente Franck-Sætervoll ([Bokbasen](https://www.bokbasen.no/))
+- Hadrien Gardeur ([Feedbooks](http://www.feedbooks.com))
+- Yuri Khramov ([Evident Point](http://www.evidentpoint.com/))
+- Aferdita Muriqi ([AM Consulting](mailto:aferdita.muriqi@gmail.com))
+- Jed Reinitz ([ProQuest](https://www.proquest.com/))
+
 ## Current Members
 
 - [Access for All](https://www.access-for-all.ch/ch/)
