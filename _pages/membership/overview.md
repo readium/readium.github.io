@@ -26,7 +26,7 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 
 - [Access for All](https://www.access-for-all.ch/ch/)
 - [Actialuna](https://www.actialuna.com/)
-- AM Consulting (DITA)
+- [AM Consulting (DITA)](mailto:aferdita.muriqi@gmail.com)
 - [American Printing House for the Blind](https://www.aph.org/)
 - [Benetech](https://benetech.org/)
 - [Bibliovault](https://www.bibliovault.org)
