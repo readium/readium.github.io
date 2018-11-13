@@ -1,11 +1,7 @@
 ---
 layout: home
-title: Readium Website
-excerpt: The Readium Project primary goal is to provide rock-solid, performant building blocks and applications for EPUB publications.
+title: Readium Website 
 ---
 
-Open Source Technology for EPUB 3 and the Open Web Platform.
-
-The Readium Foundation is an Open Source Foundation collaboratively developing technology 
-to accelerate the adoption of EPUB 3 and the Open Web Platform by the Digital Publishing Industry.
+This file only serves to include the "home" layout which includes the other building blocks of the home page (header, footer, etc.)
 
