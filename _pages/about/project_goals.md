@@ -4,71 +4,76 @@ permalink: "/about/project_goals.html/"
 title: Readium Project Goals
 ---
 
-The fundamental goal of the Readium project is to produce a robust, performant, spec-compliant EPUB reading system that can be deployed in browsers, embedded into browser apps like the Google Chrome extension or simply embedded as an SDK into native applications.  
+The fundamental goal of the Readium project is to produce a robust, performant, spec-compliant reading system that supports digital publishing formats (e.g. EPUB, WebPub etc.) and  can be deployed in browsers or built into native apps on iOS, Android or the desktop.  
 
 ### Primary Focus
 
-The project’s primary focus is two-fold:
+The project’s primary focus is to provide a set of software building blocks (software development kits as well as utilies and glue that faciliates the construction of a wide spectrum of robust, performant reading systems.  
 
-Provide functional out-of-the-box EPUB reading systems for use on the web.  Currently, there are two, a cross-browser solution for embedding in users’ websites, named the Readium CloudReader, and the Readium Chrome Extension, which is available for download from the Google Chrome Store.
-A cross-platform native-code software development kit (SDK) that can be used to build native applications across a variety of hardware platforms.
+It is the intent to enable a platform that can be easily adapted to supporting a variety of "digial publishing formats", including:
+
+- EPUB 2.x and 3.x
+- Audio books
+- Image-based books (e.g. Manga, etc.)
+- Web Pub
+
+There are currently (early 2019) four target platforms:
+
+- iOS
+- Android
+- Desktop (e.g. MacOS, Windows, Linux)
+- Browser-based
+
+In addition, developers are of course more than welcome to adapt the Readium toolkits to other platforms, but the four above are the primary focus of Readium development at present.
+
+It is important to emphasize that Readium strives to network and coordinate with other open-source efforts, most notably the European Digital Reading Lab ([EDRLab](https://www.edrlab.org/)) which is the European arm of Readium.  EDRLab is not only a major participant in the Readium effort, but is also the lead and driver for the [Licensed Content Protection (LCP)](https://www.edrlab.org/readium/readium-lcp/) system.
 
 ### Open Source
 
-Readium is available for both open source and proprietary applications.  For open-source, non-commercial applications, all the Readium code is available under a BSD-style license. For commercial applications,  the Readium SDK code is licensed under Gnu Affero General Public License Version 3 to help ensure the level of development and management support necessary for its ongoing development.
+Readium is a true open-source project, permissively licensed  under the under the 3-part BSD license.  This licensing approach applies to ALL the code developed in the Readium project. This includes not only the current development projects but also the legacy software (Cloud Reader, Chrome app and Readium C++ SDK)
 
 ### Communication
 
-Readium strives to create a courteous, welcoming environment that feels approachable to newcomers. We maintain both public chat rooms (via Slack) and a public mailing list where the ideas of contributors both new and old are heard and discussed with equal weight. For more information see the Communication page here.
+Readium strives to create a courteous, welcoming environment that feels approachable to newcomers. We maintain both public chat rooms (via Slack) and a public mailing list (readium-dev@gmail.com) where the ideas of contributors both new and old are heard and discussed with equal weight. For more information see the Communication page [here](https://readium.org/development/contributing/).
 
 ### Standards Compliance
 
-Readium aims for compliance with the latest EPUB specification, and to be a testbed for support of emerging EPUB modules. EPUB Publications are expected to have longevity and to be interoperable across multiple, indirect distribution channels, and reliably manipulated by intermediate workflows. Being a comprehensive reference system, Readium places a high priority on compatibility with the EPUB 3 specifications.
+Readium aims for compliance with all the relevant W3C specifications, including EPUB as well as other emerging digital publishing format such as audio and comic books.
 
-The Readium Project also provides feedback to the EPUB and overall web standards community as well as to the broader W3C and web standards community, introducing new technologies and making sure new standards can be implemented in our engine. We use regression testing to maintain our standards compliance.
+In order to achieve this, many members of the Readium community are active participants in a wide variety of W3C working groups (e.g. working, community and business groups for both EPUB and WebPub).  
 
-### Compatibility
+In addition to helping to develop the specifications themselves, Readium has and will continue to provide feedback to the various W3C groups on developing and testing implementations of the new emerging standards.
 
-We strive for compatibility with real-world commercial EPUB Reading Systems, but not at the expense of standards compliance. In particular we seek to be a reference system that promotes digital publications for the Open Web, and does not depend on, or proliferate proprietary technologies. We discourage “embrace and extend” tactics that aim to create closed silos, by the positive step of showcasing and delivering leading-edge functionality that is fully specified, free and open, and interoperable.
+EPUB and related formats are expected to have longevity and to be interoperable across multiple, indirect distribution channels, and reliably manipulated by intermediate workflows. Being a comprehensive reference system, Readium places a high priority on compatibility with the EPUB specifications as well as new emerging standards, such as WebPub.
+
+### Accessibility
+Providing access to reading system functionality for ALL users is a critical part of the Readium goals.  To achieve this, great efforts are made as part of the Readium development to provide access to the content for all users, whether that is through using CSS to provide a better reading experience or tight integration with system level accessibility affordances such as VoiceOver and similar technologies.
 
 ### Stability
 
-The main Readium code base strives to always maintain a high degree of stability. This means that crashes, hangs and regressions are given the highest priority for fixes and releases.  Readium uses a careful release process and closely tracks reported issues from both internal testing and external forums.
+The Readium development community strives to keep the code base uo to date and with a high degree of stability. This means that crashes, hangs and regressions are given the highest priority for fixes and releases.  Readium closely tracks reported issues from both internal testing and external forums.  Members of the Readium community are strongly encouraged to report new issues, update ongoing problems and foster communication aimed at provide a more stable development and execution environment.
 
 ### Performance
 
-Maintaining and improving speed and memory use is an important goal, however being a complete reference system for EPUB is more important than speed or memory efficiency. We never consider performance good enough, but strive to constantly improve.
+Maintaining and improving execution speed and memory use is an important goal, and one that Readium aims to achieve.  However, there is a dynamic balance to be struck as Readium also aims to provide a complete reference system for both EPUB and other emerging W3C standards.
 
 ### Security
 
-Protecting users from security violations is critical. We fix security issues promptly to protect users and maintain their trust.
-
-### Portability
-
-The Readium project addresses a variety of needs, from desktop and mobile browsers to native applications on the desktop and mobile devices. We strive to enable porting or deploying Readium to a wide variety of desktop, mobile, embedded and other platforms.
+Protecting users from security violations is critical. Insofar as possible we strive to fix security issues promptly to protect users and maintain their trust.
 
 ### Usability
 
 To the extent that Readium features affect the user experience, we want them to work in accordance with good human interface design principles, and to mesh well with platform-native HI conventions. Furthermore, we strive to integrate with platform accessibility features to allow access for all users, including those with disabilities.
 
 ### Governance
-
-While IDPF is the sponsoring organization for Readium Project, governance of the project is by a seven-person board of directors rather than the policies and procedures IDPF utilizes for standards-development working groups. In addition, the board takes direction from the members of the Readium Foundation as well as the grass-roots needs and requests from the contributors (who need not be members of the Foundation).
+Governance of the project is by a seven-person board of directors which takes direction from the members of the Readium Foundation as well as the grass-roots needs and requests from the contributors (who need not be members of the Foundation).
 
 ### Non-Goals
 
-The above goals are a lot to bite off, so we consider the following out of scope for the project.
+The above set of goals are a lot to bite off, so we consider the following out of scope for the project:
 
-Readium is a reference system and engine, not a commercial Reading System.
-
-We do not plan to develop or host a full-featured commercial-quality application based on Readium. Others are welcome to do so, of course.
-
-Readium is an engineering project not a science project.
-
-For new features to be adopted into Readium, we strongly prefer the technology, or at least the use case for it, to be proven. Since Readium has been created to promote EPUB format support under the sponsorship of IDPF/W3C, we will in general give the benefit of the doubt that features standardized for EPUB by IDPF/W3C meet this bar. Support for non-standard extensions to EPUB will be discouraged unless widely supported in real world content.
-
-Readium is not the solution to every problem.
-
-We focus on handling EPUB publications, not complete solutions to every imaginable technology need.
+- Readium is a reference system and engine, not a commercial Reading System.
+- We do not plan to develop or host a full-featured commercial-quality application based on Readium. Others are welcome to do so, of course.
+- Readium is not the solution to every problem.  We focus on handling EPUB/WebPub publications, not complete solutions to every imaginable technology need.
 
  
