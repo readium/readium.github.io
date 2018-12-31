@@ -4,7 +4,7 @@ permalink: "/about/project_goals.html/"
 title: Readium Project Goals
 ---
 
-The fundamental goal of the Readium project is to produce a robust, performant, spec-compliant reading system that supports digital publishing formats (e.g. EPUB, WebPub etc.) and  can be deployed in browsers or built into native apps on iOS, Android or the desktop.  
+The fundamental goal of the Readium project is to produce a set of robust, performant, spec-compliant reading system toolkits that support digital publishing formats (e.g. EPUB, [Web Publications](https://www.w3.org/TR/wpub/) etc.) and can be deployed in browsers or built into native apps on iOS, Android or the desktop.  
 
 ### Primary Focus
 
@@ -30,7 +30,7 @@ It is important to emphasize that Readium strives to network and coordinate with
 
 ### Open Source
 
-Readium is a true open-source project, permissively licensed  under the under the 3-part BSD license.  This licensing approach applies to ALL the code developed in the Readium project. This includes not only the current development projects but also the legacy software (Cloud Reader, Chrome app and Readium C++ SDK)
+Readium is a true open-source project, permissively licensed under the 3-part BSD license.  This licensing approach applies to ALL the code developed in the Readium project. This includes not only the current development projects but also the legacy software (Cloud Reader, Chrome app and Readium C++ SDK)
 
 ### Communication
 
@@ -73,7 +73,7 @@ Governance of the project is by a seven-person board of directors which takes di
 The above set of goals are a lot to bite off, so we consider the following out of scope for the project:
 
 - Readium is a reference system and engine, not a commercial Reading System.
-- We do not plan to develop or host a full-featured commercial-quality application based on Readium. Others are welcome to do so, of course.
+- We have no plans to develop or host a full-featured commercial-quality application based on Readium. Others are welcome to do so, of course.
 - Readium is not the solution to every problem.  We focus on handling EPUB/WebPub publications, not complete solutions to every imaginable technology need.
 
  
