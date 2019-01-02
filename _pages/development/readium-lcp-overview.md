@@ -30,7 +30,7 @@ Readium LCP is built using standard and best practice technology for encryption:
 
 A large open-source codebase has been developed by [EDRLab](https://www.edrlab.org), an active member of the Readium Foundation. This includes a fully featured License Server, DRM libraries compliant with the original an new Readium SDKs on Mobile and Desktop, plus a lightweight DRM library usable on any target device. 
 
-Readium LCP can protect EPUB 2 and EPUB 3 publications, with texte, images and audio-visual content. From 2019, this technology will also be able to protect PDF content (with an adaptation of the Readium development kits for PDF support).
+Readium LCP can protect EPUB 2 and EPUB 3 publications, with text, images and audio-visual content. From 2019, this technology will also be able to protect PDF content (with an adaptation of the Readium development kits for PDF support).
 
 The management of the LCP Network is handled by EDRLab, which is itself an international membership organization fueled by companies from the publishing industry.  
 
