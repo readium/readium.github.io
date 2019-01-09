@@ -19,7 +19,7 @@ If you have these skills and want to help, you are of course very welcome!  But 
 
 **What is the relationship between Readium and standards bodies such as the IDPF and W3C?**
 
-In early 2017, IDPF  was absorbed into the World Wide Web Consortium (W3C), which is responsible for HTML and other Web Standard. Thus standards development for EPUB and other publishing technology for the Web Platform is now taking place within W3C. For more information see [Publishing@W3C](https://w3.org/publishing). 
+In early 2017, IDPF  was absorbed into the World Wide Web Consortium (W3C), which is responsible for HTML and other Web Standards. Thus standards development for EPUB and other publishing technology for the Web Platform is now taking place within W3C. For more information see [Publishing@W3C](https://w3.org/publishing). 
 
 A number of Readium Foundation members and contributors are participating in Publishing@W3C activities to help ensure coordination. 
 
