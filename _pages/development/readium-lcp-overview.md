@@ -1,68 +1,54 @@
 ---
 layout: post
 title:  "Overview of Readium LCP"
-date:   2016-11-08 13:30:00 +0100
+date:   2019-01-02 13:30:00 +0100
 categories: overview
 permalink: /development/readium-lcp-overview/
 ---
 
 ## Introduction
 
-Several members of Readium Foundation are pursuing, as a sub-project of Readium SDK, the implementation of a vendor-neutral interoperable DRM technology, named Readium LCP (for “Licensed Content Protection”).
-
-The requirements and use-cases have been expressed in 2012, and can still be found on the [IDPF website](http://idpf.org/epub-content-protection).
+Several members of the Readium Foundation have created a vendor-neutral, interoperable and distributed DRM technology named Readium LCP (for “Licensed Content Protection”); the only DRM solution developed specifically *by* the publishing industry, *for* the industry. 
 
 Readium LCP defines a simple passphrase-based authentication method, which is minimally intrusive for the end user,
 but still fulfills the needs of public libraries and publishers. 
 
-In a few words, Readium LCP is:
-- Vendor neutral
-- Interoperable
-- Accessible
-- Minimally intrusive
-- Flexible
-- Distributed
-- Usable offline
-- Cost effective
-- Easy to set up.
+The requirements and use-cases for this DRM technology have been expressed in 2012 and can still be found on the [IDPF website](http://idpf.org/epub-content-protection).
 
-There are two main kinds of participants in the Readium LCP ecosystem:
-* Readium LCP Servers and
-* Readium LCP Compliant Reading systems
+Its specification is open, so that any company can implement the technology freely. The specification is two-fold:
 
-### Readium LCP Server
+* [Readium Licensed Content Protection Specification](/technical/readium-lcp-specification/) defines license documents;
+* [Readium License Status Document Specification](/technical/readium-lsd-specification/) defines associated status documents;
 
-A Readium LCP Server is managed by a license provider. It encrypts the content of incoming EPUB files and acts as a license server and license status server.
+Readium LCP will certainly become more than an industry standard: it has been submitted to the ISO by Japan and South Korea and will certainly become an international standard before 2021.
 
-The license server generates Readium LCP licenses and gives access to existing licenses. It is not exposed directly on the Web, but rather installed behind the provider's frontend server and accessed via a protected REST API.
-The license status server enables device registration, plus early return and loan extension in a library lending scenario. It may be directly exposed on the Web and is accessible via a REST API.
+Readium LCP is built using standard and best practice technology for encryption:
 
-In order to ease the implementation of Readium LCP services, a reference server codebase written in Golang is provided by Readium (see below).
+* AES 256 bits encryption for the content and the content key
+* SHA-256 for the user passphrase
+* RSA with SHA-256 for the signature of the license.
 
-### Readium LCP Compliant Reading system
+A large open-source codebase has been developed by [EDRLab](https://www.edrlab.org), an active member of the Readium Foundation. This includes a fully featured License Server, DRM libraries compliant with the original an new Readium SDKs on Mobile and Desktop, plus a lightweight DRM library usable on any target device. 
 
-A Readium LCP Compliant Reading system (application of e-reader) is able to give access to a Readium LCP protected publication, using a passphrase provided by the end user. Decryption is done on-the-fly so that the decrypted contents are never on disk where they might be sniffed and/or extracted. Such compliant Reading System is also capable of fetching an updated license, and - in a library lending use-case - request early returns and loan extensions.  
+Readium LCP can protect EPUB 2 and EPUB 3 publications, with text, images and audio-visual content. From 2019, this technology will also be able to protect PDF content (with an adaptation of the Readium development kits for PDF support).
 
-In order to ease the implementation of Readium LCP services, a reference client codebase written in C++ is provided by Readium as a module of the Readium Core SDK (see below).
+The management of the LCP Network is handled by EDRLab, which is itself an international membership organization fueled by companies from the publishing industry.  
 
-## Interoperability
+Readium LCP is free from transaction costs. The only mandatory cost for using the DRM is a yearly cost of certification, by EDRLab, for each node of the LCP Network (i.e. the network of all interoperable LCP client devices and server solutions). 
 
-Different implementations of Readium LCP Servers and Readium LCP Compliant Reading systems must be 100% interoperable.
-EDRLab (European Digital Reading Lab, i.e. the European Readium headquarter) is in charge of verifying the compliance  and interoperability of each participant in the ecosystem.
+Readium LCP is designed for privacy and GDPR compliance (required for EU adoption) since no third-party is collecting data on behalf of the distributor.
 
-## PKI
-
-Content protection is based on PKI (Public Key Infrastructure) technologies. T-Systems (a German global IT services and subsidiary of Deutsche Telekom) has been chosen to act as a Certificate Authority and provide digital certificates to each license provider via EDRLab, EDRLab acting as manager of the Readium LCP ecosystem.
-
-## Workflow
-
-The diagram below illustrates a high-level view of an LCP-enabled workflow.
-
-![readium-lcp](/assets/images/readium-lcp.png)
+From 2018, Readium LCP is becoming the standard DRM for major markets, including but not limited to: France, Germany, Belgium, Switzerland and Québec.
 
 ## Useful links
 
-If you want to know more about Readium LCP, or if you want to implement a Readium LCP compliant service, please read [Readium LCP Specs and Codebase](/technical/readium-lcp-specs-codebase/).
+If you want to know more about Readium LCP, please read [Readium LCP Specs and Codebase](/technical/readium-lcp-specs-codebase/).
 
-You will also find detailed information about the Readium LCP ecosystem on the [EDRLab website](https://edrlab.org/edrlab/readium-lcp-principles/).
+Several LCP open-source modules are found on the [Readium Github using the 'lcp' search key](https://github.com/readium?utf8=%E2%9C%93&q=lcp).
+
+Some documentation about these modules are found on the [Readium Github in the architecture section](https://github.com/readium/architecture/tree/master/other/lcp).
+
+You will also find detailed information about the Readium LCP ecosystem on the [EDRLab website](https://edrlab.org/readium/readium-lcp/).
+
+If you want to implement a Readium LCP compliant service, please contact EDRLab directly (contact at edrlab.org).
 
