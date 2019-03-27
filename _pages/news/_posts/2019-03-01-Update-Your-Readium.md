@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Update Your Readium!
-excerpt: We have learned that some of our Readium users are not updating Readium  when new releases are made.  This is unfortunate as we typically have some real bug fixes in each release.
+excerpt: We know that some of our Readium users are not updating Readium  when new releases are made.  This is unfortunate as we typically have some real bug fixes in each release.
 date:   2019-03-18 11:30:00 +0100
 categories: news
 permalink: /news/_posts/update-your-readium/
