@@ -51,7 +51,7 @@ Providing access to reading system functionality for ALL users is a critical par
 
 ### Stability
 
-The Readium development community strives to keep the code base uo to date and with a high degree of stability. This means that crashes, hangs and regressions are given the highest priority for fixes and releases.  Readium closely tracks reported issues from both internal testing and external forums.  Members of the Readium community are strongly encouraged to report new issues, update ongoing problems and foster communication aimed at provide a more stable development and execution environment.
+The Readium development community strives to keep the code base up to date and with a high degree of stability. This means that crashes, hangs and regressions are given the highest priority for fixes and releases.  Readium closely tracks reported issues from both internal testing and external forums.  Members of the Readium community are strongly encouraged to report new issues, update ongoing problems and foster communication aimed at provide a more stable development and execution environment.
 
 ### Performance
 
