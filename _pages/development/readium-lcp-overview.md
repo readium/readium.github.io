@@ -35,10 +35,12 @@ Readium LCP can protect EPUB 2 and EPUB 3 publications, with text, images and au
 The management of the LCP Network is handled by EDRLab, which is itself an international membership organization fueled by companies from the publishing industry.  
 
 Readium LCP is free from transaction costs. The only mandatory cost for using the DRM is a yearly cost of certification, by EDRLab, for each node of the LCP Network (i.e. the network of all interoperable LCP client devices and server solutions). 
-
+ 
 Readium LCP is designed for privacy and GDPR compliance (required for EU adoption) since no third-party is collecting data on behalf of the distributor.
 
-From 2018, Readium LCP is becoming the standard DRM for major markets, including but not limited to: France, Germany, Belgium, Switzerland and Québec.
+From 2018, LCP is becoming the standard DRM for major markets, including but not limited to: France, Germany, Belgium, Switzerland and Québec.
+
+It is planned to see LCP become an ISO international standard by 2020. 
 
 ## Useful links
 
