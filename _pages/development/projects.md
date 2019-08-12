@@ -7,7 +7,7 @@ title: Projects
 ## Current Projects
 
 - [List of projects based on the Readium Architecture](https://readium.org/architecture/projects)
-- [Readium LCP](readium-lcp-overview)
+- [Readium LCP](https://readium.org/lcp-specs)
 
 ## Projects in Maintenance Mode
 
