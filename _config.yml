@@ -35,3 +35,11 @@ exclude:
 
 include: ["_pages"]
 
+# Add the redirect for all  files of the _redirects collection
+defaults:
+  -
+    scope:
+      type: redirects
+    values:
+      layout: redirect
+
