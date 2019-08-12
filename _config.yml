@@ -27,7 +27,7 @@ google_analytics: true
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
@@ -36,6 +36,10 @@ exclude:
 include: ["_pages"]
 
 # Add the redirect for all  files of the _redirects collection
+collections:
+  redirects:
+    output: true
+    
 defaults:
   -
     scope:
