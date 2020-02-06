@@ -31,7 +31,6 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 - Hadrien Gardeur ([Feedbooks](http://www.feedbooks.com))
 - Yuri Khramov ([Evident Point](http://www.evidentpoint.com/))
 - Aferdita Muriqi ([AM Consulting](mailto:aferdita.muriqi@gmail.com))
-- Jed Reinitz ([ProQuest](https://www.proquest.com/))
 
 ## Current Members
 
