@@ -45,6 +45,7 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 - [Bluefire Productions](http://www.bluefirereader.com/)
 - [Bokbasen](https://www.bokbasen.no/)
 - [Brooklyn Public Library](https://www.bklynlibrary.org/)
+- [Columbia University Library](https://library.columbia.edu/)
 - [CSA Group](https://www.csagroup.org/)
 - [DAISY Consortium](http://www.daisy.org/home)
 - [Datalogics](https://www.datalogics.com/)
