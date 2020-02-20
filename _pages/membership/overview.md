@@ -24,7 +24,6 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 
 ## Board Members
 
-- Micah Bowers ([Bluefire Productions](http://www.bluefirereader.com/))
 - James English
 - Stephen Ferranti ([Learning Ally](https://learningally.org/))
 - Bente Franck-Sætervoll ([Bokbasen](https://www.bokbasen.no/))
