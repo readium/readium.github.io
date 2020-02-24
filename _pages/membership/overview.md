@@ -51,6 +51,7 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 - [Digital Public Library of America](https://dp.la/)
 - [Dilicom](http://www.dilicom.net)
 - [Disney Publishing Worldwide](https://books.disney.com/)
+- [DRM Inside](http://www.drminside.com/drminside_ENG/drminside.html)
 - [Eden Livre](https://www.edenlivres.fr/)
 - [Ellibs](https://www.edenlivres.fr/)
 - [ePagine](https://www.epagine.fr/)
