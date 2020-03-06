@@ -18,7 +18,7 @@ The dues structure is as follows:
 
 |  Company Type  | Total Company Revenue | Member Dues |
 |:-------------:|:-------------:|:------------:|
-| Startup Company or Individual  | Under $1 million (*) |  $750 per year Company |
+| Startup Company or Individual  | Under $1 million (*) |  $750 per year |
 | Company  | Under $5 million | $1200 per year |
 | Company  | Between $5 million and $250 million | $1800 per year |
 | Company  | Between $250 million and $2 billion | $2750 per year |
