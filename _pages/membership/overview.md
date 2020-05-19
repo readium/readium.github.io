@@ -25,8 +25,6 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 ## Board Members
 
 - James English
-- Stephen Ferranti ([Learning Ally](https://learningally.org/))
-- Bente Franck-Sætervoll ([Bokbasen](https://www.bokbasen.no/))
 - Hadrien Gardeur ([Feedbooks](http://www.feedbooks.com))
 - Yuri Khramov ([Evident Point](http://www.evidentpoint.com/))
 - Aferdita Muriqi ([AM Consulting](mailto:aferdita.muriqi@gmail.com))
