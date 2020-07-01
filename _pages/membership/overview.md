@@ -29,7 +29,7 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 - Yuri Khramov ([Evident Point](http://www.evidentpoint.com/))
 - Laurent Le Meur ([EDRLab](https://edrlab.org))
 - Aferdita Muriqi ([AM Consulting](mailto:aferdita.muriqi@gmail.com))
-- Bria O'Leary ([BISG](https://www.bisg.org))
+- Brian O'Leary ([BISG](https://www.bisg.org))
 - Risa Wolf ([NYPL](https://www.nypl.org))
 
 ## Current Members
