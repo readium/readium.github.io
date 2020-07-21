@@ -4,6 +4,7 @@ title:  Board meeting summary
 excerpt: The new board had its first meeting, here is a summary. 
 date:   2020-07-21 11:30:00 +0100
 categories: news
+permalink: /news/_posts/2020-07-21-board-meeting-summary/
 ---
 
 # Summary Notes, Readium Board of Directors Meeting
