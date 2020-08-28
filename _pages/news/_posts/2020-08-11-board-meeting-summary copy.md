@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Board meeting summary
-excerpt: The new board had its first meeting, here is a summary. 
+excerpt: Mission statement updated, financial status studied, communication with members. 
 date:   2020-08-11 11:30:00 +0100
 categories: news
 permalink: /news/_posts/2020-08-11-board-meeting-summary/
@@ -22,7 +22,7 @@ Date: 2020-08-11
 
 ## Topics
 1. Review Foundation mission and Board Directorial duties
-2. Propose Developer role scope 
+2. Propose Board and Developer role scope 
 3. Review Foundation financial status 
 4. Organize communication with members
 
