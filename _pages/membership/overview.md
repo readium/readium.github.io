@@ -3,7 +3,7 @@ layout: page
 permalink: "/membership/overview/"
 title: Membership Overview
 ---
-The Readium.org community is supported by organizations that join the Readium Foundation as members. Member organizations typically use Readium technologies to build solutions. You can participate in a Readium open source project or use Readium technologies without being a member, but membership is an important way to support the community.
+The Readium community is supported by organizations that join the Readium Foundation as members. Member organizations typically use Readium technologies to build client or server solutions. You can participate in a Readium open source project or use Readium technologies without being a member, but membership is an important way to support the community.
 
 Find out more about joining Readium Foundation [here](http://readium.org/membership/join/).
 
@@ -18,21 +18,21 @@ The Readium Foundation makes its corporate documents available to the public. Th
 
 ## Licensing
 
-Effective January, 2018 all Readium SDK software is permissively licensed **free of charge** under the [3-part BSD license](https://github.com/readium/readium.github.io/blob/master/license.txt) and the previous fee-based Alternative License is no longer offered. 
+Effective January, 2018 Readium software is permissively licensed **free of charge** under the [3-part BSD license](https://github.com/readium/readium.github.io/blob/master/license.txt) and the previous fee-based Alternative License is no longer offered. 
 
-Adopters are encouraged to help support Readium SDK development and maintenance by paying an _optional_ annual support fee. Those parties paying support will receive priority attention from the Readium Support team.
+Adopters are encouraged to help support Readium software development and maintenance by paying an _optional_ annual support fee. Those parties paying support will receive priority attention from the Readium Support team.
 
 ## Board Members
 
-- James English
-- Hadrien Gardeur ([De Marque](https://www.demarque.com))
+- Laurent Le Meur ([EDRLab](https://edrlab.org)) as President
+- Risa Wolf ([NYPL](https://www.nypl.org)) as Secretary
+- Aferdita Muriqi ([AM Consulting](mailto:aferdita.muriqi@gmail.com)) as Treasurer
+- Brian O'Leary ([BISG](https://www.bisg.org)) as Assistant treasurer
 - Yuri Khramov ([Evident Point](http://www.evidentpoint.com/))
-- Laurent Le Meur ([EDRLab](https://edrlab.org))
-- Aferdita Muriqi ([AM Consulting](mailto:aferdita.muriqi@gmail.com))
-- Brian O'Leary ([BISG](https://www.bisg.org))
-- Risa Wolf ([NYPL](https://www.nypl.org))
 
 ## Current Members
+
+From A to Z:
 
 - [AM Consulting (DITA)](mailto:aferdita.muriqi@gmail.com)
 - [Benetech](https://benetech.org/)
@@ -42,16 +42,17 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 - [Bokbasen](https://www.bokbasen.no/)
 - [Brooklyn Public Library](https://www.bklynlibrary.org/)
 - [Columbia University Library](https://library.columbia.edu/)
-- [DAISY Consortium](http://www.daisy.org/home)
 - [De Marque](https://www.demarque.com/)
 - [Dilicom](http://www.dilicom.net)
 - [DRM Inside](http://www.drminside.com/drminside_ENG/drminside.html)
 - [Eden Livre](https://www.edenlivres.fr/)
+- [Editis / Sogedif](www.editis.com)
 - [EDRLab](https://www.edenlivres.fr/)
-- [Ellibs](https://www.edenlivres.fr/)
+- [Ellibs Oy](https://www.ellibs.com/)
 - [Evident Point](http://www.evidentpoint.com/)
 - [Google](https://www.google.org/)
-- [Ingram Content Group](https://www.ingramcontent.com/) / [Vital Source Technologies](https://www.vitalsource.com/)
+- [Hachette Livre](http://www.hachette.fr)
+- [Ingram / VitalSource](https://www.ingramcontent.com/)
 - [Kivuto Solutions](https://kivuto.com/)
 - [Learning Ally](https://learningally.org/)
 - [New York Public Library](https://www.nypl.org/)
@@ -59,4 +60,4 @@ Adopters are encouraged to help support Readium SDK development and maintenance 
 - [Norwegian Library of Talking Books](http://www.nlb.no)
 - [Ravn Webveveriet](https://www.ravn.no/)
 - [Russian State Library](https://www.rsl.ru)
-- [The Ebook Alternative](https://www.tea-ebook.com/)
+- [Vivlio](https://www.vivlio.com/)
