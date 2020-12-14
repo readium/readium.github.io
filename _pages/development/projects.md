@@ -11,7 +11,10 @@ The following projects rely on the [Readium Architecture](https://readium.org/ar
 - [Readium Mobile](https://readium.org/mobile/): the Readium toolkit dedicated to iOS and Android reading apps; written in Swift (iOS) and Kotlin (Android).
 - [Readium Desktop](https://readium.org/desktop/): the Readium toolkit dedicated to Windows, MacOS and Linux apps; written in typescript, based on node.js and Electron.js.
 - [Readium Web](https://readium.org/web/): the Readium toolkit dedicated to Web apps managing Readium Web Publications; written in typescript.
-- [Readium Publication Server](https://github.com/readium/r2-streamer-go): a server of Readium Web Publications; written in Go. This is the server counterpart of an app built on Readium Web, when the original content is in EPUB 3 or is a Readium package.  
+
+And in the medium term: 
+
+- Readium Publication Server: a server of Readium Web Publications; written in Go and node.js. This is the server companion of Readium Web for when the original content is in EPUB or is a Readium package.  
 
 ## Projects in Maintenance Mode
 
