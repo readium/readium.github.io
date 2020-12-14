@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: "/development/projects"
-title: Projects
+title: Readium Projects
 ---
 
 ## Current Projects
