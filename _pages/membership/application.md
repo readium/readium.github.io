@@ -12,6 +12,6 @@ Details about membership dues are found on the [Join the Readium Foundation page
 
 Upon submission, the primary representative will receive an email acknowledgement of the pending application. When processed (usually within 2 business days), he will receive an invoice by email and be listed on our website as a member.
 
-If you have any questions, please contact one of the [Readium Foundation board members](https://readium.org/membership/overview/).
+If you have any questions, please [contact the Readium Foundation](mailto:contact@readium.org?subject=Readium%20Enquiry).
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTjJk47O82NjpUfiY9wukVCSz39ThVkvdsrjZouLMrAjaGjg/viewform?embedded=true" width="650" height="2500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
