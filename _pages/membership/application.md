@@ -14,4 +14,4 @@ Upon submission, the primary representative will receive an email acknowledgemen
 
 If you have any questions, please contact one of the [Readium Foundation board members](https://readium.org/membership/overview/).
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScailYPbPU0o1bWBz8tCHoJVLrEHj4tBwIZ9i5Y8ObQYnVPUw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTjJk47O82NjpUfiY9wukVCSz39ThVkvdsrjZouLMrAjaGjg/viewform?embedded=true" width="650" height="2500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
