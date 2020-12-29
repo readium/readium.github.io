@@ -14,4 +14,4 @@ Upon submission, the primary representative will receive an email acknowledgemen
 
 If you have any questions, please [contact the Readium Foundation](mailto:contact@readium.org?subject=Readium%20Enquiry).
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTjJk47O82NjpUfiY9wukVCSz39ThVkvdsrjZouLMrAjaGjg/viewform?embedded=true" width="650" height="2500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTjJk47O82NjpUfiY9wukVCSz39ThVkvdsrjZouLMrAjaGjg/viewform?embedded=true" width="650" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
