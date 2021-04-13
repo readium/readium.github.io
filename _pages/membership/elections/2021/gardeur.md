@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Candidate Statement - Jean-Philippe Bougie
-permalink: /membership/elections/2020/bougie/
+title: Candidate Statement - Hadrien Gardeur
+permalink: /membership/elections/2021/gardeur/
 ---
 
 Dear Readium members, 
