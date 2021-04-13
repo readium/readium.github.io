@@ -22,6 +22,6 @@ Over the years, I've been deeply involved with some of the key projects of the R
  - while Readium Mobile started out with proof of concepts on the Web, Readium Web continues to lag behind what we've achieved with mobile and desktop. As a board member, I'll make sure that we bridge that gap and turn Readium into the engine that powers millions of Web Publications.
 - As an organization, Readium is no longer simply an alliance between reading system vendors. As a board member, I'll make sure that we extend our reach towards other types of organizations as well, such as national and specialized libraries and beyond trade publishing.  
  
-Best regards,
-Hadrien Gardeur
+Best regards,<br>
+Hadrien Gardeur<br>
 Head of Product at De Marque 
