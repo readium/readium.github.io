@@ -9,8 +9,6 @@ permalink: /news/_posts/2021-01-21-board-meeting-summary/
 
 # Summary Notes, Readium Board of Directors Meeting
 
-Date: 2021-01-21
-
 ## Agenda
 
 - Review of Work in Progress

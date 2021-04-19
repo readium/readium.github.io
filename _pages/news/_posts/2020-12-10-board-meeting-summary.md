@@ -9,8 +9,6 @@ permalink: /news/_posts/2020-12-10-board-meeting-summary/
 
 # Summary Notes, Readium Board of Directors Meeting
 
-Date: 2020-12-10
-
 ## Agenda
 
 - Financial Status
@@ -59,7 +57,7 @@ Final Fee Structure Proposal:
 |     E     | Between $250 million and $2 billion                        | $3000 per year |
 |     F     | Over $2 billion                                            | $4000 per year |
 
-For non-profit organizations, the membership fee is based on the annual budget. New members benefit from a 25% discount during the two first years of membership, but they must pay in advance by Stripe or Paypal.
+<br>For non-profit organizations, the membership fee is based on the annual budget. New members benefit from a 25% discount during the two first years of membership, but they must pay in advance by Stripe or Paypal.
 
 - Proposal to agree on the membership structure presented here
 - Proposal seconded and accepted
