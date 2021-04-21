@@ -40,6 +40,8 @@ Again, the CloudReader may (and usually does) run properly on other browser/plat
 
 ## More
 
-[Using the CloudReader to Test EPUB Publications](/technical/notes/testing-with-cloudreader/).
+[Online demo of the Cloud Reader](https://readium.web.app/)
 
-[View the release notes for Readium SDK and JS](releases.md).
+[Using the Cloud Reader to Test EPUB Publications](/technical/notes/testing-with-cloudreader/).
+
+[Release notes for the Readium SDK and JS](releases.md).
