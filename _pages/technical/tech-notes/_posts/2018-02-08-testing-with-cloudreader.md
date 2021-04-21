@@ -4,7 +4,7 @@ title: Using the CloudReader to Test EPUB Publications
 excerpt:  The Readium Chrome App has become a popular choice to test/check EPUB2 and EPUB3 publications on desktop platforms, but Google is now deprecating it.  Fortunately, the CloudReader can also be used to test those EPUBs.  This tech note explains how.
 date:   2018-02-08 8:45:00 +0100
 categories: tech-notes
-permalink: /technical/technical-notes/_posts/testing-with-cloudreader/
+permalink: /technical/notes/testing-with-cloudreader/
 ---
 
 The Readium Chrome App has become a popular choice to test/check EPUB2 and EPUB3 publications on desktop platforms (Windows, MacOS, Linux, and ChromeOS). Unfortunately, Google is deprecating the "apps" framework in the Chrome web browser, so the Readium app will soon be removed from the Chrome Web Store (during the first half of 2018). That being said, even if the Readium Chrome App remained available, there would be other limitations inherent to the Chrome "apps" model (such as Content Security Policy restrictions on inline Javascript, which breaks most of the  existing interactive EPUB3 publications).

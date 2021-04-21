@@ -1,5 +1,5 @@
 ---
 layout: tech-notes
-permalink: "/technical/tech-notes/tech-notes/"
+permalink: "/technical/notes/"
 title: Readium Technical Notes
 ---

@@ -38,6 +38,8 @@ The CloudReader is currently validated against the latest version of all major b
 
 Again, the CloudReader may (and usually does) run properly on other browser/platform combinations, but Readium does not validate against them.
 
-## Releases
+## More
+
+[Using the CloudReader to Test EPUB Publications](/technical/notes/testing-with-cloudreader/).
 
 [View the release notes for Readium SDK and JS](releases.md).
