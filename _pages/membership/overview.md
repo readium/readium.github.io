@@ -26,9 +26,9 @@ Adopters are encouraged to help support Readium software development and mainten
 
 - Laurent Le Meur ([EDRLab](https://edrlab.org)) as President
 - Risa Wolf ([NYPL](https://www.nypl.org)) as Secretary
-- Aferdita Muriqi ([AM Consulting](mailto:aferdita.muriqi@gmail.com)) as Treasurer
-- Brian O'Leary ([BISG](https://www.bisg.org)) as Assistant treasurer
-- Yuri Khramov ([Evident Point](http://www.evidentpoint.com/))
+- Brian O'Leary ([BISG](https://www.bisg.org)) as Assistant Treasurer
+- Robert Cartolano ([Columbia University Library](https://library.columbia.edu/)
+- Hadrien Gardeur ([De Marque](https://www.demarque.com/))
 
 ## Current Members
 
