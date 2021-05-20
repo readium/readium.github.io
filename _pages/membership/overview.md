@@ -38,6 +38,7 @@ From A to Z:
 - [Bibliovault](https://www.bibliovault.org)
 - [BISG](https://www.bisg.org)
 - [Bluefire Productions](http://www.bluefirereader.com/)
+- [Bokbasen](htts://www.bokbasen.com)
 - [Columbia University Library](https://library.columbia.edu/)
 - [DAISY consortium](https://daisy.org/)
 - [De Marque](https://www.demarque.com/)
