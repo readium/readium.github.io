@@ -48,7 +48,6 @@ From A to Z:
 - [Ekitabu](https://www./ekitabu.com)
 - [Ellibs Oy](https://www.ellibs.com/)
 - [Evident Point](http://www.evidentpoint.com/)
-- [Google](https://www.google.org/)
 - [Ingram / VitalSource](https://www.ingramcontent.com/)
 - [Kivuto Solutions](https://kivuto.com/)
 - [Learning Ally](https://learningally.org/)
