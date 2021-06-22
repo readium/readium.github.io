@@ -45,7 +45,7 @@ From A to Z:
 - [Dilicom](http://www.dilicom.net)
 - [Eden Livre](https://www.edenlivres.fr/)
 - [EDRLab](https://www.edrlab.org/)
-- [Ekitabu](https://www./ekitabu.com)
+- [Ekitabu](https://www.ekitabu.com)
 - [Ellibs Oy](https://www.ellibs.com/)
 - [Evident Point](http://www.evidentpoint.com/)
 - [Kivuto Solutions](https://kivuto.com/)
