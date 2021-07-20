@@ -54,5 +54,6 @@ From A to Z:
 - [Nord Compo](http://www.nordcompo.com/)
 - [Norwegian Library of Talking Books](http://www.nlb.no)
 - [Russian State Library](https://www.rsl.ru)
+- [Tagus Books](https://www.tagusbooks.com)
 - [VitalSource Technologies](https://get.vitalsource.com)
 - [Vivlio](https://www.vivlio.com/)
