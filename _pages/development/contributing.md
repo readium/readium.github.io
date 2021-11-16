@@ -12,7 +12,7 @@ table, td, th {
 
 ## Introduction
 
-As an open-source project, Readium welcomes contributions from everyone - individuals, corporations and non-profit organizations. The best way to get started with Readium is to read through the introductory materials on this site, subscribe to the Readium Slack, the mailing list and, of course, download source code and start playing.
+As an open-source project, Readium welcomes contributions from everyone - individuals, corporations and non-profit organizations. The best way to get started with Readium is to read through the introductory materials on this site, subscribe to the Readium Slack and of course download source code and start playing.
 
 An important note to bear in mind is that YOU are the Readium team. The Readium Foundation has no "dedicated team" and every piece of the different Readium projects is done by Readium contributors.
 
@@ -23,7 +23,6 @@ An important note to bear in mind is that YOU are the Readium team. The Readium 
 *  Contribution can be done in a variety of ways: submitting or reviewing pull requests, participating in the Readium Dev calls and in architectural discussions, writing technical documentation, etc.
 * Anyone is welcome to contribute to Readium projects.
 * No special rights are required, anyone can submit a pull request from a private fork or open issues to question the API or architecture.
-* 
 
 ### Maintainer
 
@@ -81,8 +80,7 @@ Before contributing, please sign and send to the Readium Foundation the [Readium
 
 ## Coding Style
 
-* To avoid heated debates about coding style in PRs, contributors must follow a style guide agreed upon beforehand.
-Selecting the style guide is done collaboratively, privileging best practices and most established standards for each platform.
+* To avoid heated debates about coding style in PRs, contributors must follow a style guide agreed upon beforehand. Selecting the style guide is done collaboratively, privileging best practices and most established standards for each platform.
 * Automated linters are used to enforce coding style.
 * Not observing the style guide is a valid reason to reject a pull request.
 
@@ -129,17 +127,15 @@ Plase [ask an invite](http://readium-slack.herokuapp.com) for accessing the [Rea
 
 There is also a mailing list for the Readium projects, essentially used for sending notifications to all interested parties.
 
-To join, simply send mail to [Ric Wright](rkwright@readium.org), requesting access. 
+To join, simply send mail to [the Readium Foundation contact](contact@readium.org), requesting access. 
 
 You can also visit the [Google Readium mailing-list](https://groups.google.com/forum/?fromgroups#!forum/readium-dev) page, where you can also browse the archives and request access.
 
 ### Weekly Meetings
 
-The Readium Engineering meeting is held each Wednesdays at 16.30h UTC.
+The Readium Dev meeting is held each Wednesday at 16:30 UTC.
 
-It is hosted on the EDRLab GoToMeeting, [here](https://global.gotomeeting.com/join/915053453).
-
-Phone access is also available from a large set of countries: phone numbers are available on demand (they change from time to time).
+It is hosted on Zoom and notified on Slack (general channel, 15 mn before each call).
 
 **Note!**
 
@@ -148,7 +144,7 @@ Phone access is also available from a large set of countries: phone numbers are 
 
 ### Face to Face Meetings
 
-Once a year, we try to arrange a face-to-face meeting of the developers and contributors. These usually but not always coincide with Readium membership meetings and/or major eBook conferences like the Digital Publishing Summit.
+Once a year, we try to arrange a face-to-face meeting of the Readium members and contributors. These usually but not always coincide with major eBook conferences like the Digital Publishing Summit.
 
 ### Meeting Archives
 
