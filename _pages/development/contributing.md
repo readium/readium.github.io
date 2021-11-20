@@ -12,11 +12,39 @@ table, td, th {
 
 ## Introduction
 
-As an open-source project, Readium welcomes contributions from everyone - individuals, corporations and non-profit organizations. The best way to get started with Readium is to read through the introductory materials on this site, subscribe to the Readium Slack and of course download source code and start playing.
+As an open-source project, Readium welcomes contributions from everyone - individuals, corporations and non-profit organizations. The best way to get started with Readium is to read through the introductory materials on this site, subscribe to the Readium Slack and of course download the source code and start playing.
 
-An important note to bear in mind is that YOU are the Readium team. The Readium Foundation has no "dedicated team" and every piece of the different Readium projects is done by Readium contributors.
+An important note to bear in mind is that YOU are the Readium team. The Readium Foundation has no "dedicated team" and every piece of the different Readium projects is done by Readium contributors. Contributors have therefore an important role 
 
-## The Roles of Participants
+Many developers take Readium toolkits and integrate them into their application without contributing back to the Readium project. This is already really useful, as the increase of the number of applications based on  Readium toolkits mechanically improves the level of interoperability of EPUB 3, Audiobooks and Divina reading systems. Non-contributing developers are considered as "guests" for the active Readium community and also have a role and some duties, detailed below. 
+
+## The Roles and duties of Participants
+
+### Guest
+
+* If you decide to start a development based on Readium Mobile, please:
+  * Make sure that the whole dev team has a good understanding of Swift and Kotlin development, including build systems, dependency management etc., i.e basics that are not part of Readium Mobile. The Readium community cannot help beginners in mobile development. 
+  * Before expecting help in solving your implementation issues, check the codebase of the TestApp provided with the Swift and Kotlin toolkit: the TestApp does work and has all the details you need.
+  * If you have problems with the TestApp you just built, download the pre-compiled beta R2 Reader testapp (links are found in the readme of the Swift and Kotlin toolkits).  
+  * Once you have the TestApp running (and working with LCP in test mode if you are using it), this will hopefully leave only very specific questions to ask.
+  * If you have specific questions about the Swift or Kotlin toolkit, and the answer is not found in the codebase, Github discussions, Slack history, please ask those questions in the #r2-swift or #r2-kotlin Slack channel respectively.  
+  * If after careful testing you think you have discovered an issue related to the Swift or Kotlin toolkit, please open a Github issue in the swift-toolkit or kotlin-toolkit respectively.
+  * If the community cannot answer to your questions or help solving your problems, paid consulting has to be considered.
+  
+* If you decide to start a development based on Readium Desktop (or EDRLab's Thorium Reader), please:
+ * Make sure that the whole dev team has a very good understanding of Electron.js, React.js and typescript, including build systems, dependency management etc. This project is not for faint hearts.
+ * Other rules are the same as for the Readium Mobile toolkit; the best Slack channel for discussions is #r2-desktop and issues are to be open in the appropriate r2-*-js Github repository. Only application-level issues can be open in the EDRLab thorium-reader Github repository. 
+
+ * If you decide to start a development using LCP:
+  * Once you have obtained the test LCP client library from EDRLab, the instructions available in the toolkit should be enough to integrate the library without hiccup. 
+  * A first-level support is offered by EDRLab for LCP integrations.
+  * If you have specific questions about the LCP DRM, please ask those questions in the #lcp Slack channel.
+  * If the community cannot answer to your questions or help solving your problems, paid consulting has to be considered.
+ 
+ * Once your Readium-based application is ready:
+  * Please announce this achievement in the Readium Slack, #general channel, with links to the apps on the Apple and Google stores. We will then add your app to the "awesome Readium" page.
+  * The Readium community will appreciate if you promote Readium on social networks. 
+  * It is still time to become a Contributor, see below ...
 
 ### Contributor
 
@@ -53,7 +81,9 @@ Contributors grant to the Readium Foundation and to recipients of software distr
 
 Before contributing, please sign and send to the Readium Foundation the [Readium Individual Contributor License Agreement (ICLA)](/documents/Individual Contributor License Agreement.pdf).
 
-## How to Contribute
+## Contributions 
+
+### How to Contribute
 
 * Contributing to Readium is best done following these steps:
   1. Open an issue on the relevant repositories to state a problem you want to fix.
@@ -66,7 +96,7 @@ Before contributing, please sign and send to the Readium Foundation the [Readium
 * Nobody (including maintainers) has a grant to push/merge significant commits on develop and master without peer-review first, through a pull request.
   * Exception is made for minor contributions, such as fixing typos, cleaning files or an obvious bug fix.
 
-## Review of Pull Requests
+### Review of Pull Requests
 
 * Before being merged, all pull requests (including the ones from maintainers) must:
   * Be reviewed by at least one contributor from a different company than the author.
@@ -78,19 +108,19 @@ Before contributing, please sign and send to the Readium Foundation the [Readium
 * If nobody was willing to review a maintainer's pull request after the review window, then it can be merged.
 * Upon merge and if relevant, an entry in the next change log must be added with a link to the pull request and, if necessary, migration information for reading apps.
 
-## Coding Style
+### Coding Style
 
 * To avoid heated debates about coding style in PRs, contributors must follow a style guide agreed upon beforehand. Selecting the style guide is done collaboratively, privileging best practices and most established standards for each platform.
 * Automated linters are used to enforce coding style.
 * Not observing the style guide is a valid reason to reject a pull request.
 
-## Architectural Decisions
+### Architectural Decisions
 
 * Because of their deeply impacting nature, each architectural and API decision must be first discussed and agreed upon through an issue on either architecture, or in the appropriate repository for platform-specific concerns.
   * Readium Dev calls and Slack are not the place to take architectural decisions, but they can be used for debate or suggesting ideas.
 * Upon agreement, a Markdown documentation will be produced to explain the architecture or API, and the solution will be implemented. This document will usually be stored into the Architecture repository on Github. 
 
-## In Case of Disagreement
+### In Case of Disagreement
 
 * In such a collaborative project, disagreement is bound to occur. If it can't be solved through informal discussion, then we follow this process:
   1. An issue is opened on the appropriate repository.
@@ -117,6 +147,8 @@ Before contributing, please sign and send to the Readium Foundation the [Readium
 
 ## Project Communication
 
+Github issues are the prime medium for communicating about the evolution of the codebase. 
+
 ### Slack
 
 Readium developers are using Slack for real-time chats.
@@ -125,7 +157,7 @@ Plase [ask an invite](http://readium-slack.herokuapp.com) for accessing the [Rea
 
 ### Mailing List
 
-There is also a mailing list for the Readium projects, essentially used for sending notifications to all interested parties.
+There is also a mailing list for the Readium projects, but it is essentially used for sending notifications to all interested parties.
 
 To join, simply send mail to [the Readium Foundation contact](contact@readium.org), requesting access. 
 
@@ -135,7 +167,7 @@ You can also visit the [Google Readium mailing-list](https://groups.google.com/f
 
 The Readium Dev meeting is held each Wednesday at 16:30 UTC.
 
-It is hosted on Zoom and notified on Slack (general channel, 15 mn before each call).
+It is hosted on Zoom and notified on Slack (#general channel, 15 mn before each call).
 
 **Note!**
 
