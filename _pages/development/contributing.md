@@ -22,7 +22,7 @@ Many developers take Readium toolkits and integrate them into their application 
 
 ### Guest
 
-#### On Readium Mobile
+#### __On Readium Mobile__
 
 If you decide to start a development based on Readium Mobile, please:
 
@@ -31,24 +31,24 @@ If you decide to start a development based on Readium Mobile, please:
 * If you have problems with the TestApp you just built, download the pre-compiled beta R2 Reader testapp (links are found in the readme of the Swift and Kotlin toolkits).  
 * Once you have the TestApp running (and working with LCP in test mode if you are using it), this will hopefully leave only very specific questions to ask.
 * If you have specific questions about the Swift or Kotlin toolkit, and the answer is not found in the codebase, Github discussions, Slack history, please ask those questions in the #r2-swift or #r2-kotlin Slack channel respectively.  
-* If after careful testing you think you have discovered an issue related to the Swift or Kotlin toolkit, please open a Github issue in the swift-toolkit or kotlin-toolkit respectively.
+* If after careful testing you think you have discovered an issue related to the Swift or Kotlin toolkit, please open a Github issue in the swift-toolkit or kotlin-toolkit repository respectively.
 * If the community cannot answer to your questions or help solving your problems, paid consulting has to be considered.
   
-#### On Readium Desktop
+#### __On Readium Desktop__
 
 If you decide to start a development based on Readium Desktop (or EDRLab's Thorium Reader), please:
 
 * Make sure that the whole dev team has a very good understanding of Electron.js, React.js and typescript, including build systems, dependency management etc. This project is not for faint hearts.
 * Other rules are the same as for the Readium Mobile toolkit; the best Slack channel for discussions is #r2-desktop and issues are to be open in the appropriate r2-*-js Github repository. Only application-level issues can be open in the EDRLab thorium-reader Github repository. 
 
-#### On Readium LCP
+#### __On Readium LCP__
 
 * Once you have obtained the test LCP client library from EDRLab, the instructions available in the toolkit should be enough to integrate the library without hiccup. 
 * A first-level support is offered by EDRLab for LCP integrations.
 * If you have specific questions about the LCP DRM, please ask those questions in the #lcp Slack channel.
 * If the community cannot answer to your questions or help solving your problems, paid consulting has to be considered.
  
-#### Once the app is ready
+#### __Once the app is ready__
 
 * Please announce this achievement in the Readium Slack, #general channel, with links to the apps on the Apple and Google stores. We will then add your app to the "awesome Readium" page.
 * The Readium community will appreciate if you promote Readium on social networks. 
