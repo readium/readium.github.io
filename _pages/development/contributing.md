@@ -16,7 +16,7 @@ As an open-source project, Readium welcomes contributions from everyone - indivi
 
 An important note to bear in mind is that YOU are the Readium team. The Readium Foundation has no "dedicated team" and every piece of the different Readium projects is done by Readium contributors. Contributors have therefore an important role 
 
-Many developers take Readium toolkits and integrate them into their application without contributing back to the Readium project. This is already really useful, as the increase of the number of applications based on  Readium toolkits mechanically improves the level of interoperability of EPUB 3, Audiobooks and Divina reading systems. Non-contributing developers are considered as "guests" for the active Readium community and also have a role and some duties, detailed below. 
+Many developers take Readium toolkits and integrate them into their application without contributing back to the Readium project. This is already really useful, as the increase of the number of applications based on  Readium toolkits mechanically improves the level of interoperability of EPUB 3, Audiobooks and Divina reading systems. Non-contributing developers are considered "guests" by the active Readium community and also have a role and some duties, detailed below. 
 
 ## The Roles and duties of Participants
 
