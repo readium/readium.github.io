@@ -14,13 +14,13 @@ table, td, th {
 
 As an open-source project, Readium welcomes contributions from everyone - individuals, corporations and non-profit organizations. The best way to get started with Readium is to read through the introductory materials on this site, subscribe to the Readium Slack and of course download the source code and start playing.
 
-An important note to bear in mind is that YOU are the Readium team. The Readium Foundation has no "dedicated team" and every piece of the different Readium projects is done by Readium contributors. Contributors have therefore an important role 
+An important note to bear in mind is that YOU are the Readium team. The Readium Foundation has no "dedicated team" and every piece of the different Readium projects is done by Readium contributors. Contributors have therefore an important role in the organization.
 
-Many developers take Readium toolkits and integrate them into their application without contributing back to the Readium project. This is already really useful, as the increase of the number of applications based on  Readium toolkits mechanically improves the level of interoperability of EPUB 3, Audiobooks and Divina reading systems. Non-contributing developers are considered "guests" by the active Readium community and also have a role and some duties, detailed below. 
+Many developers take Readium toolkits and integrate them into their application without contributing back to the Readium project. This is already really useful, as the increase of the number of applications based on Readium toolkits mechanically improves the level of interoperability of EPUB 3 and Audiobooks reading systems. Non-contributing developers are considered "implementers" by the active Readium community and also have a role, plus some duties, detailed below. 
 
 ## The Roles and duties of Participants
 
-### Guest
+### Implementer
 
 #### __On Readium Mobile__
 
@@ -38,11 +38,12 @@ If you decide to start a development based on Readium Mobile, please:
 
 If you decide to start a development based on Readium Desktop (or EDRLab's Thorium Reader), please:
 
-* Make sure that the whole dev team has a very good understanding of Electron.js, React.js and typescript, including build systems, dependency management etc. This project is not for faint hearts.
+* Make sure that the whole dev team has a very good understanding of Electron.js, React.js and typescript, including build systems, dependency management etc. This project is not for faint hearts ;-).
 * Other rules are the same as for the Readium Mobile toolkit; the best Slack channel for discussions is #r2-desktop and issues are to be open in the appropriate r2-*-js Github repository. Only application-level issues can be open in the EDRLab thorium-reader Github repository. 
 
 #### __On Readium LCP__
 
+* Make sure that the whole dev team has a very good understanding of security on the Web (setting up https, securing confidential information etc.).
 * Once you have obtained the test LCP client library from EDRLab, the instructions available in the toolkit should be enough to integrate the library without hiccup. 
 * A first-level support is offered by EDRLab for LCP integrations.
 * If you have specific questions about the LCP DRM, please ask those questions in the #lcp Slack channel.
