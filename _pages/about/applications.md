@@ -4,7 +4,7 @@ permalink: "/about/applications.html/"
 title: Useful applications based on Readium technology
 ---
 
-### Thorium Reader
+### Readium Chrome Application user: move to Thorium Reader
 
 The [Readium Chrome Application](https://chrome.google.com/webstore/detail/readium/fepbnnnkkadjhjahcafoaglimekefifl) should not be used anymore, as Google has decided to remove support for "apps" in the Chrome Web Browser, as [explained here](https://developer.chrome.com/docs/apps/migration/). 
 
