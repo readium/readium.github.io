@@ -95,6 +95,7 @@ Before contributing, please sign and send to the Readium Foundation the [Readium
 ### How to Contribute
 
 * Contributing to Readium is best done following these steps:
+  1. Check previous issues (open or closed) and Github discussions. You may find that your problem is already treated. 
   1. Open an issue on the relevant repositories to state a problem you want to fix.
      1. This will avoid getting a pull request rejected because it doesn't fit the design goals.
      1. It will help gather opinions and information from other contributors.
@@ -158,11 +159,13 @@ Before contributing, please sign and send to the Readium Foundation the [Readium
 
 Github issues are the prime medium for communicating about the evolution of the codebase. 
 
+### Github discussions
+
+Most Readium repositories have discussions attached, and they should be used in priority if you have a question. The core contributors are actively participating to these discussions.  
+
 ### Slack
 
-Readium developers are using Slack for real-time chats.
-
-Plase [ask an invite](http://readium-slack.herokuapp.com) for accessing the [Readium Slack](https://readium.slack.com), then select the channnels you're interested in (including "general", "r2-swift", "r2-kotlin" etc.).
+Readium contributors are using Slack for real-time chats. Access to the Readium Slack is reserved to Readium Foundation Members and invited guests. 
 
 ### Mailing List
 
