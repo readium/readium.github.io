@@ -165,7 +165,7 @@ Most Readium repositories have discussions attached, and they should be used in 
 
 ### Slack
 
-Readium contributors are using Slack for real-time chats. Access to the Readium Slack is reserved to Readium Foundation Members and invited guests. 
+Readium contributors are using Slack for real-time chats. Access to the [Readium Slack](https://readium.slack.com) is reserved to Readium Foundation Members and invited guests. 
 
 ### Mailing List
 
