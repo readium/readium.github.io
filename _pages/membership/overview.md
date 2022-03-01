@@ -34,7 +34,6 @@ Adopters are encouraged to help support Readium software development and mainten
 
 From A to Z:
 
-- [AM Consulting (DITA)](mailto:aferdita.muriqi@gmail.com)
 - [Bibliovault](https://www.bibliovault.org)
 - [BISG](https://www.bisg.org)
 - [Bluefire Productions](http://www.bluefirereader.com/)
@@ -43,17 +42,11 @@ From A to Z:
 - [DAISY consortium](https://daisy.org/)
 - [De Marque](https://www.demarque.com/)
 - [Dilicom](http://www.dilicom.net)
-- [Eden Livre](https://www.edenlivres.fr/)
 - [EDRLab](https://www.edrlab.org/)
-- [Ekitabu](https://www.ekitabu.com)
+- [eKitabu](https://www.ekitabu.com)
 - [Ellibs Oy](https://www.ellibs.com/)
-- [Evident Point](http://www.evidentpoint.com/)
-- [Kivuto Solutions](https://kivuto.com/)
 - [Learning Ally](https://learningally.org/)
 - [New York Public Library](https://www.nypl.org/)
-- [Nord Compo](http://www.nordcompo.com/)
-- [Norwegian Library of Talking Books](http://www.nlb.no)
-- [Russian State Library](https://www.rsl.ru)
 - [Tagus Books](https://www.tagusbooks.com)
 - [VitalSource Technologies](https://get.vitalsource.com)
 - [Vivlio](https://www.vivlio.com/)
