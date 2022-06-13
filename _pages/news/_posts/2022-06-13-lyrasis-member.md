@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Lyrasis is becoming member of the Readium Foundation
-excerpt: .
+excerpt: Lyrasis has just launched a Readium based mobile application.
 date:   2022-06-13 11:30:00 +0100
 categories: news
 permalink: /news/_posts/lyrasis-member/
