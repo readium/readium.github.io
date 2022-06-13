@@ -10,7 +10,7 @@ The following projects rely on the [Readium Architecture](https://readium.org/ar
 
 - [Readium Mobile](https://readium.org/mobile/): the Readium toolkit dedicated to iOS and Android reading apps; written in Swift (iOS) and Kotlin (Android).
 - [Readium Desktop](https://readium.org/desktop/): the Readium toolkit dedicated to Windows, MacOS and Linux apps; written in typescript, based on node.js and Electron.js.
-- [Readium Web](https://readium.org/web/): the Readium toolkit dedicated to Web apps managing Readium Web Publications; written in typescript.
+- [Readium Web](https://readium.org/ts-toolkit/): the Readium toolkit dedicated to Web apps managing Readium Web Publications; written in typescript.
 
 In the medium term, a new project will be released: 
 
