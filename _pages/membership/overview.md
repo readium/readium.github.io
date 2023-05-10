@@ -49,5 +49,5 @@ From A to Z:
 - [Lyrasis](https://lyrasis.org/)
 - [New York Public Library](https://www.nypl.org/)
 - [Tagus Books (Casa del Libro)](https://www.tagusbooks.com)
-- [VitalSource Technologies (Ingram)](https://get.vitalsource.com)
+- [VitalSource Technologies](https://get.vitalsource.com)
 - [Vivlio](https://www.vivlio.com/)
