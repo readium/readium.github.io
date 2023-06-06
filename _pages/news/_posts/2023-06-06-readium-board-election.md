@@ -17,5 +17,5 @@ The board of the Readium Foundation is currently counting five Directors:
 
 Three seats are now open, those occupied by Laurent Le Meur, Risa Wolf and Brian O'Leary. Two members have candidated this year: Laurent Le Meur and Kate Davey (BiblioVault). Their candidate statements are available [here](https://readium.org/membership/elections/2023/).
 
-The voting period is starting on June 7th and will last until June 28th, and is reserved to members of the Readium Foundation in good standing. 
+The voting period is starting on June 7th and will last until June 25th (one day before tre General Meeting), and is reserved to members of the Readium Foundation in good standing. 
 
