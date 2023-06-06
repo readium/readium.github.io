@@ -14,3 +14,4 @@ This page has links to all the board candidate's statements from 2014 to 2021.
  - [2018](./2018/)  
  - [2020](./2020/)
  - [2021](./2021/)
+ - [2023](./2023/)

@@ -44,7 +44,7 @@ From A to Z:
 - [Dilicom](http://www.dilicom.net)
 - [EDRLab](https://www.edrlab.org/)
 - [eKitabu](https://www.ekitabu.com)
-- [Ellibs Oy](https://www.ellibs.com/)
+- [Ellibs](https://www.ellibs.com/)
 - [Learning Ally](https://learningally.org/)
 - [Lyrasis](https://lyrasis.org/)
 - [New York Public Library](https://www.nypl.org/)
