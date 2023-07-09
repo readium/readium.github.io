@@ -1,5 +1,4 @@
-Readium Foundation General Meeting - 2023-06-26
-=======
+Summary of the Readium Foundation General Meeting, held on 2023-06-26
 
 Attendees
 -----------
