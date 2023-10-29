@@ -167,19 +167,9 @@ Most Readium repositories have discussions attached, and they should be used in 
 
 Readium contributors are using Slack for real-time chats. Access to the [Readium Slack](https://readium.slack.com) is reserved to Readium Foundation Members and invited guests. 
 
-### Mailing List
-
-There is also a mailing list for the Readium projects, but it is essentially used for sending notifications to all interested parties.
-
-To join, simply send mail to [the Readium Foundation contact](contact@readium.org), requesting access. 
-
-You can also visit the [Google Readium mailing-list](https://groups.google.com/forum/?fromgroups#!forum/readium-dev) page, where you can also browse the archives and request access.
-
 ### Weekly Meetings
 
-The Readium Dev meeting is held each Wednesday at 16:30 UTC.
-
-It is hosted on Zoom and notified on Slack (#general channel, 15 mn before each call).
+A Readium Developer meeting is held every other Wednesday at a time compatible with Europe and US work hours. It is hosted on Zoom and notified on the Readium Slack (#general channel, 15 mn before each call).
 
 **Note!**
 
@@ -188,8 +178,5 @@ It is hosted on Zoom and notified on Slack (#general channel, 15 mn before each 
 
 ### Face to Face Meetings
 
-Once a year, we try to arrange a face-to-face meeting of the Readium members and contributors. These usually but not always coincide with major eBook conferences like the Digital Publishing Summit.
+Once a year, we try to arrange a face-to-face meeting of the Readium Foundation members and contributors. These usually but not always coincide with major eBook events like the FRankfurt Book Fair or the EDRLab Digital Publishing Summit.
 
-### Meeting Archives
-
-The agenda and notes from all meetings are archived in the Readium Google Doc cloud space. You can access the archives [here](https://drive.google.com/drive/folders/0BzaNaBNAB6FjbzR5NWFVWVo2dDg).
