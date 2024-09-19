@@ -26,7 +26,7 @@ Adopters are encouraged to help support Readium software development and mainten
 
 - Laurent Le Meur ([EDRLab](https://edrlab.org)) as President
 - Risa Wolf ([NYPL](https://www.nypl.org)) as Secretary
-- Brian O'Leary ([BISG](https://www.bisg.org)) as Assistant Treasurer
+- Kate Davey ([University of Chicago Press](https://www.bibliovault.org)) as Treasurer
 - Robert Cartolano ([Columbia University Library](https://library.columbia.edu/))
 - Hadrien Gardeur ([De Marque](https://www.demarque.com/))
 
@@ -41,7 +41,6 @@ From A to Z:
 - [Columbia University Library](https://library.columbia.edu/)
 - [DAISY consortium](https://daisy.org/)
 - [De Marque](https://www.demarque.com/)
-- [Dilicom](http://www.dilicom.net)
 - [EDRLab](https://www.edrlab.org/)
 - [eKitabu](https://www.ekitabu.com)
 - [Ellibs](https://www.ellibs.com/)
