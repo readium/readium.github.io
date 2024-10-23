@@ -1,4 +1,10 @@
-Summary of the Readium Foundation General Meeting, held on 2023-06-26
+---
+layout: post
+title:  Readium General Assembly Summary
+excerpt: Summary of the Readium Foundation General Meeting, held on 2023-06-26 
+date:   2023-06-26 11:30:00 +0100
+categories: news
+---
 
 Attendees
 -----------

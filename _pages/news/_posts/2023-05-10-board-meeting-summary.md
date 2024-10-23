@@ -7,10 +7,6 @@ categories: news
 permalink: /news/_posts/2023-05-10-board-meeting-summary/
 ---
 
-Readium Foundation Board meeting - 2023-05-10
-=======
-
-
 Attendees
 -----------
 Risa Wolf (NYPL)

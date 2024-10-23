@@ -7,9 +7,6 @@ categories: news
 permalink: /news/_posts/2023-08-01-board-meeting-summary/
 ---
 
-Readium Foundation General Meeting - 2023-08-01
-=======
-
 Attendees
 -----------
 Laurent Le Meur (EDRLab)

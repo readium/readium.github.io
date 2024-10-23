@@ -1,14 +1,9 @@
 ---
 layout: post
-title:  Board meeting summary
-excerpt: Internal Elections, Bylaws Update and more. 
+excerpt: Internal Elections, Frankfurt book fair, Membership Conference and more. 
 date:   2024-09-19 11:30:00 +0100
 categories: news
-permalink: /news/_posts/2024-09-19-board-meeting-summary/
 ---
-
-Readium Foundation General Meeting - 2023-08-01
-=======
 
 Attendees
 -----------
