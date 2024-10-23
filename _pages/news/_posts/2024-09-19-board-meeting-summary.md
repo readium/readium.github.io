@@ -8,11 +8,7 @@ permalink: /news/2024-09-19-board-meeting-summary/
 
 Attendees
 -----------
-- Laurent Le Meur (EDRLab)
-- Kate Davey (BiblioVault / the University of Chicago Press)
-- Risa Wolf (NYPL)
-- Robert Cartolano (Columbia University)
-- Hadrien Gardeur (De Marque)
+Laurent Le Meur (EDRLab), Kate Davey (BiblioVault / the University of Chicago Press), Risa Wolf (NYPL), Robert Cartolano (Columbia University), Hadrien Gardeur (De Marque)
 
 
 Agenda
@@ -66,12 +62,12 @@ Updates provided  on technology progress, informational only
 - Outline progress on Readium Web and Readium CSS v2
 - Outline progress on Readium Mobile toolkits
 - Announcement of new initiatives: 
--- Readium Speech
--- Readium Playground
-—- Readium Annotations
-—- Subscription support for LCP license providers
-—- Divina (Readium Web Publications for Comics/Manga/Webtoons) as an ISO standard for webtoons
--- OPDS (already supported by the Readium toolkits) as an ISO standard.
+ - Readium Speech
+ - Readium Playground
+ - Readium Annotations
+ - Subscription support for LCP license providers
+ - Divina (Readium Web Publications for Comics/Manga/Webtoons) as an ISO standard for webtoons
+ - OPDS (already supported by the Readium toolkits) as an ISO standard.
 
 
 Other Business
