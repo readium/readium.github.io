@@ -4,7 +4,7 @@ title:  Board elections at the Readium Foundation
 excerpt: Readium Foundation members to vote for two seats at the board. 
 date:   2023-06-06 11:30:00 +0100
 categories: news
-permalink: /news/_posts/2023-06-06-readium-board-elections/
+permalink: /news/2023-06-06-readium-board-elections/
 ---
 
 The board of the Readium Foundation is currently counting five Directors:

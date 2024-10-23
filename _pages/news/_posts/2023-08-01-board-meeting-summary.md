@@ -4,18 +4,12 @@ title:  Board meeting summary
 excerpt: Internal Elections, Bylaws Update and more. 
 date:   2023-08-01 11:30:00 +0100
 categories: news
-permalink: /news/_posts/2023-08-01-board-meeting-summary/
+permalink: /news/2023-08-01-board-meeting-summary/
 ---
 
 Attendees
 -----------
-Laurent Le Meur (EDRLab)
-Kate Davey (BiblioVault / the University of Chicago Press)
-Brian O’Leary (BISG) - thank you for your service!
-Risa Wolf (NYPL)
-Robert Cartolano (Columbia University)
-Hadrien Gardeur (De Marque)
-
+Laurent Le Meur (EDRLab),  Kate Davey (BiblioVault / the University of Chicago Press), Brian O’Leary (BISG), Risa Wolf (NYPL), Robert Cartolano (Columbia University), Hadrien Gardeur (De Marque)
 
 Agenda
 -----------

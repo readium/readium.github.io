@@ -4,16 +4,16 @@ title:  Board meeting summary
 excerpt: Elections, Use of Treasury, Promotion, Bylaws, General Assembly. 
 date:   2023-05-10 16:00:00 +0200
 categories: news
-permalink: /news/_posts/2023-05-10-board-meeting-summary/
+permalink: /news/2023-05-10-board-meeting-summary/
 ---
 
 Attendees
 -----------
-Risa Wolf (NYPL)
-Brian O’Leary (BISG)
-Robert Cartolano (Columbia University)
-Hadrien Gardeur (De Marque)
-Laurent Le Meur (EDRLab)
+- Risa Wolf (NYPL)
+- Brian O’Leary (BISG)
+- Robert Cartolano (Columbia University)
+- Hadrien Gardeur (De Marque)
+- Laurent Le Meur (EDRLab)
 
 
 Agenda
