@@ -3,6 +3,7 @@ layout: post
 excerpt: Internal Elections, Frankfurt book fair, Membership Conference and more. 
 date:   2024-09-19 11:30:00 +0100
 categories: news
+permalink: /news/2024-09-19-board-meeting-summary/
 ---
 
 Attendees
