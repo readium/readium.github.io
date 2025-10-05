@@ -35,7 +35,7 @@ From A to Z:
 
 - [Bibliovault (University of Chicago Press)](https://www.bibliovault.org)
 - [Bluefire Productions](http://www.bluefirereader.com/)
-- [Bokbasen](htts://www.bokbasen.com)
+- [Bokbasen](https://www.bokbasen.com)
 - [Columbia University Library](https://library.columbia.edu/)
 - [DAISY consortium](https://daisy.org/)
 - [De Marque](https://www.demarque.com/)
