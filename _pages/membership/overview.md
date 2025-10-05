@@ -33,6 +33,7 @@ Adopters are encouraged to help support Readium software development and mainten
 
 From A to Z:
 
+- [Baker & Taylor](https://www.baker-taylor.com/)
 - [Bibliovault (University of Chicago Press)](https://www.bibliovault.org)
 - [Bluefire Productions](http://www.bluefirereader.com/)
 - [Bokbasen](https://www.bokbasen.no/)
