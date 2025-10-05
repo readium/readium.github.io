@@ -35,7 +35,6 @@ Adopters are encouraged to help support Readium software development and mainten
 From A to Z:
 
 - [Bibliovault (University of Chicago Press)](https://www.bibliovault.org)
-- [BISG](https://www.bisg.org)
 - [Bluefire Productions](http://www.bluefirereader.com/)
 - [Bokbasen](htts://www.bokbasen.com)
 - [Columbia University Library](https://library.columbia.edu/)
@@ -47,6 +46,4 @@ From A to Z:
 - [Learning Ally](https://learningally.org/)
 - [Lyrasis](https://lyrasis.org/)
 - [New York Public Library](https://www.nypl.org/)
-- [Tagus Books (Casa del Libro)](https://www.tagusbooks.com)
 - [VitalSource Technologies](https://get.vitalsource.com)
-- [Vivlio](https://www.vivlio.com/)
