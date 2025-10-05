@@ -25,10 +25,9 @@ Adopters are encouraged to help support Readium software development and mainten
 ## Board Members
 
 - Laurent Le Meur ([EDRLab](https://edrlab.org)) as President
-- Risa Wolf ([NYPL](https://www.nypl.org)) as Secretary
 - Kate Davey ([University of Chicago Press](https://www.bibliovault.org)) as Treasurer
 - Robert Cartolano ([Columbia University Library](https://library.columbia.edu/))
-- Hadrien Gardeur ([De Marque](https://www.demarque.com/))
+- Hadrien Gardeur
 
 ## Current Members
 
