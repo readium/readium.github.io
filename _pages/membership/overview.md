@@ -40,6 +40,7 @@ From A to Z:
 - [Columbia University Library](https://library.columbia.edu/)
 - [DAISY consortium](https://daisy.org/)
 - [De Marque](https://www.demarque.com/)
+- [Dilicom](https://www.dilicom.net/)
 - [DRM Inside](https://drminside.com/en)
 - [EDRLab](https://www.edrlab.org/)
 - [eKitabu](https://www.ekitabu.com)
