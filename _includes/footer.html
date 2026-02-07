@@ -2,12 +2,13 @@
   <div class="prefooter">
     <div class="container">
       <div class="region region-prefooter">
-        <section id="block-block-19" class="block block-block clearfix">    
+        <section id="block-block-19" class="block block-block clearfix">
           <div class="related-site-logo related-site-logo-idpf">
             <a href="https://www.w3.org/publishing/" target="_blank"><img src="/assets/logos/w3c_logo_gray.png"></a>
           </div>
           <div class="related-site-logo related-site-logo-epub">
-            <a href="/epub_zone/resources/"  target="_blank"><img class="related-site-logo-epub" src="/assets/logos/epub-logo-gray.png"></a>
+            <a href="/epub_zone/resources/" target="_blank"><img class="related-site-logo-epub"
+                src="/assets/logos/epub-logo-gray.png"></a>
           </div>
         </section>
       </div>
@@ -16,12 +17,47 @@
   <div class="footer">
     <div class="container">
       <div class="region region-footer">
-        <section id="social-links" class="block block-block col-sm-4 col-sm-push-5">
-          <a href="https://www.youtube.com/channel/UCcNrUCos9dzjHPzXlD1XGOg">YouTube</a> &mdash; <a href="https://www.linkedin.com/company/readium-foundation">LinkedIn</a>
-        </section>
-        <section id="copyright-notice" class="block block-block col-sm-5 col-sm-pull-7">    
-          <div class="copyright-notice">{{ site.copyright_notice | escape }}</div>
-        </section>
+        <div class="footer-branding">
+          <div class="footer-left">
+            <div class="copyright-notice">{{ site.copyright_notice | escape }}</div>
+          </div>
+          <div class="footer-center">
+            <div class="social-icons">
+              <a href="https://github.com/readium" target="_blank" rel="noopener noreferrer" title="GitHub"
+                class="social-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12.008 2C6.474 2 2 6.583 2 12.254c0 4.532 2.867 8.369 6.843 9.727.498.102.68-.221.68-.493 0-.237-.017-1.052-.017-1.901-2.784.611-3.364-1.222-3.364-1.222-.447-1.189-1.11-1.494-1.11-1.494-.911-.628.067-.628.067-.628 1.01.068 1.54 1.052 1.54 1.052.895 1.562 2.337 1.12 2.917.85.083-.663.348-1.121.63-1.376-2.22-.238-4.557-1.12-4.557-5.059 0-1.12.397-2.037 1.027-2.75-.1-.254-.447-1.307.1-2.716 0 0 .845-.272 2.75 1.052a9.5 9.5 0 0 1 2.502-.34c.845 0 1.707.12 2.502.34 1.906-1.324 2.75-1.052 2.75-1.052.548 1.409.2 2.462.1 2.716.647.713 1.028 1.63 1.028 2.75 0 3.939-2.337 4.804-4.574 5.06.365.322.68.933.68 1.9 0 1.375-.017 2.479-.017 2.818 0 .272.183.595.68.493C19.133 20.622 22 16.786 22 12.253 22.016 6.584 17.526 2 12.008 2">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://discord.gg/yTdtzBddM3" target="_blank" rel="noopener noreferrer" title="Discord"
+                class="social-icon">
+                <svg viewBox="0 0 126.644 96">
+                  <path
+                    d="M81.15,0c-1.2376,2.1973-2.3489,4.4704-3.3591,6.794-9.5975-1.4396-19.3718-1.4396-28.9945,0-.985-2.3236-2.1216-4.5967-3.3591-6.794-9.0166,1.5407-17.8059,4.2431-26.1405,8.0568C2.779,32.5304-1.6914,56.3725.5312,79.8863c9.6732,7.1476,20.5083,12.603,32.0505,16.0884,2.6014-3.4854,4.8998-7.1981,6.8698-11.0623-3.738-1.3891-7.3497-3.1318-10.8098-5.1523.9092-.6567,1.7932-1.3386,2.6519-1.9953,20.281,9.547,43.7696,9.547,64.0758,0,.8587.7072,1.7427,1.3891,2.6519,1.9953-3.4601,2.0457-7.0718,3.7632-10.835,5.1776,1.97,3.8642,4.2683,7.5769,6.8698,11.0623,11.5419-3.4854,22.3769-8.9156,32.0509-16.0631,2.626-27.2771-4.496-50.9172-18.817-71.8548C98.9811,4.2684,90.1918,1.5659,81.1752.0505l-.0252-.0505ZM42.2802,65.4144c-6.2383,0-11.4159-5.6575-11.4159-12.6535s4.9755-12.6788,11.3907-12.6788,11.5169,5.708,11.4159,12.6788c-.101,6.9708-5.026,12.6535-11.3907,12.6535ZM84.3576,65.4144c-6.2637,0-11.3907-5.6575-11.3907-12.6535s4.9755-12.6788,11.3907-12.6788,11.4917,5.708,11.3906,12.6788c-.101,6.9708-5.026,12.6535-11.3906,12.6535Z" />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UCcNrUCos9dzjHPzXlD1XGOg" target="_blank"
+                rel="noopener noreferrer" title="YouTube" class="social-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19.816 5.417c.86.23 1.537.908 1.768 1.769h-.002C22 8.745 22 12 22 12s0 3.255-.418 4.814a2.5 2.5 0 0 1-1.768 1.768C18.254 19 12 19 12 19s-6.254 0-7.813-.418a2.5 2.5 0 0 1-1.769-1.768C2 15.254 2 12 2 12s0-3.255.418-4.814a2.5 2.5 0 0 1 1.769-1.769C5.746 5 12 5 12 5s6.255 0 7.816.418M10 15l5-3-5-3z">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/company/readium-foundation" target="_blank" rel="noopener noreferrer"
+                title="LinkedIn" class="social-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-right"></div>
+        </div>
       </div>
     </div>
   </div>

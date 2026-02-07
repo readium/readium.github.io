@@ -5,7 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description"
+    content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="/images/favicon.png" />
   <link rel="stylesheet" type="text/css" href="/styles/system.base.css"/>
@@ -18,20 +19,20 @@
   <link rel="stylesheet" type="text/css" href="/styles/styles.css"/>
   
   <style>
-.dropdown-submenu {
-    position: relative;
-}
+    .dropdown-submenu {
+      position: relative;
+    }
 
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -1px;
-}
- 
-.views-row {
-  line-height:1.2;
-}
-</style>
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+    }
+
+    .views-row {
+      line-height: 1.2;
+    }
+  </style>
 
 
   <!-- HTML5 element support for IE6-8 -->
