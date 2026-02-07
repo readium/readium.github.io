@@ -4,7 +4,7 @@ title:  Readium Member Meeting in Frankfurt
 excerpt: On October 9th at 17:00 the Readium Foundation will host a member meeting at the Marriott Hotel Frankfurt .
 date:   2018-10-01 11:30:00 +0100
 categories: news
-permalink: /news/_posts/epub-summit-2018/
+permalink: /news/_posts/epub-meeting-2018/
 ---
 
 On October 9th at 17:00 the Readium Foundation will host a member meeting at the [Marriott Hotel Frankfurt] (https://www.marriott.com/hotels/travel/fradt-frankfurt-marriott-hotel/).
