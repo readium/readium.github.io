@@ -155,6 +155,8 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   cursor: pointer; }
 
 /* line 302, ../sass/vendor/bootstrap/_normalize.scss */
@@ -186,12 +188,16 @@ input[type="number"]::-webkit-outer-spin-button {
 /* line 356, ../sass/vendor/bootstrap/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
   box-sizing: content-box; }
 
 /* line 367, ../sass/vendor/bootstrap/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 /* line 376, ../sass/vendor/bootstrap/_normalize.scss */
 fieldset {
@@ -3170,7 +3176,9 @@ textarea.form-control {
 
 /* line 168, ../sass/vendor/bootstrap/_forms.scss */
 input[type="search"] {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   /* line 187, ../sass/vendor/bootstrap/_forms.scss */
@@ -6344,7 +6352,9 @@ button.close {
   cursor: pointer;
   background: transparent;
   border: 0;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 /* line 11, ../sass/vendor/bootstrap/_modals.scss */
 .modal-open {
@@ -8361,4 +8371,69 @@ b {
 .block-views {
 	margin-left:10%;
 	margin-right:10%;
+}
+
+/* Custom Footer Branding Styles */
+.footer-branding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.footer-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff;
+    transition: opacity 0.2s ease;
+}
+
+.social-icon:hover svg {
+    opacity: 0.7;
+}
+
+.copyright-notice {
+    font-size: 14px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    .footer-branding {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-left, .footer-center, .footer-right {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .copyright-notice {
+        white-space: normal;
+    }
 }

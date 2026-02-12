@@ -5,12 +5,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description"
+    content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="/images/favicon.png" />
   <link rel="stylesheet" type="text/css" href="/styles/system.base.css"/>
   <link rel="stylesheet" type="text/css" href="/styles/date.css"/>
-  <link rel="stylesheet" type="text/css" href="/styles/datepicker.1.7.css"/>
   <link rel="stylesheet" type="text/css" href="/styles/field.css"/>
   <link rel="stylesheet" type="text/css" href="/styles/node.css"/>
   <link rel="stylesheet" type="text/css" href="/styles/views.css"/>
@@ -19,20 +19,20 @@
   <link rel="stylesheet" type="text/css" href="/styles/styles.css"/>
   
   <style>
-.dropdown-submenu {
-    position: relative;
-}
+    .dropdown-submenu {
+      position: relative;
+    }
 
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -1px;
-}
- 
-.views-row {
-  line-height:1.2;
-}
-</style>
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+    }
+
+    .views-row {
+      line-height: 1.2;
+    }
+  </style>
 
 
   <!-- HTML5 element support for IE6-8 -->
@@ -40,13 +40,11 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <script src="/js/jquery.min.js?v=1.11.2"></script>
-  <script src="/js/jquery.once.js?v=1.2"></script>
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
 
-  <script src="/js/bootstrap/affix.js"></script>
   <script src="/js/bootstrap/alert.js"></script>
   <script src="/js/bootstrap/button.js"></script>
   <script src="/js/bootstrap/carousel.js"></script>
