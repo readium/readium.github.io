@@ -35,7 +35,6 @@ From A to Z:
 
 - [Baker & Taylor](https://www.baker-taylor.com/)
 - [Bibliovault (University of Chicago Press)](https://www.bibliovault.org)
-- [Bluefire Productions](http://www.bluefirereader.com/)
 - [Bokbasen](https://www.bokbasen.no/)
 - [Columbia University Library](https://library.columbia.edu/)
 - [DAISY consortium](https://daisy.org/)
